@@ -1,0 +1,16 @@
+#scrollDownLottie {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 55vh;
+  left: -5.5%;
+  z-index: 10;
+}
+@media (max-width: 500px) {
+  #scrollDownLottie {
+    width: 100px;
+    height: 100px;
+    top: 70vh;
+    left: -10%;
+  }
+}

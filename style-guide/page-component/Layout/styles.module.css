@@ -1,0 +1,16 @@
+.bgtext {
+  top: 50%;
+  left: 5%;
+  position: fixed;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 10vw;
+  font-weight: 800;
+  z-index: 1;
+  opacity: 1;
+  color: var(--bgTextColor) !important;
+  line-height: 1.2em;
+  letter-spacing: 5px;
+  font-family: Anton;
+  pointer-events: none;
+}

@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap");
+.highlight {
+  z-index: 2;
+  border-radius: 5px;
+  background: #bc4e9c !important;
+  font-family: Anton;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#f80759),
+    to(#bc4e9c)
+  ) !important;
+  background: linear-gradient(to right, #f80759, #bc4e9c) !important;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 15px;
+  margin: 10px 0px 0px 0px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-clip-path: polygon(
+    100% 0,
+    100% 50%,
+    100% 100%,
+    0% 100%,
+    0 50%,
+    0% 0%
+  );
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+}
+
+.highlight:hover {
+  -webkit-clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 5% 50%, 0% 0%);
+  clip-path: polygon(90% 0, 100% 50%, 90% 100%, 0% 100%, 5% 50%, 0% 0%);
+}
+
+.bgtext {
+  top: 50%;
+  left: 5%;
+  position: fixed;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 10vw;
+  font-weight: 800;
+  z-index: 1;
+  opacity: 1;
+  color: var(--bgTextColor) !important;
+  line-height: 1.2em;
+  letter-spacing: 5px;
+  font-family: Anton;
+  pointer-events: none;
+}
+
+#headTile {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.dashboard {
+  position: relative;
+  width: 100vw;
+  height: 120vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.dashboard p {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  text-align: start;
+}
+
+.dashboard .dividers {
+  position: relative;
+  background-color: var(--black);
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  text-align: start;
+}
+
+.dashboard .dividers_first {
+  -webkit-transform: translate(10%, -20%);
+  transform: translate(10%, -20%);
+}
+
+.dashboard .dividers_first .title {
+  font-family: Anton;
+  width: 10em;
+  color: var(--Grey-light-3);
+  font-weight: 100;
+  font-size: 4em;
+  letter-spacing: 0.1em;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.dashboard .dividers_first .subtitle {
+  margin: 3em 0;
+  color: var(--Grey-light-3);
+}
+
+.dashboard .dividers_first .subtitle p {
+  font-family: "Gill Sans", sans-serif;
+  margin: 0.4em 0;
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--Grey-light-3);
+}
+
+/*  Lotie  */
+.hero_lottie {
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  z-index: 1;
+  width: 50vw;
+  opacity: 0.2;
+}
+.network_lottie {
+  opacity: 0.9;
+  margin: 0;
+  top: 50vh;
+  right: 0%;
+  -webkit-transform: translate(0%, -50vh);
+  transform: translate(0%, -50vh);
+  width: 40em;
+  height: 40em;
+  z-index: 1;
+  position: absolute;
+  pointer-events: none;
+}
+.scrollanime {
+  margin: 0;
+  padding: 0;
+  bottom: 0%;
+  left: 0%;
+  -webkit-transform: translate(-30%, 0%);
+  transform: translate(-30%, 0%);
+  width: 12em;
+  height: 20em;
+  z-index: 2;
+  position: fixed;
+}
+@media only screen and (max-width: 1200px) {
+  .dashboard .dividers_first {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transform: translate(50%, -20%);
+    transform: translate(50%, -20%);
+  }
+  .dashboard .dividers_first .title {
+    font-size: 3em;
+    width: 100vw;
+  }
+  .dashboard .dividers_first p {
+    text-align: center;
+  }
+  .dashboard .highlight {
+    display: inline-block;
+    width: auto;
+    height: 1.5em;
+    padding: 0px 7px;
+  }
+  .network_lottie {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .dashboard .dividers_first .title {
+    font-size: 3em;
+    width: 80vw;
+  }
+}

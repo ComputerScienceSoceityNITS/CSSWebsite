@@ -1,0 +1,17 @@
+.head {
+  color: white;
+  margin: 10vh auto;
+  width: 60vw;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.main {
+  background-color: white;
+  max-width: 40vw;
+  height: 50vh;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px 2px rgb(123, 123, 123);
+  margin-bottom: 20vh;
+  font-family: "Roboto", sans-serif;
+}

@@ -1,0 +1,124 @@
+.gridItem {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  position: relative;
+  padding: 5px;
+  height: 14vw;
+  width: 14vw;
+  overflow: hidden;
+  z-index: 10;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #000000, #000000);
+  -webkit-box-shadow: 2px 2px 7px #141414, -2px -2px 7px #000000;
+  box-shadow: 2px 2px 7px #141414, -2px -2px 7px #000000;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.gridItem img {
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: none;
+}
+
+.gridItem .details2021 {
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10%;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: white;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.gridItem .details2021 .icons2021 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.gridItem .details2021 .icons2021 a {
+  color: black;
+}
+
+.gridItem .details2021 .icons2021 a i {
+  margin-right: 10px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.gridItem .details2021 .icons2021 a i:hover {
+  color: white;
+}
+
+.gridItem .details2021 h2 {
+  font-size: clamp(0.5rem, 1vw, 0.75rem);
+  color: #ebe6e6;
+  text-align: center;
+  width: 7rem;
+  display: block;
+  margin: auto;
+}
+
+.gridItem .details2021 h3 {
+  font-size: clamp(0.5rem, 1vw, 0.65rem);
+  width: 7rem;
+  display: block;
+  margin: auto;
+}
+
+.gridItem:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.gridItem:hover img {
+  opacity: 0.5;
+}
+
+.gridItem:hover .details2021 {
+  opacity: 1;
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+@media only screen and (max-width: 560px) {
+  .gridItem {
+    box-shadow: 1px 1px 4px #141414, -1px -1px 4px #0f0f0f;
+    height: 30vh;
+    width: 30vh;
+    margin-bottom: 5vh;
+  }
+  .gridItem img {
+    height: 100%;
+    width: 100%;
+  }
+}

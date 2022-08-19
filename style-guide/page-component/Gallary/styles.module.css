@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=East+Sea+Dokdo&display=swap");
+
+/* ///// */
+
+@media (max-width: 620px) {
+  .header {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+  }
+  .header_content {
+    z-index: 2 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header_content p {
+    font-size: 10vh;
+    font-weight: bolder;
+    color: white;
+    padding: 0;
+    margin: 30px 0;
+    font-family: "Archivo", sans-serif;
+  }
+  .header_content p::first-letter {
+    font-size: 15vh;
+    font-weight: bolder;
+    color: white;
+    background-color: #e41f6f;
+    padding: 0;
+    margin: 30px 0;
+    font-family: "Archivo", sans-serif;
+  }
+  .header_content span {
+    font-size: 3.5vh;
+    font-weight: bolder;
+    color: white;
+    padding: 0;
+    margin: 30px 0;
+    font-family: "East Sea Dokdo", cursive;
+  }
+  .header_content .buttonContainer button {
+    font-size: 3vh;
+    font-weight: bolder;
+    color: rgb(68, 68, 68);
+    border: none;
+    background-color: transparent;
+    padding: 0 20px 0 0;
+    margin: 30px 0;
+    font-family: "Archivo", sans-serif;
+    outline: none;
+  }
+  /* button:focus {
+    outline: none;
+  } */
+  /* button:hover {
+    cursor: pointer;
+  } */
+}
+
+@media (min-width: 620px) {
+  .header {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--black);
+    position: relative;
+  }
+  .header_content {
+    position: absolute;
+    color: var(--Grey-light-3);
+    top: 50%;
+    right: 10%;
+    text-align: end;
+    transform: translate(0%, -50%);
+    z-index: 2 !important;
+  }
+  .header_content p {
+    font-size: 15vh;
+    font-weight: bolder;
+    padding: 0;
+    margin: 30px 0;
+    color: var(--Grey-light-3);
+    font-family: "Archivo", sans-serif;
+  }
+  .header_content p::first-letter {
+    font-size: 15vh;
+    font-weight: bolder;
+    color: white;
+    background-color: #e41f6f;
+    padding: 0;
+    margin: 30px 0;
+    font-family: "Archivo", sans-serif;
+    border-radius: 7px;
+  }
+  .header_content span {
+    font-size: 4.5vh;
+    font-weight: bolder;
+    color: var(--Grey-light-3);
+    padding: 0;
+    margin: 30px 0;
+    font-family: "East Sea Dokdo", cursive;
+  }
+  .header_content .buttonContainer > button {
+    font-size: 3vh;
+    font-weight: bolder;
+    color: rgb(68, 68, 68);
+    border: none;
+    background-color: transparent;
+    padding: 0 20px 0 0;
+    margin: 30px 0;
+    font-family: "Archivo", sans-serif;
+    outline: none;
+    cursor: pointer;
+  }
+}

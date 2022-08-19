@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+/* @font-face {
+  font-family: "AlphaCentauri";
+  src: URL("../fonts/Alphacentauri-MVY4p.ttf") format("truetype");
+} */
+
+.footer {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white) !important;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  z-index: 0;
+}
+
+.footer .fmain {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer .fmain .fmain_c {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2em;
+}
+
+.footer .fmain .fmain_c .fmain_e {
+  position: relative;
+  cursor: pointer;
+  padding: 0.4em 0;
+  font-size: 0.8em;
+  font-family: "AlphaCentauri" !important;
+  letter-spacing: 2px;
+  color: var(--black) !important;
+  transition: all 0.2s;
+  line-height: 1.6em;
+}
+
+.footer .fmain .fmain_c .fmain_e a {
+  color: var(--black) !important;
+}
+
+.footer .fmain .fmain_c .fmain_e:first-child {
+  font-weight: 900;
+  margin-bottom: 0.5em;
+  opacity: 1 !important;
+}
+
+.footer .fmain .fmain_c .fmain_e:first-child::before {
+  width: 0% !important;
+}
+
+.footer .fmain .fmain_c .fmain_e:hover {
+  opacity: 0.4;
+}
+
+.footer .fmain .fmain_c .fmain_e:hover::before {
+  width: 100%;
+}
+
+.footer .fmain .fmain_c .fmain_e::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  bottom: 0%;
+  left: 0%;
+  background-color: var(--black) !important;
+  width: 0%;
+  height: 2px;
+  transition: all 0.5s;
+}
+
+.footer .fmain .fmain_c .title {
+  font-family: "Anton";
+  font-weight: 800;
+  font-size: 5em;
+  letter-spacing: 5px;
+  line-height: 1em;
+}
+
+.footer .fmain .fmain_c .subtitle {
+  font-family: sans-serif;
+  font-size: 0.8em;
+}
+
+.footer .ftnc {
+  font-family: "Anton";
+  position: relative;
+  bottom: 10rem;
+  padding: 3em;
+  line-height: 1.5em;
+  height: 15rem;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  right: 1.5rem;
+  margin-top: 2rem;
+  z-index: 10;
+}
+.ficon {
+  height: 10rem;
+  position: relative;
+  /* left: 15rem; */
+  bottom: 4rem;
+}
+.footer .fcopyright {
+  position: absolute;
+  font-family: Anton;
+  font-weight: 100;
+  color: var(--bgTextColor);
+  top: 90%;
+  left: 5%;
+}
+.report {
+  position: relative;
+  right: 40vw;
+  bottom: 4rem;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.report img {
+  height: 40px;
+  width: 40px;
+  transition: all 0.5s ease-in-out;
+}
+.report span {
+  position: relative;
+  left: 3rem;
+  bottom: 2rem;
+}
+.report:hover {
+  opacity: 0.5;
+}
+.report:hover img {
+  transform: translateZ(0px) rotateY(180deg) !important;
+}
+.report:hover::before {
+  width: 150%;
+}
+.report:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  bottom: 5%;
+  left: 0%;
+  background-color: var(--black) !important;
+  width: 0%;
+  height: 2px;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 1200px) {
+  .footer {
+    z-index: 2;
+    height: auto;
+    padding: 2em 0;
+    align-items: center;
+    text-align: center;
+  }
+  .footer .fmain {
+    width: 100%;
+    flex-direction: column;
+  }
+  .footer .fmain_c {
+    margin-bottom: 2em !important;
+  }
+  .footer .fmain_e {
+    font-size: 1em !important;
+  }
+  .footer .fmain_e::before {
+    width: 0% !important;
+  }
+  .footer .ftnc {
+    height: 25rem;
+    top: 5rem;
+    width: 60%;
+    left: 10vw;
+  }
+  .footer .fcopyright {
+    width: 100%;
+    transform: translate(-50%, 50%);
+    bottom: 3%;
+    left: 50%;
+    top: unset;
+    font-size: 10px;
+    letter-spacing: 1px;
+    opacity: 0.5;
+  }
+  .footgroup {
+    display: none;
+  }
+  .remove {
+    display: none !important;
+    pointer-events: none;
+  }
+  .report {
+    position: absolute;
+    margin: auto;
+    bottom: 24rem;
+    right: 4vw;
+    display: block;
+    width: 100vw;
+    font-size: 0.9rem;
+  }
+  .report img {
+    position: relative;
+    left: 45vw;
+  }
+}
+.footgroup {
+  bottom: 0%;
+  right: 0%;
+  position: absolute;
+  width: 30vw;
+  height: 50vh;
+  z-index: 3;
+}
+@media only screen and (max-width: 540px) {
+  .footer .ftnc {
+    height: 24rem;
+    top: 2rem;
+    left: 0.5rem;
+  }
+  .ficon {
+    height: 6rem;
+    padding: 0;
+    left: 0.7rem;
+  }
+  .report {
+    width: 29vw;
+    right: 40vw;
+  }
+  .report img {
+    position: relative;
+    left: 2vw;
+  }
+  .report:hover::before {
+    width: 0%;
+  }
+}

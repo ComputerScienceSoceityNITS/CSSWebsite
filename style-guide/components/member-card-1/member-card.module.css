@@ -1,0 +1,103 @@
+.card20 {
+  height: 50vh;
+  width: 38vh;
+  margin-top: 10vh;
+  background: #808080;
+  border-radius: 10px;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+  overflow: hidden;
+  background: #131419;
+  -webkit-box-shadow: -2.5px -2.5px 5px rgba(255, 255, 255, 0.05),
+    2.5px 2.5px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: -2.5px -2.5px 5px rgba(255, 255, 255, 0.05),
+    2.5px 2.5px 8px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card200:hover h2 {
+  opacity: 1;
+}
+
+.card200:hover .fab {
+  opacity: 1;
+}
+
+.card20 h2 {
+  margin-top: 25vh;
+  margin-right: 2vh;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  font-size: 1.5em;
+  text-align: right;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.card20 h2 {
+  color: #fff;
+}
+
+.card20 .fab {
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+  color: #131419;
+}
+
+.card20 .fab:hover {
+  -webkit-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #858080;
+}
+
+.icons20 {
+  position: relative;
+  font-size: 1.5em;
+  height: 60px;
+  list-style: none;
+  top: 3vh;
+  left: -0.5vh;
+  width: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+.border20 {
+  height: 50vh;
+  width: 38vh;
+  background: transparent;
+  border-radius: 10px;
+  -webkit-transition: border 1s;
+  transition: border 1s;
+  position: relative;
+}
+
+.border20:hover {
+  border: 1px solid #fff;
+}

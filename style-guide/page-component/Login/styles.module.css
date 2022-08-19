@@ -1,0 +1,37 @@
+.head {
+  color: white;
+  margin: 10vh auto;
+  width: 60vw;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.main {
+  background-color: white;
+  max-width: 40vw;
+  height: 50vh;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px 2px rgb(123, 123, 123);
+  margin-bottom: 20vh;
+  font-family: "Roboto", sans-serif;
+}
+.main label {
+  display: block;
+  width: 90%;
+  margin: auto;
+  padding: 4vh 2vw;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.main input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 80%;
+  margin: auto;
+  /* padding: 4vh 2vw; */
+}
+.main input:focus {
+  border: none;
+  border-bottom: 1px solid rgb(31, 56, 241);
+}

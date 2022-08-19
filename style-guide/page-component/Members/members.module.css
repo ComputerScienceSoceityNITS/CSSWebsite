@@ -1,0 +1,210 @@
+.firstSection {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.bgtext {
+  top: 50%;
+  left: 5%;
+  position: fixed;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 10vw;
+  font-weight: 800;
+  z-index: 1;
+  opacity: 1;
+  color: var(--bgTextColor) !important;
+  line-height: 1.2em;
+  letter-spacing: 5px;
+  font-family: Anton;
+  pointer-events: none;
+}
+.firstSection .largeHeader {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+
+.firstSection #demoCanvas {
+  z-index: -100;
+}
+
+.firstSection h3 {
+  font-size: 2vh;
+  color: var(--Grey-light-3);
+  font-weight: 400;
+}
+
+.firstSection .text1 {
+  position: absolute;
+  right: -1.75%;
+  top: 7%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.firstSection .text2 {
+  position: absolute;
+  right: 0.5%;
+  bottom: 2%;
+}
+
+.firstSection .text3 {
+  position: absolute;
+  bottom: 7%;
+  left: -1.75%;
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.firstSection .text4 {
+  position: absolute;
+  top: 2%;
+  left: 0%;
+}
+
+.firstSection .container {
+  z-index: 2;
+  position: relative;
+  width: 80vw;
+  margin: 3vh 0vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "IBM Plex Sans", serif;
+}
+
+.firstSection .container h1 {
+  font-size: 10vh;
+  color: var(--Grey-light-3);
+  font-weight: 500;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.836);
+}
+
+.firstSection .container .buttons {
+  height: 15vh;
+  position: absolute;
+  top: 45%;
+  left: -10%;
+  -webkit-transform: translate(-45%, -50%);
+  transform: translate(-45%, -50%);
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.firstSection .container .buttons button {
+  margin: 1vh;
+  color: #926473;
+  font-weight: 500;
+  -webkit-text-fill-color: var(--Grey-light-3);
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255, 255, 255, 0.856);
+  outline: none;
+  border-radius: 12px;
+  background: #0d0d0d;
+  -webkit-box-shadow: 14px 14px 32px #070707, -14px -14px 32px #131313;
+  box-shadow: 14px 14px 32px #070707, -14px -14px 32px #131313;
+  cursor: pointer;
+  font-size: clamp(1rem, 10vw, 2.5rem);
+  border: none;
+  padding: 0.08em;
+}
+
+.firstSection .container .buttons button span {
+  padding: 6px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: transparent 1px solid;
+}
+
+.firstSection .container .buttons button:hover span {
+  background-color: rgba(255, 255, 255, 0.315);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  visibility: visible;
+  -webkit-animation: point 2s ease-in-out forwards;
+  animation: point 2s ease-in-out forwards;
+  border-radius: 6px;
+  border: var(--Grey-light-3) 1px solid;
+}
+.memsection {
+  background: var(--black);
+  position: relative;
+  z-index: 2;
+}
+.tabPanel {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+.active {
+  background: #f80759 !important;
+  border: 2px solid #e7e7e7;
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .firstSection .largeHeader .largeHeader {
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .firstSection .container .buttons {
+    height: 8vh;
+    top: 50%;
+    left: 14%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+  }
+  .firstSection .container .buttons button span {
+    z-index: 2;
+    width: 0%;
+  }
+  .firstSection .container h1 {
+    margin-right: 10vw;
+  }
+  .firstSection .text1 {
+    position: absolute;
+    right: -6%;
+    top: 7%;
+  }
+  .firstSection .text2 {
+    position: absolute;
+    right: 1vh;
+    bottom: 2%;
+  }
+  .firstSection .text3 {
+    position: absolute;
+    bottom: 7%;
+    left: -6%;
+  }
+  .firstSection #demoCanvas {
+    visibility: hidden;
+    pointer-events: none;
+  }
+}

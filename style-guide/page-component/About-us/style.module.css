@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap");
+.about {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  z-index: 1;
+  background-color: var(--black);
+}
+
+.about p {
+  text-align: start;
+}
+
+.about .dividers {
+  position: relative;
+  border-bottom: 0.6px solid var(--Grey-dark-4);
+  border-left: 0.6px solid var(--Grey-dark-4);
+  border-right: 0.6px solid var(--Grey-dark-4);
+  width: 50%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: start;
+  padding-left: 2em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.about .dividers:nth-of-type(2) {
+  z-index: 3;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.about .dividers:nth-of-type(3) {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.about .dividers:nth-of-type(4) {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.about .dividers_second {
+  z-index: 2;
+  padding-left: 8em;
+}
+
+.about .dividers_second .title {
+  font-family: Anton;
+  color: var(--Grey-light-3);
+  font-weight: 100;
+  font-size: 5em;
+  letter-spacing: 0.1em;
+  width: 5em;
+  margin: 1em 0;
+}
+
+.about .dividers_second .smallTitle {
+  font-size: 2em;
+}
+
+.about .dividers_second .subtitle p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  letter-spacing: 2px;
+  font-weight: 100;
+  width: 40vw;
+  color: var(--Grey-light-2) !important;
+  margin-bottom: 4em;
+}
+
+.about .dividers_second .subtitle .smallSubtitle {
+  font-size: 1em;
+}
+.about_svg {
+  position: relative;
+  width: 25em;
+  height: 20em;
+}
+@media only screen and (max-width: 1200px) {
+  .about {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .about .dividers {
+    text-align: center;
+    width: 90vw;
+  }
+  .about .dividers_second {
+    padding: 0;
+  }
+  .about .dividers_second .title {
+    font-size: 2em;
+    width: 90vw;
+  }
+  .about .dividers_second .subtitle p {
+    width: 90vw;
+    font-size: 1.3em;
+  }
+  .about .dividers_second .title p,
+  .about .dividers_second .subtitle p {
+    text-align: center;
+  }
+  .about .dividers:nth-of-type(2) {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .about #logo {
+    display: none;
+  }
+  .about .about_svg {
+    width: 90vw;
+    height: 50vw;
+  }
+}
+/* Lottie  */

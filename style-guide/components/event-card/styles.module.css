@@ -1,0 +1,329 @@
+.el {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 19.2%;
+  height: 100%;
+  background: #252525;
+  -webkit-transition: width 0.45s, opacity 0.4s 0.45s, z-index 0s 0.85s,
+    -webkit-transform 0.4s 0.45s;
+  transition: width 0.45s, opacity 0.4s 0.45s, z-index 0s 0.85s,
+    -webkit-transform 0.4s 0.45s;
+  transition: transform 0.4s 0.45s, width 0.45s, opacity 0.4s 0.45s,
+    z-index 0s 0.85s;
+  transition: transform 0.4s 0.45s, width 0.45s, opacity 0.4s 0.45s,
+    z-index 0s 0.85s, -webkit-transform 0.4s 0.45s;
+  will-change: transform, width, opacity;
+}
+.el__inactive {
+  cursor: pointer;
+}
+.el__overflow {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.el__inner {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.el__bg {
+  position: relative;
+  width: calc(100vw - 140px);
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.4s 0.45s;
+  transition: -webkit-transform 0.4s 0.45s;
+  transition: transform 0.4s 0.45s;
+  transition: transform 0.4s 0.45s, -webkit-transform 0.4s 0.45s;
+  will-change: transform;
+  background-size: contain;
+  background-image: url("../../../public/images/Homepage/events/1.jpg");
+}
+
+.el__bg:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -5%;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+.el__bg:after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.el__preview_cont {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.3s 1.2s;
+  transition: all 0.3s 1.2s;
+}
+
+.el__heading {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-family: Anton;
+  text-align: center;
+  letter-spacing: 10px;
+  word-break: break-word;
+}
+.el__heading_active {
+  display: none;
+}
+.el__content {
+  z-index: -1;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.el__content_active {
+  z-index: 2;
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transition: all 0.5s 0.95s;
+  transition: all 0.5s 0.95s;
+}
+.el__text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 90%;
+  line-height: 1.5em;
+  font-size: 32px;
+  color: #fff;
+}
+
+.el__close_btn {
+  z-index: 5;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 60px;
+  height: 60px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0s 0.45s;
+  transition: all 0s 0.45s;
+  cursor: pointer;
+}
+
+.el__close_btn:before,
+.el__close_btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 8px;
+  margin-top: -4px;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: opacity 0s;
+  transition: opacity 0s;
+}
+
+.el__close_btn:before {
+  -webkit-transform: rotate(45deg) translateX(100%);
+  transform: rotate(45deg) translateX(100%);
+}
+
+.el__close_btn:after {
+  -webkit-transform: rotate(-45deg) translateX(100%);
+  transform: rotate(-45deg) translateX(100%);
+}
+
+.el__index {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  width: 100%;
+  height: 100%;
+  min-height: 250px;
+  text-align: center;
+  font-size: 2em;
+  line-height: 0.85;
+  font-weight: bold;
+  -webkit-transition: opacity 0.2s 0.95s, -webkit-transform 0.5s;
+  transition: opacity 0.2s 0.95s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.2s 0.95s;
+  transition: transform 0.5s, opacity 0.2s 0.95s, -webkit-transform 0.5s;
+  -webkit-transform: translate3d(0, 1vw, 0);
+  transform: translate3d(0, 1vw, 0);
+}
+.el__index_active {
+  display: none;
+}
+.el:hover .el__index {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.el__index_back,
+.el__index_front {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.el__index_back {
+  color: #2f3840;
+  opacity: 0;
+  -webkit-transition: opacity 0.25s 0.25s;
+  transition: opacity 0.25s 0.25s;
+}
+
+.el:hover .el__index_back {
+  -webkit-transition: opacity 0.25s;
+  transition: opacity 0.25s;
+  opacity: 1;
+}
+
+.el__index_overlay {
+  overflow: hidden;
+  position: relative;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  -webkit-transition: -webkit-transform 0.5s 0.1s;
+  transition: -webkit-transform 0.5s 0.1s;
+  transition: transform 0.5s 0.1s;
+  transition: transform 0.5s 0.1s, -webkit-transform 0.5s 0.1s;
+  color: transparent;
+}
+
+.el__index_overlay:before {
+  content: attr(data-index);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  -webkit-transition: -webkit-transform 0.5s 0.1s;
+  transition: -webkit-transform 0.5s 0.1s;
+  transition: transform 0.5s 0.1s;
+  transition: transform 0.5s 0.1s, -webkit-transform 0.5s 0.1s;
+}
+
+.el:hover .el__index_overlay {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.el:hover .el__index_overlay:before {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.el:hover .el__bg:after {
+  opacity: 1;
+}
+
+/*onclick animations*/
+.el__active {
+  z-index: 1;
+  width: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: width 0.45s 0.5s, z-index 0s, -webkit-transform 0.4s;
+  transition: width 0.45s 0.5s, z-index 0s, -webkit-transform 0.4s;
+  transition: transform 0.4s, width 0.45s 0.5s, z-index 0s;
+  transition: transform 0.4s, width 0.45s 0.5s, z-index 0s,
+    -webkit-transform 0.4s;
+}
+.el__bg__active {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+.el__bg__active:before {
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+.el__close__btn__active {
+  z-index: 15;
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transition: all 0s 0.95s;
+  transition: all 0s 0.95s;
+}
+.el__close__btn__active:before,
+.el__close__btn__active:after {
+  opacity: 1;
+}
+.el__close__btn__active:before {
+  -webkit-transition: all 0.3s 0.95s cubic-bezier(0.72, 0.09, 0.32, 1.57);
+  transition: all 0.3s 0.95s cubic-bezier(0.72, 0.09, 0.32, 1.57);
+  -webkit-transform: rotate(45deg) translateX(0);
+  transform: rotate(45deg) translateX(0);
+}
+.el__close__btn__active:after {
+  -webkit-transition: all 0.3s 1.1s cubic-bezier(0.72, 0.09, 0.32, 1.57);
+  transition: all 0.3s 1.1s cubic-bezier(0.72, 0.09, 0.32, 1.57);
+  -webkit-transform: rotate(-45deg) translateX(0);
+  transform: rotate(-45deg) translateX(0);
+}

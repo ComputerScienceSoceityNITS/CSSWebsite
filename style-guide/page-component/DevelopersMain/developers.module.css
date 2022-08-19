@@ -1,0 +1,82 @@
+.teamX {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  flex-direction: row-reverse;
+  max-width: 90%;
+  /* margin-bottom: 2rem; */
+}
+.teamX h2 {
+  position: absolute;
+  top: 14rem;
+  right: 10rem;
+  font-size: clamp(3rem, 8vw, 7.5rem);
+  font-family: "Poppins", sans-serif;
+}
+.teamX h2 span {
+  background: -webkit-linear-gradient(#923cb5 0%, #6a1a85);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 2px rgb(19, 19, 19);
+}
+.yearTag {
+  position: absolute;
+  right: 0;
+  top: 70vh;
+  width: 15vw;
+  height: 10vh;
+  z-index: 20;
+}
+.options {
+  width: 50%;
+  padding: 10px;
+  margin: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: bold;
+}
+.options:hover {
+  background: rgba(255, 255, 255, 0.315);
+}
+.active {
+  width: 75%;
+  background: #f80759 !important;
+  box-shadow: -2px 0px 8px 4px rgb(65, 64, 64);
+  font-size: 22px !important;
+}
+#option1 {
+  position: absolute;
+  right: -2vw;
+}
+#option2 {
+  position: absolute;
+  right: -2vw;
+  top: 7vh;
+}
+@media screen and (max-width: 700px) {
+  .teamX {
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+  .teamX h2 {
+    position: relative;
+    left: 4rem;
+    top: 6rem;
+  }
+  .yearTag {
+    top: 28vh;
+    width: 100px;
+  }
+  .options {
+    font-size: 15px;
+  }
+  .active {
+    font-size: 16px;
+  }
+}

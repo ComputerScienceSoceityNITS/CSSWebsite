@@ -1,0 +1,17 @@
+#headLottie {
+  z-index: 10;
+  position: absolute;
+  background: transparent;
+  top: 35%;
+  right: 5%;
+  width: 300px;
+  height: 300px;
+}
+@media (max-width: 700px) {
+  #headLottie {
+    width: 200px;
+    height: 200px;
+    top: 62%;
+    right: 17%;
+  }
+}

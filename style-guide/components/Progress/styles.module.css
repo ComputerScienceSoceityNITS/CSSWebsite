@@ -1,0 +1,12 @@
+.Bar {
+  background-color: #f80759;
+  height: 4px;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 50;
+}
+.Container {
+  pointer-events: none;
+}

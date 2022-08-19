@@ -1,0 +1,12 @@
+#drones {
+  position: absolute;
+  bottom: 0%;
+  right: -5%;
+  width: 400px;
+  height: 400px;
+}
+@media only screen and (max-width: 1200px) {
+  #drones {
+    display: none;
+  }
+}

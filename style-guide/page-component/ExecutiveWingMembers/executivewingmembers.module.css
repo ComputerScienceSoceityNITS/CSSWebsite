@@ -1,0 +1,263 @@
+.gridContainer {
+  position: relative;
+}
+
+.gridContainer .wingTag {
+  position: absolute;
+  font-size: 18vh;
+  color: rgba(75, 74, 74, 0.644);
+  bottom: 0%;
+  right: 0%;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.gridContainer .grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  min-height: 100vh;
+  min-width: 80%;
+  margin-left: 10vh;
+  margin-top: 8vh;
+  min-height: 500px;
+}
+
+.grid > div:nth-child(1) {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -ms-grid-column-align: center;
+  justify-self: center;
+}
+.grid > div:nth-child(3) {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  height: 20vw;
+  width: 20vw;
+}
+.grid > div:nth-child(4) {
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+.grid > div:nth-child(5) {
+  -ms-grid-column-align: start;
+  justify-self: start;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+.grid > div:nth-child(7) {
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  height: 20vw;
+  width: 20vw;
+}
+.grid > div:nth-child(8) {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -ms-grid-column-align: center;
+  justify-self: center;
+}
+.grid > div:nth-child(9) {
+  justify-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+.grid > div:nth-child(10) {
+  justify-self: flex-start;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+.grid > div:nth-child(11) {
+  justify-self: flex-end;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.grid > div:nth-child(12) {
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.grid > div:nth-child(14) {
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  height: 20vw;
+  width: 20vw;
+}
+
+.grid > div:nth-child(13) {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.grid > div:nth-child(15) {
+  justify-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.grid > div:nth-child(16) {
+  -ms-grid-column-align: start;
+  justify-self: start;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.grid > div:nth-child(17) {
+  -ms-grid-column-align: center;
+  justify-self: center;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  height: 40vh;
+  width: 40vh;
+}
+
+.grid > div:nth-child(18) {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -ms-grid-column-align: center;
+  justify-self: center;
+}
+
+.grid > div:nth-child(19) {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  -ms-grid-column-align: center;
+  justify-self: center;
+}
+
+.grid > div:nth-child(20) {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+.grid img {
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@media only screen and (max-width: 560px) {
+  .gridContainer .grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0%;
+    margin-bottom: 5vh;
+  }
+  .gridContainer .grid > div {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+  .gridContainer .grid > div:nth-child(7) {
+    -ms-grid-column-align: center;
+    justify-self: center;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    height: 40vh;
+    width: 40vh;
+  }
+  .gridContainer .grid > div:nth-child(3) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    height: 40vh;
+    width: 40vh;
+  }
+  .gridContainer .grid > div:nth-child(17) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: 40vh;
+    width: 40vh;
+  }
+  .gridContainer .grid > div:nth-child(14) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    height: 40vh;
+    width: 40vh;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .gridContainer .wingTag {
+    font-size: 10vh;
+    bottom: 70%;
+    right: 20%;
+  }
+  .gridContainer .grid {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 0%;
+    margin-bottom: 5vh;
+  }
+  .gridContainer .grid > div {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+  .gridContainer .grid > div:nth-child(7) {
+    -ms-grid-column-align: center;
+    justify-self: center;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    height: 40vh;
+    width: 40vh;
+  }
+  .gridContainer .grid > div:nth-child(3) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    height: 40vh;
+    width: 40vh;
+  }
+  .gridContainer .grid > div:nth-child(17) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: 40vh;
+    width: 40vh;
+  }
+  .gridContainer .grid > div:nth-child(13) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    height: 40vh;
+    width: 40vh;
+  }
+}
