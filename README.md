@@ -14,8 +14,8 @@ The [official website](https://nitscss.live/) of Computer Science Society, NIT S
 1. Clone the repository
 
 ```bash
-git clone https://github.com/azad-ali786/CSS_2.0.git
-cd CSS_2.0
+git clone https://github.com/ComputerScienceSoceityNITS/CSSWebsite.git
+cd CSSWebsite
 ```
 
 2. Install all the dependencies(Make sure to have npm installed on your device)
@@ -41,7 +41,7 @@ Do not mess with the master branch
 2. Clone your local repository
 
 ```bash
-git clone https://github.com/[username]/CSS_2.0.git
+git clone https://github.com/[username]/CSSWebsite.git
 ```
 
 3. Make code changes.
@@ -123,4 +123,4 @@ git clone https://github.com/[username]/CSS_2.0.git
 
 ## Backend API:
 
-[Github](https://github.com/azad-ali786/CSS_CMS)
+[Github](https://github.com/ComputerScienceSoceityNITS/CSS_CMS.git)
