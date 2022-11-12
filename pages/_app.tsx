@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Layout from "../style-guide/page-component/Layout";
 import "../styles/globals.css";
@@ -8,6 +8,7 @@ import { Progress } from "../style-guide/components/Progress";
 import { useProgressStore } from "../store";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const [colorScheme, setColorScheme] = useState(true);
   const setIsAnimating = useProgressStore((state) => state.setIsAnimating);
   const isAnimating = useProgressStore((state) => state.isAnimating);
   const router = useRouter();
@@ -37,9 +38,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Progress isAnimating={isAnimating} />
-      <Layout>
-        <Component {...pageProps} />;
-      </Layout>
+      <div className={`${colorScheme ? "dark" : "light"}`}>
+        <Layout>
+          <Component {...pageProps} setColorScheme={setColorScheme} />;
+        </Layout>
+      </div>
     </>
   );
 }

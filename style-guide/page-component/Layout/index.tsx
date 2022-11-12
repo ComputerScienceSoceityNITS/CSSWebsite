@@ -4,6 +4,7 @@ import Footer from "../../components/footer";
 import Loader from "../../components/loader";
 import Navbar from "../../components/navbar";
 import GoTop from "../../components/go-top";
+import ToggleTheme from "../../components/toggle-theme";
 import Head from "next/head";
 
 interface LayoutProps {
@@ -11,6 +12,7 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
+  console.log(children);
   const [load, setLoad] = useState(true);
   useEffect(() => {
     loadercall();
@@ -30,6 +32,7 @@ const Layout = ({ children }: LayoutProps) => {
             <title>Computer Science Society</title>
           </Head>
           <GoTop />
+          <ToggleTheme>{children[0].props}</ToggleTheme>
           <Curosr />
           <Navbar />
           {children}
