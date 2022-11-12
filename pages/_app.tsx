@@ -1,9 +1,8 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Layout from "../style-guide/page-component/Layout";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-
 import { Progress } from "../style-guide/components/Progress";
 import { useProgressStore } from "../store";
 
@@ -34,12 +33,25 @@ function MyApp({ Component, pageProps }: AppProps) {
       router.events.off("routeChangeError", handleStop);
     };
   }, [router, setIsAnimating]);
+
+  const [mode, setMode] = useState("dark");
+
   return (
     <>
       <Progress isAnimating={isAnimating} />
-      <Layout>
-        <Component {...pageProps} />;
-      </Layout>
+      <button
+        style={{ position: "absolute", top: "10px", left: "10px" }}
+        onClick={() => {
+          mode == "dark" ? setMode("bright") : setMode("dark");
+        }}
+      >
+        Change
+      </button>
+      <main className={mode == "dark" ? "dark" : "bright"}>
+        <Layout>
+          <Component {...pageProps} />;
+        </Layout>
+      </main>
     </>
   );
 }

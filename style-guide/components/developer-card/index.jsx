@@ -8,6 +8,7 @@ import {
   faGithub,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+
 library.add(faFacebook, faLinkedin, faGithub, faInstagram);
 
 const DeveloperCard = ({ props }) => {
@@ -34,7 +35,7 @@ const DeveloperCard = ({ props }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <i style={{ color: "white" }} aria-hidden="true">
+            <i aria-hidden="true">
               <FontAwesomeIcon icon={["fab", "facebook"]} />
             </i>
           </a>
@@ -47,7 +48,7 @@ const DeveloperCard = ({ props }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <i style={{ color: "white" }} aria-hidden="true">
+            <i aria-hidden="true">
               <FontAwesomeIcon icon={["fab", "instagram"]} />
             </i>
           </a>
@@ -60,7 +61,7 @@ const DeveloperCard = ({ props }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <i style={{ color: "white" }} aria-hidden="true">
+            <i aria-hidden="true">
               <FontAwesomeIcon icon={["fab", "github"]} />
             </i>
           </a>
@@ -73,7 +74,7 @@ const DeveloperCard = ({ props }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <i style={{ color: "white" }} aria-hidden="true">
+            <i aria-hidden="true">
               <FontAwesomeIcon icon={["fab", "linkedin"]} />
             </i>
           </a>

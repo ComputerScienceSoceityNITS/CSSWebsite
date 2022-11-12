@@ -8,7 +8,7 @@
   position: relative;
   margin: 0;
   padding: 0;
-  background-color: var(--white) !important;
+  background-color: var(--footer-bg) !important;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,13 +42,13 @@
   font-size: 0.8em;
   font-family: "AlphaCentauri" !important;
   letter-spacing: 2px;
-  color: var(--black) !important;
+  color: var(--footer-text) !important;
   transition: all 0.2s;
   line-height: 1.6em;
 }
 
 .footer .fmain .fmain_c .fmain_e a {
-  color: var(--black) !important;
+  color: var(--footer-text) !important;
 }
 
 .footer .fmain .fmain_c .fmain_e:first-child {
@@ -75,7 +75,7 @@
   display: inline-block;
   bottom: 0%;
   left: 0%;
-  background-color: var(--black) !important;
+  background-color: var(--footer-bg) !important;
   width: 0%;
   height: 2px;
   transition: all 0.5s;
@@ -118,7 +118,7 @@
   position: absolute;
   font-family: Anton;
   font-weight: 100;
-  color: var(--bgTextColor);
+  color: var(--footer-text);
   top: 90%;
   left: 5%;
 }
@@ -155,7 +155,7 @@
   display: inline-block;
   bottom: 5%;
   left: 0%;
-  background-color: var(--black) !important;
+  background-color: var(--footer-bg) !important;
   width: 0%;
   height: 2px;
   transition: all 0.5s;

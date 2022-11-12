@@ -1,0 +1,20 @@
+@import "./color.css";
+
+.dark {
+  --devcard-bg: var(--offBlack);
+  --devcard-bottom: var(--surface-color);
+  --devcard-text: white;
+  --devcardoff-white: whitesmoke;
+  --footer-bg: white;
+  --footer-text: black;
+  --devtag-hover: grey;
+}
+.bright {
+  --devcard-bg: rgb(234, 230, 230);
+  --devcard-bottom: rgb(237, 237, 237, 0.7);
+  --devcard-text: var(--offBlack);
+  --devcardoff-white: var(--offBlack);
+  --footer-bg: black;
+  --footer-text: white;
+  --devtag-hover: rgb(96, 93, 93);
+}

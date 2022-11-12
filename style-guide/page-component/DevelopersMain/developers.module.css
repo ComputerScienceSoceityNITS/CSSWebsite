@@ -1,6 +1,6 @@
 .teamX {
   display: flex;
-  color: #fff;
+  color: var(--devcardoff-white);
   align-items: center;
   flex-direction: row-reverse;
   max-width: 90%;
@@ -34,7 +34,7 @@
   margin: 5px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  color: white;
+  color: var(--devcardoff-white);
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
@@ -42,7 +42,7 @@
   font-weight: bold;
 }
 .options:hover {
-  background: rgba(255, 255, 255, 0.315);
+  background: var(--devtag-hover);
 }
 .active {
   width: 75%;

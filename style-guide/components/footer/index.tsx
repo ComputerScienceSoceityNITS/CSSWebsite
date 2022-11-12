@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Styles from "./footer.module.css";
+
 import Lottie from "../lottie-player/footgroup";
 // import GooglePlay from "../../../public/images/Homepage/Google_Play.png";
 
@@ -17,7 +18,7 @@ const Footer = () => {
         <div className={Styles.fmain_c}>
           <div className={Styles.fmain_e}>
             <Link href="/events">
-              <a style={{ textDecoration: "none" }}>Events</a>
+              <a style={{ textDecoration: "none", color: "black" }}>Events</a>
             </Link>
           </div>
           <div className={Styles.fmain_e}>
