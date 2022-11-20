@@ -11,6 +11,7 @@
   --footer-bg: var(--white);
   --footer-text: var(--black);
   --icon-text: var(--white);
+  --abacus-border: transparent;
 }
 .light {
   /* light theme variables */
@@ -21,4 +22,5 @@
   --devcard-bottom: rgba(248, 246, 246, 0.8);
   --footer-text: var(--white);
   --icon-text: var(--bgTextColor);
+  --abacus-border: var(--bgTextColor);
 }

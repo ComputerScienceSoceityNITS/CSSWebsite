@@ -9,8 +9,10 @@ const Gallery = () => {
     <>
       <div className={styles.header}>
         <div className={styles.header_content}>
-          <p>Gallery</p>
-          <span>Things end but memories last forever. </span>
+          <p className={styles.gallerytext}>Gallery</p>
+          <span className={styles.gallerytext}>
+            Things end but memories last forever.{" "}
+          </span>
           <div className={styles.buttonContainer}>
             <button
               onClick={() => setActive(true)}
