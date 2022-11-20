@@ -4,6 +4,8 @@
 }
 
 .navigation__button {
+  display: flex;
+  justify-content: center;
   height: 3.9rem;
   width: 3.9rem;
   text-align: center;

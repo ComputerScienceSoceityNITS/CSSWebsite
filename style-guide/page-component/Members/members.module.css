@@ -24,7 +24,7 @@
   font-weight: 800;
   z-index: 1;
   opacity: 1;
-  color: var(--bgTextColor) !important;
+  color: var(--text-primary) !important;
   line-height: 1.2em;
   letter-spacing: 5px;
   font-family: Anton;
@@ -44,7 +44,7 @@
 
 .firstSection h3 {
   font-size: 2vh;
-  color: var(--Grey-light-3);
+  color: var(--text-outline);
   font-weight: 400;
 }
 
@@ -97,7 +97,7 @@
 
 .firstSection .container h1 {
   font-size: 10vh;
-  color: var(--Grey-light-3);
+  color: var(--text-outline);
   font-weight: 500;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   /* Will override color (regardless of order) */
@@ -125,10 +125,10 @@
   -webkit-text-fill-color: var(--Grey-light-3);
   /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0.856);
+  -webkit-text-stroke-color: var(--primary-light);
   outline: none;
   border-radius: 12px;
-  background: #0d0d0d;
+  background: var(--dark);
   -webkit-box-shadow: 14px 14px 32px #070707, -14px -14px 32px #131313;
   box-shadow: 14px 14px 32px #070707, -14px -14px 32px #131313;
   cursor: pointer;
@@ -154,18 +154,13 @@
   border-radius: 6px;
   border: var(--Grey-light-3) 1px solid;
 }
-.memsection {
-  background: var(--black);
-  position: relative;
-  z-index: 2;
-}
 .tabPanel {
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
 }
 .active {
-  background: #f80759 !important;
+  background: var(--theme-primary) !important;
   border: 2px solid #e7e7e7;
   border-radius: 10px;
 }

@@ -1,0 +1,14 @@
+@import url("/color.css");
+
+.dark {
+  /* dark theme variables */
+  --text-primary: var(--bgTextColor);
+  --memsection-bg: var(--black);
+  --text-outline: var(--Grey-light-3);
+}
+.light {
+  /* light theme variables */
+  --text-primary: var(--bgTextColor);
+  --memsection-bg: var(--Grey-light-3);
+  --text-outline: var(--black);
+}
