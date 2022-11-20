@@ -1,20 +1,14 @@
-@import "./color.css";
+@import url("/color.css");
 
 .dark {
-  --devcard-bg: var(--offBlack);
-  --devcard-bottom: var(--surface-color);
-  --devcard-text: white;
-  --devcardoff-white: whitesmoke;
-  --footer-bg: white;
-  --footer-text: black;
-  --devtag-hover: grey;
+  /* dark theme variables */
+  --text-primary: var(--bgTextColor);
+  --memsection-bg: var(--black);
+  --text-outline: var(--Grey-light-3);
 }
-.bright {
-  --devcard-bg: rgb(234, 230, 230);
-  --devcard-bottom: rgb(237, 237, 237, 0.7);
-  --devcard-text: var(--offBlack);
-  --devcardoff-white: var(--offBlack);
-  --footer-bg: black;
-  --footer-text: white;
-  --devtag-hover: rgb(96, 93, 93);
+.light {
+  /* light theme variables */
+  --text-primary: var(--bgTextColor);
+  --memsection-bg: var(--Grey-light-3);
+  --text-outline: var(--black);
 }

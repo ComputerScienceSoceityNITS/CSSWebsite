@@ -1,4 +1,6 @@
 :root {
+  --theme-primary: #f80759;
+  --theme-secondary: #bc4e9c;
   --background: #f8f8f8;
   --dark: #0f0f0f;
   --light-blue: #8686fa;

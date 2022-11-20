@@ -7,6 +7,7 @@ import { Progress } from "../style-guide/components/Progress";
 import { useProgressStore } from "../store";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const [colorScheme, setColorScheme] = useState(true);
   const setIsAnimating = useProgressStore((state) => state.setIsAnimating);
   const isAnimating = useProgressStore((state) => state.isAnimating);
   const router = useRouter();
@@ -34,24 +35,14 @@ function MyApp({ Component, pageProps }: AppProps) {
     };
   }, [router, setIsAnimating]);
 
-  const [mode, setMode] = useState("dark");
-
   return (
     <>
       <Progress isAnimating={isAnimating} />
-      <button
-        style={{ position: "absolute", top: "10px", left: "10px" }}
-        onClick={() => {
-          mode == "dark" ? setMode("bright") : setMode("dark");
-        }}
-      >
-        Change
-      </button>
-      <main className={mode == "dark" ? "dark" : "bright"}>
+      <div className={`${colorScheme ? "dark" : "light"}`}>
         <Layout>
-          <Component {...pageProps} />;
+          <Component {...pageProps} setColorScheme={setColorScheme} />;
         </Layout>
-      </main>
+      </div>
     </>
   );
 }

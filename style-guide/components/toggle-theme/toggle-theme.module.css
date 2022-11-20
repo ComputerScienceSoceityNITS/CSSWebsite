@@ -1,0 +1,11 @@
+.toggleBtn {
+  position: fixed;
+  width: 5rem;
+  height: 2rem;
+  top: 1rem;
+  border: 2px solid var(--text-outline);
+  font-weight: bold;
+  z-index: 1000;
+  color: var(--text-outline);
+  background-color: var(--memsection-bg);
+}
