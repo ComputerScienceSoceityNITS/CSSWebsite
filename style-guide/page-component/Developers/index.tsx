@@ -28,7 +28,7 @@ interface DeveloperProps {
   }[];
 }
 
-const Developers = ({ devWing, coHead }: DeveloperProps) => {
+const Developers = ({ devWing, coHead }: DeveloperProps, { mode }: any) => {
   const devCoHeads = coHead.filter((head) => {
     return head.role === "Dev-Wing Co-Head" && head.name !== "Yash Srivastava";
   });

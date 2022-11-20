@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import Layout from "../style-guide/page-component/Layout";
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-
 import { Progress } from "../style-guide/components/Progress";
 import { useProgressStore } from "../store";
 
@@ -35,6 +34,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       router.events.off("routeChangeError", handleStop);
     };
   }, [router, setIsAnimating]);
+
   return (
     <>
       <Progress isAnimating={isAnimating} />

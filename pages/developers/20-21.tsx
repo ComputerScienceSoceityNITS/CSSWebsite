@@ -2,6 +2,7 @@ import React from "react";
 import { GetStaticProps } from "next";
 import Developers from "../../style-guide/page-component/Developers";
 import Main from "../../style-guide/page-component/DevelopersMain";
+import Styles from "./developerspage.module.css";
 
 interface DeveloperProps {
   devWing: {
@@ -30,7 +31,7 @@ interface DeveloperProps {
 
 const developers = ({ devWing, coHead }: DeveloperProps) => {
   return (
-    <div>
+    <div className={Styles.devpgheader}>
       <Main year={2021} />
       <Developers devWing={devWing} coHead={coHead} />
     </div>

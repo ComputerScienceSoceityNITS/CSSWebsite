@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Styles from "./footer.module.css";
+
 import Lottie from "../lottie-player/footgroup";
 // import GooglePlay from "../../../public/images/Homepage/Google_Play.png";
 
@@ -17,7 +18,7 @@ const Footer = () => {
         <div className={Styles.fmain_c}>
           <div className={Styles.fmain_e}>
             <Link href="/events">
-              <a style={{ textDecoration: "none" }}>Events</a>
+              <a style={{ textDecoration: "none", color: "black" }}>Events</a>
             </Link>
           </div>
           <div className={Styles.fmain_e}>
@@ -111,13 +112,15 @@ const Footer = () => {
             }}
           >
             <img src="./images/rocket.png" alt="report" />
-            <span>Report to CSS</span>
+            <span className={Styles.reporttext}>Report to CSS</span>
           </div>
         </Link>
       </div>
 
       <div className={Styles.ftnc}>
-        <span>Download the official CSS mobile app</span>
+        <span className={Styles.reporttext}>
+          Download the official CSS mobile app
+        </span>
         <a
           href="https://play.google.com/store/apps/details?id=com.niki.cssapp"
           target="_blank"
