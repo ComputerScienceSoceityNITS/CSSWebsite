@@ -34,7 +34,7 @@
   margin: 5px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  color: var(--devcardoff-white);
+  color: var(--devcard-text);
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   cursor: pointer;

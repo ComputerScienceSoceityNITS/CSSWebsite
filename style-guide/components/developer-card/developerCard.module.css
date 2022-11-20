@@ -111,7 +111,10 @@
 }
 .card__description i {
   font-size: 1.25em;
-  color: var(--devcard-text);
+}
+
+.card__description i {
+  color: var(--icon-text);
 }
 
 @media only screen and (max-width: 500px) {

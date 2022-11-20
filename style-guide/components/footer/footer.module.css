@@ -160,6 +160,10 @@
   height: 2px;
   transition: all 0.5s;
 }
+
+.reporttext {
+  color: var(--footer-text);
+}
 @media only screen and (max-width: 1200px) {
   .footer {
     z-index: 2;
@@ -213,6 +217,7 @@
     width: 100vw;
     font-size: 0.9rem;
   }
+
   .report img {
     position: relative;
     left: 45vw;

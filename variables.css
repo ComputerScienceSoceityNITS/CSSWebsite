@@ -5,10 +5,20 @@
   --text-primary: var(--bgTextColor);
   --memsection-bg: var(--black);
   --text-outline: var(--Grey-light-3);
+  --devcard-bg: var(--offBlack);
+  --devcard-bottom: var(--surface-color);
+  --devcard-text: white;
+  --footer-bg: var(--white);
+  --footer-text: var(--black);
+  --icon-text: var(--white);
 }
 .light {
   /* light theme variables */
   --text-primary: var(--bgTextColor);
   --memsection-bg: var(--Grey-light-3);
   --text-outline: var(--black);
+  --devcard-bg: var(--primary-light);
+  --devcard-bottom: rgba(248, 246, 246, 0.8);
+  --footer-text: var(--white);
+  --icon-text: var(--bgTextColor);
 }

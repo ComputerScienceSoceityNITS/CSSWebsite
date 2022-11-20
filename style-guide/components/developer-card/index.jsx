@@ -35,7 +35,7 @@ const DeveloperCard = ({ props }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <i aria-hidden="true">
+            <i className="icon" aria-hidden="true">
               <FontAwesomeIcon icon={["fab", "facebook"]} />
             </i>
           </a>
@@ -48,7 +48,7 @@ const DeveloperCard = ({ props }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <i aria-hidden="true">
+            <i className="icon" aria-hidden="true">
               <FontAwesomeIcon icon={["fab", "instagram"]} />
             </i>
           </a>
@@ -61,7 +61,7 @@ const DeveloperCard = ({ props }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <i aria-hidden="true">
+            <i className="icon" aria-hidden="true">
               <FontAwesomeIcon icon={["fab", "github"]} />
             </i>
           </a>
@@ -74,7 +74,7 @@ const DeveloperCard = ({ props }) => {
             target="_blank"
             rel="noreferrer"
           >
-            <i aria-hidden="true">
+            <i className="icon" aria-hidden="true">
               <FontAwesomeIcon icon={["fab", "linkedin"]} />
             </i>
           </a>

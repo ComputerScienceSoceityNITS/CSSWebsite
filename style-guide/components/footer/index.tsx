@@ -112,13 +112,15 @@ const Footer = () => {
             }}
           >
             <img src="./images/rocket.png" alt="report" />
-            <span>Report to CSS</span>
+            <span className={Styles.reporttext}>Report to CSS</span>
           </div>
         </Link>
       </div>
 
       <div className={Styles.ftnc}>
-        <span>Download the official CSS mobile app</span>
+        <span className={Styles.reporttext}>
+          Download the official CSS mobile app
+        </span>
         <a
           href="https://play.google.com/store/apps/details?id=com.niki.cssapp"
           target="_blank"
