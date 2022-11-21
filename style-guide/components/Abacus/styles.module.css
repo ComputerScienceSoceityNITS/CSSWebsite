@@ -2,6 +2,7 @@
   width: 100%;
   padding: 0 2rem;
   text-align: center;
+  background-color: var(--devcard-bg);
 }
 .polaroid {
   background: #fff;
@@ -25,6 +26,7 @@
   display: inline-block;
   margin-top: 2rem;
   filter: grayscale(100%);
+  box-shadow: 2px 2px 10px var(--abacus-border);
 }
 .item .polaroid:before {
   content: "";
@@ -84,6 +86,7 @@
   filter: none;
   transform: scale(1, 1) rotate(0deg) !important;
   transition: all 0.35s;
+  box-shadow: none;
 }
 .item:hover .polaroid:before {
   content: "";
