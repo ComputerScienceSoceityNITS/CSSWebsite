@@ -17,6 +17,7 @@
   --event-techno-bg: var(--primary-dark);
   --techno-event-card-bg: var(--primary-light);
   --icon-image: url(./style-guide/components/toggle-theme/moon-solid.svg);
+  --abacus-border: transparent;
 }
 
 .light {
@@ -36,4 +37,5 @@
   --event-techno-bg: var(--black);
   --techno-event-card-bg: var(--Grey-dark-5);
   --icon-image: url(./style-guide/components/toggle-theme/sun-regular.svg);
+  --abacus-border: var(--bgTextColor);
 }
