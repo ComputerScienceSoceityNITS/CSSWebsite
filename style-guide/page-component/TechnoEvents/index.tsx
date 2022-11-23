@@ -62,7 +62,7 @@ const TechnoEvents = () => {
                   <span>Tech-review</span>Technical article writing competitions
                 </li>
                 <li>
-                  <span>Web Spyder</span>Online Tresure Hunt
+                  <span>Web Spyder</span>Online Treasure Hunt
                 </li>
                 <li>
                   <span>Statsmania</span>a mathematical quiz for those with

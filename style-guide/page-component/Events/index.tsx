@@ -8,7 +8,7 @@ import EventsBg from "../../components/lottie-player/events";
 const Events = () => {
   const [active, setActive] = useState(true);
   return (
-    <div>
+    <div className={Styles.body_bg}>
       <header className={Styles.header}>
         <div className={Styles.heading}>
           <div className={Styles.coloredBg}>
@@ -18,7 +18,7 @@ const Events = () => {
               <span>S</span>
             </p>
           </div>
-          <h1>Events</h1>
+          <h1 className={Styles.eventstyle}>Events</h1>
           <p className={Styles.tagline}>
             <span>Participate</span>
             <span>Enjoy</span>
@@ -28,7 +28,7 @@ const Events = () => {
         <ScrollDownLottie />
         <EventsBg />
       </header>
-      <main>
+      <main className={Styles.body_bg}>
         <div className={Styles.btnContainer}>
           <button
             id="stechno"
