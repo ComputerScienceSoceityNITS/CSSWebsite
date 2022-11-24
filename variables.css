@@ -12,6 +12,7 @@
   --footer-text: var(--black);
   --icon-text: var(--white);
   --abacus-border: transparent;
+  --reportbox-bg: var(--white);
 }
 .light {
   /* light theme variables */
@@ -23,4 +24,5 @@
   --footer-text: var(--white);
   --icon-text: var(--bgTextColor);
   --abacus-border: var(--bgTextColor);
+  --reportbox-bg: var(--black);
 }

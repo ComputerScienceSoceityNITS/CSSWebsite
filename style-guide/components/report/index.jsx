@@ -27,7 +27,7 @@ const BugReport = () => {
     setStatus(true);
   };
   return (
-    <div>
+    <div className={Styles.mainreportdiv}>
       <div className={Styles.header}>
         <span>Report to CSS</span>
       </div>
