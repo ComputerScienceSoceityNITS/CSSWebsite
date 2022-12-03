@@ -9,6 +9,9 @@
   font-weight: 600;
   display: none;
 }
+.mainreportdiv {
+  background-color: var(--devcard-bg);
+}
 .container {
   height: 65vh;
   max-width: 45rem;
@@ -36,15 +39,18 @@
   width: 100%;
   padding: 1rem;
   border-radius: 5px;
+  background-color: var(--reportbox-bg);
 }
 .btn {
   padding: 1rem;
   border-radius: 5px;
   max-width: 20rem;
   margin: auto;
+  background-color: var(--reportbox-bg);
+  color: var(--footer-text);
 }
 .success {
-  color: white;
+  color: var(--devcard-bg);
   font-size: 2rem;
   margin: auto;
   font-family: "Roboto", sans-serif;
@@ -57,7 +63,7 @@
   visibility: hidden;
 }
 .disclaimer {
-  color: white;
+  color: var(--icon-text);
   font-size: 12px;
   text-align: center;
   width: 50%;
@@ -66,7 +72,9 @@
   overflow: auto;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 400;
 }
+
 @media only screen and (max-width: 500px) {
   .header {
     font-size: 1.4rem;
