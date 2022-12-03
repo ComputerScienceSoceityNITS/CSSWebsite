@@ -11,8 +11,15 @@
   --footer-bg: var(--white);
   --footer-text: var(--black);
   --icon-text: var(--white);
+  --events-bg-color: var(--primary-dark);
+  --event-style: var(--black);
+  --event-button: var(--Grey-dark-5);
+  --event-techno-bg: var(--primary-dark);
+  --techno-event-card-bg: var(--primary-light);
+  --icon-image: url(./style-guide/components/toggle-theme/moon-solid.svg);
   --abacus-border: transparent;
 }
+
 .light {
   /* light theme variables */
   --text-primary: var(--bgTextColor);
@@ -20,7 +27,15 @@
   --text-outline: var(--black);
   --devcard-bg: var(--primary-light);
   --devcard-bottom: rgba(248, 246, 246, 0.8);
-  --footer-text: var(--white);
+  --devcard-text: white;
+  --footer-bg: var(--white);
+  --footer-text: var(--black);
   --icon-text: var(--bgTextColor);
+  --events-bg-color: var(--black);
+  --event-style: var(--white);
+  --event-button: var(--Grey-light-3);
+  --event-techno-bg: var(--black);
+  --techno-event-card-bg: var(--Grey-dark-5);
+  --icon-image: url(./style-guide/components/toggle-theme/sun-regular.svg);
   --abacus-border: var(--bgTextColor);
 }

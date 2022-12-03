@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Italianno&family=Lobster&family=Quintessential&family=Roboto:wght@500&display=swap");
+
 .techno {
   position: relative;
   display: -ms-grid;
@@ -22,7 +23,9 @@
     "lottie_1 abacus abacus"
     "card_1 lottie_2 card_2"
     "hacks enigma classes";
+  background-color: var(--event-techno-bg);
 }
+
 .techno_bg_1 {
   position: absolute;
   top: -10vh;
@@ -30,6 +33,7 @@
   opacity: 0.8;
   pointer-events: none;
 }
+
 .techno_bg_2 {
   position: absolute;
   top: 95vh;
@@ -37,6 +41,7 @@
   opacity: 0.8;
   pointer-events: none;
 }
+
 .techno_bg_3 {
   position: absolute;
   top: 200vh;
@@ -44,6 +49,7 @@
   opacity: 0.8;
   pointer-events: none;
 }
+
 .techno .lottie_1 {
   grid-area: lottie_1;
 }
@@ -59,6 +65,7 @@
   grid-area: abacus;
   width: 70%;
   margin: 0 auto;
+  color: var(--event-style);
 }
 
 .techno .abacusHead .title {
@@ -84,6 +91,7 @@
 
 .techno .card_1 {
   grid-area: card_1;
+  background-color: var(--techno-event-card-bg);
 }
 
 .techno .lottie_2 {
@@ -99,18 +107,22 @@
 
 .techno .card_2 {
   grid-area: card_2;
+  background-color: var(--techno-event-card-bg);
 }
 
 .techno .hacks {
   grid-area: hacks;
+  background-color: var(--techno-event-card-bg);
 }
 
 .techno .enigma {
   grid-area: enigma;
+  background-color: var(--techno-event-card-bg);
 }
 
 .techno .c_classes {
   grid-area: classes;
+  background-color: var(--techno-event-card-bg);
 }
 
 .techno .card_1 .ul_c,
@@ -255,6 +267,7 @@
   font-size: 2.5vw !important;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  color: var(--event-style);
 }
 
 .h_before .d_title::first-letter {
@@ -282,6 +295,7 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  color: var(--event-style);
 }
 
 .h_after .d_content p {
@@ -447,17 +461,22 @@
   top: 63%;
   left: 50%;
 }
+
 .d_title {
   font-family: "Lobster", cursive;
   letter-spacing: 5px !important;
 }
+
 .desktop_hide {
   display: none;
+  /* background-color: var(--techno-event-card-bg); */
 }
+
 @media only screen and (max-width: 700px) {
   .desktop_hide {
     display: block;
   }
+
   .techno {
     position: relative;
     display: -ms-grid;
@@ -479,19 +498,23 @@
       "hacks lottie_2"
       "enigma classes";
   }
+
   .techno .lottie_1 {
     grid-area: lottie_1;
   }
+
   .techno .lottie_1 #working-man {
     background: transparent;
     width: 100%;
     height: 100%;
   }
+
   .techno .abacusHead {
     grid-area: abacus;
     width: 100%;
     margin: 0 0;
   }
+
   .techno .abacusHead .title {
     font-size: 5vw;
     margin-top: 8vw;
@@ -499,10 +522,12 @@
     font-weight: 500;
     font-family: cherry;
   }
+
   .techno .abacusHead .title::first-letter {
     color: #f80759;
     font-weight: 700;
   }
+
   .techno .abacusHead p:last-child {
     padding: 0 0.2rem;
     padding-top: 0.3rem;
@@ -511,40 +536,48 @@
     letter-spacing: 1px;
     font-weight: 300;
   }
+
   .techno .card_1 {
     grid-area: card_1;
     -webkit-transform: translateY(-20%);
     transform: translateY(-20%);
   }
+
   .techno .lottie_2 {
     grid-area: lottie_2;
   }
+
   .techno .lottie_2 #pictionary {
     background: transparent;
     margin-top: 25%;
     width: 100%;
     height: 90%;
   }
+
   .techno .card_2 {
     grid-area: card_2;
     -webkit-transform: translateY(20%);
     transform: translateY(20%);
   }
+
   .techno .hacks {
     grid-area: hacks;
     -webkit-transform: translateY(-20%);
     transform: translateY(-20%);
   }
+
   .techno .enigma {
     grid-area: enigma;
     -webkit-transform: translateY(-20%);
     transform: translateY(-20%);
   }
+
   .techno .c_classes {
     grid-area: classes;
     -webkit-transform: translateY(20%);
     transform: translateY(20%);
   }
+
   .techno .card_1 .ul_c,
   .techno .card_2 .ul_c {
     display: -webkit-box;
@@ -560,11 +593,13 @@
     height: 34vw;
     margin: 0 auto;
   }
+
   .techno .card_1 .ul_c ul,
   .techno .card_2 .ul_c ul {
     text-align: center;
     text-transform: capitalize;
   }
+
   .techno .card_1 .ul_c ul li,
   .techno .card_2 .ul_c ul li {
     list-style: none;
@@ -572,6 +607,7 @@
     letter-spacing: 1px;
     font-size: 0;
   }
+
   .techno .card_1 .ul_c ul li span,
   .techno .card_2 .ul_c ul li span {
     display: block;
@@ -579,9 +615,11 @@
     font-weight: 300;
     margin-bottom: 0.4vw;
   }
+
   .mobile_hide {
     display: none;
   }
+
   .card_blur {
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.15);
@@ -590,7 +628,9 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     -webkit-box-shadow: 0 4px 16px 0 rgba(255, 255, 255, 0.18);
     box-shadow: 0 4px 16px 0 rgba(255, 255, 255, 0.18);
+    /* background-color: var(--techno-event-card-bg); */
   }
+
   .card_blur .title {
     font-size: 0.9rem;
     margin-top: 7vw;
@@ -598,10 +638,12 @@
     letter-spacing: 1px;
     font-family: "Lobster", cursive;
   }
+
   .card_blur .title::first-letter {
     color: #f80759;
     font-weight: 500;
   }
+
   .card_blur p:nth-child(2) {
     width: 90%;
     margin: 0 auto;
@@ -610,8 +652,13 @@
     letter-spacing: 1px;
     font-weight: 300;
   }
+
   .card_blur:hover {
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
+  }
+
+  .desktop_hide {
+    color: var(--event-style);
   }
 }
