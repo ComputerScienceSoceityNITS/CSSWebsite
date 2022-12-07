@@ -2,7 +2,7 @@
   position: relative;
   width: 100vw;
   height: 95vh;
-  background-color: var(--black);
+  background-color: var(--events-bg-color);
 }
 
 .header .heading {
@@ -14,6 +14,10 @@
   color: var(--Grey-light-3);
   overflow: hidden;
   font-family: "Roboto", sans-serif;
+}
+
+.body_bg {
+  background-color: var(--events-bg-color);
 }
 
 .header .heading .coloredBg {
@@ -36,6 +40,7 @@
   font-weight: 600;
   animation: moveInLeft 1s ease-out;
   padding: 0.5rem 0.5rem;
+  color: var(--event-style);
 }
 
 .header .heading .coloredBg p span {
@@ -67,42 +72,53 @@
   margin: 0 2.2vw;
   letter-spacing: 3px;
   transition: all 0.2s;
+  color: var(--theme-primary);
 }
 
 .header .heading .tagline span:nth-child(2) {
   color: #f80759;
 }
+
+.eventstyle {
+  color: var(--event-style);
+}
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
     transform: translateX(-13vw);
   }
+
   75% {
     transform: translateX(0.8vw);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
+
 @keyframes getBlurry {
   0% {
     backdrop-filter: blur(0);
   }
+
   100% {
     backdrop-filter: blur(5px);
   }
 }
+
 .btnContainer {
   position: relative;
   padding: 4rem 0;
   padding-left: 5rem;
-  background-color: var(--black);
+  background-color: var(--events-bg-color);
 }
 
 .btnContainer button {
   font-size: 1.6vw;
-  color: var(--Grey-light-3);
+  color: var(--event-button);
   border: none;
   background-color: transparent;
   padding: 1rem 1rem;
@@ -123,6 +139,7 @@
 .btnContainer .active {
   color: #f80759;
 }
+
 @media only screen and (max-width: 850px) {
   .header .heading {
     top: 14%;
@@ -134,6 +151,7 @@
   .header {
     height: 65vh;
   }
+
   .header .heading {
     transform: scale(1.2);
     top: 31%;
@@ -141,6 +159,7 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
+
   .btnContainer .eventBtn {
     -webkit-box-flex: 1;
     -ms-flex: 1;

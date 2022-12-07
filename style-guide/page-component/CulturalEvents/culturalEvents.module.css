@@ -9,6 +9,7 @@
   opacity: 0.8;
   pointer-events: none;
 }
+
 .culturalbg2 {
   position: absolute;
   top: 100vh;
@@ -18,6 +19,7 @@
   opacity: 0.8;
   pointer-events: none;
 }
+
 .culturalbg3 {
   position: absolute;
   top: 80vh;
@@ -27,6 +29,7 @@
   opacity: 0.8;
   pointer-events: none;
 }
+
 .card_blur {
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.15);
@@ -103,6 +106,7 @@
   grid-template-areas:
     "lottie-3 orientation cs-go"
     "freshers farewell lottie-4";
+  background-color: var(--event-techno-bg);
 }
 
 .cultural .lottie_3 {
@@ -117,18 +121,22 @@
 
 .cultural .orientation {
   grid-area: orientation;
+  background-color: var(--techno-event-card-bg);
 }
 
 .cultural .cs_go {
   grid-area: cs-go;
+  background-color: var(--techno-event-card-bg);
 }
 
 .cultural .freshers {
   grid-area: freshers;
+  background-color: var(--techno-event-card-bg);
 }
 
 .cultural .farewell {
   grid-area: farewell;
+  background-color: var(--techno-event-card-bg);
 }
 
 .cultural .lottie_4 {
@@ -203,6 +211,7 @@
   font-size: 2.5vw !important;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  color: var(--event-style);
 }
 
 .h_before .d_title::first-letter {
@@ -244,6 +253,7 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  color: var(--event-style);
 }
 
 .h_after .d_content p {
@@ -409,20 +419,26 @@
   top: 63%;
   left: 50%;
 }
+
 .d_title {
   font-family: "Lobster", cursive;
   letter-spacing: 5px !important;
+  /* color: var(--event-style); */
 }
+
 .desktop_hide {
   display: none;
 }
+
 @media only screen and (max-width: 700px) {
   .desktop_hide {
     display: block;
   }
+
   .mobile_hide {
     display: none;
   }
+
   .card_blur {
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.15);
@@ -432,6 +448,7 @@
     -webkit-box-shadow: 0 4px 16px 0 rgba(255, 255, 255, 0.18);
     box-shadow: 0 4px 16px 0 rgba(255, 255, 255, 0.18);
   }
+
   .card_blur .title {
     font-size: 0.9rem;
     margin-top: 7vw;
@@ -439,10 +456,12 @@
     letter-spacing: 1px;
     font-family: "Lobster", cursive;
   }
+
   .card_blur .title::first-letter {
     color: #f80759;
     font-weight: 500;
   }
+
   .card_blur p:nth-child(2) {
     width: 90%;
     margin: 0 auto;
@@ -451,10 +470,12 @@
     letter-spacing: 1px;
     font-weight: 300;
   }
+
   .card_blur:hover {
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
   }
+
   .cultural {
     display: grid;
     max-width: 90vw;
@@ -475,37 +496,45 @@
       "cs-go freshers"
       "farewell lottie-4";
   }
+
   .cultural .lottie_3 {
     grid-area: lottie-3;
   }
+
   .cultural .lottie_3 #singing {
     background: transparent;
     height: 100%;
     width: 95%;
   }
+
   .cultural .orientation {
     grid-area: orientation;
     -webkit-transform: translateY(20%);
     transform: translateY(20%);
   }
+
   .cultural .cs_go {
     grid-area: cs-go;
     -webkit-transform: translateY(-20%);
     transform: translateY(-20%);
   }
+
   .cultural .freshers {
     grid-area: freshers;
     -webkit-transform: translateY(20%);
     transform: translateY(20%);
   }
+
   .cultural .farewell {
     grid-area: farewell;
     -webkit-transform: translateY(-20%);
     transform: translateY(-20%);
   }
+
   .cultural .lottie_4 {
     grid-area: lottie-4;
   }
+
   .cultural .lottie_4 #playing {
     background: transparent;
     margin-top: 30%;
@@ -514,18 +543,25 @@
     transform: translateX(-5%);
     height: 100%;
   }
+
   .cs_go p {
     font-size: 3.8vw !important;
   }
+
   .cs_go ul {
     font-size: 3.5vw;
     margin-top: 2vw;
   }
+
   .cs_go ul li {
     list-style: none;
     margin: 1vw auto;
     font-size: 3.1vw;
     font-weight: 300;
     font-family: "Quintessential", cursive;
+  }
+
+  .desktop_hide {
+    color: var(--event-style);
   }
 }

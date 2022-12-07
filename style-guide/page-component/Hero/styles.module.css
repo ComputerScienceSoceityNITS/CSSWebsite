@@ -46,7 +46,7 @@
   font-weight: 800;
   z-index: 1;
   opacity: 1;
-  color: var(--text-primary) !important;
+  color: var(--hero-section-bg-text) !important;
   line-height: 1.2em;
   letter-spacing: 5px;
   font-family: Anton;

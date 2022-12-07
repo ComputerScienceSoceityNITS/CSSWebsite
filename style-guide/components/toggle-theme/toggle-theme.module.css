@@ -1,11 +1,14 @@
 .toggleBtn {
   position: fixed;
-  width: 5rem;
+  width: 2rem;
   height: 2rem;
   top: 1rem;
-  border: 2px solid var(--text-outline);
   font-weight: bold;
-  z-index: 1000;
-  color: var(--text-outline);
-  background-color: var(--memsection-bg);
+  z-index: 99;
+  background-image: var(--icon-image);
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+  filter: invert(1);
 }

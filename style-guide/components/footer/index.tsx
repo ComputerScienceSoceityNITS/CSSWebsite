@@ -11,6 +11,7 @@ const Footer = () => {
       <span className={Styles.footgroup}>
         <Lottie />
       </span>
+
       <div className={Styles.fcopyright}>
         © 2022 Computer Science Society. All Rights Reserved.
       </div>
