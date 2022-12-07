@@ -12,7 +12,7 @@
   -ms-flex-direction: row;
   flex-direction: row;
   z-index: 1;
-  background-color: var(--black);
+  background-color: var(--about-section-bg);
 }
 
 .about p {
@@ -63,7 +63,7 @@
 
 .about .dividers_second .title {
   font-family: Anton;
-  color: var(--Grey-light-3);
+  color: var(--about-section-text);
   font-weight: 100;
   font-size: 5em;
   letter-spacing: 0.1em;
@@ -82,18 +82,24 @@
   letter-spacing: 2px;
   font-weight: 100;
   width: 40vw;
-  color: var(--Grey-light-2) !important;
+  color: var(--about-section-text) !important;
   margin-bottom: 4em;
 }
 
 .about .dividers_second .subtitle .smallSubtitle {
   font-size: 1em;
 }
+
 .about_svg {
   position: relative;
   width: 25em;
   height: 20em;
 }
+
+.about #logo {
+  filter: invert(var(--css-logo-invert-amount));
+}
+
 @media only screen and (max-width: 1200px) {
   .about {
     -webkit-box-pack: center;

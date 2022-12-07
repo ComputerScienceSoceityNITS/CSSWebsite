@@ -11,7 +11,7 @@
   padding: 2em 0;
   width: auto;
   z-index: 5;
-  background-color: var(--black);
+  background-color: var(--upcomingEvents-section-bg);
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -19,7 +19,7 @@
   -ms-flex-align: center;
   align-items: center;
   font-family: Anton;
-  color: var(--Grey-light-3);
+  color: var(--upcomingEvents-section-text);
 }
 .announcements .head {
   font-size: 4em;
@@ -35,7 +35,7 @@
   transform: translateX(0.2rem);
 }
 .empty {
-  color: rgba(255, 255, 255, 0.436);
+  color: var(--upcomingEvents-section-text);
   font-size: 2rem;
   text-align: center;
   margin-top: 2rem;

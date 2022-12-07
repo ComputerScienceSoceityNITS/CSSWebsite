@@ -1,5 +1,8 @@
 @import url("/color.css");
 
+* {
+  transition: background-color 200ms linear;
+}
 .dark {
   /* dark theme variables */
   --text-primary: var(--bgTextColor);
@@ -12,15 +15,49 @@
   --footer-text: var(--black);
   --icon-text: var(--white);
   --abacus-border: transparent;
+  --temp-color: var(--black);
+  --hero-section-bg: var(--black);
+  --hero-section-text: var(--Grey-light-3);
+  --network-lottie-invert-amount: 0;
+  --about-section-bg: var(--black);
+  --about-section-text: var(--Grey-light-3);
+  --css-logo-invert-amount: 0;
+  --scrollanime-invert-amount: 0;
+  --event-section-bg: var(--black);
+  --executive-section-text: var(--Grey-dark-1);
+  --executive-section-bg: var(--black);
+  --executive-card-text: var(--Grey-light-4);
+  --executive-card-bg: var(--offBlack);
+  --upcomingEvents-section-bg: var(--black);
+  --upcomingEvents-section-text: var(--Grey-light-3);
+  --upev-lotte-invert-amount: 0;
 }
 .light {
   /* light theme variables */
-  --text-primary: var(--bgTextColor);
+  --text-primary: rgb(190, 188, 188);
   --memsection-bg: var(--Grey-light-3);
   --text-outline: var(--black);
   --devcard-bg: var(--primary-light);
   --devcard-bottom: rgba(248, 246, 246, 0.8);
+  --devcard-text: var(--black);
+  --footer-bg: var(--black);
   --footer-text: var(--white);
   --icon-text: var(--bgTextColor);
   --abacus-border: var(--bgTextColor);
+  --temp-color: var(--white);
+  --hero-section-bg: var(--Grey-light-3);
+  --hero-section-text: var(--Grey-dark-1);
+  --network-lottie-invert-amount: 0.2;
+  --about-section-bg: var(--Grey-light-3);
+  --about-section-text: var(--Grey-dark-1);
+  --css-logo-invert-amount: 1;
+  --scrollanime-invert-amount: 1;
+  --event-section-bg: var(--Grey-light-3);
+  --executive-section-text: var(--Grey-dark-3);
+  --executive-section-bg: var(--Grey-light-3);
+  --executive-card-text: var(--Grey-light-3);
+  --executive-card-bg: var(--Grey-dark-1);
+  --upcomingEvents-section-bg: var(--Grey-light-3);
+  --upcomingEvents-section-text: var(--offBlack);
+  --upev-lotte-invert-amount: 1;
 }

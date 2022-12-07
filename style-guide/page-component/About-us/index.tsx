@@ -3,11 +3,12 @@ import AboutLottie from "../../components/lottie-player/about-lottie";
 import styles from "./style.module.css";
 import CSSLogo from "../../components/lottie-player/CSS";
 
-const AboutUs = () => {
+const AboutUs = (children: any) => {
+  console.log(children);
   return (
     <div>
       <div className={styles.about}>
-        <div className={`${styles.dividers} ${styles.dividers_second}`}>
+        <div className={`${styles.dividers} ${styles.dividers_second} `}>
           <div className={styles.title}>
             <p>ABOUT US</p>
           </div>

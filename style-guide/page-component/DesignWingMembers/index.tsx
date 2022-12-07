@@ -28,7 +28,6 @@ interface MemberProps {
 }
 
 const DesignWing = ({ members, coHeads }: MemberProps) => {
-  console.log(members);
   return (
     <div className={Styles.gridContainer}>
       <h1 className={Styles.wingTag}>
