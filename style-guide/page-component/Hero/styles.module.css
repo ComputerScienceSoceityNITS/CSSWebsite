@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap");
 .highlight {
+  color: var(--white);
   z-index: 2;
   border-radius: 5px;
   background: #bc4e9c !important;
@@ -45,7 +46,7 @@
   font-weight: 800;
   z-index: 1;
   opacity: 1;
-  color: var(--bgTextColor) !important;
+  color: var(--hero-section-bg-text) !important;
   line-height: 1.2em;
   letter-spacing: 5px;
   font-family: Anton;
@@ -78,7 +79,7 @@
 
 .dashboard .dividers {
   position: relative;
-  background-color: var(--black);
+  background-color: var(--hero-section-bg);
   width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,6 +98,9 @@
 }
 
 .dashboard .dividers_first {
+  padding: 2rem;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
   -webkit-transform: translate(10%, -20%);
   transform: translate(10%, -20%);
 }
@@ -104,7 +108,7 @@
 .dashboard .dividers_first .title {
   font-family: Anton;
   width: 10em;
-  color: var(--Grey-light-3);
+  color: var(--hero-section-text);
   font-weight: 100;
   font-size: 4em;
   letter-spacing: 0.1em;
@@ -122,7 +126,7 @@
   margin: 0.4em 0;
   font-size: 1em;
   font-weight: 400;
-  color: var(--Grey-light-3);
+  color: var(--hero-section-text);
 }
 
 /*  Lotie  */
@@ -135,6 +139,7 @@
   opacity: 0.2;
 }
 .network_lottie {
+  filter: invert(var(--network-lottie-invert-amount));
   opacity: 0.9;
   margin: 0;
   top: 50vh;
@@ -143,11 +148,12 @@
   transform: translate(0%, -50vh);
   width: 40em;
   height: 40em;
-  z-index: 1;
+  z-index: 17;
   position: absolute;
   pointer-events: none;
 }
 .scrollanime {
+  filter: invert(var(--scrollanime-invert-amount));
   margin: 0;
   padding: 0;
   bottom: 0%;

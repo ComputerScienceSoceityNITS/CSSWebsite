@@ -5,6 +5,7 @@
   height: 100px;
   position: relative;
   top: 35px;
+  filter: invert(var(--upev-lotte-invert-amount));
 }
 @media only screen and (max-width: 600px) {
   #upev {

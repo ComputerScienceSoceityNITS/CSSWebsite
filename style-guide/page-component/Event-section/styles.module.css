@@ -1,7 +1,7 @@
 .cont {
   position: relative;
   overflow: hidden;
-  background-color: var(--black);
+  background-color: var(--event-section-bg);
   height: 100vh;
   padding: 2em 0;
   z-index: 2;

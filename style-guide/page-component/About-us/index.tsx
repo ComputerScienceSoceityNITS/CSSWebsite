@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <div>
       <div className={styles.about}>
-        <div className={`${styles.dividers} ${styles.dividers_second}`}>
+        <div className={`${styles.dividers} ${styles.dividers_second} `}>
           <div className={styles.title}>
             <p>ABOUT US</p>
           </div>

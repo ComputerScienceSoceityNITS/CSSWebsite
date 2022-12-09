@@ -21,7 +21,7 @@
   z-index: 1;
   letter-spacing: 10px;
   font-family: "Anton", sans-serif;
-  color: var(--Grey-dark-1);
+  color: var(--executive-section-text);
   opacity: 1;
 }
 
@@ -34,13 +34,13 @@
   z-index: 1;
   letter-spacing: 10px;
   font-family: "Anton", sans-serif;
-  color: var(--Grey-dark-1);
+  color: var(--executive-section-text);
   opacity: 1;
 }
 
 .cores .dividers {
   position: relative;
-  background-color: var(--black);
+  background-color: var(--executive-section-bg);
   width: 100%;
   display: flex;
   text-align: start;
@@ -88,7 +88,7 @@
   .cores {
     flex-direction: column;
     padding: 2em 0;
-    background-color: var(--black);
+    /* background-color: var(--black); */
   }
   .cores .bgtext,
   .cores .bgtext1 {
@@ -158,9 +158,9 @@
   position: relative;
   width: 300px;
   height: 400px;
-  background: var(--offBlack);
+  background: var(--executive-card-bg);
   margin: 15px;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 1);
+  box-shadow: 0 15px 25px var(--executive-card-bg);
   border-radius: 15px;
   display: flex;
   justify-content: center;
@@ -215,7 +215,7 @@
 }
 .cuscontainer .cuscard .cuscontent .cuscontentBx div {
   position: relative;
-  color: var(--Grey-light-4);
+  color: var(--executive-card-text);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 100;
@@ -225,7 +225,7 @@
   line-height: 1.1em;
 }
 .cuscontainer .cuscard .cuscontent .cuscontentBx div p {
-  color: var(--Grey-light-2);
+  color: var(--executive-card-text);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   position: relative;
   margin: 10px 0;
