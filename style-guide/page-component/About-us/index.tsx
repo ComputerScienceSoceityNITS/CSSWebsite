@@ -3,8 +3,7 @@ import AboutLottie from "../../components/lottie-player/about-lottie";
 import styles from "./style.module.css";
 import CSSLogo from "../../components/lottie-player/CSS";
 
-const AboutUs = (children: any) => {
-  console.log(children);
+const AboutUs = () => {
   return (
     <div>
       <div className={styles.about}>

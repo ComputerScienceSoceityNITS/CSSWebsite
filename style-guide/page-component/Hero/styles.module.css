@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap");
 .highlight {
-  color: white;
+  color: var(--white);
   z-index: 2;
   border-radius: 5px;
   background: #bc4e9c !important;
@@ -99,8 +99,7 @@
 
 .dashboard .dividers_first {
   padding: 2rem;
-  backdrop-filter: blur(10px);
-  background-color: rgba(200, 200, 200, 5%);
+  backdrop-filter: blur(5px);
   border-radius: 5px;
   -webkit-transform: translate(10%, -20%);
   transform: translate(10%, -20%);
