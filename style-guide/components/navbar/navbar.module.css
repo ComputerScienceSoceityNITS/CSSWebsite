@@ -1,6 +1,7 @@
 .navigation {
   font-family: Anton;
   font-weight: 400;
+  background-color: var(--footer-bg) !important;
 }
 
 .navigation__button {
@@ -14,8 +15,8 @@
   top: 2.7rem;
   right: 2.7rem;
   z-index: 60;
-  background-color: var(--white);
-  box-shadow: 0 0.5rem 0.6rem var(--shadow-dark);
+  background-color: var(--footer-bg);
+  box-shadow: 0 0.5rem 0.6rem var(--navbutton-shadow);
   cursor: pointer;
   border: none;
 }
@@ -27,7 +28,7 @@
   position: fixed;
   top: 3rem;
   right: 3rem;
-  background-image: radial-gradient(var(--white) 0%, var(--white) 45%);
+  background-image: radial-gradient(var(--footer-bg) 0%, var(--footer-bg) 45%);
   z-index: 40;
   transition: transform 1s cubic-bezier(0.88, -0.8, 0.32, 1.6);
   overflow: hidden;
@@ -66,7 +67,7 @@
   display: inline-block;
   font-weight: 900;
   padding: 0.5rem 1.5rem;
-  color: var(--Grey-dark-1);
+  color: var(--footer-text);
   text-decoration: none;
   text-transform: none;
   text-transform: uppercase;
@@ -78,7 +79,7 @@
     110deg,
     transparent 0%,
     transparent 50%,
-    var(--black) 50%
+    var(--footer-text) 50%
   );
   background-size: 220%;
   transition: all 0.5s;
@@ -92,7 +93,7 @@
 .navigation__link:hover,
 .navigation__link:active {
   background-position: 100%;
-  color: var(--white);
+  color: var(--footer-bg);
   transform: translateX(0.6rem);
 }
 
@@ -118,7 +119,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: var(--black);
+  background-color: var(--footer-text);
   display: inline-block;
 }
 

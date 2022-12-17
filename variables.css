@@ -39,6 +39,7 @@
   --upcomingEvents-section-bg: var(--black);
   --upcomingEvents-section-text: var(--Grey-light-3);
   --upev-lotte-invert-amount: 0;
+  --navbutton-shadow: var(--shadow-dark);
 }
 
 .light {
@@ -77,4 +78,5 @@
   --upcomingEvents-section-bg: var(--Grey-light-3);
   --upcomingEvents-section-text: var(--offBlack);
   --upev-lotte-invert-amount: 1;
+  --navbutton-shadow: rgb(245, 245, 245, 0.4);
 }
