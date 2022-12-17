@@ -59,6 +59,12 @@
   right: -2vw;
   top: 7vh;
 }
+.teamour{
+  color: var(--devcard-text);
+}
+.teamlottie{
+  filter: invert(var(--upev-lotte-invert-amount)) !important;
+}
 @media screen and (max-width: 700px) {
   .teamX {
     justify-content: space-around;

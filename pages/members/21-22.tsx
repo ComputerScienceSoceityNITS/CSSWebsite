@@ -135,7 +135,7 @@ export const getStaticProps: GetStaticProps = async () => {
       executiveWing: data.executiveWing,
       mlWing: data.mlWing,
       designWing: data.designWing,
-      literaryWing: data.literaryWing,
+      literaryWing: data.literaryWing || [],
       coHead: data.coHeads,
       members: data.members,
     },
