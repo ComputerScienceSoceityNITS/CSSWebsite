@@ -48,7 +48,7 @@
   --text-outline: var(--black);
   --devcard-bg: var(--primary-light);
   --devcard-bottom: rgba(248, 246, 246, 0.8);
-  --devcard-text: white;
+  --devcard-text: var(--black);
   --footer-bg: var(--black);
   --footer-text: var(--white);
   --icon-text: var(--bgTextColor);
