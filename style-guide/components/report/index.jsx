@@ -31,7 +31,7 @@ const BugReport = () => {
       <div className={Styles.header}>
         <span>Report to CSS</span>
       </div>
-      <div className={Styles.report_lottie}>  
+      <div className={Styles.report_lottie}>
         <Report />
       </div>
 

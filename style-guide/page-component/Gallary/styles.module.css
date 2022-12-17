@@ -4,7 +4,6 @@
 
 .gallerytext {
   color: var(--icon-text) !important;
-
 }
 @media (max-width: 620px) {
   .header {

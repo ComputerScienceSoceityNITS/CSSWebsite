@@ -11,14 +11,14 @@ const DevelopersMain = (props: DeveloperYear) => {
   const [year, setYear] = useState(props.year);
   return (
     <div>
-     
       <ScrollDownLottie />
-     
+
       <div className={Styles.teamX}>
         <TeamX />
         <h2 className={Styles.teamour}>
-        Our  <span className={Styles.teamlottie}>
-          <span>team</span>
+          Our{" "}
+          <span className={Styles.teamlottie}>
+            <span>team</span>
           </span>
         </h2>
       </div>

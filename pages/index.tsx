@@ -49,7 +49,9 @@ export const getServerSideProps: GetServerSideProps = async () => {
   );
   const data = await response.json();
 
-  response = await fetch("https://tasty-crab-hosiery.cyclic.app/api/admin/events");
+  response = await fetch(
+    "https://tasty-crab-hosiery.cyclic.app/api/admin/events"
+  );
 
   const events = await response.json();
   return {
