@@ -52,17 +52,17 @@ export default members;
 
 export const getStaticProps: GetStaticProps = async () => {
   let response = await fetch(
-    "https://tasty-crab-hosiery.cyclic.app/api/admin/members/19-20?year=2"
+    `${process.env.BACKEND_URL}/api/admin/members/19-20?year=2`
   );
   const Year2 = await response.json();
 
   response = await fetch(
-    "https://tasty-crab-hosiery.cyclic.app/api/admin/members/19-20?year=3"
+    `${process.env.BACKEND_URL}/api/admin/members/19-20?year=3`
   );
   const Year3 = await response.json();
 
   response = await fetch(
-    "https://tasty-crab-hosiery.cyclic.app/api/admin/members/19-20?year=4"
+    `${process.env.BACKEND_URL}/api/admin/members/19-20?year=4`
   );
   const Year4 = await response.json();
 
