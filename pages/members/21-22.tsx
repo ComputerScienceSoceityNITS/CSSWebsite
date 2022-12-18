@@ -125,7 +125,7 @@ export default members;
 
 export const getStaticProps: GetStaticProps = async () => {
   const response = await fetch(
-    "https://css-website.herokuapp.com/api/admin/members/21-22"
+    `${process.env.BACKEND_URL}/api/admin/members/21-22`
   );
   const data = await response.json();
   return {
@@ -135,7 +135,7 @@ export const getStaticProps: GetStaticProps = async () => {
       executiveWing: data.executiveWing,
       mlWing: data.mlWing,
       designWing: data.designWing,
-      literaryWing: data.literaryWing,
+      literaryWing: data.literaryWing || [],
       coHead: data.coHeads,
       members: data.members,
     },

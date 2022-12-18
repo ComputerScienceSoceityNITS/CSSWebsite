@@ -45,11 +45,11 @@ export default Home;
 
 export const getServerSideProps: GetServerSideProps = async () => {
   let response = await fetch(
-    "https://css-website.herokuapp.com/api/admin/members/21-22"
+    `${process.env.BACKEND_URL}/api/admin/members/21-22`
   );
   const data = await response.json();
 
-  response = await fetch("https://css-website.herokuapp.com/api/admin/events");
+  response = await fetch(`${process.env.BACKEND_URL}/api/admin/events`);
 
   const events = await response.json();
   return {

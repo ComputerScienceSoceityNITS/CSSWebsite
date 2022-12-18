@@ -40,7 +40,7 @@ const developers = ({ devWing, coHead }: DeveloperProps) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const response = await fetch(
-    "https://css-website.herokuapp.com/api/admin/members/21-22"
+    `${process.env.BACKEND_URL}/api/admin/members/21-22`
   );
   const data = await response.json();
 

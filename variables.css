@@ -39,6 +39,7 @@
   --upcomingEvents-section-bg: var(--black);
   --upcomingEvents-section-text: var(--Grey-light-3);
   --upev-lotte-invert-amount: 0;
+  --navbutton-shadow: var(--shadow-dark);
 }
 
 .light {
@@ -48,7 +49,7 @@
   --text-outline: var(--black);
   --devcard-bg: var(--primary-light);
   --devcard-bottom: rgba(248, 246, 246, 0.8);
-  --devcard-text: white;
+  --devcard-text: var(--black);
   --footer-bg: var(--black);
   --footer-text: var(--white);
   --icon-text: var(--bgTextColor);
@@ -77,4 +78,5 @@
   --upcomingEvents-section-bg: var(--Grey-light-3);
   --upcomingEvents-section-text: var(--offBlack);
   --upev-lotte-invert-amount: 1;
+  --navbutton-shadow: rgb(245, 245, 245, 0.4);
 }
