@@ -36,50 +36,52 @@ const BugReport = () => {
       </div>
 
       <div className={status ? Styles.container_inactive : Styles.container}>
-        <form onSubmit={sendEmail}>
-          <div className={Styles.entry} onClick={() => setStatus(false)}>
-            <input
-              type="text"
-              className={Styles.formControl}
-              placeholder="Name(Optional)"
-              name="name"
-            />
-          </div>
-          <div className={Styles.entry} onClick={() => setStatus(false)}>
-            <input
-              type="email"
-              className={Styles.formControl}
-              placeholder="Email-Address"
-              name="email"
-              required
-            />
-          </div>
-          <div className={Styles.entry} onClick={() => setStatus(false)}>
-            <input
-              type="text"
-              className={Styles.formControl}
-              placeholder="Subject"
-              name="subject"
-              required
-            />
-          </div>
-          <div className={Styles.entry} onClick={() => setStatus(false)}>
-            <textarea
-              className={Styles.formControl}
-              placeholder="Your message"
-              name="message"
-              required
-            />
-          </div>
-          <div className={Styles.entry} onClick={() => setStatus(false)}>
-            <input
-              type="submit"
-              className={Styles.btn}
-              value="Send Message"
-              style={{ cursor: "pointer" }}
-            />
-          </div>
-        </form>
+        <div className={Styles.formholder}>
+          <form className={Styles.form} onSubmit={sendEmail}>
+            <div className={Styles.entry} onClick={() => setStatus(false)}>
+              <input
+                type="text"
+                className={Styles.formControl}
+                placeholder="Name(Optional)"
+                name="name"
+              />
+            </div>
+            <div className={Styles.entry} onClick={() => setStatus(false)}>
+              <input
+                type="email"
+                className={Styles.formControl}
+                placeholder="Email-Address"
+                name="email"
+                required
+              />
+            </div>
+            <div className={Styles.entry} onClick={() => setStatus(false)}>
+              <input
+                type="text"
+                className={Styles.formControl}
+                placeholder="Subject"
+                name="subject"
+                required
+              />
+            </div>
+            <div className={Styles.entry} onClick={() => setStatus(false)}>
+              <textarea
+                className={Styles.formControl}
+                placeholder="Your message"
+                name="message"
+                required
+              />
+            </div>
+            <div className={Styles.entry} onClick={() => setStatus(false)}>
+              <input
+                type="submit"
+                className={Styles.btn}
+                value="Send Message"
+                style={{ cursor: "pointer" }}
+              />
+            </div>
+          </form>
+        </div>
       </div>
       <div className={status ? Styles.sent : Styles.sent_inactive}>
         <Sent />

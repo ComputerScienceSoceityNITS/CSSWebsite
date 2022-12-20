@@ -1,7 +1,8 @@
 .header {
-  color: white;
+  color: var(--footer-bg);
   font-size: 2rem;
-  margin: 3rem auto;
+  margin: 0rem auto;
+  padding-top: 3rem;
   font-family: "Roboto", sans-serif;
   width: 20rem;
   text-align: center;
@@ -9,17 +10,59 @@
   font-weight: 600;
   display: none;
 }
+
 .mainreportdiv {
   background-color: var(--devcard-bg);
 }
+
+.formholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+.formholder::before {
+  content: "";
+  background-image: conic-gradient(
+    var(--animate-color1),
+    var(--animate-color2),
+    var(--animate-color1),
+    var(--animate-color2),
+    var(--animate-color1),
+    var(--animate-color2)
+  );
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  animation: animate 4s linear infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.form {
+  width: 99%;
+  height: 99%;
+  z-index: 2;
+  background-color: var(--devcard-bg);
+}
 .container {
-  height: 65vh;
+  height: 500px;
+  min-height: 500px;
   max-width: 45rem;
   margin: 4rem auto;
   margin-top: 2rem;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 0 3rem;
-  overflow-y: auto;
 }
 .container_inactive {
   display: none;
@@ -40,7 +83,9 @@
   padding: 1rem;
   border-radius: 5px;
   background-color: var(--reportbox-bg);
+  color: var(--footer-text);
 }
+
 .btn {
   padding: 1rem;
   border-radius: 5px;

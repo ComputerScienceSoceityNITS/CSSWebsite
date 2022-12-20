@@ -40,6 +40,8 @@
   --upcomingEvents-section-text: var(--Grey-light-3);
   --upev-lotte-invert-amount: 0;
   --navbutton-shadow: var(--shadow-dark);
+  --animate-color1: blue;
+  --animate-color2: rgb(151, 3, 151);
 }
 
 .light {
@@ -79,4 +81,6 @@
   --upcomingEvents-section-text: var(--offBlack);
   --upev-lotte-invert-amount: 1;
   --navbutton-shadow: rgb(245, 245, 245, 0.4);
+  --animate-color1: black;
+  --animate-color2: rgb(233, 238, 130);
 }
