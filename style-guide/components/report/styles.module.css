@@ -27,11 +27,13 @@
   content: "";
   background-image: conic-gradient(
     var(--animate-color1),
+    transparent,
+    transparent,
+    transparent,
     var(--animate-color2),
-    var(--animate-color1),
-    var(--animate-color2),
-    var(--animate-color1),
-    var(--animate-color2)
+    transparent,
+    transparent,
+    transparent
   );
   width: 800px;
   height: 800px;
