@@ -3,6 +3,7 @@
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  transition: all 0.3s ease;
   position: relative;
   padding: 5px;
   height: 14vw;
@@ -10,10 +11,12 @@
   overflow: hidden;
   z-index: 10;
   border-radius: 50%;
-  background: linear-gradient(145deg, #000000, #000000);
-  -webkit-box-shadow: 2px 2px 7px #141414, -2px -2px 7px #000000;
-  box-shadow: 2px 2px 7px #141414, -2px -2px 7px #000000;
+  background-color: var(--memsection-bg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.6);
   font-family: "IBM Plex Sans", sans-serif;
+}
+.gridItem:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.4), 0 15px 12px rgba(0, 0, 0, 0.3);
 }
 
 .gridItem img {
@@ -100,7 +103,7 @@
 }
 
 .gridItem:hover img {
-  opacity: 0.5;
+  filter: brightness(50%);
 }
 
 .gridItem:hover .details2021 {
@@ -112,7 +115,7 @@
 }
 @media only screen and (max-width: 560px) {
   .gridItem {
-    box-shadow: 1px 1px 4px #141414, -1px -1px 4px #0f0f0f;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.6);
     height: 30vh;
     width: 30vh;
     margin-bottom: 5vh;

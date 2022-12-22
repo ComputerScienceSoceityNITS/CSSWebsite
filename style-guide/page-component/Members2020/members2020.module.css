@@ -1,5 +1,5 @@
 .wrapper {
-  background-color: var(--black);
+  background-color: var(--memsection-bg);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   min-height: 100vh;
@@ -12,12 +12,17 @@
   text-align: center;
   width: 100vw;
   font-size: 8vw;
-  color: linear-gradient(to right, #f80759, #bc4e9c);
+  color: linear-gradient(
+    to right,
+    var(--theme-primary),
+    var(--theme-secondary)
+  );
   font-weight: 500;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: var(--memberTag-fill-color);
   /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--Grey-light-3);
+  -webkit-text-stroke-color: var(--white);
+  text-shadow: var(--memberTag-text-shadow);
   z-index: 10;
   font-family: "IBM Plex Sans", sans-serif;
   margin-bottom: 50px;
@@ -45,10 +50,10 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  -webkit-text-fill-color: transparent;
   /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-color: var(--text-outline);
   z-index: 100;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -78,10 +83,10 @@
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-color: var(--text-outline);
   z-index: 100;
   font-size: 8vh;
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color: var(--text-outline);
 }
 
 @media screen and (max-width: 1100px) {
@@ -138,7 +143,7 @@
   }
 }
 .memsection {
-  background: var(--black);
+  background: var(--memsection-bg);
   position: relative;
   z-index: 2;
 }
@@ -148,7 +153,7 @@
   width: 100%;
 }
 .active {
-  background: #f80759 !important;
+  background: var(--theme-secondary) !important;
   border: 2px solid #e7e7e7;
   border-radius: 10px;
 }

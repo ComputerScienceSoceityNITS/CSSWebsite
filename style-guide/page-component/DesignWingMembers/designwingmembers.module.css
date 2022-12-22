@@ -5,7 +5,10 @@
 .gridContainer .wingTag {
   position: absolute;
   font-size: 18vh;
-  color: rgba(75, 74, 74, 0.644);
+  background: var(--wingTag-bg);
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--black);
   bottom: 0%;
   right: 0%;
   font-family: "IBM Plex Sans", sans-serif;
