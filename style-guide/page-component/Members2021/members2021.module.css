@@ -4,17 +4,21 @@
   text-align: center;
   width: 100vw;
   font-size: 8vw;
-  color: linear-gradient(to right, #f80759, #bc4e9c);
+  color: linear-gradient(
+    to right,
+    var(--theme-primary),
+    var(--theme-secondary)
+  );
   font-weight: 500;
   -webkit-text-fill-color: transparent;
   /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--Grey-light-3);
+  -webkit-text-stroke-color: var(--text-outline);
   z-index: 10;
   font-family: "IBM Plex Sans", sans-serif;
 }
 .memsection {
-  background: var(--black);
+  background: var(--memsection-bg);
   position: relative;
   z-index: 2;
 }
