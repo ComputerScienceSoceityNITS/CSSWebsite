@@ -5,6 +5,15 @@
 .gallerytext {
   color: var(--icon-text) !important;
 }
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lottiecont {
+  filter: invert(var(--upev-lotte-invert-amount));
+}
 @media (max-width: 620px) {
   .header {
     height: 100vh;
@@ -116,5 +125,10 @@
     font-family: "Archivo", sans-serif;
     outline: none;
     cursor: pointer;
+  }
+}
+@media (max-width: 750px) {
+  .lottiecont {
+    display: none;
   }
 }
