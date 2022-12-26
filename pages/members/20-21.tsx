@@ -104,7 +104,6 @@ const members = ({
   literaryWing,
   members,
 }: MemberProps) => {
-  // console.log(devWing);
   return (
     <>
       <Members year={2021} />
@@ -126,7 +125,7 @@ export default members;
 
 export const getStaticProps: GetStaticProps = async () => {
   const response = await fetch(
-    `${process.env.BACKEND_URL}/api/admin/members/20-22`
+    `${process.env.BACKEND_URL}/api/admin/members/20-21`
   );
   const data = await response.json();
   return {
@@ -136,7 +135,7 @@ export const getStaticProps: GetStaticProps = async () => {
       executiveWing: data.executiveWing,
       mlWing: data.mlWing,
       designWing: data.designWing,
-      literaryWing: data.literaryWing,
+      literaryWing: data.literaryWing || [],
       coHead: data.coHeads,
       members: data.members,
     },
