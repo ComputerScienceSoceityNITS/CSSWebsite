@@ -17,6 +17,11 @@
     var(--theme-primary),
     var(--theme-secondary)
   );
+  color: linear-gradient(
+    to right,
+    var(--theme-primary),
+    var(--theme-secondary)
+  );
   font-weight: 500;
   -webkit-text-fill-color: var(--memberTag-fill-color);
   /* Will override color (regardless of order) */
