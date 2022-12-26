@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie";
-import animationData from "./report.json";
+import animationData from "./reportlottie2.json";
 
 export default function WorkingMan() {
   const defaultOptions = {
@@ -17,7 +17,7 @@ export default function WorkingMan() {
       <Lottie
         options={defaultOptions}
         speed={1.5}
-        style={{ height: "400px", width: "400px" }}
+        style={{ height: "50%", width: "300px" }}
       />
     </div>
   );

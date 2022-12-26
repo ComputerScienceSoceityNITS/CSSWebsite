@@ -1,5 +1,5 @@
 .header {
-  color: var(--footer-bg);
+  color: var(--report-color);
   font-size: 2rem;
   margin: 0rem auto;
   padding-top: 3rem;
@@ -7,8 +7,8 @@
   width: 20rem;
   text-align: center;
   text-transform: capitalize;
-  font-weight: 600;
-  display: none;
+  font-weight: 900;
+  text-shadow: 1px 1px 1px var(--footer-bg);
 }
 
 .mainreportdiv {
@@ -122,9 +122,6 @@
   font-weight: 400;
 }
 
-.report_lottie {
-  filter: invert(var(--upev-lotte-invert-amount));
-}
 @media only screen and (max-width: 500px) {
   .header {
     font-size: 1.4rem;

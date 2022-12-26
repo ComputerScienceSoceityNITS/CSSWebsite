@@ -45,6 +45,7 @@
   --devtag-hover: rgb(197, 194, 194);
   --devselect-text: white;
   --theme-pink: var(--white);
+  --report-color: rgb(151, 3, 151);
 }
 
 .light {
@@ -65,7 +66,7 @@
   --techno-event-card-bg: var(--Grey-dark-5);
   --icon-image: url(./style-guide/components/toggle-theme/sun-regular.svg);
   --abacus-border: var(--bgTextColor);
-  --reportbox-bg: var(--black);
+  --reportbox-bg: rgb(0, 0, 0);
   --temp-color: var(--white);
   --hero-section-bg: var(--Grey-light-3);
   --hero-section-text: var(--Grey-dark-1);
@@ -85,8 +86,9 @@
   --upev-lotte-invert-amount: 1;
   --navbutton-shadow: rgb(245, 245, 245, 0.4);
   --animate-color1: black;
-  --animate-color2: rgb(227, 239, 9);
+  --animate-color2: rgb(78, 9, 239);
   --devtag-hover: gray;
   --devselect-text: white;
   --theme-pink: rgb(232, 9, 172);
+  --report-color: rgb(78, 9, 239);
 }
