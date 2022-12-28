@@ -20,8 +20,9 @@
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  -webkit-box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.4),
+    0 15px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.4), 0 15px 12px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   width: 20vw;
   height: 25vw;
@@ -41,6 +42,11 @@
   transition: 0.5s;
 }
 
+.card:hover {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5),
+    0 6px 6px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.7);
+}
 .card:hover img {
   opacity: 0.5;
   -webkit-transition: 0.5s;

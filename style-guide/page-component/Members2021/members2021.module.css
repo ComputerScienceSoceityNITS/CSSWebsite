@@ -10,10 +10,11 @@
     var(--theme-secondary)
   );
   font-weight: 500;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: var(--memberTag-fill-color);
   /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--text-outline);
+  -webkit-text-stroke-color: var(--white);
+  text-shadow: var(--memberTag-text-shadow);
   z-index: 10;
   font-family: "IBM Plex Sans", sans-serif;
 }
