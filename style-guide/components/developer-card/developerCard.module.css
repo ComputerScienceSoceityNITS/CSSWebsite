@@ -16,6 +16,7 @@
   overflow: hidden;
   text-decoration: none;
   margin: 4rem 3rem;
+  box-shadow: 1px 1px 3px black;
 }
 
 .card img {

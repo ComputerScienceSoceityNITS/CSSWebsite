@@ -3,7 +3,7 @@ import Styles from "./styles.module.css";
 import Report from "../lottie-player/report";
 import Sent from "../lottie-player/sent";
 import emailjs from "emailjs-com";
-
+import ReactTyped from "react-typed";
 const BugReport = () => {
   const [status, setStatus] = useState(false);
   const sendEmail = (e) => {
@@ -29,7 +29,13 @@ const BugReport = () => {
   return (
     <div className={Styles.mainreportdiv}>
       <div className={Styles.header}>
-        <span>Report to CSS</span>
+        <ReactTyped
+          className="typed-text"
+          strings={["REPORT TO CSS"]}
+          typeSpeed={40}
+          backSpeed={40}
+          loop
+        />
       </div>
       <div className={Styles.report_lottie}>
         <Report />

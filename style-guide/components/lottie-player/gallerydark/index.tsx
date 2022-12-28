@@ -1,8 +1,8 @@
 import React from "react";
 import Lottie from "react-lottie";
-import animationData from "./reportlottie2.json";
+import animationData from "./gallerylottie3.json";
 
-export default function WorkingMan() {
+export default function DarkGallery() {
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -15,9 +15,10 @@ export default function WorkingMan() {
   return (
     <div>
       <Lottie
+        height={"70%"}
+        width={"40vw"}
         options={defaultOptions}
         speed={1.5}
-        style={{ height: "50%", width: "300px" }}
       />
     </div>
   );

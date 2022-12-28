@@ -2,12 +2,17 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Esperanza from "../../components/Esperanza";
 import Abacus from "../../components/Abacus";
+import DarkGallery from "../../components/lottie-player/gallerydark";
 
 const Gallery = () => {
   const [active, setActive] = useState(true);
   return (
     <>
       <div className={styles.header}>
+        <div className={styles.lottiecont}>
+          {" "}
+          <DarkGallery />
+        </div>
         <div className={styles.header_content}>
           <p className={styles.gallerytext}>Gallery</p>
           <span className={styles.gallerytext}>
