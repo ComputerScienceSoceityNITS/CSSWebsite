@@ -11,14 +11,14 @@
   width: 3.9rem;
   text-align: center;
   border-radius: 50%;
+  border: 2px solid var(--Grey-light-3);
   position: fixed;
   top: 2.7rem;
   right: 2.7rem;
   z-index: 60;
-  background-color: var(--footer-bg);
-  box-shadow: 0 0.5rem 0.6rem var(--navbutton-shadow);
+  background-color: var(--navigation-button-bg);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
   cursor: pointer;
-  border: none;
 }
 
 .navigation__bg {
