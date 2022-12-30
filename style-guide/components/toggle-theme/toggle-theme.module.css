@@ -1,14 +1,68 @@
-.toggleBtn {
+.toggleBtnContainer {
   position: fixed;
+  top: 2.7rem;
+  left: 2.7rem;
+  z-index: 99;
+  border-radius: 50%;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+  border: 2px solid var(--Grey-light-3);
+}
+.toggleBtnContainer .checkbox {
+  display: none;
+}
+.toggleIcon {
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: var(--Grey-light-3);
+  overflow: hidden;
+  cursor: none;
+  transition: all 0.3s ease-in;
+}
+.toggleIcon .moon,
+.toggleIcon .sun {
+  position: absolute;
+  top: 17%;
+  left: 17%;
   width: 2rem;
   height: 2rem;
-  top: 1rem;
-  font-weight: bold;
-  z-index: 99;
-  background-image: var(--icon-image);
-  background-color: transparent;
-  border: none;
-  background-repeat: no-repeat;
-  margin-left: 5px;
-  filter: invert(1);
+  transition: all 0.3s ease-in-out;
+  transform-origin: 50% 100%;
+}
+.toggleIcon .sun {
+  color: var(--Grey-light-3);
+  opacity: 0;
+  transform: rotate(90deg);
+}
+.toggleIcon .moon {
+  color: var(--offBlack);
+}
+.toggleBtnContainer .checkbox:checked + .toggleIcon {
+  background-color: var(--theme-primary);
+  border-color: var(--Grey-light-3);
+}
+.toggleBtnContainer .checkbox:checked + .toggleIcon .sun {
+  opacity: 1;
+  transform: rotate(0);
+}
+.toggleBtnContainer .checkbox:checked + .toggleIcon .moon {
+  opacity: 0;
+  transform: rotate(-90deg);
+}
+
+@media only screen and (max-width: 700px) {
+  .toggleBtnContainer {
+    top: 1.7rem;
+    left: 1.7rem;
+  }
+  .toggleIcon {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .toggleIcon .moon,
+  .toggleIcon .sun {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
 }
