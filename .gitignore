@@ -36,7 +36,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
-# local
-/.husky
-/json
 package-lock.json

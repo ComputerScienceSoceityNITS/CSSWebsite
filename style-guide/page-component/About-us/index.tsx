@@ -1,8 +1,5 @@
 import React from "react";
-import AboutLottie from "../../components/lottie-player/about-lottie";
 import styles from "./style.module.css";
-import CSSLogo from "../../components/lottie-player/CSS";
-
 const AboutUs = () => {
   return (
     <div>
@@ -11,6 +8,7 @@ const AboutUs = () => {
           <div className={styles.title}>
             <p>ABOUT US</p>
           </div>
+          <div className={styles.gradientbg}></div>
           <div className={styles.subtitle}>
             <p>
               The Computer Science Society, run by the CSE department of NIT
@@ -18,21 +16,14 @@ const AboutUs = () => {
               awareness to the students of our beloved college.
             </p>
           </div>
-          {/* <lottie-player
-            id="aboutsvg"
-            src="https://assets6.lottiefiles.com/packages/lf20_yIZkqk.json"
-            background="transparent"
-            speed="0.6"
-            loop
-            autoplay
-          ></lottie-player> */}
-          <div className={styles.about_svg}>
-            <AboutLottie />
-          </div>
         </div>
-        <div className={styles.dividers} id={styles.logo}>
-          <CSSLogo />
+        <div className={styles.dividers_third}>
+          <div className={styles.aboutcentre}>CONDUCT</div>
+          <br></br>
+          <span></span>
         </div>
+
+        <div className={styles.head_about}>ABOUT US</div>
       </div>
     </div>
   );
