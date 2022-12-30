@@ -27,4 +27,9 @@
   --global-font: "Roboto";
   --surface-color: rgba(0, 0, 0, 0.884);
   --curve: 40;
+  --heading-color: #ececec;
+  --sky-blue: #8dfbff;
+  --dark-blue: #14327f;
+  --sky-blue-light: #b8fefe;
+  --blue-dark: #acc3fd;
 }

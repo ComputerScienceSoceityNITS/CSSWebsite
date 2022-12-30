@@ -3,6 +3,7 @@
 * {
   transition: background-color 200ms linear;
 }
+
 .dark {
   /* dark theme variables */
   --text-primary: var(--bgTextColor);
@@ -49,6 +50,14 @@
   --devselect-text: white;
   --theme-pink: var(--white);
   --report-color: rgb(151, 3, 151);
+  --about-color: var(--heading-color);
+  --animation-color: radial-gradient(
+    30.75% 49.12% at 30.75% 38.37%,
+    var(--sky-blue) 0%,
+    var(--dark-blue) 100%
+  );
+  --about-shadow: #282828;
+  --about-shadow-color: #282828;
 }
 
 .light {
@@ -101,4 +110,11 @@
   --devselect-text: white;
   --theme-pink: rgb(232, 9, 172);
   --report-color: rgb(78, 9, 239);
+  --animation-color: radial-gradient(
+    30.75% 49.12% at 30.75% 38.37%,
+    var(--sky-blue-light) 0%,
+    var(--blue-dark) 100%
+  );
+  --about-shadow: var(--Grey-light-4);
+  --about-shadow-color: var(--Grey-light-4);
 }
