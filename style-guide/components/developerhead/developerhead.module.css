@@ -1,0 +1,74 @@
+.newcardcontainer {
+  box-sizing: border-box;
+  position: relative;
+  width: 400px;
+  height: 460px;
+  border: 3.5px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-right: 4px solid transparent;
+  border-radius: 12px;
+  border-bottom-left-radius: 12px;
+  background: linear-gradient(to left, #f7085a, #be4c9b);
+  margin-bottom: 45px;
+}
+
+.cardimgcont {
+  position: absolute;
+  width: 100%;
+  height: 455px;
+  z-index: 2;
+  border-radius: 12px;
+  bottom: 1.5px;
+  top: 1px;
+
+  overflow: hidden;
+}
+.cardimg {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  border-radius: 12px;
+}
+
+.newcardfooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px;
+  gap: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  position: absolute;
+  width: 396px;
+  height: 120px;
+
+  left: -0.5px;
+  bottom: -0.9px;
+
+  background: linear-gradient(90deg, #f7085a 0%, #be4c9b 100%);
+  border-radius: 0px 0px 12px 12px;
+  z-index: 5;
+  color: #ececec;
+}
+
+.footercont {
+  width: 100%;
+  height: 28px;
+  font-size: 22px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  bottom: 10px;
+  line-height: 28px;
+  margin-top: 5px;
+}
+
+@media (max-width: 500px) {
+  .newcardcontainer {
+    width: 350px;
+  }
+  .newcardfooter {
+    width: 346px;
+  }
+}
