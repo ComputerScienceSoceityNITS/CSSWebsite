@@ -2,30 +2,37 @@
   box-sizing: border-box;
   position: relative;
   width: 310px;
-  height: 360px;
-  border: 2px solid transparent;
+  height: 380px;
+
   border-radius: 8px;
   background-image: linear-gradient(#f7095b, #be4c9b);
   margin-bottom: 45px;
   margin-right: 4px;
   margin-left: 4px;
+  overflow: hidden;
 }
 
 .cardimgcont {
   position: absolute;
-  width: 304px;
-  height: 353.5px;
+  width: 302px;
+  height: 370px;
   z-index: 2;
   border-radius: 8px;
   bottom: 1.5px;
-  left: 1px;
-  top: 1px;
+  left: 3px;
+  top: 5px;
+  overflow: hidden;
 }
 .cardimg {
+  position: absolute;
   height: 100%;
   width: 100%;
-  z-index: 2;
+  z-index: 1;
   border-radius: 8px;
+  transition: all;
+  transition-duration: 0.5s;
+  overflow: hidden;
+  left: 1.5px;
 }
 
 .newcardfooter {
@@ -37,15 +44,14 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   position: absolute;
-  width: 304px;
+  width: 302px;
   height: 90px;
-
-  left: 0px;
-  bottom: 1px;
-  background: rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  bottom: 5px;
+  background: rgba(0, 0, 0, 0.5);
   z-index: 5;
   color: #ececec;
-  left: 1px;
+  left: 3px;
 }
 
 .footercont {
@@ -57,4 +63,40 @@
   font-weight: 700;
 
   line-height: 28px;
+}
+
+.socials {
+  width: 20%;
+  position: absolute;
+  height: 280.045px;
+  z-index: 6;
+  right: -2px;
+  background: rgba(0, 0, 0, 0.5);
+  border-top-right-radius: 8px;
+  transition: all;
+  transition-duration: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  transform: translateX(65px);
+}
+
+.newcardcontainer:hover .socials {
+  width: 20%;
+  transform: translateX(-1.6px);
+}
+
+.icon {
+  margin-top: 60px;
+}
+
+.newcardcontainer:hover .cardimg {
+  transform: scale(1.2) translateY(20px);
+}
+
+.newcardcontainer:hover .newcardcontainer {
+  width: 304px;
 }

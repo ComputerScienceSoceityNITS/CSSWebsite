@@ -2,7 +2,7 @@ import React from "react";
 import Styles from "./developercard.module.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import DevTest from "../../../public/images/Picture.png";
+import { useRef } from "react";
 import {
   faFacebook,
   faLinkedin,
@@ -13,11 +13,78 @@ import {
 library.add(faFacebook, faLinkedin, faGithub, faInstagram);
 
 export default function DeveloperCardNew({ props }) {
+  const ref = useRef();
+
+  const handleSocials = () => {
+    console.log(
+      ref.current.classList,
+      typeof Array.from(ref.current.classList)
+    );
+    if (ref.current.classList.contains("display")) {
+      ref.current.classList.remove("display");
+    } else {
+      ref.current.classList.add("display");
+    }
+  };
   return (
-    <div className={Styles.newcardcontainer}>
+    <div className={Styles.newcardcontainer} onClick={handleSocials}>
       <div className={Styles.cardimgcont}>
+        <div ref={ref} className={Styles.socials}>
+          <a
+            href={
+              typeof props.socialMedia !== "undefined"
+                ? props.socialMedia.facebook
+                : "/"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className={Styles.icon} aria-hidden="true">
+              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            </i>
+          </a>
+          <a
+            href={
+              typeof props.socialMedia !== "undefined"
+                ? props.socialMedia.facebook
+                : "/"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className={Styles.icon} aria-hidden="true">
+              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            </i>
+          </a>
+          <a
+            href={
+              typeof props.socialMedia !== "undefined"
+                ? props.socialMedia.facebook
+                : "/"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className={Styles.icon} aria-hidden="true">
+              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            </i>
+          </a>
+          <a
+            href={
+              typeof props.socialMedia !== "undefined"
+                ? props.socialMedia.facebook
+                : "/"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className={Styles.icon} aria-hidden="true">
+              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            </i>
+          </a>
+        </div>
         <img
-          src="https://tse3.mm.bing.net/th?id=OIP.jjNXXwRVqOMzNTHuTD-9WQHaIU&pid=Api&P=0"
+          src="https://cdn.pixabay.com/photo/2018/04/27/03/50/portrait-3353699__480.jpg"
           className={Styles.cardimg}
           alt=""
         />

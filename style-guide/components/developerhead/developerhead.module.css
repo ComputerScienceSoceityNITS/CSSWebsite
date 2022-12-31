@@ -3,23 +3,21 @@
   position: relative;
   width: 400px;
   height: 460px;
-  border: 3.5px solid transparent;
-  border-bottom: 1px solid transparent;
-  border-right: 4px solid transparent;
   border-radius: 12px;
   border-bottom-left-radius: 12px;
-  background: linear-gradient(to left, #f7085a, #be4c9b);
+  background: linear-gradient(90deg, #f7085a, #be4c9b);
   margin-bottom: 45px;
 }
 
 .cardimgcont {
   position: absolute;
-  width: 100%;
-  height: 455px;
+  width: 97%;
+  height: 453px;
   z-index: 2;
   border-radius: 12px;
   bottom: 1.5px;
-  top: 1px;
+  top: 6px;
+  left: 6px;
 
   overflow: hidden;
 }
@@ -28,6 +26,8 @@
   width: 100%;
   z-index: 2;
   border-radius: 12px;
+  transition: all;
+  transition-duration: 0.5s;
 }
 
 .newcardfooter {
@@ -40,10 +40,9 @@
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   position: absolute;
-  width: 396px;
+  width: 400px;
   height: 120px;
 
-  left: -0.5px;
   bottom: -0.9px;
 
   background: linear-gradient(90deg, #f7085a 0%, #be4c9b 100%);
@@ -64,6 +63,38 @@
   margin-top: 5px;
 }
 
+.socials {
+  width: 20%;
+  height: 340px;
+  background: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 28px;
+  transition: all;
+  transition-duration: 0.5s;
+  transform: translateX(80px);
+  right: 0;
+}
+
+.icon {
+  margin-top: 0;
+}
+
+.newcardcontainer:hover .socials {
+  width: 20%;
+  transform: translateX(-1px);
+}
+
+.newcardcontainer:hover .cardimg {
+  transform: scale(1.2) translateY(0px);
+}
 @media (max-width: 500px) {
   .newcardcontainer {
     width: 350px;

@@ -16,8 +16,62 @@ export default function DeveloperHeadNew({ props }) {
   return (
     <div className={Styles.newcardcontainer}>
       <div className={Styles.cardimgcont}>
+        <div className={Styles.socials}>
+          <a
+            href={
+              typeof props.socialMedia !== "undefined"
+                ? props.socialMedia.facebook
+                : "/"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className={Styles.icon} aria-hidden="true">
+              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            </i>
+          </a>
+          <a
+            href={
+              typeof props.socialMedia !== "undefined"
+                ? props.socialMedia.facebook
+                : "/"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className={Styles.icon} aria-hidden="true">
+              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            </i>
+          </a>
+          <a
+            href={
+              typeof props.socialMedia !== "undefined"
+                ? props.socialMedia.facebook
+                : "/"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className={Styles.icon} aria-hidden="true">
+              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            </i>
+          </a>
+          <a
+            href={
+              typeof props.socialMedia !== "undefined"
+                ? props.socialMedia.facebook
+                : "/"
+            }
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i className={Styles.icon} aria-hidden="true">
+              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            </i>
+          </a>
+        </div>
         <img
-          src="https://tse2.mm.bing.net/th?id=OIP.FeQVm60y1VhsN9PODwD00wHaEo&pid=Api&P=0"
+          src="https://cdn.pixabay.com/photo/2018/04/27/03/50/portrait-3353699__480.jpg"
           className={Styles.cardimg}
           alt=""
         />
