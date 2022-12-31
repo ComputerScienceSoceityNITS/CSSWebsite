@@ -43,3 +43,33 @@
   left: 0;
   bottom: 0;
 }
+
+@media (max-width: 1250px) {
+  .maincontainer {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media (max-width: 850px) {
+  .heading {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .heading {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 450px) {
+  .heading {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 390px) {
+  .heading {
+    font-size: 32px;
+  }
+}
