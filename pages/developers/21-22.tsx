@@ -3,6 +3,7 @@ import { GetStaticProps } from "next";
 import Developers from "../../style-guide/page-component/Developers";
 import DevelopersNew from "../../style-guide/page-component/Developersnew";
 import Main from "../../style-guide/page-component/DevelopersMain";
+import DevelopersNewMain from "../../style-guide/page-component/Developersnewmain";
 import Styles from "./developerspage.module.css";
 
 interface DeveloperProps {
@@ -33,7 +34,7 @@ interface DeveloperProps {
 const developers = ({ devWing, coHead }: DeveloperProps) => {
   return (
     <div className={Styles.devpgheader}>
-      <Main year={2022} />
+      <DevelopersNewMain year={2022} />
       <DevelopersNew devWing={devWing} coHead={coHead} />
     </div>
   );

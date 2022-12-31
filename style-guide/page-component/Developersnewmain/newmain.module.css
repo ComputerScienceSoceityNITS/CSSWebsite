@@ -1,0 +1,45 @@
+.maincontainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+
+.headingcont {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #f80759;
+  filter: blur(78px);
+  z-index: -1;
+}
+.heading {
+  position: relative;
+  width: 50%;
+  font-size: 52px;
+  font-weight: 800;
+  display: inline-block;
+  color: #ececec;
+
+  z-index: 5;
+}
+
+.lottie {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
