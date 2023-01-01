@@ -7,6 +7,10 @@
   border-bottom-left-radius: 12px;
   background: linear-gradient(90deg, #f7085a, #be4c9b);
   margin-bottom: 45px;
+  display: flex;
+  justify-content: center;
+  margin: 45px 15px;
+  overflow: hidden;
 }
 
 .cardimgcont {
@@ -17,8 +21,6 @@
   border-radius: 12px;
   bottom: 1.5px;
   top: 6px;
-  left: 6px;
-
   overflow: hidden;
 }
 .cardimg {
@@ -28,6 +30,8 @@
   border-radius: 12px;
   transition: all;
   transition-duration: 0.5s;
+  transform: translateY(-40px);
+  overflow: hidden;
 }
 
 .newcardfooter {
@@ -40,8 +44,8 @@
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   position: absolute;
-  width: 400px;
-  height: 120px;
+  width: 100%;
+  height: 28%;
 
   bottom: -0.9px;
 
@@ -89,17 +93,31 @@
 
 .newcardcontainer:hover .socials {
   width: 20%;
-  transform: translateX(-1px);
+  transform: translateX(-0.2px);
 }
 
 .newcardcontainer:hover .cardimg {
-  transform: scale(1.2) translateY(0px);
+  transform: scale(1.2) translateY(-60px);
 }
 @media (max-width: 500px) {
   .newcardcontainer {
-    width: 350px;
+    width: 370px;
+    height: 430px;
   }
-  .newcardfooter {
-    width: 346px;
+}
+
+@media (max-width: 400px) {
+  .newcardcontainer {
+    width: 330px;
+  }
+}
+
+@media (max-width: 360px) {
+  .newcardcontainer {
+    width: 300px;
+    height: 400px;
+  }
+  .cardimg {
+    transform: translateY(-50px);
   }
 }

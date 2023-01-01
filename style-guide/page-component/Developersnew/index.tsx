@@ -45,6 +45,10 @@ const DevelopersNew = ({ devWing, coHead }: DeveloperProps, { mode }: any) => {
         <DeveloperCardNew />
         <DeveloperCardNew />
         <DeveloperCardNew />
+        <DeveloperCardNew />
+        <DeveloperCardNew />
+        <DeveloperCardNew />
+        <DeveloperCardNew />
       </div>
     </div>
   );

@@ -10,16 +10,18 @@
   margin-right: 4px;
   margin-left: 4px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .cardimgcont {
   position: absolute;
-  width: 302px;
+  width: 97%;
   height: 370px;
   z-index: 2;
   border-radius: 8px;
   bottom: 1.5px;
-  left: 3px;
+
   top: 5px;
   overflow: hidden;
 }
@@ -32,7 +34,6 @@
   transition: all;
   transition-duration: 0.5s;
   overflow: hidden;
-  left: 1.5px;
 }
 
 .newcardfooter {
@@ -44,14 +45,13 @@
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   position: absolute;
-  width: 302px;
+  width: 97%;
   height: 90px;
   overflow: hidden;
   bottom: 5px;
   background: rgba(0, 0, 0, 0.5);
   z-index: 5;
   color: #ececec;
-  left: 3px;
 }
 
 .footercont {
@@ -99,4 +99,10 @@
 
 .newcardcontainer:hover .newcardcontainer {
   width: 304px;
+}
+
+@media (max-width: 360px) {
+  .newcardcontainer {
+    width: 280px;
+  }
 }
