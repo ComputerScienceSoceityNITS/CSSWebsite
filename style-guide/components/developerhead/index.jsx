@@ -33,45 +33,45 @@ export default function DeveloperHeadNew({ props }) {
           <a
             href={
               typeof props.socialMedia !== "undefined"
-                ? props.socialMedia.facebook
+                ? props.socialMedia.instagram
                 : "/"
             }
             target="_blank"
             rel="noreferrer"
           >
-            <i className={Styles.icon} aria-hidden="true">
-              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            <i className="icon" aria-hidden="true">
+              <FontAwesomeIcon icon={["fab", "instagram"]} />
             </i>
           </a>
           <a
             href={
               typeof props.socialMedia !== "undefined"
-                ? props.socialMedia.facebook
+                ? props.socialMedia.github
                 : "/"
             }
             target="_blank"
             rel="noreferrer"
           >
-            <i className={Styles.icon} aria-hidden="true">
-              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            <i className="icon" aria-hidden="true">
+              <FontAwesomeIcon icon={["fab", "github"]} />
             </i>
           </a>
           <a
             href={
               typeof props.socialMedia !== "undefined"
-                ? props.socialMedia.facebook
+                ? props.socialMedia.linkedin
                 : "/"
             }
             target="_blank"
             rel="noreferrer"
           >
-            <i className={Styles.icon} aria-hidden="true">
-              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            <i className="icon" aria-hidden="true">
+              <FontAwesomeIcon icon={["fab", "linkedin"]} />
             </i>
           </a>
         </div>
         <img
-          src="https://tse3.mm.bing.net/th?id=OIP.YbcewcmwCtPu8ZAX5N0UIAHaE8&pid=Api&P=0"
+          src="https://cdn.pixabay.com/photo/2018/04/27/03/50/portrait-3353699__480.jpg"
           className={Styles.cardimg}
           alt=""
         />

@@ -106,3 +106,16 @@
     width: 280px;
   }
 }
+
+@media (max-width: 320px) {
+  .newcardcontainer {
+    width: 260px;
+    height: 330px;
+  }
+  .cardimgcont {
+    height: 320px;
+  }
+  .socials {
+    height: 230.045px;
+  }
+}

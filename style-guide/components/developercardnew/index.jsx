@@ -46,40 +46,40 @@ export default function DeveloperCardNew({ props }) {
           <a
             href={
               typeof props.socialMedia !== "undefined"
-                ? props.socialMedia.facebook
+                ? props.socialMedia.instagram
                 : "/"
             }
             target="_blank"
             rel="noreferrer"
           >
-            <i className={Styles.icon} aria-hidden="true">
-              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            <i className="icon" aria-hidden="true">
+              <FontAwesomeIcon icon={["fab", "instagram"]} />
             </i>
           </a>
           <a
             href={
               typeof props.socialMedia !== "undefined"
-                ? props.socialMedia.facebook
+                ? props.socialMedia.github
                 : "/"
             }
             target="_blank"
             rel="noreferrer"
           >
-            <i className={Styles.icon} aria-hidden="true">
-              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            <i className="icon" aria-hidden="true">
+              <FontAwesomeIcon icon={["fab", "github"]} />
             </i>
           </a>
           <a
             href={
               typeof props.socialMedia !== "undefined"
-                ? props.socialMedia.facebook
+                ? props.socialMedia.linkedin
                 : "/"
             }
             target="_blank"
             rel="noreferrer"
           >
-            <i className={Styles.icon} aria-hidden="true">
-              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            <i className="icon" aria-hidden="true">
+              <FontAwesomeIcon icon={["fab", "linkedin"]} />
             </i>
           </a>
         </div>

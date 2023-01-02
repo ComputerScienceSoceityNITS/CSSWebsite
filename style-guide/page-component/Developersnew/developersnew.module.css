@@ -19,8 +19,10 @@
   font-weight: 800;
   font-size: 28px;
   line-height: 37px;
-  color: #ececec;
+  color: var(--devcard-text);
   margin-right: 35px;
+  text-shadow: -0.5px 0.5px 0 red, 0.5px 0.5px 0 red, 0.5px -0.5px 0 red,
+    -0.5px -0.5px 0 red;
 }
 
 .buttoncontainer {
@@ -37,7 +39,7 @@
   justify-content: center;
   padding: 8px 16px;
   gap: 10px;
-  color: #ececec;
+  color: var(--devcard-text);
   font-weight: 700;
   font-family: "Helvetica";
   font-style: normal;
@@ -46,7 +48,7 @@
   height: 44px;
   border-radius: 4px;
   cursor: pointer;
-  border: 1px solid #ececec;
+  border: 1px solid var(--devcard-text);
 }
 .active {
   margin: 10px 20px;
@@ -72,18 +74,21 @@
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 50px;
+  text-shadow: 0.5px 0.5px 1px whitesmoke;
 }
+
 .members {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 900px) {
   .yearcontainer {
     justify-content: center;
   }
   .sideheading {
     margin-bottom: 15px;
+    margin-right: 0;
   }
 }

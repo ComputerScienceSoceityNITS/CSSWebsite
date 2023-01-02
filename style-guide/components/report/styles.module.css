@@ -8,7 +8,7 @@
   text-align: center;
   text-transform: capitalize;
   font-weight: 900;
-  text-shadow: 1px 1px 1px var(--footer-bg);
+  text-shadow: 0.8px 0.8px 1px var(--footer-bg);
 }
 
 .mainreportdiv {

@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "react-lottie";
-import animationData from "./devpg.json";
+import animationData from "./devpgnewlottie.json";
 
 export default function DevPgLottie() {
   const defaultOptions = {
@@ -16,7 +16,7 @@ export default function DevPgLottie() {
     <div>
       <Lottie
         options={defaultOptions}
-        style={{ height: "85%", width: "85%" }}
+        style={{ height: "100%", width: "100%" }}
       />
     </div>
   );

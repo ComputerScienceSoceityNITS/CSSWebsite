@@ -1,9 +1,8 @@
 .maincontainer {
   display: flex;
   align-items: center;
-  position: relative;
   width: 100%;
-  justify-content: center;
+
   margin: auto;
 }
 
@@ -31,22 +30,20 @@
   font-size: 52px;
   font-weight: 800;
   display: inline-block;
-  color: #ececec;
-
+  color: var(--devcard-text);
+  text-shadow: 0.5px 0.5px 1px whitesmoke;
   z-index: 5;
-}
-
-.lottie {
-  width: 50%;
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
 }
 
 @media (max-width: 1250px) {
   .maincontainer {
     flex-wrap: wrap-reverse;
+  }
+}
+
+@media (max-width: 1000px) {
+  .maincontainer {
+    justify-content: center;
   }
 }
 
