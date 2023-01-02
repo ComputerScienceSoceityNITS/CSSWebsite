@@ -71,7 +71,7 @@ export default function DeveloperHeadNew({ props }) {
           </a>
         </div>
         <img
-          src="https://cdn.pixabay.com/photo/2018/04/27/03/50/portrait-3353699__480.jpg"
+          src="https://tse3.mm.bing.net/th?id=OIP.YbcewcmwCtPu8ZAX5N0UIAHaE8&pid=Api&P=0"
           className={Styles.cardimg}
           alt=""
         />

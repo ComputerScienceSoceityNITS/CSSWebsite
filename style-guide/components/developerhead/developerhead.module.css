@@ -1,8 +1,8 @@
 .newcardcontainer {
   box-sizing: border-box;
   position: relative;
-  width: 400px;
-  height: 460px;
+  width: 350px;
+  height: 440px;
   border-radius: 12px;
   border-bottom-left-radius: 12px;
   background: linear-gradient(90deg, #f7085a, #be4c9b);
@@ -15,12 +15,12 @@
 
 .cardimgcont {
   position: absolute;
-  width: 97%;
-  height: 453px;
+  width: 97.5%;
+  height: 440px;
   z-index: 2;
   border-radius: 12px;
   bottom: 1.5px;
-  top: 6px;
+  top: 5px;
   overflow: hidden;
 }
 .cardimg {
@@ -69,7 +69,7 @@
 
 .socials {
   width: 20%;
-  height: 340px;
+  height: 313px;
   background: rgba(0, 0, 0, 0.35);
   position: absolute;
   top: 0;
@@ -104,6 +104,10 @@
     width: 370px;
     height: 430px;
   }
+
+  .socials {
+    height: 306px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -116,6 +120,10 @@
   .newcardcontainer {
     width: 300px;
     height: 400px;
+  }
+
+  .socials {
+    height: 285px;
   }
   .cardimg {
     transform: translateY(-50px);

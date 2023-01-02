@@ -1,8 +1,8 @@
 .newcardcontainer {
   box-sizing: border-box;
   position: relative;
-  width: 310px;
-  height: 380px;
+  width: 270px;
+  height: 350px;
 
   border-radius: 8px;
   background-image: linear-gradient(#f7095b, #be4c9b);
@@ -17,7 +17,7 @@
 .cardimgcont {
   position: absolute;
   width: 97%;
-  height: 370px;
+  height: 340px;
   z-index: 2;
   border-radius: 8px;
   bottom: 1.5px;
@@ -68,7 +68,7 @@
 .socials {
   width: 20%;
   position: absolute;
-  height: 280.045px;
+  height: 250.045px;
   z-index: 6;
   right: -2px;
   background: rgba(0, 0, 0, 0.5);
@@ -94,7 +94,7 @@
 }
 
 .newcardcontainer:hover .cardimg {
-  transform: scale(1.2) translateY(20px);
+  transform: scale(1.2) translateY(-25px);
 }
 
 .newcardcontainer:hover .newcardcontainer {
