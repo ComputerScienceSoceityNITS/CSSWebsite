@@ -14,7 +14,7 @@
   --text-outline: var(--Grey-light-3);
   --devcard-bg: var(--offBlack);
   --devcard-bottom: var(--surface-color);
-  --devcard-text: white;
+  --devcard-text: #ececec;
   --footer-bg: var(--white);
   --footer-text: var(--black);
   --icon-text: var(--white);
@@ -57,6 +57,7 @@
   );
   --about-shadow: #282828;
   --about-shadow-color: #282828;
+  --devcard-socials: rgba(0, 0, 0, 0.5);
 }
 
 .light {
@@ -115,4 +116,5 @@
   );
   --about-shadow: var(--Grey-light-4);
   --about-shadow-color: var(--Grey-light-4);
+  --devcard-socials: rgb(255, 255, 255, 0.25);
 }

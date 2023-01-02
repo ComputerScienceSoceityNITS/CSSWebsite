@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Esperanza from "../../components/Esperanza";
 import Abacus from "../../components/Abacus";
-import DarkGallery from "../../components/lottie-player/gallerydark";
+import BrightGallery from "../../components/lottie-player/gallerybright";
 
 const Gallery = () => {
   const [active, setActive] = useState(true);
@@ -11,7 +11,7 @@ const Gallery = () => {
       <div className={styles.header}>
         <div className={styles.lottiecont}>
           {" "}
-          <DarkGallery />
+          <BrightGallery />
         </div>
         <div className={styles.header_content}>
           <p className={styles.gallerytext}>Gallery</p>
