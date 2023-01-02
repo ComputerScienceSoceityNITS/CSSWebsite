@@ -5,7 +5,7 @@
   position: relative;
   width: 100vw;
   /* min-height: 100vh; */
-  height: 50vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,27 +21,9 @@
   text-align: start;
 }
 
-/* .about .dividers {
-  position: relative;
-  border-bottom: 0.6px solid var(--Grey-dark-4);
-  border-left: 0.6px solid var(--Grey-dark-4);
-  border-right: 0.6px solid var(--Grey-dark-4);
-  width: 50%;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: start;
-  padding-left: 2em;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-} */
-
 .dividers_third {
   position: absolute;
-  top: -13%;
+  top: 20%;
   left: 70%;
 }
 
@@ -85,37 +67,17 @@
   }
 }
 
-/* .about .dividers:nth-of-type(2) {
-  z-index: 3;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.about .dividers:nth-of-type(3) {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.about .dividers:nth-of-type(4) {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-} */
-
 .about .dividers_second {
   z-index: 2;
   padding-left: 8em;
 }
 
 .about .dividers_second .title {
-  font-size: 5.3em;
-  letter-spacing: 0.1em;
+  font-size: 4em;
   position: absolute;
-  font-family: "Anton", sans-serif;
+  font-family: Geneva, Verdana, sans-serif;
   font-style: normal;
-  top: -3em;
+  top: 2em;
   font-weight: 700;
   line-height: 85px;
   color: var(--about-color);
@@ -123,12 +85,14 @@
 
 .gradientbg {
   background: var(--animation-color);
+  border-radius: 61% 39% 62% 38% / 51% 40% 60% 49%;
   width: 677px;
-  height: 411px;
+  height: 370px;
   z-index: -1;
   filter: blur(78px);
   position: relative;
-  top: -14em;
+  top: 10em;
+  left: -2em;
 }
 
 .about .dividers_second .title p {
@@ -144,12 +108,12 @@
   letter-spacing: 2px;
   position: absolute;
   width: 48vw;
-  font-family: "Anton", sans-serif;
+  font-family: Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.7em;
   color: var(--about-color);
-  margin-top: -18em;
+  top: 10em;
   opacity: 1;
   z-index: -1;
 }
@@ -165,8 +129,8 @@
     1px 1px 0 var(--about-shadow-color), 1px -1px 0 var(--about-shadow-color),
     -1px -1px 0 var(--about-shadow-color);
   position: absolute;
-  top: 1em;
-  left: 6em;
+  bottom: 1em;
+  left: 4em;
   font-family: "Anton", sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -215,13 +179,12 @@
 
   .about .dividers .title p {
     position: relative;
-    top: -3em;
     font-size: 1.4em;
   }
 
   .about .dividers .subtitle p {
     position: relative;
-    top: 1em;
+    top: -2em;
     font-size: 1.3em;
   }
 
@@ -236,21 +199,21 @@
 
   .dividers_third {
     position: relative;
-    top: 2em;
+    top: 6em;
     left: 0;
     text-align: center;
   }
 
   .gradientbg {
-    width: 60vw;
-    left: 1em;
-    height: 200px;
+    width: 80vw;
+    left: -3em;
+    height: 300px;
   }
 
   .about .head_about {
     position: relative;
-    font-size: 4em;
-    top: 0;
+    font-size: 8em;
+    top: 1em;
     left: 0;
     text-align: center !important;
   }
