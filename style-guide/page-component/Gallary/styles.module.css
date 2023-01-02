@@ -11,9 +11,6 @@
   flex-wrap: wrap;
 }
 
-.lottiecont {
-  filter: invert(var(--upev-lotte-invert-amount));
-}
 @media (max-width: 620px) {
   .header {
     height: 100vh;
