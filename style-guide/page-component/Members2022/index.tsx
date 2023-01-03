@@ -110,22 +110,22 @@ const index = ({
   literaryWing,
   members,
 }: MemberProps) => {
-  const devCoHeads = coHead.filter((head) => {
+  const devCoHeads = members.filter((head) => {
     return head.role === "Dev-Wing Co-Head";
   });
-  const cpCoHeads = coHead.filter((head) => {
+  const cpCoHeads = members.filter((head) => {
     return head.role === "CP-Wing Head";
   });
-  const seniorExe = coHead.filter((head) => {
+  const seniorExe = members.filter((head) => {
     return head.role === "Senior Executive";
   });
-  const mlCoHeads = coHead.filter((head) => {
+  const mlCoHeads = members.filter((head) => {
     return head.role === "ML-Wing Head";
   });
-  const designCoHeads = coHead.filter((head) => {
+  const designCoHeads = members.filter((head) => {
     return head.role === "Design-Wing Head";
   });
-  const literatureCoHeads = coHead.filter((head) => {
+  const literatureCoHeads = members.filter((head) => {
     return head.role === "Literary-Wing Head";
   });
   return (
