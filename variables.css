@@ -3,6 +3,7 @@
 * {
   transition: background-color 200ms linear;
 }
+
 .dark {
   /* dark theme variables */
   --text-primary: var(--bgTextColor);
@@ -13,7 +14,7 @@
   --text-outline: var(--Grey-light-3);
   --devcard-bg: var(--offBlack);
   --devcard-bottom: var(--surface-color);
-  --devcard-text: white;
+  --devcard-text: #ececec;
   --footer-bg: var(--white);
   --footer-text: var(--black);
   --icon-text: var(--white);
@@ -22,7 +23,6 @@
   --event-button: var(--Grey-light-3);
   --event-techno-bg: var(--black);
   --techno-event-card-bg: var(--Grey-dark-5);
-  --icon-image: url(./style-guide/components/toggle-theme/moon-solid.svg);
   --abacus-border: transparent;
   --reportbox-bg: var(--white);
   --temp-color: var(--black);
@@ -42,13 +42,22 @@
   --upcomingEvents-section-bg: var(--black);
   --upcomingEvents-section-text: var(--Grey-light-3);
   --upev-lotte-invert-amount: 0;
-  --navbutton-shadow: var(--shadow-dark);
+  --navigation-button-bg: var(--Grey-light-3);
   --animate-color1: blue;
   --animate-color2: rgb(151, 3, 151);
   --devtag-hover: rgb(197, 194, 194);
   --devselect-text: white;
   --theme-pink: var(--white);
   --report-color: rgb(151, 3, 151);
+  --about-color: var(--heading-color);
+  --animation-color: radial-gradient(
+    30.75% 49.12% at 30.75% 38.37%,
+    var(--sky-blue) 0%,
+    var(--dark-blue) 100%
+  );
+  --about-shadow: #282828;
+  --about-shadow-color: #282828;
+  --devcard-socials: rgba(0, 0, 0, 0.5);
 }
 
 .light {
@@ -74,7 +83,6 @@
   --event-button: var(--Grey-dark-5);
   --event-techno-bg: var(--primary-dark);
   --techno-event-card-bg: var(--primary-light);
-  --icon-image: url(./style-guide/components/toggle-theme/sun-regular.svg);
   --abacus-border: var(--bgTextColor);
   --reportbox-bg: rgb(0, 0, 0);
   --temp-color: var(--white);
@@ -94,11 +102,19 @@
   --upcomingEvents-section-bg: var(--Grey-light-3);
   --upcomingEvents-section-text: var(--offBlack);
   --upev-lotte-invert-amount: 1;
-  --navbutton-shadow: rgb(245, 245, 245, 0.4);
+  --navigation-button-bg: var(--theme-primary);
   --animate-color1: black;
   --animate-color2: rgb(78, 9, 239);
   --devtag-hover: gray;
   --devselect-text: white;
   --theme-pink: rgb(232, 9, 172);
   --report-color: rgb(78, 9, 239);
+  --animation-color: radial-gradient(
+    30.75% 49.12% at 30.75% 38.37%,
+    var(--sky-blue-light) 0%,
+    var(--blue-dark) 100%
+  );
+  --about-shadow: var(--Grey-light-4);
+  --about-shadow-color: var(--Grey-light-4);
+  --devcard-socials: rgb(255, 255, 255, 0.25);
 }

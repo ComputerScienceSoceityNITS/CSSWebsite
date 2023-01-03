@@ -8,8 +8,7 @@
   text-align: center;
   text-transform: capitalize;
   font-weight: 900;
-  text-shadow: 1px 1px 1px var(--footer-bg);
-
+  text-shadow: 0.8px 0.8px 1px var(--footer-bg);
 }
 
 .mainreportdiv {
@@ -122,7 +121,6 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 400;
 }
-
 
 @media only screen and (max-width: 500px) {
   .header {

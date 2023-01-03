@@ -1,0 +1,121 @@
+.newcardcontainer {
+  box-sizing: border-box;
+  position: relative;
+  width: 270px;
+  height: 350px;
+
+  border-radius: 8px;
+  background-image: linear-gradient(#f7095b, #be4c9b);
+  margin-bottom: 45px;
+  margin-right: 4px;
+  margin-left: 4px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.cardimgcont {
+  position: absolute;
+  width: 97%;
+  height: 340px;
+  z-index: 2;
+  border-radius: 8px;
+  bottom: 1.5px;
+
+  top: 5px;
+  overflow: hidden;
+}
+.cardimg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  border-radius: 8px;
+  transition: all;
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+
+.newcardfooter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 12px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  width: 97%;
+  height: 90px;
+  overflow: hidden;
+  bottom: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  color: #ececec;
+}
+
+.footercont {
+  width: 193px;
+  height: 28px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+
+  line-height: 28px;
+}
+
+.socials {
+  width: 20%;
+  position: absolute;
+  height: 250.045px;
+  z-index: 6;
+  right: -2px;
+  background: rgba(0, 0, 0, 0.5);
+  border-top-right-radius: 8px;
+  transition: all;
+  transition-duration: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  font-size: 28px;
+  transform: translateX(65px);
+}
+
+.newcardcontainer:hover .socials {
+  width: 20%;
+  transform: translateX(-1.6px);
+}
+
+.icon {
+  margin-top: 60px;
+}
+
+.newcardcontainer:hover .cardimg {
+  transform: scale(1.2) translateY(-25px);
+}
+
+.newcardcontainer:hover .newcardcontainer {
+  width: 304px;
+}
+
+@media (max-width: 360px) {
+  .newcardcontainer {
+    width: 280px;
+  }
+}
+
+@media (max-width: 320px) {
+  .newcardcontainer {
+    width: 260px;
+    height: 330px;
+  }
+  .cardimgcont {
+    height: 320px;
+  }
+  .socials {
+    height: 230.045px;
+  }
+}
