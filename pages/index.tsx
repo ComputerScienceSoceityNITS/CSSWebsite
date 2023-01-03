@@ -4,6 +4,7 @@ import EventSection from "../style-guide/page-component/Event-section";
 import Hero from "../style-guide/page-component/Hero";
 import Executives from "../style-guide/page-component/Executives";
 import UpcomingEvents from "../style-guide/page-component/UpcomingEvents";
+import Carousel from "../style-guide/components/carousel";
 
 interface IndexProps {
   members: {
@@ -36,7 +37,8 @@ const Home = ({ members, events }: IndexProps) => {
       <AboutUs />
       <EventSection />
       <Executives members={members} />
-      <UpcomingEvents events={events} />
+      {/* <UpcomingEvents events={events} /> */}
+      <Carousel />
     </>
   );
 };
