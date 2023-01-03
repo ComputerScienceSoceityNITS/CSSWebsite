@@ -92,6 +92,7 @@
 .techno .card_1 {
   grid-area: card_1;
   background-color: var(--techno-event-card-bg);
+  box-shadow: 1px 2px 5px rgba(40, 40, 40, 0.8);
 }
 
 .techno .lottie_2 {
@@ -108,21 +109,25 @@
 .techno .card_2 {
   grid-area: card_2;
   background-color: var(--techno-event-card-bg);
+  box-shadow: var(--event-card-box-shadow);
 }
 
 .techno .hacks {
   grid-area: hacks;
   background-color: var(--techno-event-card-bg);
+  box-shadow: var(--event-card-box-shadow);
 }
 
 .techno .enigma {
   grid-area: enigma;
   background-color: var(--techno-event-card-bg);
+  box-shadow: var(--event-card-box-shadow);
 }
 
 .techno .c_classes {
   grid-area: classes;
   background-color: var(--techno-event-card-bg);
+  box-shadow: var(--event-card-box-shadow);
 }
 
 .techno .card_1 .ul_c,
