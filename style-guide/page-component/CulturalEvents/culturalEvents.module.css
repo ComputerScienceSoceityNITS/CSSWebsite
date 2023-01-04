@@ -122,21 +122,25 @@
 .cultural .orientation {
   grid-area: orientation;
   background-color: var(--techno-event-card-bg);
+  box-shadow: var(--event-card-box-shadow);
 }
 
 .cultural .cs_go {
   grid-area: cs-go;
   background-color: var(--techno-event-card-bg);
+  box-shadow: var(--event-card-box-shadow);
 }
 
 .cultural .freshers {
   grid-area: freshers;
   background-color: var(--techno-event-card-bg);
+  box-shadow: var(--event-card-box-shadow);
 }
 
 .cultural .farewell {
   grid-area: farewell;
   background-color: var(--techno-event-card-bg);
+  box-shadow: var(--event-card-box-shadow);
 }
 
 .cultural .lottie_4 {

@@ -23,6 +23,7 @@
   --event-button: var(--Grey-light-3);
   --event-techno-bg: var(--black);
   --techno-event-card-bg: var(--Grey-dark-5);
+  --event-card-box-shadow: none;
   --abacus-border: transparent;
   --reportbox-bg: var(--white);
   --temp-color: var(--black);
@@ -81,8 +82,9 @@
   --events-bg-color: var(--Grey-light-3);
   --event-style: var(--black);
   --event-button: var(--Grey-dark-5);
-  --event-techno-bg: var(--primary-dark);
+  --event-techno-bg: var(--Grey-light-3);
   --techno-event-card-bg: var(--primary-light);
+  --event-card-box-shadow: 1px 2px 4px rgba(40, 40, 40, 0.5);
   --abacus-border: var(--bgTextColor);
   --reportbox-bg: rgb(0, 0, 0);
   --temp-color: var(--white);

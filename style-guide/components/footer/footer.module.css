@@ -171,6 +171,7 @@
     padding: 2em 0;
     align-items: center;
     text-align: center;
+    margin: -2em;
   }
   .footer .fmain {
     width: 100%;

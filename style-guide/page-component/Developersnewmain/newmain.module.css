@@ -16,22 +16,27 @@
 .heading::before {
   position: absolute;
   content: "";
-  height: 100%;
+  height: 150%;
   width: 100%;
-  left: 0;
-  top: 0;
-  background-color: #f80759;
+  left: -5rem;
+  top: -2rem;
+  border-radius: 61% 39% 62% 38% / 51% 40% 60% 49%;
+  background: linear-gradient(
+    0deg,
+    var(--theme-primary),
+    var(--theme-secondary)
+  );
   filter: blur(78px);
   z-index: -1;
 }
 .heading {
   position: relative;
   width: 50%;
+  font-family: Geneva, Tahoma, sans-serif;
   font-size: 52px;
   font-weight: 800;
   display: inline-block;
   color: var(--devcard-text);
-  text-shadow: 0.5px 0.5px 1px whitesmoke;
   z-index: 5;
 }
 

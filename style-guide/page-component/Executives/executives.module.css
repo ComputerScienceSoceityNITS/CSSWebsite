@@ -56,7 +56,7 @@
 
 .title p {
   margin-left: 1em;
-  color: var(--Grey-light-3);
+  color: var(--hero-section-text);
   text-align: center;
   font-size: 4em;
   font-family: Anton;
@@ -87,8 +87,6 @@
 @media only screen and (max-width: 1200px) {
   .cores {
     flex-direction: column;
-    padding: 2em 0;
-    /* background-color: var(--black); */
   }
   .cores .bgtext,
   .cores .bgtext1 {
@@ -108,6 +106,7 @@
   }
   .cores .dividers {
     padding-left: 0;
+    padding-bottom: 1.1em;
   }
   .cores .dividers .title p {
     font-size: 2.5em;
