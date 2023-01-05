@@ -1,7 +1,5 @@
-import React, { useState } from "react";
-import Link from "next/link";
+import React from "react";
 import ScrollDownLottie from "../../components/lottie-player/scrollDown";
-import TeamX from "../../components/lottie-player/teamX";
 import Styles from "./newmain.module.css";
 import DevPGLottie from "../../components/lottie-player/DevpageLottie";
 interface DeveloperYear {
@@ -9,7 +7,6 @@ interface DeveloperYear {
 }
 
 const DevelopersNewMain = (props: DeveloperYear) => {
-  const [year, setYear] = useState(props.year);
   return (
     <div>
       <ScrollDownLottie />

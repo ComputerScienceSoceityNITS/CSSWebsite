@@ -1,5 +1,4 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
 import DeveloperCardNew from "../../components/developercardnew";
 import DeveloperHeadNew from "../../components/developerhead";
 import Styles from "./developersnew.module.css";
@@ -30,9 +29,9 @@ interface DeveloperProps {
 }
 
 const DevelopersNew = ({ devWing, coHead }: DeveloperProps, { mode }: any) => {
-  const devCoHeads = coHead.filter((head) => {
-    return head.role === "Dev-Wing Co-Head" && head.name !== "Yash Srivastava";
-  });
+  // const devCoHeads = coHead.filter((head) => {
+  //   return head.role === "Dev-Wing Co-Head" && head.name !== "Yash Srivastava";
+  // });
   return (
     <div className={Styles.devpagecontainer}>
       <div className={Styles.yearcontainer}>

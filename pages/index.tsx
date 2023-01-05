@@ -3,7 +3,6 @@ import AboutUs from "../style-guide/page-component/About-us";
 import EventSection from "../style-guide/page-component/Event-section";
 import Hero from "../style-guide/page-component/Hero";
 import Executives from "../style-guide/page-component/Executives";
-import UpcomingEvents from "../style-guide/page-component/UpcomingEvents";
 import Carousel from "../style-guide/components/carousel";
 
 interface IndexProps {
@@ -30,7 +29,7 @@ interface IndexProps {
   }[];
 }
 
-const Home = ({ members, events }: IndexProps) => {
+const Home = ({ members }: IndexProps) => {
   return (
     <>
       <Hero />

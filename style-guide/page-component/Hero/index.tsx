@@ -23,12 +23,7 @@ const Hero = () => {
         <div className={styles.bottomText}>
           <p>CSS</p>
         </div>
-        <div
-          className={styles.dividers_first}
-          id="headTile"
-          style={{ zIndex: "16" }}
-        >
-          <div className={styles.gradientbg}></div>
+        <div className={styles.divider} id="headTile" style={{ zIndex: "16" }}>
           <div className={styles.title}>
             COMPUTER <br /> SCIENCE <br /> SOCIETY
           </div>
