@@ -1,8 +1,6 @@
 import React from "react";
 import { GetStaticProps } from "next";
-import Developers from "../../style-guide/page-component/Developers";
 import DevelopersNew from "../../style-guide/page-component/Developersnew";
-import Main from "../../style-guide/page-component/DevelopersMain";
 import DevelopersNewMain from "../../style-guide/page-component/Developersnewmain";
 import Styles from "./developerspage.module.css";
 
