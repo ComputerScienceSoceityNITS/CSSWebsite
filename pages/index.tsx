@@ -3,11 +3,7 @@ import AboutUs from "../style-guide/page-component/About-us";
 import EventSection from "../style-guide/page-component/Event-section";
 import Hero from "../style-guide/page-component/Hero";
 import Executives from "../style-guide/page-component/Executives";
-<<<<<<< HEAD
 import UpcomingEvents from "../style-guide/page-component/UpcomingEvents";
-=======
-import Carousel from "../style-guide/components/carousel";
->>>>>>> 234a149b7cd214ee63a93db0b8b63925a6d29a15
 
 interface IndexProps {
   members: {
@@ -40,7 +36,7 @@ const Home = ({ members }: IndexProps) => {
       <AboutUs />
       <EventSection />
       <Executives members={members} />
-      <UpcomingEvents events={events} />
+      <UpcomingEvents />
     </>
   );
 };

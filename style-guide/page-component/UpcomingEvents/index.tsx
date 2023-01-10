@@ -1,5 +1,4 @@
 import React from "react";
-import UpcomingEventsCard from "../../components/upcoming-events-card";
 import Styles from "./UpcomingEvents.module.css";
 import Drone from "../../components/lottie-player/drones";
 import Upev from "../../components/lottie-player/upev";
@@ -19,8 +18,7 @@ interface EventsProps {
   }[];
 }
 
-const UpcomingEvents = ({ events }: EventsProps) => {
-  console.log(events);
+const UpcomingEvents = () => {
   return (
     <div className={Styles.announcements}>
       <Drone />

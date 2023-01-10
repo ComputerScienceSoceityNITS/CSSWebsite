@@ -105,7 +105,7 @@
   --upcomingEvents-section-text: var(--offBlack);
   --upev-lotte-invert-amount: 1;
   --navigation-button-bg: var(--theme-primary);
-  --animate-color1: black;
+  --animate-color1: rgb(151, 3, 151);
   --animate-color2: rgb(78, 9, 239);
   --devtag-hover: gray;
   --devselect-text: white;

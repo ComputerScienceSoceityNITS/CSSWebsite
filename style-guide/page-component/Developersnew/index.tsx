@@ -2,6 +2,7 @@ import React from "react";
 import DeveloperCardNew from "../../components/developercardnew";
 import DeveloperHeadNew from "../../components/developerhead";
 import Styles from "./developersnew.module.css";
+import Fade from "react-reveal/Fade";
 
 interface DeveloperProps {
   devWing: {
@@ -29,16 +30,10 @@ interface DeveloperProps {
 }
 
 const DevelopersNew = ({ devWing, coHead }: DeveloperProps, { mode }: any) => {
-<<<<<<< HEAD
   const devCoHeads = coHead.filter((head) => {
     return head.role === "Dev-Wing Co-Head" && head.name !== "Yash Srivastava";
   });
 
-=======
-  // const devCoHeads = coHead.filter((head) => {
-  //   return head.role === "Dev-Wing Co-Head" && head.name !== "Yash Srivastava";
-  // });
->>>>>>> 234a149b7cd214ee63a93db0b8b63925a6d29a15
   return (
     <Fade bottom>
       <div className={Styles.devpagecontainer}>
