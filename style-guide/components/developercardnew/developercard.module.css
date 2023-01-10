@@ -79,7 +79,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  color: white;
+  color: white !important;
   font-size: 28px;
   transform: translateX(65px);
 }
@@ -91,6 +91,7 @@
 
 .icon {
   margin-top: 60px;
+  color: white !important;
 }
 
 .newcardcontainer:hover .cardimg {

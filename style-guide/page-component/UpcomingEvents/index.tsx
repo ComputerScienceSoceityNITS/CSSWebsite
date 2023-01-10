@@ -4,6 +4,7 @@ import Styles from "./UpcomingEvents.module.css";
 import Drone from "../../components/lottie-player/drones";
 import Upev from "../../components/lottie-player/upev";
 import Shake from "react-reveal/Shake";
+import Carousel from "../../components/carousel";
 
 interface EventsProps {
   events: {
@@ -27,16 +28,7 @@ const UpcomingEvents = ({ events }: EventsProps) => {
         <Upev />
         <Shake>Upcoming Events</Shake>
       </h1>
-      <div className={Styles.body}>
-        <div className={events.length == 0 ? Styles.empty : Styles.notempty}>
-          Nothing to Show! Come back later
-        </div>
-        {events.length == 0
-          ? null
-          : events.map((event, index) => {
-              return <UpcomingEventsCard props={event} key={index} />;
-            })}
-      </div>
+      <Carousel />
     </div>
   );
 };

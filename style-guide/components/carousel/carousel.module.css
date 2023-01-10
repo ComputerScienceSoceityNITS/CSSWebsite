@@ -72,9 +72,8 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  border: 10px solid transparent;
-  border-image: linear-gradient(90deg, #f7095b, #b34c9b);
-  border-image-slice: 1;
+  border: 10px solid var(--footer-bg);
+  border-radius: 25px;
   margin-top: 30px;
 }
 
@@ -92,6 +91,8 @@
   .iframe {
     height: 80%;
     margin-top: 60px;
+    border: 7px solid var(--footer-bg);
+    border-radius: 25px;
   }
   .leftarrow,
   .rightarrow {
