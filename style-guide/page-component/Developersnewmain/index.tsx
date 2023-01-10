@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import Link from "next/link";
+import React from "react";
 import ScrollDownLottie from "../../components/lottie-player/scrollDown";
 import Styles from "./newmain.module.css";
 import DevPGLottie from "../../components/lottie-player/DevpageLottie";
@@ -8,7 +7,6 @@ interface DeveloperYear {
 }
 
 const DevelopersNewMain = (props: DeveloperYear) => {
-  const [year, setYear] = useState(props.year);
   return (
     <div className={Styles.parentcontainer}>
       <ScrollDownLottie />
