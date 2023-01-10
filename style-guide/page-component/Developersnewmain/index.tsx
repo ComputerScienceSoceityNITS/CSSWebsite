@@ -1,14 +1,17 @@
-import React from "react";
+import React,{useState} from "react";
 import ScrollDownLottie from "../../components/lottie-player/scrollDown";
 import Styles from "./newmain.module.css";
 import DevPGLottie from "../../components/lottie-player/DevpageLottie";
+import Link from "next/link";
+
 interface DeveloperYear {
   year: number;
 }
 
 const DevelopersNewMain = (props: DeveloperYear) => {
+  const [year,setYear]=useState(props.year)
   return (
-    <div>
+    <div className={Styles.parentcontainer}>
       <ScrollDownLottie />
       <div className={Styles.maincontainer}>
         <div className={Styles.headingcont}>
@@ -16,6 +19,29 @@ const DevelopersNewMain = (props: DeveloperYear) => {
         </div>
         <div className={Styles.lottiecont}>
           <DevPGLottie />
+        </div>
+      </div>
+      <div className={Styles.yearcontainer}>
+        <div className={Styles.sideheading}>TEAM OF</div>
+        <div className={Styles.buttoncontainer}>
+          <div className={Styles.buttons}>2022-23</div>
+          <Link href="/developers/21-22" passHref scroll={false} replace>
+            <div
+              onClick={() => setYear(2022)}
+              className={`${year === 2022 ? Styles.active : Styles.buttons}`}
+            >
+              2021-22
+            </div>
+          </Link>
+          <Link href="/developers/20-21" passHref scroll={false} replace>
+            <div
+              onClick={() => setYear(2021)}
+              className={`${year === 2021 ? Styles.active : Styles.buttons}`}
+            >
+              2020-21
+            </div>
+          </Link>
+          <div className={Styles.buttons}>2019-20</div>
         </div>
       </div>
     </div>
