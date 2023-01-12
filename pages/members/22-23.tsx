@@ -142,19 +142,34 @@ export const getStaticProps: GetStaticProps = async () => {
     `${process.env.BACKEND_URL}/api/admin/members/22-23`
   );
   const data = await response.json();
-  console.log(data);
+
   return {
     props: {
       devWing: data.members.filter(
-        (i: any) => i.role === "Dev-Wing" || i.role === "Dev-Wing Head"
+        (i: any) => i.role === "Dev-Wing" || i.role == "Dev-Wing "
       ),
       cpWing: data.cpWing,
-      executiveWing: data.executiveWing,
-      mlWing: data.mlWing,
-      designWing: data.designWing,
-      literaryWing: data.literaryWing || [],
-      prWing: data.prWing || [],
-      coHead: data.coHeads,
+      executiveWing: data.members.filter(
+        (i: any) => i.role === "Executive-Wing" || i.role === "Executive-Wing "
+      ),
+      mlWing: data.members.filter(
+        (i: any) => i.role === "ML-Wing" || i.role === "ML-Wing "
+      ),
+      designWing: data.members.filter(
+        (i: any) => i.role == "Design-Wing" || i.role == "Design-Wing "
+      ),
+      literaryWing:
+        data.members.filter(
+          (i: any) => i.role === "Literary-Wing" || i.role === "Literary-Wing "
+        ) || [],
+      prWing:
+        data.members.filter(
+          (i: any) => i.role == "PR-Wing " || i.role === "PR-Wing"
+        ) || [],
+      coHead: data.members.filter(
+        (i: any) =>
+          i.role === "Dev-Wing Head" || i.role === "Executive-Wing Head"
+      ),
       members: data.members,
     },
   };

@@ -124,13 +124,13 @@ const index = ({
   members,
 }: MemberProps) => {
   const devCoHeads = members.filter((head) => {
-    return head.role === "Dev-Wing Co-Head";
+    return head.role === "Dev-Wing Head";
   });
   const cpCoHeads = members.filter((head) => {
     return head.role === "CP-Wing Head";
   });
   const seniorExe = members.filter((head) => {
-    return head.role === "Senior Executive";
+    return head.role === "Executive-Wing Head";
   });
   const mlCoHeads = members.filter((head) => {
     return head.role === "ML-Wing Head";

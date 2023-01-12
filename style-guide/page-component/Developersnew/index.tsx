@@ -60,13 +60,13 @@ const DevelopersNew = (
             return <DeveloperHeadNew props={head} key={index} />;
           })}
         </div>
-        <div className={Styles.teamhead}>TEAM HEADS</div>
+        <div className={Styles.teamhead}>DEV-WING HEADS</div>
         <div className={Styles.heads}>
           {devCoHeads.map((head, index) => {
             return <DeveloperHeadNew props={head} key={index} />;
           })}
         </div>
-        <div className={Styles.teamhead}>TEAM MEMBERS</div>
+        <div className={Styles.teamhead}>DEV-WING MEMBERS</div>
         <div className={Styles.members}>
           {devWing.map((member, index) => {
             return <DeveloperCardNew props={member} key={index} />;
