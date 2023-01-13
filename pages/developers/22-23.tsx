@@ -3,6 +3,7 @@ import { GetStaticProps } from "next";
 import DevelopersNew from "../../style-guide/page-component/Developersnew";
 import DevelopersNewMain from "../../style-guide/page-component/Developersnewmain";
 import Styles from "./developerspage.module.css";
+import { constants } from "buffer";
 
 interface DeveloperProps {
   devWing: {
@@ -43,7 +44,7 @@ interface DeveloperProps {
 const developers = ({ devWing, coHead, secretary }: DeveloperProps) => {
   return (
     <div className={Styles.devpgheader}>
-      <DevelopersNewMain year={2022} />
+      <DevelopersNewMain year={2023} />
       <DevelopersNew devWing={devWing} coHead={coHead} secretary={secretary} />
     </div>
   );
@@ -51,14 +52,23 @@ const developers = ({ devWing, coHead, secretary }: DeveloperProps) => {
 
 export const getStaticProps: GetStaticProps = async () => {
   const response = await fetch(
-    `${process.env.BACKEND_URL}/api/admin/members/21-22`
+    `${process.env.BACKEND_URL}/api/admin/members/22-23`
   );
   const data = await response.json();
+  console.log(data.members.filter((i: any) => i.role == "Technical Head"));
+  const newdata = data.devWing;
 
   return {
     props: {
-      devWing: data.devWing,
-      coHead: data.coHeads,
+      devWing: data.members.filter(
+        (i: any) =>
+          i.role == "Dev-Wing" ||
+          i.role == "Dev-Wing " ||
+          (i.role == "Dev -Wing" && i.session == "22-23")
+      ),
+      coHead: data.members.filter(
+        (i: any) => i.role == "Dev-Wing Head" && i.session == "22-23"
+      ),
       secretary: data.members.filter(
         (i: any) =>
           i.role === "Technical Head"

@@ -70,7 +70,7 @@ export default function DeveloperHeadNew({ props }) {
             </i>
           </a>
         </div>
-        <img src={props.avatar.url} className={Styles.cardimg} alt="" />
+        <img src={props?.avatar?.url} className={Styles.cardimg} alt="" />
       </div>
       <div className={Styles.newcardfooter}>
         <div className={Styles.footercont}>{props.name}</div>
