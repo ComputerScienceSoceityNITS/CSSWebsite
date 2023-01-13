@@ -11,7 +11,6 @@ interface MemberYearProp {
 
 const Members = (props: MemberYearProp) => {
   const [year, setYear] = useState(props.year);
-  // setYear(props.year);
   return (
     <>
       <p className={Styles.bgtext}>
@@ -27,14 +26,6 @@ const Members = (props: MemberYearProp) => {
         <div className={Styles.container}>
           <StudyTableLottie />
           <div className={Styles.buttons}>
-            <Link href="/members/19-20" passHref scroll={false} replace>
-              <button onClick={() => setYear(2020)}>
-                <span className={year === 2020 ? Styles.active : ""}>
-                  19-20
-                </span>
-              </button>
-            </Link>
-            <br />
             <Link href="/members/20-21" passHref scroll={false} replace>
               <button onClick={() => setYear(2021)}>
                 <span className={year === 2021 ? Styles.active : ""}>
