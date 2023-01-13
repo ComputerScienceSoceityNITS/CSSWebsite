@@ -61,8 +61,6 @@ export const getStaticProps: GetStaticProps = async () => {
       coHead: data.coHeads.filter((i: any) => i.role === "Dev-Wing Co-Head"),
       secretary: data.members.filter(
         (i: any) =>
-          i.role == "General Secretary" ||
-          i.role === "President" ||
           i.role === "Technical Head"
       ),
     },

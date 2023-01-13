@@ -71,8 +71,6 @@ export const getStaticProps: GetStaticProps = async () => {
       ),
       secretary: data.members.filter(
         (i: any) =>
-          i.role == "General Secretary" ||
-          i.role === "President" ||
           i.role === "Technical Head"
       ),
     },

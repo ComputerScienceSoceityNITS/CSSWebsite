@@ -54,7 +54,7 @@ const DevelopersNew = (
   return (
     <Fade bottom>
       <div className={Styles.devpagecontainer}>
-        <div className={Styles.teamhead}>SECRETARY</div>
+        <div className={Styles.teamhead}>TECHNICAL HEAD</div>
         <div className={Styles.heads}>
           {secretary.map((head, index) => {
             return <DeveloperHeadNew props={head} key={index} />;
