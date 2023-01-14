@@ -106,6 +106,8 @@
 }
 
 .firstSection .container .buttons {
+  display: flex;
+  flex-direction: column;
   height: 15vh;
   position: absolute;
   top: 45%;

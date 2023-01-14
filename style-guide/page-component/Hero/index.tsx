@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
-import HeroLottie from "../../components/lottie-player/Hero";
-import NetworkLottie from "../../components/lottie-player/homePageNetwork";
+import ParallaxBlob from "../../components/parallaxBlob";
+import NetworkLottie from "../../components/lottie-player/globe";
 import ScrollAnime from "../../components/lottie-player/homePageScroll";
 const Hero = () => {
   return (
@@ -17,15 +17,17 @@ const Hero = () => {
         <br /> Science <br /> Society
       </p>
       <div className={styles.dashboard}>
-        <div className={styles.hero_lottie}>
-          <HeroLottie />
+        <div className={styles.parallax}>
+          <ParallaxBlob offsetYMultiplier={0.24} />
         </div>
-        <div className={styles.bottomText}>
-          <p>CSS</p>
+        <div className={styles.parallax}>
+          <ParallaxBlob offsetYMultiplier={0.4} />
         </div>
         <div className={styles.divider} id="headTile" style={{ zIndex: "16" }}>
           <div className={styles.title}>
-            COMPUTER <br /> SCIENCE <br /> SOCIETY
+            COMPUTER <br />
+            SCIENCE <br />
+            <span className={styles.highlight}>SOCIETY</span>
           </div>
           <div className={styles.subtitle} id="subtitle">
             <p>Department of Computer Science and Engineering</p>
