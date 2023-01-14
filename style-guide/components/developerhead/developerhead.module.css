@@ -6,10 +6,12 @@
   border-radius: 12px;
   border-bottom-left-radius: 12px;
   background: linear-gradient(90deg, #f7085a, #be4c9b);
-  margin-bottom: 45px;
+  margin:0 25px;
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   overflow: hidden;
+  
 }
 
 .cardimgcont {

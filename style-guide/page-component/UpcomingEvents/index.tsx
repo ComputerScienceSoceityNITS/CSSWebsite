@@ -24,7 +24,7 @@ const UpcomingEvents = () => {
       <Drone />
       <h1 className={Styles.head}>
         <Upev />
-        <Shake>Upcoming Events</Shake>
+        <Shake>Announcements</Shake>
       </h1>
       <Carousel />
     </div>
