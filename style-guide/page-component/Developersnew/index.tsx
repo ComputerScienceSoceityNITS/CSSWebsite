@@ -2,7 +2,6 @@ import React from "react";
 import DeveloperCardNew from "../../components/developercardnew";
 import DeveloperHeadNew from "../../components/developerhead";
 import Styles from "./developersnew.module.css";
-import Fade from "react-reveal/Fade";
 
 interface DeveloperProps {
   devWing: {
