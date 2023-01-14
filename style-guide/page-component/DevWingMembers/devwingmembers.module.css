@@ -8,7 +8,6 @@
   background: var(--wingTag-bg);
   background-clip: text;
   color: transparent;
-  -webkit-text-stroke: 1px var(--black);
   bottom: 0%;
   right: 0%;
   font-family: "IBM Plex Sans", sans-serif;
@@ -83,6 +82,8 @@
   justify-self: flex-end;
   -ms-flex-item-align: start;
   align-self: flex-start;
+  height: 20vw;
+  width: 20vw;
 }
 
 .grid > div:nth-child(12) {
@@ -190,7 +191,7 @@
     height: 40vh;
     width: 40vh;
   }
-  .gridContainer .grid > div:nth-child(17) {
+  .gridContainer .grid > div:nth-child(11) {
     -ms-flex-item-align: end;
     align-self: flex-end;
     -webkit-box-pack: end;
@@ -245,7 +246,7 @@
     height: 40vh;
     width: 40vh;
   }
-  .gridContainer .grid > div:nth-child(17) {
+  .gridContainer .grid > div:nth-child(11) {
     -ms-flex-item-align: end;
     align-self: flex-end;
     -webkit-box-pack: end;

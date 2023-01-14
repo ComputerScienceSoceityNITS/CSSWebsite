@@ -1,7 +1,7 @@
 import React from "react";
 import { GetStaticProps } from "next";
-import Developers from "../../style-guide/page-component/Developers";
-import Main from "../../style-guide/page-component/DevelopersMain";
+import DevelopersNew from "../../style-guide/page-component/Developersnew";
+import DevelopersNewMain from "../../style-guide/page-component/Developersnewmain";
 import Styles from "./developerspage.module.css";
 
 interface DeveloperProps {
@@ -27,13 +27,24 @@ interface DeveloperProps {
     session: String;
     year: String;
   }[];
+  secretary: {
+    avatar: { public_id: String; url: String };
+    socialMedia: [
+      { facebook: String; instagram: String; github: String; linkedin: String }
+    ];
+    _id: String;
+    name: String;
+    role: String;
+    session: String;
+    year: String;
+  }[];
 }
 
-const developers = ({ devWing, coHead }: DeveloperProps) => {
+const developers = ({ devWing, coHead, secretary }: DeveloperProps) => {
   return (
     <div className={Styles.devpgheader}>
-      <Main year={2021} />
-      <Developers devWing={devWing} coHead={coHead} />
+      <DevelopersNewMain year={2021} />
+      <DevelopersNew devWing={devWing} coHead={coHead} secretary={secretary} />
     </div>
   );
 };
@@ -47,7 +58,8 @@ export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
       devWing: data.devWing,
-      coHead: data.coHeads,
+      coHead: data.coHeads.filter((i: any) => i.role === "Dev-Wing Co-Head"),
+      secretary: data.members.filter((i: any) => i.role === "Technical Head"),
     },
   };
 };

@@ -52,7 +52,7 @@ export default function DeveloperCardNew({ props }) {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="icon" aria-hidden="true">
+            <i className={Styles.icon} aria-hidden="true">
               <FontAwesomeIcon icon={["fab", "instagram"]} />
             </i>
           </a>
@@ -65,7 +65,7 @@ export default function DeveloperCardNew({ props }) {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="icon" aria-hidden="true">
+            <i className={Styles.icon} aria-hidden="true">
               <FontAwesomeIcon icon={["fab", "github"]} />
             </i>
           </a>
@@ -78,20 +78,16 @@ export default function DeveloperCardNew({ props }) {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="icon" aria-hidden="true">
+            <i className={Styles.icon} aria-hidden="true">
               <FontAwesomeIcon icon={["fab", "linkedin"]} />
             </i>
           </a>
         </div>
-        <img
-          src="https://cdn.pixabay.com/photo/2018/04/27/03/50/portrait-3353699__480.jpg"
-          className={Styles.cardimg}
-          alt=""
-        />
+        <img src={props.avatar.url} className={Styles.cardimg} alt="" />
       </div>
       <div className={Styles.newcardfooter}>
-        <div className={Styles.footercont}>Anubhav Chakraborty</div>
-        <div className={Styles.footercont}>Dev Wing Member </div>
+        <div className={Styles.footercont}>{props.name}</div>
+        <div className={Styles.footercont}>{props.role} Member</div>
       </div>
     </div>
   );
