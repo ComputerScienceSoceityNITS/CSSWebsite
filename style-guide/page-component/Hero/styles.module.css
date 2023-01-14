@@ -1,5 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
+.parallax {
+  position: absolute;
+  filter: brightness(150%);
+}
+.parallax:nth-child(1) {
+  transform: scale(0.5);
+  bottom: 2rem;
+  left: 5rem;
+}
+.parallax:nth-child(2) {
+  top: 4rem;
+  left: -1rem;
+}
+
+.highlight {
+  color: var(--Grey-light-3);
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  background: linear-gradient(
+    -45deg,
+    var(--theme-primary),
+    var(--theme-secondary)
+  );
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+  transition: all 0.1s ease-in;
+}
+
+.highlight:hover {
+  -webkit-clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 3% 50%, 0% 0%);
+  clip-path: polygon(95% 0, 100% 50%, 95% 100%, 0% 100%, 3% 50%, 0% 0%);
+}
+
 .bgtext {
   top: 50%;
   left: 5%;
@@ -20,7 +53,7 @@
 .dashboard {
   position: relative;
   width: 100vw;
-  background-color: var(--memsection-bg);
+  background: var(--hero-section-bg);
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,13 +85,20 @@
 }
 
 .dashboard .divider {
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  box-shadow: -1px 1px 20px rgba(10, 10, 10, 0.3);
   display: flex;
-  width: 100vw;
+  margin: 20vh 6em 5vh 6em;
+  height: fit-content;
+  background-color: hsla(0, 0%, 97%, 0.1);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   flex-direction: column;
   justify-content: center;
   padding-top: 4em;
-  padding-left: 8em;
-  border-radius: 5px;
+  padding-left: 2em;
+  padding-right: 4em;
+  border-radius: 1rem;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -66,29 +106,13 @@
 .dashboard .divider .title {
   color: var(--hero-section-text);
   max-width: fit-content;
-  font-family: Geneva, Verdana, sans-serif;
+  font-family: Anton;
   font-weight: bolder;
   font-size: 5em;
-  line-height: 1em;
+  line-height: 1.1em;
   letter-spacing: 0.1em;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-}
-
-.dashboard .divider .title::before {
-  position: absolute;
-  content: "";
-  height: 20rem;
-  width: 40rem;
-  left: -4rem;
-  border-radius: 61% 39% 62% 38% / 51% 40% 60% 49%;
-  background: linear-gradient(
-    0deg,
-    var(--theme-primary),
-    var(--theme-secondary)
-  );
-  filter: blur(78px);
-  z-index: -1;
 }
 
 .dashboard .divider .subtitle {
@@ -103,23 +127,15 @@
   color: var(--hero-section-text);
 }
 
-/*  Lotie  */
-.hero_lottie {
-  position: absolute;
-  top: 0%;
-  left: 25%;
-  z-index: 1;
-  width: 50vw;
-  opacity: 0.2;
-}
 .network_lottie {
+  width: 45em;
+  height: 45em;
+  right: -22em;
+
   filter: invert(var(--network-lottie-invert-amount));
   opacity: 0.9;
   position: absolute;
-  top: calc(50vh - 15em);
-  right: 0;
-  width: 30em;
-  height: 30em;
+  top: calc(50vh - 19em);
   z-index: 3;
   pointer-events: none;
 }
@@ -131,13 +147,15 @@
   left: -4rem;
   width: 12em;
   height: 20em;
-  z-index: 2;
+  z-index: 3;
   position: fixed;
 }
 
 @media only screen and (max-width: 1200px) {
   .dashboard .divider {
-    margin: 0;
+    min-height: 60vh;
+    width: 90vw;
+    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -158,17 +176,15 @@
     font-size: 4em;
     width: 100vw;
   }
-  .dashboard .divider .title::before {
-    left: 4rem;
-  }
   .dashboard .divider p {
     text-align: center;
   }
   .dashboard .highlight {
-    display: inline-block;
+    display: flex;
+    /* height: 1.5em; */
     width: auto;
-    height: 1.5em;
-    padding: 0px 7px;
+    text-align: center;
+    justify-content: center;
   }
   .network_lottie {
     display: none;
@@ -179,15 +195,15 @@
     left: 0;
     justify-content: center;
   }
+  .parallax:nth-child(1) {
+    bottom: 10rem;
+  }
 }
 @media only screen and (max-width: 600px) {
   .dashboard .divider .title {
+    font-family: Anton, Geneva, Tahoma, Verdana, sans-serif;
     font-size: 2.5em;
     width: 80vw;
-  }
-  .dashboard .divider .title::before {
-    height: 10rem;
-    left: -4rem;
   }
   .dashboard .divider .subtitle {
     font-size: 0.7em;
@@ -195,5 +211,13 @@
     letter-spacing: 0.2px;
     line-height: 1.25m;
     width: 70vw;
+  }
+  .parallax:nth-child(1) {
+    bottom: 12rem;
+    left: 75vw;
+  }
+  .parallax:nth-child(2) {
+    top: 8rem;
+    left: -4rem;
   }
 }

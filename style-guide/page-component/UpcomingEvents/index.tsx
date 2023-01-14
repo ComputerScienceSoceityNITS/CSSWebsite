@@ -5,18 +5,18 @@ import Upev from "../../components/lottie-player/upev";
 import Shake from "react-reveal/Shake";
 import Carousel from "../../components/carousel";
 
-interface EventsProps {
-  events: {
-    _id: String;
-    name: String;
-    description: String;
-    startTime: String;
-    startDate: String;
-    images: [];
-    endDate: String;
-    __v: 0;
-  }[];
-}
+// interface EventsProps {
+//   events: {
+//     _id: String;
+//     name: String;
+//     description: String;
+//     startTime: String;
+//     startDate: String;
+//     images: [];
+//     endDate: String;
+//     __v: 0;
+//   }[];
+// }
 
 const UpcomingEvents = () => {
   return (

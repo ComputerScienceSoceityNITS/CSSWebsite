@@ -19,7 +19,7 @@ const MemberCard1 = ({ props }) => {
         background: `url(${props.avatar.url}) ${
           hover ? "left center no-repeat" : "center no-repeat"
         }`,
-        backgroundSize: `${hover ? "70vh" : "55vh"}`,
+        backgroundSize: `${hover ? "60vh" : "55vh"}`,
       }}
       onMouseOver={() => setHover(true)}
       onMouseOut={() => setHover(false)}
