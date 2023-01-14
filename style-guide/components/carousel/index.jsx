@@ -10,11 +10,11 @@ export default function Carousel() {
   const videos = document.querySelectorAll("carouselcard");
 
   const iarray = [
+    "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FCSS.NITSilchar%2Fvideos%2F560968688975273%2F&show_text=false&width=560&t=0",
+    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7020012658594590720?compact=1",
     "https://www.youtube.com/embed/eVivzsATS6Q",
     "https://www.youtube.com/embed/R2I_pISNHGI",
     "https://www.youtube.com/embed/gLNe_msUjnY",
-    "https://www.youtube.com/embed/10gvOqiKkTQ",
-    "https://www.youtube.com/embed/WZit5nLIHhg?list=RDWZit5nLIHhg",
     "https://www.youtube.com/embed/4GASb93__Bg",
     "https://www.youtube.com/embed/fzNMd3Tu1Zw",
     "https://www.youtube.com/embed/X0sRdWLiPDg",
@@ -86,3 +86,4 @@ export default function Carousel() {
     </div>
   );
 }
+
