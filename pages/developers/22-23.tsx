@@ -3,7 +3,6 @@ import { GetStaticProps } from "next";
 import DevelopersNew from "../../style-guide/page-component/Developersnew";
 import DevelopersNewMain from "../../style-guide/page-component/Developersnewmain";
 import Styles from "./developerspage.module.css";
-import { constants } from "buffer";
 
 interface DeveloperProps {
   devWing: {
@@ -56,7 +55,6 @@ export const getStaticProps: GetStaticProps = async () => {
   );
   const data = await response.json();
   console.log(data.members.filter((i: any) => i.role == "Technical Head"));
-  const newdata = data.devWing;
 
   return {
     props: {
@@ -69,10 +67,7 @@ export const getStaticProps: GetStaticProps = async () => {
       coHead: data.members.filter(
         (i: any) => i.role == "Dev-Wing Head" && i.session == "22-23"
       ),
-      secretary: data.members.filter(
-        (i: any) =>
-          i.role === "Technical Head"
-      ),
+      secretary: data.members.filter((i: any) => i.role === "Technical Head"),
     },
   };
 };
