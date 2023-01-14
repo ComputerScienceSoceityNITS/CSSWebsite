@@ -32,6 +32,8 @@
   transition: all;
   transition-duration: 0.5s;
   overflow: hidden;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .newcardfooter {

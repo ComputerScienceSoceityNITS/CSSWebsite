@@ -69,10 +69,7 @@ export const getStaticProps: GetStaticProps = async () => {
       coHead: data.members.filter(
         (i: any) => i.role == "Dev-Wing Head" && i.session == "22-23"
       ),
-      secretary: data.members.filter(
-        (i: any) =>
-          i.role === "Technical Head"
-      ),
+      secretary: data.members.filter((i: any) => i.role === "Technical Head"),
     },
   };
 };
