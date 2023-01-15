@@ -42,7 +42,6 @@ const Home = ({ members }: IndexProps) => {
 };
 
 export default Home;
-
 export const getServerSideProps: GetServerSideProps = async () => {
   let response = await fetch(
     `${process.env.BACKEND_URL}/api/admin/members/21-22`
