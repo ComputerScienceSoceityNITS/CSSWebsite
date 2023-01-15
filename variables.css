@@ -51,14 +51,21 @@
   --theme-pink: var(--white);
   --report-color: rgb(151, 3, 151);
   --about-color: var(--heading-color);
-  --animation-color: radial-gradient(
-    30.75% 49.12% at 30.75% 38.37%,
-    var(--sky-blue) 0%,
-    var(--dark-blue) 100%
-  );
+  --animation-color: radial-gradient(30.75% 49.12% at 30.75% 38.37%,
+      var(--sky-blue) 0%,
+      var(--dark-blue) 100%);
   --about-shadow: #282828;
   --about-shadow-color: #282828;
   --devcard-socials: rgba(0, 0, 0, 0.5);
+  --wing-page-bg3: rgba(32, 25, 26, 0.9);
+  --wing-page-bg2: rgba(18, 40, 40, 0.9);
+  --wing-page-bg1: rgba(23, 19, 19, 0.9);
+  --wing-card-bg1: rgba(29, 25, 25, 0.9);
+  --wing-card-bg2: rgba(30, 33, 39, 0.9);
+  --wing-card-bg: rgba(0, 0, 0, 0.3);
+  --wing-white: rgb(0, 0, 0);
+  --wing-black: rgb(255, 255, 255);
+  --wing-tooltip-bg: rgba(240, 238, 238, 0.8);
 }
 
 .light {
@@ -66,11 +73,9 @@
   --text-primary: var(--bgTextColor);
   --memsection-bg: var(--Grey-light-3);
   --memberTag-fill-color: var(--theme-primary);
-  --wingTag-bg: linear-gradient(
-    -125deg,
-    var(--theme-primary),
-    var(--theme-secondary)
-  );
+  --wingTag-bg: linear-gradient(-125deg,
+      var(--theme-primary),
+      var(--theme-secondary));
   --memberTag-text-shadow: 1px 3px 6px var(--offBlack);
   --text-outline: hsl(317, 45%, 45%);
   --devcard-bg: var(--primary-light);
@@ -111,12 +116,19 @@
   --devselect-text: white;
   --theme-pink: rgb(232, 9, 172);
   --report-color: rgb(78, 9, 239);
-  --animation-color: radial-gradient(
-    30.75% 49.12% at 30.75% 38.37%,
-    var(--sky-blue-light) 0%,
-    var(--blue-dark) 100%
-  );
+  --animation-color: radial-gradient(30.75% 49.12% at 30.75% 38.37%,
+      var(--sky-blue-light) 0%,
+      var(--blue-dark) 100%);
   --about-shadow: var(--Grey-light-4);
   --about-shadow-color: var(--Grey-light-4);
   --devcard-socials: rgb(255, 255, 255, 0.25);
+  --wing-page-bg1: rgba(252, 156, 188, 0.8);
+  --wing-page-bg2: rgba(251, 203, 219, 0.8);
+  --wing-card-bg1: rgba(194, 194, 194, 0.8);
+  --wing-card-bg2: rgba(255, 213, 213, 0.8);
+  --wing-page-bg3: rgba(243, 241, 241, 0.8);
+  --wing-card-bg: rgba(255, 255, 255, 0.3);
+  --wing-white: rgb(255, 255, 255);
+  --wing-black: rgb(0, 0, 0);
+  --wing-tooltip-bg: rgba(248, 7, 87, 0.8);
 }

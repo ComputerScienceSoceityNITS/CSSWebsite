@@ -1,0 +1,197 @@
+.wings_page {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(200deg, var(--wing-page-bg1), var(--wing-page-bg2) 45%, var(--wing-page-bg3) 80%), url("/images/WingsOfCSS/people.png") no-repeat center center / cover;
+    overflow: auto;
+    background-position: fixed;
+    transition: all 450ms ease-in;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.wing_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.h1 {
+    font-family: Geneva, Tahoma, sans-serif;
+    font-size: 7rem;
+    /* height: 30vh; */
+    font-weight: 900;
+    color: var(--wing-black);
+}
+
+.h2 {
+    font-family: Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    color: darkblue;
+    margin-bottom: 1rem;
+    color: var(--Grey-light-3);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(-45deg, var(--theme-primary), var(--theme-secondary));
+    -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 0 50%, 0 0);
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 0 50%, 0 0);
+    transition: all .1s ease-in;
+}
+
+.wing_card {
+    padding: 1.5rem;
+    width: 70vw;
+    min-height: 50vh;
+    border-radius: 0.5rem;
+    backdrop-filter: blur(0.5rem);
+    /* background: var(--wing-card-bg); */
+    margin-bottom: 10vh;
+    border: 1px solid var(--wing-white);
+    margin-left: 1.5rem;
+    box-shadow: -1px 1px 20px black;
+    color: var(--wing-black);
+    font-family: Geneva, Tahoma, sans-serif;
+    margin-top: 55vh;
+    scroll-snap-align: end;
+    font-size: 1.5rem;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wings_scrollBar {
+    position: absolute;
+    top: 50%;
+    right: -19.5rem;
+    transform: translateX(-50%) rotateZ(90deg);
+}
+
+.scroll {
+    width: 25rem;
+    /* background: linear-gradient(to right, darkGray, gray); */
+    background-color: var(--navigation-button-bg);
+    border-radius: 8px;
+    height: 10px;
+    width: 400px;
+    outline: none;
+    transition: all 450ms ease-in;
+    -webkit-appearance: none;
+}
+
+.scroll::-webkit-slider-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    /* background: #434343; */
+    background-color: var(--navigation-button-bg);
+    filter: invert(0.5);
+}
+
+.tooltip {
+    /* background: rgba(128, 128, 128, 0.8); */
+    width: 6rem;
+    padding: 0.5rem;
+    z-index: 2;
+    transform: rotateZ(-90deg);
+    position: relative;
+    top: 1.2rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    backdrop-filter: blur(0.5rem);
+    overflow: hidden;
+    z-index: -1;
+    font-family: Geneva, Tahoma, sans-serif;
+    background-color: var(--wing-tooltip-bg);
+    color: var(--wing-white);
+    font-weight: 700;
+}
+
+.span {
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-size: 5rem;
+    z-index: -1;
+    font-weight: 900;
+    color: var(--wing-white);
+}
+
+@media (max-width: 767px) {
+    .wing_card {
+        width: 80vw;
+        min-height: 50vh;
+        font-size: 1rem;
+    }
+
+    .wings_scrollBar {
+        position: absolute;
+        top: 50%;
+        right: -10.5rem;
+        /* transform: translateX(-50%); */
+        transform: rotateZ(90deg);
+    }
+
+    .scroll {
+        height: 7px;
+    }
+
+    .scroll::-webkit-slider-thumb {
+        width: 20px;
+        height: 20px;
+    }
+
+    .span {
+        font-size: 3rem;
+    }
+
+    .h1 {
+        font-size: 3rem;
+    }
+
+    .h2 {
+        font-size: 1.2rem;
+    }
+}
+
+#Lit {
+    background: red;
+}
+
+.wing_card:nth-child(2) {
+    background: linear-gradient(200deg, var(--wing-card-bg1), var(--wing-card-bg2)), url("/images/WingsOfCSS/exec.jpg") no-repeat center center / cover;
+}
+
+.wing_card:nth-child(3) {
+    background: linear-gradient(200deg, var(--wing-card-bg1), var(--wing-card-bg2)), url("/images/WingsOfCSS/dev.jpg") no-repeat center center / cover;
+}
+
+.wing_card:nth-child(4) {
+    background: linear-gradient(200deg, var(--wing-card-bg1), var(--wing-card-bg2)), url("/images/WingsOfCSS/cp.jpg") no-repeat center center / cover;
+}
+
+.wing_card:nth-child(5) {
+    background: linear-gradient(200deg, var(--wing-card-bg1), var(--wing-card-bg2)), url("/images/WingsOfCSS/ai.jpg") no-repeat center center / cover;
+}
+
+.wing_card:nth-child(6) {
+    background: linear-gradient(200deg, var(--wing-card-bg1), var(--wing-card-bg2)), url("/images/WingsOfCSS/pr.jpg") no-repeat center center / cover;
+}
+
+.wing_card:nth-child(7) {
+    background: linear-gradient(200deg, var(--wing-card-bg1), var(--wing-card-bg2)), url("/images/WingsOfCSS/design.jpg") no-repeat center center / cover;
+}
+
+.wing_card:nth-child(8) {
+    background: linear-gradient(200deg, var(--wing-card-bg1), var(--wing-card-bg2)), url("/images/WingsOfCSS/lit.jpg") no-repeat center center / cover;
+}
