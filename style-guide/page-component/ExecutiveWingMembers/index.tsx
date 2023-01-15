@@ -28,7 +28,6 @@ interface MemberProps {
 }
 
 const ExecutiveWing = ({ members, coHeads }: MemberProps) => {
-  coHeads.forEach((el) => console.log(el.name));
   return (
     <div className={Styles.gridContainer}>
       <h1 className={Styles.wingTag}>

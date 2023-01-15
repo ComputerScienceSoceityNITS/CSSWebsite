@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 import SocietyHeads from "../SocietyHeads";
 import DevWing from "../DevWingMembers";
 import CPWing from "../CPWingMembers";
@@ -144,32 +144,28 @@ const index = ({
   const prCoHeads = members.filter((head) => {
     return head.role === "PR-Wing Head";
   });
-  console.log(executiveWing);
   return (
     <>
       <section className={Styles.memsection}>
         <div className={Styles.tabPanel} id={Styles.tabPanel}>
           <div className={Styles.wrapper}>
             <h1 className={Styles.memberTag}>Members 22-23</h1>
-            <Fade bottom>
-              <SocietyHeads members={members} />
-              <DevWing members={devWing} coHeads={devCoHeads} />
-              <div className={Styles.gap}></div>
-              <CPWing members={cpWing} coHeads={cpCoHeads} />
-              <div className={Styles.gap}></div>
-              <ExeWing members={executiveWing} coHeads={seniorExe} />
-              <div className={Styles.gap}></div>
-              <PRWing members={prWing} coHeads={prCoHeads} />
-              <div className={Styles.gap}></div>
-              <MLWing members={mlWing} coHeads={mlCoHeads} />
-              <div className={Styles.gap}></div>
-              <DesignWing members={designWing} coHeads={designCoHeads} />
-              <div className={Styles.gap}></div>
-              <LiteraryWing
-                members={literaryWing}
-                coHeads={literatureCoHeads}
-              />
-            </Fade>
+            {/* <Fade bottom> */}
+            <SocietyHeads members={members} />
+            <DevWing members={devWing} coHeads={devCoHeads} />
+            <div className={Styles.gap}></div>
+            <CPWing members={cpWing} coHeads={cpCoHeads} />
+            <div className={Styles.gap}></div>
+            <ExeWing members={executiveWing} coHeads={seniorExe} />
+            <div className={Styles.gap}></div>
+            <PRWing members={prWing} coHeads={prCoHeads} />
+            <div className={Styles.gap}></div>
+            <MLWing members={mlWing} coHeads={mlCoHeads} />
+            <div className={Styles.gap}></div>
+            <DesignWing members={designWing} coHeads={designCoHeads} />
+            <div className={Styles.gap}></div>
+            <LiteraryWing members={literaryWing} coHeads={literatureCoHeads} />
+            {/* </Fade> */}
           </div>
         </div>
       </section>

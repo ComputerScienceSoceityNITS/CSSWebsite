@@ -11,6 +11,7 @@
   width: 3.9rem;
   text-align: center;
   border-radius: 50%;
+  border: 2px solid var(--Grey-light-3);
   position: fixed;
   top: 2.7rem;
   right: 2.7rem;
