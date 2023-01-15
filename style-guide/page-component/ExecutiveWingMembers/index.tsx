@@ -28,7 +28,7 @@ interface MemberProps {
 }
 
 const ExecutiveWing = ({ members, coHeads }: MemberProps) => {
-  // console.log(members);
+  coHeads.forEach((el) => console.log(el.name));
   return (
     <div className={Styles.gridContainer}>
       <h1 className={Styles.wingTag}>
@@ -49,11 +49,23 @@ const ExecutiveWing = ({ members, coHeads }: MemberProps) => {
         {coHeads.length >= 2 ? <MemberCard2 props={coHeads[1]} /> : null}
 
         {members.map((member, index) => {
-          return index >= 5 && members.length >= 6 ? (
+          return index >= 5 && index < 8 ? (
             <MemberCard2 props={member} key={index} />
           ) : null;
         })}
         {coHeads.length >= 3 ? <MemberCard2 props={coHeads[2]} /> : null}
+        {members.map((member, index) => {
+          return index >= 8 && index < 11 ? (
+            <MemberCard2 props={member} key={index} />
+          ) : null;
+        })}
+        {coHeads.length >= 4 ? <MemberCard2 props={coHeads[3]} /> : null}
+        {members.map((member, index) => {
+          return index >= 11 && index < 14 ? (
+            <MemberCard2 props={member} key={index} />
+          ) : null;
+        })}
+        {coHeads.length >= 5 ? <MemberCard2 props={coHeads[4]} /> : null}
       </div>
     </div>
   );

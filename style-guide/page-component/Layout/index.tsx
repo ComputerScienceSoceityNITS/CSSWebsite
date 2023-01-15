@@ -14,7 +14,6 @@ interface LayoutProps {
 
 const Layout = ({ children }: LayoutProps) => {
   const [Report, setReport] = useState(false);
-  console.log(children);
   const [load, setLoad] = useState(true);
   useEffect(() => {
     loadercall();

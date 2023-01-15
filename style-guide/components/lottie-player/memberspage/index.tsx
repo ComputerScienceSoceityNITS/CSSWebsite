@@ -1,20 +1,20 @@
-import React, { useRef } from "react";
-import Styles from "./memberspage.module.css";
+import React from "react";
+import Lottie from "react-lottie";
+import animationData from "./workingMan.json";
 
-export default function Rainman() {
-  const ref = useRef(null);
-  React.useEffect(() => {
-    import("@lottiefiles/lottie-player");
-  });
+export default function WorkingMan() {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
-    <lottie-player
-      ref={ref}
-      src="https://assets8.lottiefiles.com/datafiles/6WfDdm3ooQTEs1L/data.json"
-      background="transparent"
-      speed="1"
-      id={Styles.lottie}
-      loop
-      autoplay
-    ></lottie-player>
+    <div>
+      <Lottie options={defaultOptions} />
+    </div>
   );
 }
