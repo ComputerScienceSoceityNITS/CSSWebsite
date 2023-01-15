@@ -1,12 +1,13 @@
 .maincontainer {
   display: flex;
   align-items: center;
-  width: 100%;
-
+  max-width: 1500px;
   margin: auto;
 }
 
 .yearcontainer {
+  max-width: 1500px;
+  margin: auto;
   display: flex;
   margin: 40px;
   justify-content: flex-start;
