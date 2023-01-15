@@ -87,7 +87,7 @@ export default function DeveloperCardNew({ props }) {
       </div>
       <div className={Styles.newcardfooter}>
         <div className={Styles.footercont}>{props.name}</div>
-        <div className={Styles.footercont}>{props.role} </div>
+        <div className={Styles.footercont}>{props.role} Member</div>
       </div>
     </div>
   );

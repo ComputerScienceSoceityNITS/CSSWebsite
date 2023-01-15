@@ -59,12 +59,13 @@
   --about-shadow: #282828;
   --about-shadow-color: #282828;
   --devcard-socials: rgba(0, 0, 0, 0.5);
+  --carousel-shadow: #666666;
 }
 
 .light {
   /* light theme variables */
   --text-primary: var(--bgTextColor);
-  --memsection-bg: var(--Grey-light-3);
+  --memsection-bg: var(--Grey-light-2);
   --memberTag-fill-color: var(--theme-primary);
   --wingTag-bg: linear-gradient(
     -125deg,
@@ -88,10 +89,15 @@
   --abacus-border: var(--bgTextColor);
   --reportbox-bg: rgb(0, 0, 0);
   --temp-color: var(--white);
-  --hero-section-bg: var(--Grey-light-3);
+  --hero-section-bg: linear-gradient(
+    200deg,
+    hsl(340, 95%, 80%) 0%,
+    hsl(340, 85%, 89%) 45%,
+    hsl(0, 8%, 95%) 80%
+  );
   --hero-section-text: var(--Grey-dark-1);
   --hero-section-bg-text: rgb(205, 204, 204);
-  --network-lottie-invert-amount: 0.2;
+  --network-lottie-invert-amount: 1;
   --about-section-bg: var(--Grey-light-3);
   --about-section-text: var(--Grey-dark-1);
   --css-logo-invert-amount: 1;
@@ -119,4 +125,5 @@
   --about-shadow: var(--Grey-light-4);
   --about-shadow-color: var(--Grey-light-4);
   --devcard-socials: rgb(255, 255, 255, 0.25);
+  --carousel-shadow: rgb(202, 78, 89);
 }

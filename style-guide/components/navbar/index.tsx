@@ -82,7 +82,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={Styles.navigation__item}>
-            <Link href="/members/21-22" passHref={false}>
+            <Link href="/members/22-23" passHref={false}>
               <a
                 className={Styles.navigation__link}
                 onClick={() => setToggle(!toggle)}
@@ -92,7 +92,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={Styles.navigation__item}>
-            <Link href="/developers/21-22" passHref={false}>
+            <Link href="/developers/22-23" passHref={false}>
               <a
                 className={Styles.navigation__link}
                 onClick={() => setToggle(!toggle)}
