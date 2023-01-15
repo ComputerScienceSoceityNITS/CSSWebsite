@@ -101,7 +101,7 @@ const Navbar = () => {
               </a>
             </Link>
           </li>
-          <li className={Styles.navigation__item}>
+          {/* <li className={Styles.navigation__item}>
             <Link href="/report" passHref={false}>
               <a
                 className={Styles.navigation__link}
@@ -110,7 +110,7 @@ const Navbar = () => {
                 Report
               </a>
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>

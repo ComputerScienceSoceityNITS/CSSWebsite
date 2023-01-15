@@ -6,12 +6,15 @@ import Navbar from "../../components/navbar";
 import GoTop from "../../components/go-top";
 import ToggleTheme from "../../components/toggle-theme";
 import Head from "next/head";
+import ReportButton from "../../components/report/ReportButton";
 
 interface LayoutProps {
   children: any;
 }
 
+
 const Layout = ({ children }: LayoutProps) => {
+  const [Report, setReport] = useState(false)
   console.log(children);
   const [load, setLoad] = useState(true);
   useEffect(() => {
@@ -34,9 +37,10 @@ const Layout = ({ children }: LayoutProps) => {
           <GoTop />
           <ToggleTheme>{children[0].props}</ToggleTheme>
           <Curosr />
+          <ReportButton Report={Report} setReport={setReport}/>
           <Navbar />
           {children}
-          <Footer />
+          <Footer Report={Report} setReport={setReport}/>
         </>
       )}
     </>
