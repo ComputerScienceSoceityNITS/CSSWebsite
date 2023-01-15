@@ -15,6 +15,11 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "style-guide/page-component/TechnoEvents/TechnoMap.jsx"
+  ],
   "exclude": ["node_modules"]
 }

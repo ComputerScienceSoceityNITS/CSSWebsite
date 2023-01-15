@@ -1,310 +1,87 @@
 import React from "react";
-// import EventsCardMain from "../../components/events-card-main";
 import Styles from "./technoEvents.module.css";
+import TechnoMap from "./TechnoMap";
 import WorkingMan from "../../components/lottie-player/working-man";
-import Pictionary from "../../components/lottie-player/pictionary";
-import EventBg from "../../components/lottie-player/event-bg";
-
 const TechnoEvents = () => {
+  const cars = [
+    {
+      name: "SPEAKER SESSIONS",
+      cont1:
+        "The Computer Science Society organizes numerous speaker sessions throughout the course of the year featuring techies from across the country.",
+      cont2:
+        "Having proved their mettle in varied advancing domains in the realm of computational sciences, the words of guidance from the speakers target to ignite within the students a sense of zeal and initiative as they strive forward in their respective fields. The PR wing of the CSS organizes these sessions.",
+      img: "/./images/events/Speaker-session.jpeg",
+    },
+    {
+      name: "ENIGMA",
+      cont1:
+        "Enigma is a weekly coding contest organized by the CP wing aimed to make the students comfortable with the level and format of such questions and to provide them with a competitive edge in their endeavors.",
+      cont2:
+        "Having established a trail of success stories with NIT Silchar CSE students and alumni being placed in top companies around the globe, the CSS of NIT Silchar understands the importance of competitive programming and its role in cracking international hackathons and MNCs.",
+      img: "/./images/events/Enigma.png",
+    },
+    {
+      name: "C CLASSES",
+      cont1:
+        " Every year CSS organizes introductory to advanced-level classes in C programming for freshers which are taken by the CSE sophomores themselves.",
+      cont2:
+        " The aim of the programme is to provide the students with a mentor who has followed the same path as themselves and can acknowledge and resolve the problems faced by the freshers as they gear up to pursue their careers in tech.",
+      img: "/./images/events/C-classes.png",
+    },
+
+    {
+      name: "DEVELOPMENT WORKSHOPS",
+      cont1:
+        " CSS organizes numerous development workshops throughout the course of the year which are conducted by the DEV Wing. The objective is to help the students navigate through the challenging and mind-numbing concepts",
+      cont2:
+        "of fields like app dev, web dev, web3, etc.and to provide them with a competitive edge in the corporate world.",
+      img: "/./images/events/C-classes.png",
+    },
+    {
+      name: "ABACUS",
+      cont1:
+        "Abacus is a one-week-long event organized by the CSS. The event garners participation from all CSE batches in the institute and comprises a plethora of exciting events like CSS wars, CSS hacks and many more.",
+      cont2:
+        " The event aims to provide a stress free week of fun for students to interact with each other, compete with their mates and win exciting prizes.",
+      img: "/./images/events/Abacus-tech.jpeg",
+    },
+    {
+      name: "ML SESSIONS",
+      cont1:
+        "Machine Learning is one of the fastest-growing domains in computer science with several applications in data analytics and leverage that to improve the extent and quality of performance in fields like A.I. ",
+      cont2:
+        "The ML wing of CSS organizes ML sessions on a regular basis to mentor students and help them advance in the field and pursue a career in it",
+      img: "/./images/events/ML-session.jpg",
+    },
+
+    {
+      name: "CSS HACKS",
+      cont1:
+        "Conducted under the banner of Abacus by the dev wing, CSS Hacks as the name suggests is an annual hackathon. The hackathon caters to the participants with a series of intriguing and complicated problems",
+      cont2: "as they compete with their peers for exciting prizes.",
+      img: "/./images/events/CSS-hack.png",
+    },
+
+    {
+      name: "CSS WARS",
+      cont1:
+        "Web design is one of the most sought out fields in computer science. CSS wars is conducted under the banner of Abacus by the Dev wing and is an annual web development competition aimed at testing the prowess of the participants",
+      cont2: " in HTML, CSS and Javascript.",
+      img: "/./images/events/CSS-war.jpeg",
+    },
+  ];
   return (
-    <section className={Styles.techno}>
-      <div className={Styles.techno_bg_1}>
-        <EventBg />
-      </div>
-      <div className={Styles.techno_bg_2}>
-        <EventBg />
-      </div>
-      <div className={Styles.techno_bg_3}>
-        <EventBg />
-      </div>
-      <div className={Styles.lottie_1}>
-        <WorkingMan />
-      </div>
-      <div className={Styles.lottie_2}>
-        <Pictionary />
-      </div>
-      <div className={Styles.abacusHead}>
-        <p className={Styles.title}>ABACUS</p>
-        <p>
-          The annual CSE week filled with enthralling technical and literary
-          competitions for everyone to showcase their versatile skills ranging
-          from coding, quizzes, essay writing, technical writing and poems.
-        </p>
-      </div>
+    <>
+      <section className={Styles.techno}>
+        {cars.map((event) => (
+          <TechnoMap events={event} key={null} />
+        ))}
 
-      <div className={`${Styles.card_1} ${Styles.card_blur}`}>
-        <div
-          className={`${Styles.d_card_1} ${Styles.d_card_blur} ${Styles.mobile_hide}`}
-        >
-          <div className={Styles.h_before}>
-            <div
-              className={Styles.img_1_c}
-              style={{ height: "34vw", width: "44vw", marginTop: "-7vw" }}
-            >
-              <img src="./images/events/Abacus-tech.png" alt="Image" />
-            </div>
-            <p className={Styles.d_title}>
-              <span>ABACUS</span>
-              <br />
-              <span>TECH</span>
-            </p>
-          </div>
-          <div className={Styles.h_after}>
-            <div className={Styles.d_content}>
-              <ul>
-                <li>
-                  <span>Algochemy</span>coding contest for freshers
-                </li>
-                <li>
-                  <span>CSS Wars</span>Web Design Competition
-                </li>
-                <li>
-                  <span>Tech-review</span>Technical article writing competitions
-                </li>
-                <li>
-                  <span>Web Spyder</span>Online Treasure Hunt
-                </li>
-                <li>
-                  <span>Statsmania</span>a mathematical quiz for those with
-                  endless love for maths
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className={Styles.desktop_hide}>
-          <p className={Styles.title}>
-            <span>ABACUS</span>
-            <span>TECH</span>
-          </p>
-          <div className={Styles.ul_c}>
-            <ul>
-              <li>
-                <span>Algochemy</span>coding contest for freshers
-              </li>
-              <li>
-                <span>CSS Wars</span>Web Design Competition
-              </li>
-              <li>
-                <span>Tech-review</span>Technical article writing competitions
-              </li>
-              <li>
-                <span>Web Spyder</span>Online Tresure Hunt
-              </li>
-              <li>
-                <span>Statsmania</span>a mathematical quiz for those with
-                endless love for maths
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      {/* <div className="lottie-2">
-          <lottie-player
-            id="pictionary"
-            src="images/events/pictionary.json"
-            speed="1"
-            loop
-            autoplay
-          ></lottie-player>
-        </div> */}
-
-      <div className={`${Styles.card_2} ${Styles.card_blur}`}>
-        <div
-          className={`${Styles.d_card_2} ${Styles.d_card_blur} ${Styles.mobile_hide}`}
-        >
-          <div className={Styles.h_before}>
-            <div
-              className={Styles.img_1_c}
-              style={{ height: "34vw", width: "44vw", marginTop: "-7vw" }}
-            >
-              <img src="./images/events/Abacus-lit.png" alt="Image" />
-            </div>
-            <p className={Styles.d_title}>
-              <span>ABACUS</span>
-              <br />
-              <span>LIT</span>
-            </p>
-          </div>
-          <div className={Styles.h_after}>
-            <div className={Styles.d_content}>
-              <ul>
-                <li>
-                  <span>Ficticious Cipher</span>
-                </li>
-                <li>
-                  <span>IPL Auction</span>
-                </li>
-                <li>
-                  <span>Rudimental Genesis</span>
-                </li>
-                <li>
-                  <span>Polaroid</span>
-                </li>
-                <li>
-                  <span>Holmes Alone</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className={Styles.desktop_hide}>
-          <p className={Styles.title}>
-            <span>ABACUS</span>
-            <span>LIT</span>
-          </p>
-          <div className={Styles.ul_c}>
-            <ul>
-              <li>
-                <span>Ficticious Cipher</span>
-              </li>
-              <li>
-                <span>IPL Auction</span>
-              </li>
-              <li>
-                <span>Rudimental Genesis</span>
-              </li>
-              <li>
-                <span>Polaroid</span>
-              </li>
-              <li>
-                <span>Holmes Alone</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div className={`${Styles.hacks} ${Styles.card_blur}`}>
-        <div
-          className={`${Styles.d_hacks} ${Styles.d_card_blur} ${Styles.mobile_hide}`}
-        >
-          <div className={Styles.h_before}>
-            <div
-              className={Styles.img_1_c}
-              style={{ height: "16vw", width: "21vw" }}
-            >
-              <img src="./images/events/CSS-hack.png" alt="Image" />
-            </div>
-            <p className={Styles.d_title}>CSS HACKS</p>
-          </div>
-          <div className={Styles.h_after}>
-            <div className={Styles.d_content}>
-              <p>
-                An amazing hackathon for developers
-                <span className={Styles.mobile_hide}>and dev enthusiasts</span>
-                solving problems given by the judges. This is the one big
-                opportunity for all the hackathon lovers to check their
-                innovative
-                <span className={Styles.mobile_hide}> and presentation </span>
-                skills.
-                <span className={Styles.mobile_hide}>
-                  This provides the participants a upperhand experience for all
-                  the hackathon they will be participating in.
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className={Styles.desktop_hide}>
-          <p className={Styles.title}>CSS HACKS</p>
-          <p>
-            An amazing hackathon for developers
-            <span className={Styles.mobile_hide}> and dev enthusiasts </span>
-            solving problems given by the judges. This is the one big
-            opportunity for all the hackathon lovers to check their innovative
-            <span className={Styles.mobile_hide}> and presentation </span>
-            skills.
-            <span className={Styles.mobile_hide}>
-              This provides the participants a upperhand experience for all the
-              hackathon they will be participating in.
-            </span>
-          </p>
-        </div>
-      </div>
-
-      <div className={`${Styles.enigma} ${Styles.card_blur}`}>
-        <div
-          className={`${Styles.d_enigma} ${Styles.d_card_blur} ${Styles.mobile_hide}`}
-        >
-          <div className={Styles.h_before}>
-            <div className={Styles.img_1_c}>
-              <img src="./images/events/Enigma.png" alt="Image" />
-            </div>
-            <p className={Styles.d_title}>ENIGMA</p>
-          </div>
-          <div className={Styles.h_after}>
-            <div className={Styles.d_content}>
-              <p>
-                Computer Science Society organizes coding contests for first
-                year students. This contest being open to all enhances a good
-                competitive environment for the students.
-                <span className={Styles.mobile_hide}>
-                  The questions are made such that even students will little or
-                  basic Knowledge of programming can surely attempt the
-                  questions. Learning programming is now an essential skill for
-                  various placement interviews and our society encourages more
-                  and more participation in such activities
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className={Styles.desktop_hide}>
-          <p className={Styles.title}>ENIGMA</p>
-          <p>
-            Computer Science Society organizes coding contests for first year
-            students. This contest being open to all enhances a good competitive
-            environment for the students.
-            <span className={Styles.mobile_hide}>
-              The questions are made such that even students will little or
-              basic Knowledge of programming can surely attempt the questions.
-              Learning programming is now an essential skill for various
-              placement interviews and our society encourages more and more
-              participation in such activities
-            </span>
-          </p>
-        </div>
-      </div>
-
-      <div className={`${Styles.c_classes} ${Styles.card_blur}`}>
-        <div
-          className={`${Styles.c_classes} ${Styles.d_card_blur} ${Styles.mobile_hide}`}
-        >
-          <div className={Styles.h_before}>
-            <div className={Styles.img_1_c}>
-              <img src="./images/events/C-classes.png" alt="Image" />
-            </div>
-            <p className={Styles.d_title}>C CLASSES</p>
-          </div>
-          <div className={Styles.h_after}>
-            <div className={Styles.d_content}>
-              <p>
-                Basics of programming and C language is taught by the computer
-                science students of second year in order to enlighten the first
-                year students about the resources to study
-                <span className={Styles.mobile_hide}>
-                  tips and tricks to move ahead in terms of fundamentals and
-                  knowledge about Computer Science.
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className={Styles.desktop_hide}>
-          <p className={Styles.title}>C CLASSES</p>
-          <p>
-            Basics of programming and C language is taught by the computer
-            science students of second year in order to enlighten the first year
-            students about the resources to study
-            <span className={Styles.mobile_hide}>
-              tips and tricks to move ahead in terms of fundamentals and
-              knowledge about Computer Science.
-            </span>
-          </p>
-        </div>
-      </div>
-    </section>
+        <span className={Styles.mobile_hide}>
+          <WorkingMan />
+        </span>
+      </section>
+    </>
   );
 };
 
