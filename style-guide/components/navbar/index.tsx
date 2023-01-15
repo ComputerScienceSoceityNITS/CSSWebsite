@@ -111,6 +111,16 @@ const Navbar = () => {
               </a>
             </Link>
           </li>
+          {/* <li className={Styles.navigation__item}>
+            <Link href="/report" passHref={false}>
+              <a
+                className={Styles.navigation__link}
+                onClick={() => setToggle(!toggle)}
+              >
+                Report
+              </a>
+            </Link>
+          </li> */}
         </ul>
       </nav>
     </div>
