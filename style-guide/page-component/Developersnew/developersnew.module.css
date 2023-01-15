@@ -7,7 +7,7 @@
   width: 95%;
   margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 50px;
   flex-wrap: wrap;
   text-shadow: 0.5px 0.5px 1px whitesmoke;

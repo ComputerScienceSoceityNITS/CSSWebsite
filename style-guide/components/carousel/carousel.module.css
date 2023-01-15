@@ -8,103 +8,150 @@
   position: relative;
   z-index: 10;
   background-color: var(--upcomingEvents-section-bg);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.leftarrow {
-  position: absolute;
-  left: 10%;
-  font-size: 46px;
-  z-index: 11;
-  top: 275px;
-  cursor: pointer;
-  font-weight: 900;
-  transform: translateY(-50%);
-  color: whitesmoke;
-}
-
-.rightarrow {
-  position: absolute;
-  right: 10%;
-  font-size: 46px;
-  z-index: 11;
-  color: whitesmoke;
-  top: 275px;
-  cursor: pointer;
-  font-weight: 900;
-  transform: translateY(-50%);
-}
-
-.dots {
-  color: red;
-  position: absolute;
+.carousel {
+  width: 60%;
+  height: 70%;
+  position: relative;
   display: flex;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 58px;
-  justify-content: space-around;
-  min-width: 50%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  border: 2px solid var(--memsection-bg);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 45px 2px var(--carousel-shadow);
+  -moz-box-shadow: 0 0 45px 2px var(--carousel-shadow);
+  box-shadow: 0 0 45px 2px var(--carousel-shadow);
 }
 
-.dot {
-  height: 20px;
-  width: 20px;
-  background-image: linear-gradient(#f7095b, #be4c9b);
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-  border: 3px solid var(--footer-bg);
+.videocont {
+  min-width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
-.dotu {
-  height: 20px;
-  width: 20px;
-  background-color: white;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-  border: 3px solid var(--footer-bg);
-}
+
 .iframe {
-  width: 85%;
-  height: 85%;
-  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.buttons {
+  display: flex;
   position: absolute;
-  top: 0;
+  bottom: 10px;
+  justify-content: center;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.sliderValue {
+  position: absolute;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  width: 100%;
+}
+
+.value {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(255, 0, 119);
+  color: white;
+  font-weight: 900;
+  top: -38px;
+  z-index: 2;
   left: 50%;
   transform: translateX(-50%);
-  border: 10px solid var(--footer-bg);
-  border-radius: 25px;
-  margin-top: 30px;
+  margin: auto;
+  text-align: center;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  line-height: 32px;
 }
 
-@media (max-width: 600px) {
-  .iframe {
-    width: 95%;
-  }
-  .leftarrow,
-  .rightarrow {
-    top: 290px;
-  }
+.value::after {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  background-color: rgb(255, 0, 119);
+  color: white;
+  font-weight: 300;
+  top: 0px;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  border: 1.5px solid white;
+  margin: auto;
+  text-align: center;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+
+  z-index: -1;
 }
 
+.range {
+  width: 80%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.rangeinput {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 162, 204),
+    rgb(230, 85, 150),
+    rgb(232, 71, 144),
+    rgb(234, 48, 135),
+    rgb(236, 50, 136),
+    rgb(241, 49, 139)
+  );
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.rangeinput::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 119);
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .carousel {
+    width: 70%;
+    height: 70%;
+  }
+}
+@media (max-width: 700px) {
+  .carousel {
+    width: 80%;
+    height: 70%;
+  }
+}
 @media (max-width: 500px) {
-  .iframe {
-    height: 80%;
-    margin-top: 60px;
-    border: 7px solid var(--footer-bg);
-    border-radius: 25px;
-  }
-  .leftarrow,
-  .rightarrow {
-    top: 300px;
-  }
-}
-
-@media (max-width: 320px) {
-  .iframe {
-    width: 98%;
-  }
-  .container {
-    border: 7px solid transparent;
+  .carousel {
+    width: 90%;
+    height: 50%;
   }
 }

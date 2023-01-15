@@ -155,13 +155,13 @@ const index = ({
               <DevWing members={devWing} coHeads={devCoHeads} />
               <CPWing members={cpWing} coHeads={cpCoHeads} />
               <ExeWing members={executiveWing} coHeads={seniorExe} />
+              <PRWing members={prWing} coHeads={prCoHeads} />
               <MLWing members={mlWing} coHeads={mlCoHeads} />
               <DesignWing members={designWing} coHeads={designCoHeads} />
               <LiteraryWing
                 members={literaryWing}
                 coHeads={literatureCoHeads}
               />
-              <PRWing members={prWing} coHeads={prCoHeads} />
             </Fade>
           </div>
         </div>

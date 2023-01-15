@@ -1,10 +1,8 @@
-import React from 'react';
+import React from "react";
 import WingsOfCSS from "../style-guide/page-component/WingsOfCSS";
 
 const wings = () => {
-  return (
-    <WingsOfCSS/>
-  )
-}
+  return <WingsOfCSS />;
+};
 
 export default wings;
