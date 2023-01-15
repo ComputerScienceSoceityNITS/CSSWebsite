@@ -6,9 +6,8 @@ import Lottie from "../lottie-player/footgroup";
 import BugReport from "../report/Report";
 // import GooglePlay from "../../../public/images/Homepage/Google_Play.png";
 
-const Footer = (props: { Report: any; setReport: any; }) => {
-
-  const {Report, setReport} = props;
+const Footer = (props: { Report: any; setReport: any }) => {
+  const { Report, setReport } = props;
 
   return (
     <div className={Styles.footer}>
@@ -108,17 +107,24 @@ const Footer = (props: { Report: any; setReport: any; }) => {
         </div>
       </div>
       <div className={Styles.report}>
-          <div
-            style={{
-              fontWeight: "600",
-              marginTop: "0.2rem",
-              cursor: "pointer",
+        <div
+          style={{
+            fontWeight: "600",
+            marginTop: "0.2rem",
+            cursor: "pointer",
+          }}
+        >
+          <img src="./images/rocket.png" alt="report" />
+          <span
+            className={Styles.reporttext}
+            onClick={() => {
+              Report ? setReport(false) : setReport(true);
             }}
           >
-            <img src="./images/rocket.png" alt="report" />
-            <span className={Styles.reporttext} onClick={()=>{Report?setReport(false):setReport(true)}} >Report to CSS</span>
-            {Report?<BugReport Report={Report} setReport={setReport} />:''}
-          </div>
+            Report to CSS
+          </span>
+          {Report ? <BugReport Report={Report} setReport={setReport} /> : ""}
+        </div>
       </div>
 
       <div className={Styles.ftnc}>

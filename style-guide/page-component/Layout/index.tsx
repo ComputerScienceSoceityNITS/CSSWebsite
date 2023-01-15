@@ -12,9 +12,8 @@ interface LayoutProps {
   children: any;
 }
 
-
 const Layout = ({ children }: LayoutProps) => {
-  const [Report, setReport] = useState(false)
+  const [Report, setReport] = useState(false);
   console.log(children);
   const [load, setLoad] = useState(true);
   useEffect(() => {
@@ -37,10 +36,10 @@ const Layout = ({ children }: LayoutProps) => {
           <GoTop />
           <ToggleTheme>{children[0].props}</ToggleTheme>
           <Curosr />
-          <ReportButton Report={Report} setReport={setReport}/>
+          <ReportButton Report={Report} setReport={setReport} />
           <Navbar />
           {children}
-          <Footer Report={Report} setReport={setReport}/>
+          <Footer Report={Report} setReport={setReport} />
         </>
       )}
     </>
