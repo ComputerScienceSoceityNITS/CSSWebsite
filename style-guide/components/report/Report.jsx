@@ -4,8 +4,11 @@ import Report from "../lottie-player/report";
 import Sent from "../lottie-player/sent";
 import emailjs from "emailjs-com";
 import ReactTyped from "react-typed";
-const BugReport = () => {
+
+const BugReport = (props) => {
   const [status, setStatus] = useState(false);
+  const {setReport} = props
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -26,8 +29,14 @@ const BugReport = () => {
     e.target.reset();
     setStatus(true);
   };
+
   return (
-    <div className={Styles.mainreportdiv}>
+    <>
+    <div className={Styles.backDrop}></div>
+    {/* <div className={Styles.reportEnclosure} id='repEnc' style={document.getElementById('repEnc').offsetHeight()<=window.offsetHeight()?{}:''}> */}
+    <div className={Styles.reportEnclosure} id='repEnc'>
+    <div className={Styles.mainreportdiv} id="reportDiv">
+      <img src="/images/Close.svg" alt="" className={Styles.closeBtn} onClick={()=>{setReport(false)}} />
       <div className={Styles.header}>
         <ReactTyped
           className="typed-text"
@@ -35,7 +44,7 @@ const BugReport = () => {
           typeSpeed={40}
           backSpeed={40}
           loop
-        />
+          />
       </div>
       <div className={Styles.report_lottie}>
         <Report />
@@ -50,7 +59,7 @@ const BugReport = () => {
                 className={Styles.formControl}
                 placeholder="Name(Optional)"
                 name="name"
-              />
+                />
             </div>
             <div className={Styles.entry} onClick={() => setStatus(false)}>
               <input
@@ -59,7 +68,7 @@ const BugReport = () => {
                 placeholder="Email-Address"
                 name="email"
                 required
-              />
+                />
             </div>
             <div className={Styles.entry} onClick={() => setStatus(false)}>
               <input
@@ -68,7 +77,7 @@ const BugReport = () => {
                 placeholder="Subject"
                 name="subject"
                 required
-              />
+                />
             </div>
             <div className={Styles.entry} onClick={() => setStatus(false)}>
               <textarea
@@ -76,7 +85,7 @@ const BugReport = () => {
                 placeholder="Your message"
                 name="message"
                 required
-              />
+                />
             </div>
             <div className={Styles.entry} onClick={() => setStatus(false)}>
               <input
@@ -84,7 +93,7 @@ const BugReport = () => {
                 className={Styles.btn}
                 value="Send Message"
                 style={{ cursor: "pointer" }}
-              />
+                />
             </div>
           </form>
         </div>
@@ -102,6 +111,8 @@ const BugReport = () => {
         those violating these rules.
       </div>
     </div>
+    </div>
+  </>
   );
 };
 

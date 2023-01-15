@@ -17,7 +17,7 @@ export default function WorkingMan() {
       <Lottie
         options={defaultOptions}
         speed={1.5}
-        style={{ height: "50%", width: "300px" }}
+        style={{ height: "50%", width: "230px" }}
       />
     </div>
   );
