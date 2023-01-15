@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/css";
 import { EffectFade, Navigation, Pagination, Scrollbar } from "swiper";
+import Slide from "../lottie-player/slide";
 
 export default function Carousel() {
   const currentIndex = useRef(0);
@@ -69,7 +70,6 @@ export default function Carousel() {
           pagination={{ clickable: true }}
           draggable={true}
           centeredSlides={true}
-          loop={true}
           className={Styles.videocont}
           spaceBetween={5}
         >
@@ -85,6 +85,9 @@ export default function Carousel() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
+                <span className={Styles.slide}>
+                  <Slide />
+                </span>
               </SwiperSlide>
             );
           })}
