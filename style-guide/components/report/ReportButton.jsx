@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import BugReport from './Report'
+import React, { useEffect, useState } from "react";
+import BugReport from "./Report";
 import Styles from "./styles.module.css";
 
 const ReportButton = (props) => {
@@ -11,7 +11,7 @@ const ReportButton = (props) => {
         </div>
       {Report?<BugReport Report={Report} setReport={setReport} />:''}
     </div>
-  )
-}
+  );
+};
 
-export default ReportButton
+export default ReportButton;

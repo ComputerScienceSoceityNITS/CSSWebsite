@@ -1,5 +1,9 @@
 import Styles from "./carousel.module.css";
 import { useState, useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.min.css";
+import "swiper/css";
+import { EffectFade, Navigation, Pagination, Scrollbar } from "swiper";
 
 export default function Carousel() {
   const currentIndex = useRef(0);
@@ -20,35 +24,28 @@ export default function Carousel() {
     "https://www.youtube.com/embed/X0sRdWLiPDg",
   ];
 
-  const handleRange = (e) => {
-    setTargetIndex(() => e.target.value);
+  const handleRange = async (e) => {
+    setTargetIndex(e.target.value);
+
     let width = ref.current.clientWidth;
 
     if (e.target.value - currentIndex.current > 0) {
       const num = e.target.value - currentIndex.current;
-      console.log(ref);
-      ref.current.scrollLeft = ref.current.scrollLeft + width * num;
+      //  console.log(ref);
+      ref.current.scrollLeft = (await ref.current.scrollLeft) + width * num;
 
       currentIndex.current = e.target.value;
     } else if (e.target.value - currentIndex.current < 0) {
       const num = e.target.value - currentIndex.current;
-      ref.current.scrollLeft = ref.current.scrollLeft + width * num;
+      ref.current.scrollLeft = (await ref.current.scrollLeft) + width * num;
       currentIndex.current = e.target.value;
     }
   };
 
   return (
     <div className={Styles.container}>
-      {/* <iframe
-        className={Styles.iframe}
-        src={`${iarray[currentIndex]}`}
-        title="weather website using react js  #website #reactjs  #development"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe> */}
       <div className={Styles.carousel} ref={ref}>
-        {iarray.map((item, index) => {
+        {/*iarray.map((item, index) => {
           return (
             <div className={Styles.videocont}>
               <iframe
@@ -61,11 +58,41 @@ export default function Carousel() {
               ></iframe>
             </div>
           );
-        })}
+        })*/}
+        <Swiper
+          slidesPerView={1.1}
+          freeMode={true}
+          navigation={true}
+          modules={[Navigation, Pagination, Scrollbar, EffectFade]}
+          scrollbar={{ draggable: true }}
+          effect={"flip"}
+          pagination={{ clickable: true }}
+          draggable={true}
+          centeredSlides={true}
+          loop={true}
+          className={Styles.videocont}
+          spaceBetween={5}
+        >
+          {iarray.map((item, index) => {
+            return (
+              <SwiperSlide grabCursor={true} draggable={true} freeMode={true}>
+                {" "}
+                <iframe
+                  className={Styles.iframe}
+                  src={`${iarray[index]}`}
+                  title="weather website using react js  #website #reactjs  #development"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
-      <div className={Styles.buttons}>
-        {/* <span className={Styles.lbutton} onClick={goLeft}>&lt;</span>
-      <span className={Styles.rbutton} onClick={goRight}>&gt;</span> */}
+      {/* <div className={Styles.buttons}>
+         <span className={Styles.lbutton} onClick={goLeft}>&lt;</span>
+      <span className={Styles.rbutton} onClick={goRight}>&gt;</span> 
         <div className={Styles.sliderValue}>
           <span className={Styles.value}>{parseInt(targetIndex) + 1}</span>
         </div>
@@ -83,6 +110,7 @@ export default function Carousel() {
           />
         </div>
       </div>
+    */}
     </div>
   );
 }
