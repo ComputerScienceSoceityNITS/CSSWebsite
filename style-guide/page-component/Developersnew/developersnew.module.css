@@ -15,7 +15,7 @@
 
 .teamhead {
   width: 95%;
-  margin: auto;
+  margin: auto; 
   font-size: 52px;
   color: var(--footer-bg);
   font-family: "Helvetica";
