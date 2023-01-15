@@ -26,152 +26,9 @@
   background-color: var(--event-techno-bg);
 }
 
-.techno_bg_1 {
-  position: absolute;
-  top: -10vh;
-  width: 100%;
-  opacity: 0.8;
-  pointer-events: none;
-}
-
-.techno_bg_2 {
-  position: absolute;
-  top: 95vh;
-  width: 100%;
-  opacity: 0.8;
-  pointer-events: none;
-}
-
-.techno_bg_3 {
-  position: absolute;
-  top: 200vh;
-  width: 100%;
-  opacity: 0.8;
-  pointer-events: none;
-}
-
-.techno .lottie_1 {
-  grid-area: lottie_1;
-}
-
-.techno .lottie_1 {
-  background: transparent;
-  width: 100%;
-  height: 100%;
-}
-
-.techno .abacusHead {
-  -ms-grid-column-span: 2;
-  grid-area: abacus;
-  width: 70%;
-  margin: 0 auto;
-  color: var(--event-style);
-}
-
-.techno .abacusHead .title {
-  font-size: 3.1vw;
-  margin-top: 10vw;
-  padding-bottom: 1.5vw;
-  letter-spacing: 2px;
-  font-weight: 500;
-  font-family: "Lobster", cursive;
-}
-
-.techno .abacusHead .title::first-letter {
-  color: #f80759;
-  font-weight: 700;
-}
-
-.techno .abacusHead p:last-child {
-  padding: 0 3rem;
-  font-size: 1.1vw;
-  line-height: 1.2;
-  letter-spacing: 1px;
-}
-
-.techno .card_1 {
-  grid-area: card_1;
-  background-color: var(--techno-event-card-bg);
-  box-shadow: 1px 2px 5px rgba(40, 40, 40, 0.8);
-}
-
-.techno .lottie_2 {
-  grid-area: lottie_2;
-}
-
-.techno .lottie_2 {
-  background: transparent;
-  margin-top: 30%;
-  width: 100%;
-  height: 90%;
-}
-
-.techno .card_2 {
-  grid-area: card_2;
-  background-color: var(--techno-event-card-bg);
-  box-shadow: var(--event-card-box-shadow);
-}
-
-.techno .hacks {
-  grid-area: hacks;
-  background-color: var(--techno-event-card-bg);
-  box-shadow: var(--event-card-box-shadow);
-}
-
-.techno .enigma {
-  grid-area: enigma;
-  background-color: var(--techno-event-card-bg);
-  box-shadow: var(--event-card-box-shadow);
-}
-
-.techno .c_classes {
-  grid-area: classes;
-  background-color: var(--techno-event-card-bg);
-  box-shadow: var(--event-card-box-shadow);
-}
-
-.techno .card_1 .ul_c,
-.techno .card_2 .ul_c {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 80%;
-  height: 25vw;
-  margin: 0 auto;
-}
-
-.techno .card_1 .ul_c ul,
-.techno .card_2 .ul_c ul {
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.techno .card_1 .ul_c ul li,
-.techno .card_2 .ul_c ul li {
-  text-align: center;
-  list-style: none;
-  margin: 1vw 0;
-  letter-spacing: 1px;
-  font-size: 0.9vw;
-  font-weight: 300;
-  font-family: "Italianno", cursive;
-}
-
-.techno .card_1 .ul_c ul li span,
-.techno .card_2 .ul_c ul li span {
-  display: block;
-  font-size: 1.1vw;
-  font-weight: 500;
-  margin-bottom: 0.4vw;
-  font-family: "Quintessential", cursive;
-}
-
 .card_blur {
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.15);
+  background-color: var(--techno-event-card-bg);
   -webkit-backdrop-filter: blur(40px);
   backdrop-filter: blur(40px);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -179,31 +36,6 @@
   box-shadow: 0 4px 16px 0 rgba(255, 255, 255, 0.18);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-}
-
-.card_blur .title {
-  font-size: 3vw;
-  margin-top: 4vw;
-  margin-bottom: 2vw;
-  letter-spacing: 2px;
-}
-
-.card_blur .title::first-letter {
-  color: #f80759;
-  font-weight: 500;
-}
-
-.card_blur p:nth-child(2) {
-  width: 80%;
-  margin: 0 auto;
-  font-size: 1.1vw;
-  line-height: 1.3;
-  letter-spacing: 1px;
-}
-
-.card_blur:hover {
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px);
 }
 
 .card_blur:hover .h_after {
@@ -224,12 +56,6 @@
   opacity: 0;
 }
 
-.d_card_blur {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
 .h_before {
   display: block;
   position: absolute;
@@ -243,15 +69,15 @@
 
 .h_before .img_1_c {
   position: absolute;
-  width: 23vw;
-  height: 17vw;
+  width: 12vw;
+  height: 12vw;
 }
 
 .h_before .img_1_c img {
-  width: 100%;
-  height: 100%;
   -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  transition: all 0.6s;
+  border-radius: 50%;
+  /* object-fit: contain; */
 }
 
 .h_before .img_1_c {
@@ -292,17 +118,6 @@
   opacity: 0;
 }
 
-.h_after .d_content {
-  position: absolute;
-  width: 90%;
-  height: 90%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  color: var(--event-style);
-}
-
 .h_after .d_content p {
   position: absolute;
   top: 50%;
@@ -313,168 +128,15 @@
   letter-spacing: 1px;
   font-size: 1.1vw;
   line-height: 1.3;
-}
-
-.h_after .d_content ul {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  list-style: none;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-
-.h_after .d_content ul li {
-  margin: 1vw 0;
-  font-size: 1.6vw;
-  font-family: "Italianno", cursive;
-  letter-spacing: 3px;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.h_after .d_content ul li span {
-  display: block;
-  letter-spacing: 1px;
-  font-size: 1.3vw;
-  font-family: "Quintessential", cursive;
-}
-
-.h_after .d_content ul:first-child span {
-  font-size: 1.4vw;
-}
-
-.d_card_1 .d_title,
-.d_card_2 .d_title {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-}
-
-.d_card_1 ul li,
-.d_card_2 ul li {
-  font-size: 1.4vw !important;
-  letter-spacing: 1px;
-  font-weight: 300;
-  background-image: radial-gradient(#fff, #f80759);
-  background-size: 0 2px, auto;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.d_card_1 ul li:hover,
-.d_card_2 ul li:hover {
-  -webkit-transform: translateY(-2px) scale(1.1);
-  transform: translateY(-2px) scale(1.1);
-  background-size: 93% 2px, auto;
-}
-
-.d_card_1 ul li span,
-.d_card_2 ul li span {
-  font-size: 1.3vw;
-  font-weight: 600;
-  margin-bottom: 2px;
-  color: #f80759;
-}
-
-.d-orientation .d_title {
-  position: absolute;
-  top: 68%;
-  left: 50%;
-  font-size: 1.9vw !important;
-}
-
-.d-orientation .d_content p {
-  position: absolute;
-  width: 90%;
-  top: 32%;
-  font-size: 1.1vw;
-}
-
-.d-orientation .d_content ul {
-  position: absolute;
-  bottom: 20%;
-  color: #f80759;
-}
-
-.d-orientation .d_content ul li {
-  font-size: 1.5vw;
-  letter-spacing: 1px;
-  font-weight: 600;
-  background-image: radial-gradient(#fff, #f80759);
-  background-size: 0 2px, auto;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  font-family: "Quintessential", cursive;
-}
-
-.d-orientation .d_content ul li:hover {
-  -webkit-transform: translateY(-2px) scale(1.1);
-  transform: translateY(-2px) scale(1.1);
-  background-size: 93% 2px, auto;
-}
-
-.d-cs-go .d_title {
-  position: absolute;
-  top: 68%;
-  left: 50%;
-}
-
-.d-cs-go .d_content p {
-  position: absolute;
-  width: 90%;
-  top: 32%;
-  font-size: 1.1vw;
-}
-
-.d-cs-go .d_content ul {
-  position: absolute;
-  bottom: 5%;
-  color: #f80759;
-  width: 90%;
-}
-
-.d-cs-go .d_content ul li {
-  font-size: 1.5vw;
-  letter-spacing: 1px;
-  font-weight: 600;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  background-image: radial-gradient(#fff, #f80759);
-  background-size: 0 2px, auto;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  font-family: "Quintessential", cursive;
-}
-
-.d-cs-go .d_content ul li:hover {
-  -webkit-transform: translateY(-2px) scale(1.1);
-  transform: translateY(-2px) scale(1.1);
-  background-size: 93% 2px, auto;
-}
-
-.d-farewell .d_title,
-.d-freshers .d_title {
-  position: absolute;
-  top: 63%;
-  left: 50%;
+  color: var(--event-style);
 }
 
 .d_title {
-  font-family: "Lobster", cursive;
-  letter-spacing: 5px !important;
+  font-weight: 700;
 }
 
 .desktop_hide {
   display: none;
-  /* background-color: var(--techno-event-card-bg); */
 }
 
 @media only screen and (max-width: 700px) {
@@ -633,7 +295,6 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     -webkit-box-shadow: 0 4px 16px 0 rgba(255, 255, 255, 0.18);
     box-shadow: 0 4px 16px 0 rgba(255, 255, 255, 0.18);
-    /* background-color: var(--techno-event-card-bg); */
   }
 
   .card_blur .title {
