@@ -72,6 +72,8 @@
   --wing-black: rgb(255, 255, 255);
   --wing-tooltip-bg: rgba(240, 238, 238, 0.8);
   --carousel-shadow: #666666;
+  --border-event: var(--Grey-dark-5);
+  --reverse-event-techno-bg: rgba(255, 255, 255, 0.15);
 }
 
 .light {
@@ -155,4 +157,6 @@
   --wing-black: rgb(0, 0, 0);
   --wing-tooltip-bg: rgba(248, 7, 87, 0.8);
   --carousel-shadow: rgb(202, 78, 89);
+  --border-event: var(--Grey-dark-5);
+  --reverse-event-techno-bg: var(--wing-white);
 }
