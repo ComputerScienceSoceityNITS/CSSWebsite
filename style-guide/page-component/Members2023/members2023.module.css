@@ -44,3 +44,12 @@
   border: 2px solid #e7e7e7;
   border-radius: 10px;
 }
+.gap {
+  width: 100vw;
+  height: 10vh;
+}
+@media only screen and (max-width: 560px) {
+  .gap {
+    height: 5vh;
+  }
+}

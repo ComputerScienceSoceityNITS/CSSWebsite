@@ -52,6 +52,12 @@
   -ms-flex-item-align: end;
   align-self: flex-end;
 }
+.grid > div:nth-child(6) {
+  -ms-grid-column-align: start;
+  justify-self: start;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
 .grid > div:nth-child(7) {
   -ms-grid-column-align: center;
   justify-self: center;
@@ -73,25 +79,32 @@
   align-self: flex-start;
 }
 .grid > div:nth-child(10) {
-  justify-self: flex-start;
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+  -ms-grid-column-align: start;
+  justify-self: start;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
 }
 .grid > div:nth-child(11) {
   justify-self: flex-end;
   -ms-flex-item-align: start;
   align-self: flex-start;
+  height: 20vw;
+  width: 20vw;
 }
-
 .grid > div:nth-child(12) {
   -ms-grid-column-align: center;
   justify-self: center;
   -ms-flex-item-align: end;
   align-self: flex-end;
 }
-
-.grid > div:nth-child(14) {
+.grid > div:nth-child(15) {
+  justify-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  height: 20vw;
+  width: 20vw;
+}
+.grid > div:nth-child(17) {
   -ms-grid-column-align: center;
   justify-self: center;
   -ms-flex-item-align: start;
@@ -99,44 +112,14 @@
   height: 20vw;
   width: 20vw;
 }
-
-.grid > div:nth-child(13) {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.grid > div:nth-child(15) {
-  justify-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-}
-
-.grid > div:nth-child(16) {
-  -ms-grid-column-align: start;
-  justify-self: start;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-}
-
-.grid > div:nth-child(17) {
-  -ms-grid-column-align: center;
-  justify-self: center;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
-  height: 40vh;
-  width: 40vh;
-}
-
 .grid > div:nth-child(18) {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
   -ms-grid-column-align: center;
   justify-self: center;
+  height: 20vw;
+  width: 20vw;
 }
 
 .grid > div:nth-child(19) {
@@ -172,6 +155,15 @@
     -ms-grid-column-align: center;
     justify-self: center;
   }
+  .gridContainer .grid > div:nth-child(3) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    height: 40vh;
+    width: 40vh;
+  }
   .gridContainer .grid > div:nth-child(7) {
     -ms-grid-column-align: center;
     justify-self: center;
@@ -180,7 +172,16 @@
     height: 40vh;
     width: 40vh;
   }
-  .gridContainer .grid > div:nth-child(3) {
+  .gridContainer .grid > div:nth-child(11) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: 40vh;
+    width: 40vh;
+  }
+  .gridContainer .grid > div:nth-child(15) {
     -ms-flex-item-align: end;
     align-self: flex-end;
     -webkit-box-pack: start;
@@ -198,12 +199,21 @@
     height: 40vh;
     width: 40vh;
   }
-  .gridContainer .grid > div:nth-child(14) {
+  .gridContainer .grid > div:nth-child(18) {
     -ms-flex-item-align: end;
     align-self: flex-end;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: 40vh;
+    width: 40vh;
+  }
+  .gridContainer .grid > div:nth-child(19) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     height: 40vh;
     width: 40vh;
   }
@@ -244,6 +254,14 @@
     height: 40vh;
     width: 40vh;
   }
+  .gridContainer .grid > div:nth-child(11) {
+    -ms-grid-column-align: center;
+    justify-self: center;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    height: 40vh;
+    width: 40vh;
+  }
   .gridContainer .grid > div:nth-child(17) {
     -ms-flex-item-align: end;
     align-self: flex-end;
@@ -253,7 +271,7 @@
     height: 40vh;
     width: 40vh;
   }
-  .gridContainer .grid > div:nth-child(13) {
+  .gridContainer .grid > div:nth-child(15) {
     -ms-flex-item-align: end;
     align-self: flex-end;
     -webkit-box-pack: start;
