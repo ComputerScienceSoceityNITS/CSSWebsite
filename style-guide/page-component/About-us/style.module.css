@@ -1,11 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto&display=swap");
 .about {
   position: relative;
   width: 100vw;
-  /* min-height: 100vh; */
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,57 +11,59 @@
   -ms-flex-direction: row;
   flex-direction: row;
   z-index: 1;
-  background-color: var(--about-section-bg);
+  /* fallback for browsers not supporting radial gradient */
+  background: var(--Grey-light-3);
+  background: var(--about-section-bg);
 }
 
 .about p {
   text-align: start;
 }
 
-.dividers_third {
+.about .dividers {
+  position: relative;
+  width: 50%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: start;
+  padding-left: 2em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.about .dividers:nth-of-type(2) {
+  z-index: 3;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.about .dividers:nth-of-type(3) {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.about .dividers:nth-of-type(4) {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.about .dividers .typed {
   position: absolute;
-  top: 20%;
-  left: 70%;
-}
-
-.dividers_third .aboutcentre {
-  color: var(--about-shadow);
-  font-weight: 700;
-  font-size: 3.5em;
-  line-height: 62px;
-  font-style: normal;
-  letter-spacing: 0.1em;
-  font-family: "Anton", sans-serif;
-}
-
-.dividers_third span:before {
-  content: "";
-  animation: wordChange infinite 8s;
-  color: var(--about-shadow);
-  font-weight: 700;
-  font-size: 2.5em;
-  line-height: 62px;
-  font-style: normal;
-  font-family: "Anton", sans-serif;
-  letter-spacing: 0.1em;
-}
-
-@keyframes wordChange {
-  0% {
-    content: "SPEAKER SESSIONS";
-  }
-
-  33% {
-    content: "WORKSHOPS";
-  }
-
-  66% {
-    content: "TECHNICAL EVENTS";
-  }
-
-  100% {
-    content: "FUN EVENTS";
-  }
+  height: 10rem;
+  width: 100vw;
+  bottom: 0;
+  font-size: 5rem;
+  font-family: "Anton";
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px var(--about-section-typed-text-color);
 }
 
 .about .dividers_second {
@@ -73,30 +72,13 @@
 }
 
 .about .dividers_second .title {
-  font-size: 4em;
-  position: absolute;
-  font-family: Geneva, Verdana, sans-serif;
-  font-style: normal;
-  top: 2em;
-  font-weight: 700;
-  line-height: 85px;
-  color: var(--about-color);
-}
-
-.gradientbg {
-  background: var(--animation-color);
-  border-radius: 61% 39% 62% 38% / 51% 40% 60% 49%;
-  width: 677px;
-  height: 370px;
-  z-index: -1;
-  filter: blur(78px);
-  position: relative;
-  top: 10em;
-  left: -2em;
-}
-
-.about .dividers_second .title p {
-  z-index: 2;
+  font-family: Anton;
+  color: var(--about-section-text);
+  font-weight: 100;
+  font-size: 5em;
+  letter-spacing: 0.1em;
+  width: 5em;
+  margin: 1em 0;
 }
 
 .about .dividers_second .smallTitle {
@@ -104,43 +86,35 @@
 }
 
 .about .dividers_second .subtitle p {
-  line-height: 1.3em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
   letter-spacing: 2px;
-  position: absolute;
-  width: 48vw;
-  font-family: Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.7em;
-  color: var(--about-color);
-  top: 10em;
-  opacity: 1;
-  z-index: -1;
+  font-weight: 300;
+  width: 40vw;
+  color: var(--about-section-text) !important;
+  margin-bottom: 4em;
 }
 
 .about .dividers_second .subtitle .smallSubtitle {
   font-size: 1em;
 }
 
-.about .head_about {
-  color: var(--memsection-bg);
-  font-size: 50px;
-  text-shadow: -1px 1px 0 var(--about-shadow-color),
-    1px 1px 0 var(--about-shadow-color), 1px -1px 0 var(--about-shadow-color),
-    -1px -1px 0 var(--about-shadow-color);
-  position: absolute;
-  bottom: 1em;
-  left: 4em;
-  font-family: "Anton", sans-serif;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 8em;
-  line-height: 166px;
-  letter-spacing: 0.15em;
+.about .dividers #logo {
+  width: 30vw;
+  margin: auto;
+}
+
+.about_svg {
+  position: relative;
+  width: 25em;
+  height: 20em;
 }
 
 @media only screen and (max-width: 1200px) {
   .about {
+    min-height: 10vh;
+    padding: 0 5px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -152,44 +126,33 @@
     -ms-flex-direction: column;
     flex-direction: column;
   }
-
   .about .dividers {
     text-align: center;
     width: 90vw;
+    min-height: 0;
   }
-
+  .about .dividers_second .typed {
+    font-size: 4em;
+    transform: translateY(60%);
+    min-height: 100%;
+    left: -5vw;
+  }
   .about .dividers_second {
+    min-height: 80vh;
     padding: 0;
   }
-
   .about .dividers_second .title {
     font-size: 2em;
     width: 90vw;
   }
-
   .about .dividers_second .subtitle p {
     width: 90vw;
     font-size: 1.3em;
-    top: 10em;
   }
-
   .about .dividers_second .title p,
   .about .dividers_second .subtitle p {
     text-align: center;
   }
-
-  .about .dividers .title p {
-    position: relative;
-    font-size: 1.4em;
-    top: -1.1em;
-  }
-
-  .about .dividers .subtitle p {
-    position: relative;
-    top: -2em;
-    font-size: 1.3em;
-  }
-
   .about .dividers:nth-of-type(2) {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -198,25 +161,7 @@
     -ms-flex-align: center;
     align-items: center;
   }
-
-  .dividers_third {
-    position: relative;
-    top: 0;
-    left: 0;
-    text-align: center;
-  }
-
-  .gradientbg {
-    width: 80vw;
-    left: -3em;
-    height: 300px;
-  }
-
-  .about .head_about {
-    position: relative;
-    font-size: 3em;
-    top: -1em;
-    left: 0;
-    text-align: center !important;
+  .about #logo {
+    display: none;
   }
 }

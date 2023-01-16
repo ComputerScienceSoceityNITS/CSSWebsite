@@ -18,7 +18,7 @@
   text-align: start;
   font-size: 10em;
   z-index: 1;
-  letter-spacing: 10px;
+  letter-spacing: 1px;
   font-family: "Anton", sans-serif;
   color: var(--executive-section-text);
 }
@@ -30,7 +30,7 @@
   text-align: start;
   font-size: 10em;
   z-index: 1;
-  letter-spacing: 10px;
+  letter-spacing: 1px;
   font-family: "Anton", sans-serif;
   color: var(--executive-section-text);
 }

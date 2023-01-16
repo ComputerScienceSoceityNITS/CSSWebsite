@@ -28,6 +28,7 @@ const Executives = ({ members }: ExecutivesProps) => {
   const executives = members.filter((member) => {
     return member.year === "4";
   });
+  console.log(executives);
   return (
     <div className={ExecutivesStyles.cores}>
       <h1 className={ExecutivesStyles.bgtext}>
@@ -97,9 +98,10 @@ const Executives = ({ members }: ExecutivesProps) => {
         </div>
       </div>
       <div className={ExecutivesStyles.dividers}>
-        <ExecutiveCard props={executives[0]} />
+        <ExecutiveCard props={executives[2]} />
       </div>
       <div className={ExecutivesStyles.dividers}>
+        <ExecutiveCard props={executives[0]} />
         <ExecutiveCard props={executives[1]} />
       </div>
     </div>

@@ -3,9 +3,7 @@ import Styles from "./culturalEvents.module.css";
 const CulturalMap = ({ CulturalEvents, key }) => {
   return (
     <div className={` ${Styles.card_blur}`}>
-      <div
-        className={`${Styles.d_freshers} ${Styles.d_card_blur} ${Styles.mobile_hide}`}
-      >
+      <div className={` ${Styles.d_card_blur} ${Styles.mobile_hide}`}>
         <div className={Styles.h_before}>
           <div className={Styles.img_1_c}>
             <img src={CulturalEvents.img} alt="Image" />
