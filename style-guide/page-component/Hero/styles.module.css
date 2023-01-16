@@ -6,7 +6,7 @@
 }
 .parallax:nth-child(1) {
   transform: scale(0.5);
-  top: 38rem;
+  top: 80vh;
   left: 5rem;
 }
 .parallax:nth-child(2) {
@@ -196,7 +196,7 @@
     justify-content: center;
   }
   .parallax:nth-child(1) {
-    top: 42rem;
+    top: 70vh;
   }
 }
 @media only screen and (max-width: 600px) {

@@ -46,24 +46,9 @@ export default function Carousel() {
   return (
     <div className={Styles.container}>
       <div className={Styles.carousel} ref={ref}>
-        {/*iarray.map((item, index) => {
-          return (
-            <div className={Styles.videocont}>
-              <iframe
-                className={Styles.iframe}
-                src={`${iarray[index]}`}
-                title="weather website using react js  #website #reactjs  #development"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-          );
-        })*/}
         <Swiper
           slidesPerView={1.1}
           freeMode={true}
-          navigation={true}
           modules={[Navigation, Pagination, Scrollbar, EffectFade]}
           scrollbar={{ draggable: true }}
           effect={"flip"}
@@ -93,27 +78,6 @@ export default function Carousel() {
           })}
         </Swiper>
       </div>
-      {/* <div className={Styles.buttons}>
-         <span className={Styles.lbutton} onClick={goLeft}>&lt;</span>
-      <span className={Styles.rbutton} onClick={goRight}>&gt;</span> 
-        <div className={Styles.sliderValue}>
-          <span className={Styles.value}>{parseInt(targetIndex) + 1}</span>
-        </div>
-        <div className={Styles.range}>
-          <input
-            type="range"
-            min="0"
-            className={Styles.rangeinput}
-            step="1"
-            max="7"
-            value={targetIndex}
-            onChange={(e) => {
-              handleRange(e);
-            }}
-          />
-        </div>
-      </div>
-    */}
     </div>
   );
 }
