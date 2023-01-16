@@ -31,7 +31,7 @@
 
 .card_blur {
   border-radius: 5px;
-  background: rgba(255, 255, 255, 0.15);
+  background-color: var(--reverse-event-techno-bg);
   -webkit-backdrop-filter: blur(40px);
   backdrop-filter: blur(40px);
   border: 1px solid rgba(21, 1, 1, 0.2);

@@ -13,7 +13,7 @@ const TechnoEvents = () => {
       img: "./images/events/Speaker-session.jpeg",
       id: "1",
     },
-    
+
     {
       name: "C CLASSES",
       cont1:
@@ -23,7 +23,6 @@ const TechnoEvents = () => {
       img: "./images/events/C-classes.png",
       id: "3",
     },
-  
 
     {
       name: "DEVELOPMENT WORKSHOPS",

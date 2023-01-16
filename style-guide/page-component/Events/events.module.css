@@ -23,7 +23,7 @@
 .header .heading .coloredBg {
   width: 16vw;
   text-align: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--hero-section-bg-text);
   border-radius: 5px;
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -37,14 +37,14 @@
 
 .header .heading .coloredBg p {
   font-size: 3.5vw;
-  font-weight: 600;
+  font-weight: 800;
   animation: moveInLeft 1s ease-out;
   padding: 0.5rem 0.5rem;
   color: var(--event-style);
 }
 
 .header .heading .coloredBg p span {
-  /* font-family: "Geostar Fill", cursive; */
+  font-family: "Roboto", sans-serif;
 }
 
 .header .heading h1 {
@@ -63,7 +63,7 @@
 }
 
 .header .heading .tagline {
-  /* font-family: "Italianno", cursive; */
+  font-family: "Italianno";
   font-size: 2vw;
   margin-top: 12px;
 }
