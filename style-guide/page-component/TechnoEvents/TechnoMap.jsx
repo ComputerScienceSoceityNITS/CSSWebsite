@@ -1,13 +1,14 @@
 import React from "react";
 import Styles from "./technoEvents.module.css";
 import Image from "next/image";
-const TechnoMap = ({ events }) => {
+const TechnoMap = ({ events, key }) => {
   return (
     <div className={`${Styles.card_blur}`}>
       <div className={` ${Styles.mobile_hide}`}>
         <div className={Styles.h_before}>
           <div className={Styles.img_1_c}>
-            <Image src={events.img} alt="event" layout="fill" />
+            {/* <Image src={events.img} alt="event" /> */}
+            <img src={events.img} alt="Image" />
           </div>
           <p className={Styles.d_title}>{events.name}</p>
         </div>
