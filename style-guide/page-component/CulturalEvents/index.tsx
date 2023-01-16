@@ -8,25 +8,27 @@ const CulturalEvents = () => {
     {
       name: "ORIENTATION",
       cont1:
-        "The CSS organizes the official society orientation programme each year for the fresher batch.The program aims to make the students aware of the wide range of opportunities, events and programmes that society offers.",
+        "The CSS organizes the official society orientation programme each year for the fresher batch.The program aims to make the students aware of the wide range of opportunities",
       cont3:
-        " It introduces the freshers to the various divisions and initiatives of the society .",
+        ", events and programmes that society offers. It introduces the freshers to the various divisions and initiatives of the society .",
       img: "./images/events/event-1.jpg",
       id: "1",
     },
     {
       name: "FAREWELL",
       cont1:
-        "CSS organizes the farewell programme each year to bid adieu to the senior cse batch of the institute.The objective of the program is to provide the seniors with a platform to relish and relive the joyous moments of their college lives and to honor their contributions to the institute and the student body.",
-      cont3: "",
+        "CSS organizes the farewell programme each year to bid adieu to the senior cse batch of the institute.The objective is to provide the seniors with a platform to relish and relive ",
+      cont3:
+        "the joyous moments of their college lives and to honor their contributions to the institute and the student body.",
       img: "./images/events/event-4.jpg",
       id: "2",
     },
     {
       name: "ESPERENZA",
       cont1:
-        "The official branch freshers for cse is organized by the CSS every year.The objective of the freshers is to provide the students with a platform to interact with their batchmates and to kickstart their college journey with a bunch of fun and engaging events.",
-      cont3: "",
+        "The official branch freshers for cse is organized by the CSS every year.The objective of the freshers is to provide the students with a platform to interact with their batchmates",
+      cont3:
+        " and to kickstart their college journey with a bunch of fun and engaging events.",
       img: "./images/events/esparenza.jpg",
       id: "3",
     },
@@ -42,8 +44,8 @@ const CulturalEvents = () => {
     {
       name: "CSS OLYMPICS",
       cont1:
-        "CSS Olympics is the annual sports week conducted by the Computer Science Society and garners participation from all CSE batches.It provides a platform for the students to demonstrate their athletic abilities while participating in a wide range of sporting activities. ",
-      cont3: "",
+        "CSS Olympics is the annual sports week conducted by the Computer Science Society and garners participation from all CSE batches.It provides a platform for the students to demonstrate their athletic abilities",
+      cont3: " while participating in a wide range of sporting activities. ",
       img: "./images/events/olympics.jpg",
       id: "5",
     },
