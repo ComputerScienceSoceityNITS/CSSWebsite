@@ -1,6 +1,7 @@
 @import url("/color.css");
 
 * {
+  transition: background 200ms linear;
   transition: background-color 200ms linear;
 }
 
@@ -59,6 +60,7 @@
   );
   --about-shadow: #282828;
   --about-shadow-color: #282828;
+  --about-section-typed-text-color: rgba(240, 238, 238, 0.5);
   --devcard-socials: rgba(0, 0, 0, 0.5);
   --wing-page-bg3: rgba(32, 25, 26, 0.95);
   --wing-page-bg2: rgba(18, 40, 40, 0.95);
@@ -109,7 +111,12 @@
   --hero-section-text: var(--Grey-dark-1);
   --hero-section-bg-text: rgb(205, 204, 204);
   --network-lottie-invert-amount: 1;
-  --about-section-bg: var(--Grey-light-3);
+  --about-section-bg: radial-gradient(
+    farthest-side at 0 50%,
+    hsl(340, 95%, 85%) 0%,
+    hsl(340, 85%, 95%) 60%,
+    hsl(0, 8%, 95%) 90%
+  );
   --about-section-text: var(--Grey-dark-1);
   --css-logo-invert-amount: 1;
   --scrollanime-invert-amount: 1;
@@ -135,6 +142,7 @@
   );
   --about-shadow: var(--Grey-light-4);
   --about-shadow-color: var(--Grey-light-4);
+  --about-section-typed-text-color: var(--offBlack);
   --devcard-socials: rgb(255, 255, 255, 0.25);
   --wing-page-bg1: rgba(252, 156, 188, 0.8);
   --wing-page-bg2: rgba(251, 203, 219, 0.8);
