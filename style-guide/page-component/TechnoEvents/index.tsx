@@ -21,7 +21,6 @@ const TechnoEvents = () => {
         "Having established a trail of success stories with NIT Silchar CSE students and alumni being placed in top companies around the globe, the CSS of NIT Silchar understands the importance of competitive programming and its role in cracking international hackathons and MNCs.",
       img: "./images/events/Enigma.png",
       id: "2",
-
     },
     {
       name: "C CLASSES",
@@ -31,7 +30,6 @@ const TechnoEvents = () => {
         " The aim of the programme is to provide the students with a mentor who has followed the same path as themselves and can acknowledge and resolve the problems faced by the freshers as they gear up to pursue their careers in tech.",
       img: "./images/events/C-classes.png",
       id: "3",
-
     },
 
     {
@@ -42,7 +40,6 @@ const TechnoEvents = () => {
         " of fields like app dev, web dev, web3, etc.and to provide them with a competitive edge in the corporate world.",
       img: "./images/events/C-classes.png",
       id: "4",
-
     },
     {
       name: "ABACUS",
@@ -52,7 +49,6 @@ const TechnoEvents = () => {
         " The event aims to provide a stress free week of fun for students to interact with each other, compete with their mates and win exciting prizes.",
       img: "./images/events/Abacus-tech.jpeg",
       id: "5",
-
     },
     {
       name: "ML SESSIONS",
@@ -62,17 +58,16 @@ const TechnoEvents = () => {
         " in fields like A.I.The ML wing of CSS organizes ML sessions on a regular basis to mentor students and help them advance in the field and pursue a career in it",
       img: "./images/events/ML-session.jpg",
       id: "6",
-
     },
 
     {
       name: "CSS HACKS",
       cont1:
         "Conducted under the banner of Abacus by the DEV wing, CSS Hacks as the name suggests is an annual hackathon. ",
-      cont2: "The hackathon caters to the participants with a series of intriguing and complicated problems as they compete with their peers for exciting prizes.",
+      cont2:
+        "The hackathon caters to the participants with a series of intriguing and complicated problems as they compete with their peers for exciting prizes.",
       img: "./images/events/CSS-hack.png",
       id: "7",
-
     },
 
     {
@@ -82,7 +77,6 @@ const TechnoEvents = () => {
       cont2: " ",
       img: "./images/events/CSS-war.jpeg",
       id: "8",
-
     },
   ];
   return (
