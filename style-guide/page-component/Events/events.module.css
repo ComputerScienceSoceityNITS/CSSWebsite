@@ -44,7 +44,7 @@
 }
 
 .header .heading .coloredBg p span {
-  font-family: "Geostar Fill", cursive;
+  /* font-family: "Geostar Fill", cursive; */
 }
 
 .header .heading h1 {
@@ -56,15 +56,15 @@
 
 .header .heading h1::first-letter {
   background: #f80759;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  padding: 0.5rem 0.5rem;
   margin-right: 5px;
-  font-family: "Abril Fatface", cursive;
+  /* font-family: "Abril Fatface", cursive; */
 }
 
 .header .heading .tagline {
-  font-family: "Italianno", cursive;
-  font-size: 2.1vw;
+  /* font-family: "Italianno", cursive; */
+  font-size: 2vw;
   margin-top: 12px;
 }
 
