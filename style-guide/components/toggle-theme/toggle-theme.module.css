@@ -5,7 +5,6 @@
   z-index: 99;
   border-radius: 50%;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
-  border: 2px solid var(--Grey-light-3);
 }
 .toggleBtnContainer .checkbox {
   display: none;
@@ -30,23 +29,23 @@
   transition: all 0.3s ease-in-out;
   transform-origin: 50% 100%;
 }
-.toggleIcon .sun {
+.toggleIcon .moon {
   color: var(--Grey-light-3);
   opacity: 0;
   transform: rotate(90deg);
 }
-.toggleIcon .moon {
+.toggleIcon .sun {
   color: var(--offBlack);
 }
 .toggleBtnContainer .checkbox:checked + .toggleIcon {
   background-color: var(--theme-primary);
   border-color: var(--Grey-light-3);
 }
-.toggleBtnContainer .checkbox:checked + .toggleIcon .sun {
+.toggleBtnContainer .checkbox:checked + .toggleIcon .moon {
   opacity: 1;
   transform: rotate(0);
 }
-.toggleBtnContainer .checkbox:checked + .toggleIcon .moon {
+.toggleBtnContainer .checkbox:checked + .toggleIcon .sun {
   opacity: 0;
   transform: rotate(-90deg);
 }

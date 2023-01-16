@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 .cores {
   position: relative;
-  height: auto;
   min-height: 120vh;
   display: flex;
   flex-direction: row;
@@ -22,7 +21,6 @@
   letter-spacing: 10px;
   font-family: "Anton", sans-serif;
   color: var(--executive-section-text);
-  opacity: 1;
 }
 
 .bgtext1 {
@@ -35,7 +33,6 @@
   letter-spacing: 10px;
   font-family: "Anton", sans-serif;
   color: var(--executive-section-text);
-  opacity: 1;
 }
 
 .cores .dividers {
@@ -71,7 +68,7 @@
 }
 
 .cores .dividers:nth-of-type(3) {
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .cores .dividers:nth-of-type(4) {

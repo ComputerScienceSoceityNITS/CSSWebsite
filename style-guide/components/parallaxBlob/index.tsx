@@ -20,7 +20,7 @@ const ParallaxBlob = ({ offsetYMultiplier }: parallaxProp) => {
     <div
       className={styles.blob}
       style={{
-        transform: `translateY(${offsetY * offsetYMultiplier}px)`,
+        top: `${offsetY * offsetYMultiplier}px`,
       }}
     ></div>
   );

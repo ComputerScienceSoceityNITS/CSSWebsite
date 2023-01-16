@@ -33,3 +33,14 @@
   border: 2px solid #e7e7e7;
   border-radius: 10px;
 }
+@media (max-width: 1100px) {
+  .wrapper .memberTag {
+    position: relative;
+    top: 40vh;
+    left: 23vw;
+    font-size: 10vh;
+    white-space: nowrap;
+    -webkit-transform: rotate(90deg) translate(0vh, -15vw);
+    transform: rotate(90deg) translate(0vh, -15vw);
+  }
+}
