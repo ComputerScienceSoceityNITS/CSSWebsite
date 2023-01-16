@@ -6,7 +6,8 @@
   border-radius: 12px;
   border-bottom-left-radius: 12px;
   background: linear-gradient(90deg, #f7085a, #be4c9b);
-  margin-bottom: 45px;
+  margin: 0 15px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   overflow: hidden;
@@ -31,6 +32,8 @@
   transition-duration: 0.5s;
   transform: translateY(-40px);
   overflow: hidden;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .newcardfooter {

@@ -62,6 +62,16 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={Styles.navigation__item}>
+            <Link href="/wings" passHref={false}>
+              <a
+                className={Styles.navigation__link}
+                onClick={() => setToggle(!toggle)}
+              >
+                Wings
+              </a>
+            </Link>
+          </li>
+          <li className={Styles.navigation__item}>
             <Link href="/events">
               <a
                 className={Styles.navigation__link}
@@ -101,7 +111,7 @@ const Navbar = () => {
               </a>
             </Link>
           </li>
-          <li className={Styles.navigation__item}>
+          {/* <li className={Styles.navigation__item}>
             <Link href="/report" passHref={false}>
               <a
                 className={Styles.navigation__link}
@@ -110,7 +120,7 @@ const Navbar = () => {
                 Report
               </a>
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>

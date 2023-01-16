@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./styles.module.css";
 import ParallaxBlob from "../../components/parallaxBlob";
-import NetworkLottie from "../../components/lottie-player/globe";
+import Globe from "../../components/lottie-player/globe";
 import ScrollAnime from "../../components/lottie-player/homePageScroll";
 const Hero = () => {
   return (
     <div className={styles.main}>
-      <div className={styles.network_lottie}>
-        <NetworkLottie />
+      <div className={styles.globe_lottie}>
+        <Globe />
       </div>
       <div className={styles.scrollanime}>
         <ScrollAnime />
@@ -18,7 +18,7 @@ const Hero = () => {
       </p>
       <div className={styles.dashboard}>
         <div className={styles.parallax}>
-          <ParallaxBlob offsetYMultiplier={0.24} />
+          <ParallaxBlob offsetYMultiplier={0.2} />
         </div>
         <div className={styles.parallax}>
           <ParallaxBlob offsetYMultiplier={0.4} />

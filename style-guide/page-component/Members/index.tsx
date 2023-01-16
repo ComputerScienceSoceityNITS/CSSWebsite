@@ -3,7 +3,6 @@ import Link from "next/link";
 import Styles from "./members.module.css";
 import ScrollDownLottie from "../../components/lottie-player/scrollDown";
 import StudyTableLottie from "../../components/lottie-player/memberspage";
-import AboutLottie from "../../components/lottie-player/about-bg";
 
 interface MemberYearProp {
   year: number;
@@ -11,6 +10,15 @@ interface MemberYearProp {
 
 const Members = (props: MemberYearProp) => {
   const [year, setYear] = useState(props.year);
+  const handleYearChange = (updatedYear: number) => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: self.innerHeight,
+        behavior: "smooth",
+      });
+    }, 500);
+    setYear(updatedYear);
+  };
   return (
     <>
       <p className={Styles.bgtext}>
@@ -18,31 +26,28 @@ const Members = (props: MemberYearProp) => {
         <br /> Science <br /> Society
       </p>
       <section className={Styles.firstSection}>
-        <AboutLottie />
-        <div id={Styles.largeHeader} className={Styles.largeHeader}>
-          <canvas id={Styles.demoCanvas}></canvas>
+        <div className={Styles.lottie}>
+          <StudyTableLottie />
         </div>
         <ScrollDownLottie />
         <div className={Styles.container}>
-          <StudyTableLottie />
           <div className={Styles.buttons}>
             <Link href="/members/20-21" passHref scroll={false} replace>
-              <button onClick={() => setYear(2021)}>
+              <button onClick={() => handleYearChange(2021)}>
                 <span className={year === 2021 ? Styles.active : ""}>
                   20-21
                 </span>
               </button>
             </Link>
-            <br />
             <Link href="/members/21-22" passHref scroll={false} replace>
-              <button onClick={() => setYear(2022)}>
+              <button onClick={() => handleYearChange(2022)}>
                 <span className={year === 2022 ? Styles.active : ""}>
                   21-22
                 </span>
               </button>
             </Link>
             <Link href="/members/22-23" passHref scroll={false} replace>
-              <button onClick={() => setYear(2023)}>
+              <button onClick={() => handleYearChange(2023)}>
                 <span className={year === 2023 ? Styles.active : ""}>
                   22-23
                 </span>

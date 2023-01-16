@@ -4,8 +4,8 @@ import animationData from "./CSSlogoanimation.json";
 
 export default function NetworkLottie() {
   const defaultOptions = {
-    loop: true,
-    autoplay: true,
+    loop: false,
+    autoplay: false,
     animationData: animationData,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
@@ -17,6 +17,7 @@ export default function NetworkLottie() {
       <Lottie
         options={defaultOptions}
         style={{ height: "600px", width: "600px" }}
+        speed={0.7}
       />
     </div>
   );

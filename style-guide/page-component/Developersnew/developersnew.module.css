@@ -4,10 +4,10 @@
 }
 
 .heads {
-  width: 95%;
+  max-width: 95%;
   margin: auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 50px;
   flex-wrap: wrap;
   text-shadow: 0.5px 0.5px 1px whitesmoke;
@@ -28,12 +28,12 @@
 }
 
 .members {
-  width: 95%;
+  max-width: 95%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 280px));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 290px));
   grid-auto-rows: auto;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 @media (max-width: 883px) {

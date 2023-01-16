@@ -1,5 +1,5 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+// import Fade from "react-reveal/Fade";
 import SocietyHeads from "../SocietyHeads";
 import DevWing from "../DevWingMembers";
 import CPWing from "../CPWingMembers";
@@ -134,18 +134,15 @@ const index = ({
         <div className={Styles.tabPanel} id={Styles.tabPanel}>
           <div className={Styles.wrapper}>
             <h1 className={Styles.memberTag}>Members 20-21</h1>
-            <Fade bottom>
-              <SocietyHeads members={members} />
-              <DevWing members={devWing} coHeads={devCoHeads} />
-              <CPWing members={cpWing} coHeads={cpCoHeads} />
-              <ExeWing members={executiveWing} coHeads={seniorExe} />
-              <MLWing members={mlWing} coHeads={mlCoHeads} />
-              <DesignWing members={designWing} coHeads={designCoHeads} />
-              <LiteraryWing
-                members={literaryWing}
-                coHeads={literatureCoHeads}
-              />
-            </Fade>
+            {/* <Fade bottom> */}
+            <SocietyHeads members={members} />
+            <DevWing members={devWing} coHeads={devCoHeads} />
+            <CPWing members={cpWing} coHeads={cpCoHeads} />
+            <ExeWing members={executiveWing} coHeads={seniorExe} />
+            <MLWing members={mlWing} coHeads={mlCoHeads} />
+            <DesignWing members={designWing} coHeads={designCoHeads} />
+            <LiteraryWing members={literaryWing} coHeads={literatureCoHeads} />
+            {/* </Fade> */}
           </div>
         </div>
       </section>

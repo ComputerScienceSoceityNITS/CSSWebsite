@@ -1,5 +1,5 @@
 import React from "react";
-import Report from "../style-guide/components/report";
+import Report from "../style-guide/components/report/Report";
 
 const report = () => {
   return (

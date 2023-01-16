@@ -15,7 +15,9 @@ const DevelopersNewMain = (props: DeveloperYear) => {
       <ScrollDownLottie />
       <div className={Styles.maincontainer}>
         <div className={Styles.headingcont}>
-          <div className={Styles.heading}>OUR WEBSITE DEVELOPERS</div>
+          <div className={Styles.headinginnercont}>
+            <div className={Styles.heading}>OUR WEBSITE DEVELOPERS</div>
+          </div>
         </div>
         <div className={Styles.lottiecont}>
           <DevPGLottie />

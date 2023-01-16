@@ -6,7 +6,7 @@
 }
 .parallax:nth-child(1) {
   transform: scale(0.5);
-  bottom: 2rem;
+  top: 38rem;
   left: 5rem;
 }
 .parallax:nth-child(2) {
@@ -54,7 +54,7 @@
   position: relative;
   width: 100vw;
   background: var(--hero-section-bg);
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,7 +63,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .dashboard p {
@@ -127,7 +127,7 @@
   color: var(--hero-section-text);
 }
 
-.network_lottie {
+.globe_lottie {
   width: 45em;
   height: 45em;
   right: -22em;
@@ -186,7 +186,7 @@
     text-align: center;
     justify-content: center;
   }
-  .network_lottie {
+  .globe_lottie {
     display: none;
   }
   .dashboard .bottomText {
@@ -196,7 +196,7 @@
     justify-content: center;
   }
   .parallax:nth-child(1) {
-    bottom: 10rem;
+    top: 42rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -213,7 +213,7 @@
     width: 70vw;
   }
   .parallax:nth-child(1) {
-    bottom: 12rem;
+    bottom: 20rem;
     left: 75vw;
   }
   .parallax:nth-child(2) {
