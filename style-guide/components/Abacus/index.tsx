@@ -23,7 +23,7 @@ const Abacus = () => {
         {images.map((image, ind) => (
           <div key={ind} className={styles.item}>
             <div className={styles.polaroid}>
-              <img src={path + image[0] + ".jpg"} alt="image" />
+              <img src={path + image[0] + "-min.jpg"} alt="image" />
               <div className={styles.caption}>{image[1]}</div>
             </div>
           </div>
