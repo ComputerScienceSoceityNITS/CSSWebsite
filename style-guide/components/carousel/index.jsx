@@ -3,10 +3,9 @@ import { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/css";
-import SwiperCore, { EffectFade, Navigation, Scrollbar, A11y } from "swiper";
+import { EffectFade, Navigation, Pagination, Scrollbar } from "swiper";
 import Slide from "../lottie-player/slide";
 
-SwiperCore.use([Navigation, Scrollbar, A11y]);
 export default function Carousel() {
   const currentIndex = useRef(0);
   const [targetIndex, setTargetIndex] = useState(() => 0);
@@ -16,8 +15,14 @@ export default function Carousel() {
   const videos = document.querySelectorAll("carouselcard");
 
   const iarray = [
-    "https://www.youtube.com/embed/xMJo865ORSs",
+    "https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FCSS.NITSilchar%2Fvideos%2F560968688975273%2F&show_text=false&width=560&t=0",
     "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7020012658594590720?compact=1",
+    "https://www.youtube.com/embed/eVivzsATS6Q",
+    "https://www.youtube.com/embed/R2I_pISNHGI",
+    "https://www.youtube.com/embed/gLNe_msUjnY",
+    "https://www.youtube.com/embed/4GASb93__Bg",
+    "https://www.youtube.com/embed/fzNMd3Tu1Zw",
+    "https://www.youtube.com/embed/X0sRdWLiPDg",
   ];
 
   const handleRange = async (e) => {
@@ -44,10 +49,10 @@ export default function Carousel() {
         <Swiper
           slidesPerView={1.1}
           freeMode={true}
-          modules={[Navigation, Scrollbar, EffectFade, A11y]}
+          modules={[Navigation, Pagination, Scrollbar, EffectFade]}
           scrollbar={{ draggable: true }}
           effect={"flip"}
-          navigation={true}
+          pagination={{ clickable: true }}
           draggable={true}
           centeredSlides={true}
           className={Styles.videocont}
