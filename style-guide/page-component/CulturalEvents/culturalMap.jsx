@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./culturalEvents.module.css";
-const CulturalMap = ({ CulturalEvents, key }) => {
+const CulturalMap = ({ CulturalEvents }) => {
   return (
     <div className={` ${Styles.card_blur}`}>
       <div className={` ${Styles.d_card_blur} ${Styles.mobile_hide}`}>
