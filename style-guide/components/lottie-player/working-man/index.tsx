@@ -6,7 +6,7 @@ export default function WorkingMan() {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData,
+    animationData: JSON.parse(JSON.stringify(animationData)),
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },

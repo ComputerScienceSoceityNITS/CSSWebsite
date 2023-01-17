@@ -13,7 +13,7 @@
   transition: all 0.4s;
   min-height: 100vh;
   -ms-grid-rows: 30vw 32vw 32vw;
-  grid-template-rows: 30vw 32vw;
+  grid-template-rows: 30vw 32vw 32vw 32vw;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 7vw;
@@ -183,7 +183,7 @@
     padding: 3.5rem 0 7rem 0;
     text-align: center;
     min-height: 100vh;
-    grid-template-rows: repeat(3, 60vw);
+    grid-template-rows: repeat(6, 60vw);
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 13vw;

@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import Styles from "./events.module.css";
 import TechnoEvents from "../TechnoEvents";
 import CulturalEvents from "../CulturalEvents";
+import AbacusEvents from "../AbacusEvents";
 import ScrollDownLottie from "../../components/lottie-player/scrollDown";
 import EventsBg from "../../components/lottie-player/events";
 
 const Events = () => {
-  const [active, setActive] = useState(true);
+  const [active, setActive] = useState(0);
   return (
     <div className={Styles.body_bg}>
       <header className={Styles.header}>
@@ -33,10 +34,10 @@ const Events = () => {
           <button
             id="stechno"
             className={`${Styles.eventBtn} ${
-              active === true ? Styles.active : ""
+              active === 0 ? Styles.active : ""
             }`}
             onClick={() => {
-              setActive(true);
+              setActive(0);
             }}
           >
             Techno Events
@@ -44,17 +45,29 @@ const Events = () => {
           <button
             id="scultural"
             className={`${Styles.eventBtn} ${
-              active === false ? Styles.active : ""
+              active === 1 ? Styles.active : ""
             }`}
             onClick={() => {
-              setActive(false);
+              setActive(1);
             }}
           >
             Cultural Events
           </button>
+          <button
+            id="sabacus"
+            className={`${Styles.eventBtn} ${
+              active === 2 ? Styles.active : ""
+            }`}
+            onClick={() => {
+              setActive(2);
+            }}
+          >
+            Abacus Events
+          </button>
         </div>
-        {active && <TechnoEvents />}
-        {!active && <CulturalEvents />}
+        {active === 0 && <TechnoEvents />}
+        {active === 1 && <CulturalEvents />}
+        {active === 2 && <AbacusEvents />}
       </main>
     </div>
   );
