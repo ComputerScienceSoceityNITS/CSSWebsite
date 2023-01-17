@@ -1,6 +1,6 @@
 import React from "react";
 import ExecutiveCard from "../../components/executive-card";
-import ExecutivesStyles from "./executives.module.css";
+import Styles from "./executives.module.css";
 import Rainman from "../../components/lottie-player/rainman";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -21,88 +21,95 @@ interface ExecutivesProps {
     role: String;
     session: String;
     year: String;
+    phoneNo: String;
   }[];
 }
+
+const Convener = () => {
+  return (
+    <div className={Styles.cuscontainer}>
+      <div className={Styles.cuscard}>
+        <div className={Styles.cuscontent}>
+          <div className={Styles.cusimgBx}>
+            <img src="./images/Homepage/MajhiSir.jpg" alt="Convener" />
+          </div>
+          <div className={Styles.cuscontentBx}>
+            <div>
+              <p className={Styles.postTitle}>CONVENER</p>
+              <br />
+              <span> Mr. Umakanta Majhi </span> <br />
+              <span> Assistant Professor </span>
+              <span> umakanta@cse.nits.ac.in </span>
+              <br />
+            </div>
+          </div>
+        </div>
+        <ul className={Styles.cussocials}>
+          <li>
+            <a
+              href="https://www.facebook.com/bdlsni123"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={["fab", "facebook"]} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/umakanta-majhi-43238576"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={["fab", "linkedin"]} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://cs.nits.ac.in/uma/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FontAwesomeIcon icon={["fab", "readme"]} />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
 const Executives = ({ members }: ExecutivesProps) => {
   const executives = members.filter((member) => {
     return member.year === "4";
   });
-  console.log(executives);
+  executives[0].phoneNo = "76360 12703";
+  executives[2].phoneNo = "70023 75113";
+  executives[1].phoneNo = "70335 71910";
   return (
-    <div className={ExecutivesStyles.cores}>
-      <h1 className={ExecutivesStyles.bgtext}>
+    <div className={Styles.cores}>
+      <h1 className={Styles.bgtext}>
         THE <br />
         SOCIETY-HEADS
       </h1>
-      <h2 className={ExecutivesStyles.bgtext1}>
+      <h2 className={Styles.bgtext1}>
         PILLARS OF <br />
         CSS
       </h2>
-      <span className={ExecutivesStyles.firstLottie}>
+      <span className={Styles.firstLottie}>
         <Rainman />
       </span>
-      <div className={ExecutivesStyles.dividers}>
-        <div className={ExecutivesStyles.title}>
+      <div className={Styles.dividers}>
+        <div className={Styles.title}>
           <p>Executive Members</p>
         </div>
-      </div>
-      <div className={ExecutivesStyles.dividers}>
-        <div className={ExecutivesStyles.cuscontainer}>
-          <div className={ExecutivesStyles.cuscard}>
-            <div className={ExecutivesStyles.cuscontent}>
-              <div className={ExecutivesStyles.cusimgBx}>
-                <img src="./images/Homepage/MajhiSir.jpg" alt="Convener" />
-              </div>
-              <div className={ExecutivesStyles.cuscontentBx}>
-                <div>
-                  <p className={ExecutivesStyles.postTitle}>CONVENER</p>
-                  <br />
-                  <span> Mr. Umakanta Majhi </span> <br />
-                  <span> Assistant Professor </span>
-                  <span> umakanta@cse.nits.ac.in </span>
-                  <br />
-                </div>
-              </div>
-            </div>
-            <ul className={ExecutivesStyles.cussocials}>
-              <li>
-                <a
-                  href="https://www.facebook.com/bdlsni123"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FontAwesomeIcon icon={["fab", "facebook"]} />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/umakanta-majhi-43238576"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FontAwesomeIcon icon={["fab", "linkedin"]} />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://cs.nits.ac.in/uma/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FontAwesomeIcon icon={["fab", "readme"]} />
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div className={Styles.convener}>
+          <Convener />
         </div>
-      </div>
-      <div className={ExecutivesStyles.dividers}>
-        <ExecutiveCard props={executives[2]} />
-      </div>
-      <div className={ExecutivesStyles.dividers}>
-        <ExecutiveCard props={executives[0]} />
-        <ExecutiveCard props={executives[1]} />
+        <div className={Styles.heads}>
+          <ExecutiveCard props={executives[0]} />
+          <ExecutiveCard props={executives[2]} />
+          <ExecutiveCard props={executives[1]} />
+        </div>
       </div>
     </div>
   );
