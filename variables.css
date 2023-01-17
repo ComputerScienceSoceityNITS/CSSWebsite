@@ -74,6 +74,9 @@
   --carousel-shadow: #666666;
   --border-event: var(--Grey-dark-5);
   --reverse-event-techno-bg: rgba(255, 255, 255, 0.15);
+  --error-page-bg3: rgba(32, 25, 26, 0.95);
+  --error-page-bg2: rgba(18, 40, 40, 0.95);
+  --error-page-bg1: rgba(23, 19, 19, 0.95);
 }
 
 .light {
@@ -159,4 +162,7 @@
   --carousel-shadow: rgb(202, 78, 89);
   --border-event: var(--Grey-dark-5);
   --reverse-event-techno-bg: var(--wing-white);
+  --error-page-bg1: rgba(252, 156, 188, 0.9);
+  --error-page-bg2: rgba(251, 203, 219, 0.9);
+  --error-page-bg3: rgba(243, 241, 241, 0.9);
 }
