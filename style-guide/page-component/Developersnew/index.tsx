@@ -52,13 +52,11 @@ const DevelopersNew = (
 
   return (
     <div className={Styles.devpagecontainer}>
-      {secretary ? <div className={Styles.teamhead}>TECHNICAL HEAD</div> : ""}
+      <div className={Styles.teamhead}>TECHNICAL HEAD</div>
       <div className={Styles.heads}>
-        {secretary
-          ? secretary.map((head, index) => {
-              return <DeveloperHeadNew props={head} key={index} />;
-            })
-          : ""}
+        {secretary.map((head, index) => {
+          return <DeveloperHeadNew props={head} key={index} />;
+        })}
       </div>
       <div className={Styles.teamhead}>DEV-WING HEADS</div>
       <div className={Styles.heads}>
