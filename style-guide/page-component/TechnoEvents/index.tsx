@@ -2,6 +2,7 @@ import React from "react";
 import Styles from "./technoEvents.module.css";
 import TechnoMap from "./TechnoMap";
 import WorkingMan from "../../components/lottie-player/working-man";
+import EventBg from "../../components/lottie-player/event-bg";
 const TechnoEvents = () => {
   const cards = [
     {
@@ -39,17 +40,8 @@ const TechnoEvents = () => {
         "Enigma is a weekly coding contest organized by the CP wing aimed to make the students comfortable with the level and format of such questions ",
       cont2:
         "and to provide them with a competitive edge in their endeavors.Having established a trail of success stories with NIT Silchar CSE students and alumni being placed in top companies around the globe, the CSS of NIT Silchar understands the importance of competitive programming and its role in cracking international hackathons and MNCs.",
-      img: "./images/events/ENIGMA.png",
+      img: "./images/events/Enigma.png",
       id: "2",
-    },
-    {
-      name: "ABACUS",
-      cont1:
-        "Abacus is a one-week-long event organized by the CSS. The event garners participation from all CSE batches in the institute and comprises a plethora of exciting events ",
-      cont2:
-        " like CSS wars, CSS hacks and many more.The event aims to provide a stress free week of fun for students to interact with each other, compete with their mates and win exciting prizes.",
-      img: "./images/events/Abacus-tech.jpeg",
-      id: "5",
     },
     {
       name: "ML SESSIONS",
@@ -60,36 +52,25 @@ const TechnoEvents = () => {
       img: "./images/events/ML-session.jpg",
       id: "6",
     },
-
-    {
-      name: "CSS HACKS",
-      cont1:
-        "Conducted under the banner of Abacus by the DEV wing, CSS Hacks as the name suggests is an annual hackathon. ",
-      cont2:
-        "The hackathon caters to the participants with a series of intriguing and complicated problems as they compete with their peers for exciting prizes.",
-      img: "./images/events/CSS-hack.png",
-      id: "7",
-    },
-
-    {
-      name: "CSS WARS",
-      cont1:
-        "CSS wars is conducted under the banner of Abacus by the Dev wing aimed at testing the prowess of the participants in HTML, CSS and Javascript.",
-      cont2: " ",
-      img: "./images/events/CSS-war.jpeg",
-      id: "8",
-    },
   ];
   return (
     <>
       <section className={Styles.techno}>
+        <div className={Styles.techno_bg_1}>
+          <EventBg />
+        </div>
+        <div className={Styles.techno_bg_2}>
+          <EventBg />
+        </div>
+        <div className={Styles.techno_bg_3}>
+          <EventBg />
+        </div>
+        <div className={Styles.lottie_1}>
+          <WorkingMan />
+        </div>
         {cards.map((event) => (
           <TechnoMap events={event} key={event.id} />
         ))}
-
-        <span className={Styles.mobile_hide}>
-          <WorkingMan />
-        </span>
       </section>
     </>
   );
