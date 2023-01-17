@@ -59,6 +59,7 @@ export const getStaticProps: GetStaticProps = async () => {
     props: {
       devWing: data.devWing,
       coHead: data.coHeads.filter((i: any) => i.role === "Dev-Wing Co-Head"),
+      secretary: data.members.filter((i: any) => i.role === "Technical Head"),
     },
   };
 };

@@ -3,15 +3,9 @@ import styles from "./styles.module.css";
 
 const Esperanza = () => {
   const path1 = "./images/cultural/";
-  const images1 = [
-    ["1", "CSS Orientation "],
-    ["2", "CSS Orientation "],
-    ["3", "CSS Orientation "],
-    ["4", "CSS Orientation "],
-    ["5", "CSS Orientation "],
-  ];
+  const images1 = [["1","CSS Orientation"], ["2","CSS Orientation"], ["3","CSS Orientation"], ["4","CSS Orientation"], ["5","CSS Orientation"]];
   const path2 = "./images/esperanza/";
-  const images2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const images2 = [1, 2, 3, 7, 4, 6, 8, 5, 9, 31];
   return (
     <>
       <div className={styles.wrapper}>
