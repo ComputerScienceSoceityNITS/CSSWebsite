@@ -10,16 +10,6 @@
   align-items: center;
   flex-wrap: wrap;
 }
-@media (max-width: 1000px) {
-  .header {
-    flex-direction: column-reverse;
-  }
-  .lottiecont {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-  }
-}
 
 @media (max-width: 620px) {
   .header {
@@ -132,5 +122,10 @@
     font-family: "Archivo", sans-serif;
     outline: none;
     cursor: pointer;
+  }
+}
+@media (max-width: 750px) {
+  .lottiecont {
+    display: none;
   }
 }
