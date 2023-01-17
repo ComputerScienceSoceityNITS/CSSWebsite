@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 .cores {
   position: relative;
-  min-height: 120vh;
+  min-height: 67rem;
   display: flex;
   flex-direction: row;
   z-index: 1;
+  background-color: var(--executive-section-bg);
 }
 
 .cores p {
@@ -12,6 +13,7 @@
 }
 
 .bgtext {
+  user-select: none;
   position: absolute;
   top: 80%;
   left: 5%;
@@ -24,8 +26,9 @@
 }
 
 .bgtext1 {
+  user-select: none;
   position: absolute;
-  top: 0%;
+  top: 15%;
   left: 5%;
   text-align: start;
   font-size: 10em;
@@ -36,13 +39,24 @@
 }
 
 .cores .dividers {
-  position: relative;
-  background-color: var(--executive-section-bg);
-  width: 100%;
+  position: absolute;
   display: flex;
-  text-align: start;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  min-width: 50%;
+  right: 0;
+}
+
+.heads {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.convener {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .title {
@@ -84,17 +98,33 @@
 @media only screen and (max-width: 1200px) {
   .cores {
     flex-direction: column;
+    min-height: 100rem;
+    justify-content: center;
+    align-items: center;
   }
   .cores .bgtext,
   .cores .bgtext1 {
     display: none;
   }
+  .cores .dividers {
+    position: relative;
+  }
   .cores .dividers .title {
     display: block;
+    width: 100vw;
   }
   .cores .dividers .title p {
-    margin-left: 0;
+    margin-left: auto;
     font-size: 4em;
+  }
+  .firstLottie {
+    display: none;
+  }
+  .heads {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -116,11 +146,7 @@
   width: 300px;
   height: 300px;
   z-index: 3;
-}
-@media only screen and (max-width: 1200px) {
-  .firstLottie {
-    display: none;
-  }
+  pointer-events: none;
 }
 
 /*convener */

@@ -21,9 +21,14 @@ const Hero = () => {
           <ParallaxBlob offsetYMultiplier={0.2} />
         </div>
         <div className={styles.parallax}>
-          <ParallaxBlob offsetYMultiplier={0.4} />
+          <ParallaxBlob offsetYMultiplier={0.2} />
         </div>
         <div className={styles.divider} id="headTile" style={{ zIndex: "16" }}>
+          <img
+            src="/images/logo_compressed.png"
+            alt=""
+            className={styles.logo}
+          />
           <div className={styles.title}>
             COMPUTER <br />
             SCIENCE <br />

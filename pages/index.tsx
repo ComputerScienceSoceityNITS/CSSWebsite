@@ -1,4 +1,4 @@
-import { GetServerSideProps } from "next";
+import { GetStaticProps } from "next";
 import AboutUs from "../style-guide/page-component/About-us";
 import EventSection from "../style-guide/page-component/Event-section";
 import Hero from "../style-guide/page-component/Hero";
@@ -16,6 +16,7 @@ interface IndexProps {
     role: String;
     session: String;
     year: String;
+    phoneNo: String;
   }[];
   events: {
     _id: String;
@@ -42,7 +43,8 @@ const Home = ({ members }: IndexProps) => {
 };
 
 export default Home;
-export const getServerSideProps: GetServerSideProps = async () => {
+
+export const getStaticProps: GetStaticProps = async () => {
   let response = await fetch(
     `${process.env.BACKEND_URL}/api/admin/members/22-23`
   );

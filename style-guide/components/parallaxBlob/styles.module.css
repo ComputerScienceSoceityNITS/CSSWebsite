@@ -10,3 +10,9 @@
     var(--theme-secondary)
   );
 }
+
+@media screen and (width < 600px) {
+  .blob {
+    transform: translateY(0) !important;
+  }
+}

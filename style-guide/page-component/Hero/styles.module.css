@@ -14,6 +14,17 @@
   left: -1rem;
 }
 
+.logo {
+  width: 20em;
+  height: 20em;
+  transform: translate(20%, -65%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 20;
+  filter: invert(var(--css-logo-invert-amount)) brightness(80%);
+}
+
 .highlight {
   color: var(--Grey-light-3);
   display: inline-block;
@@ -90,6 +101,7 @@
   display: flex;
   margin: 20vh 6em 5vh 6em;
   height: fit-content;
+  width: 60%;
   background-color: hsla(0, 0%, 97%, 0.1);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
@@ -197,6 +209,9 @@
   }
   .parallax:nth-child(1) {
     top: 70vh;
+  }
+  .logo {
+    display: none;
   }
 }
 @media only screen and (max-width: 600px) {
