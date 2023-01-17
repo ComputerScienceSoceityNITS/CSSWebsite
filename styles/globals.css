@@ -71,13 +71,6 @@ select {
   font: inherit;
 }
 
-.swiper-pagination-bullet {
-  background: linear-gradient(90deg, #f7085a, #be4c9b) !important;
-  width: 0.8em !important;
-  height: 0.8em !important;
-  margin: 5px 20px !important;
-}
-
 .swiper-scrollbar.swiper-scrollbar-horizontal {
   background: none;
   border: 2px solid gray;
@@ -182,14 +175,6 @@ header .animated {
   header h2 {
     font-size: 1.5em;
   }
-  .swiper-pagination-bullet {
-    background: linear-gradient(90deg, #f7085a, #be4c9b) !important;
-    width: 1em !important;
-    height: 1em !important;
-    display: block;
-    display: none !important;
-  }
-
   .swiper-scrollbar.swiper-scrollbar-horizontal {
     background: none;
     border: 2px solid gray;
