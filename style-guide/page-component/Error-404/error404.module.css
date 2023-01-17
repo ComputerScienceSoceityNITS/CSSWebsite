@@ -1,0 +1,43 @@
+.error_page {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+      200deg,
+      var(--error-page-bg1),
+      var(--error-page-bg2) 45%,
+      var(--error-page-bg3) 80%
+    ),
+    url("/images/Error/err1-min.jpg") no-repeat center center / cover;
+  overflow: auto;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--executive-section-text);
+  font-family: Geneva, Tahoma, sans-serif;
+  transition: all 450ms ease-in;
+  /* font-size: 7rem; */
+}
+
+.error_h1 {
+  font-size: 15rem;
+}
+
+.error_h2 {
+  font-size: 2rem;
+  color: var(--wing-black);
+  position: absolute;
+  transform: translateY(10px);
+}
+
+@media (max-width: 789px) {
+  .error_h1 {
+    font-size: 7rem;
+  }
+
+  .error_h2 {
+    font-size: 1rem;
+    transform: translateY(5px);
+  }
+}
