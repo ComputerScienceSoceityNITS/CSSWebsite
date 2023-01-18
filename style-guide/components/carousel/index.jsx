@@ -10,7 +10,7 @@ export default function Carousel() {
   const ref = useRef();
   const iarray = [
     "https://www.youtube.com/embed/xMJo865ORSs",
-    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7020012658594590720?compact=1"
+    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7020012658594590720?compact=1",
   ];
 
   return (
@@ -52,4 +52,12 @@ export default function Carousel() {
   );
 }
 
-<iframe width="642" height="361" src="https://www.youtube.com/embed/xMJo865ORSs" title="StriverAtNITS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe
+  width="642"
+  height="361"
+  src="https://www.youtube.com/embed/xMJo865ORSs"
+  title="StriverAtNITS"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen
+></iframe>;

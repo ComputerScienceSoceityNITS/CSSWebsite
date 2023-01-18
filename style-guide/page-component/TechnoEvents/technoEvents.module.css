@@ -12,8 +12,8 @@
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   min-height: 100vh;
-  -ms-grid-rows: 30vw 32vw 32vw;
-  grid-template-rows: 30vw 32vw;
+  -ms-grid-rows: 30vw 32vw 32vw 32vw;
+  grid-template-rows: 30vw 32vw 32vw;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 7vw;
@@ -44,16 +44,6 @@
   width: 100%;
   opacity: 0.8;
   pointer-events: none;
-}
-
-.techno .lottie_1 {
-  grid-area: lottie_1;
-}
-
-.techno .lottie_1 {
-  background: transparent;
-  width: 100%;
-  height: 100%;
 }
 
 .card_blur {
@@ -183,7 +173,7 @@
     padding: 3.5rem 0 7rem 0;
     text-align: center;
     min-height: 100vh;
-    grid-template-rows: repeat(3, 60vw);
+    grid-template-rows: repeat(5, 60vw);
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 13vw;
