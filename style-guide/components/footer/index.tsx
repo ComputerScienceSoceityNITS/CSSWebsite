@@ -96,12 +96,32 @@ const Footer = (props: { Report: any; setReport: any }) => {
           </div>
           <div className={Styles.fmain_e}>
             <a
-              href="https://www.youtube.com/channel/UC8tCBXmdKueuFODn_IngQrg"
+              href="https://www.linkedin.com/company/cssnits/"
               style={{ textDecoration: "none" }}
               target="_blank"
               rel="noreferrer"
             >
-              Youtube
+              LinkedIn
+            </a>
+          </div>
+          <div className={Styles.fmain_e}>
+            <a
+              href="https://www.instagram.com/cssnits/"
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Instagram
+            </a>
+          </div>
+          <div className={Styles.fmain_e}>
+            <a
+              href="https://github.com/ComputerScienceSoceityNITS"
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
             </a>
           </div>
         </div>
