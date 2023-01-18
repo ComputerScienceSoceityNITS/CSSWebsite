@@ -10,11 +10,11 @@
   align-items: center;
   flex-wrap: wrap;
 }
-@media (max-width:1023px){
-  .header{
+@media (max-width: 1023px) {
+  .header {
     flex-direction: column-reverse;
   }
-  .lottiecont{
+  .lottiecont {
     display: flex;
     justify-content: flex-end;
     width: 100%;

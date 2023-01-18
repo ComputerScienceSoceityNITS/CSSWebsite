@@ -8,7 +8,8 @@ const AbacusEvents = () => {
       name: "CSS HACKS",
       cont1:
         "CSS Hacks is Conducted under the banner of Abacus by the dev wing, CSS Hacks as the name suggests is an annual hackathon.",
-      cont3: " The hackathon caters to the participants with a series of intriguing and complicated problems as they compete with their peers for exciting prizes.",
+      cont3:
+        " The hackathon caters to the participants with a series of intriguing and complicated problems as they compete with their peers for exciting prizes.",
       img: "./images/events/CSS-hack.png",
       id: "1",
     },
@@ -17,7 +18,8 @@ const AbacusEvents = () => {
       name: "CSS WARS",
       cont1:
         "Web design is one of the most sought out fields in computer science. CSS wars is conducted by the dev wing and is an annual web development competition",
-      cont3: " aimed at testing the prowess of the participants in HTML, CSS and Javascript.",
+      cont3:
+        " aimed at testing the prowess of the participants in HTML, CSS and Javascript.",
       img: "./images/events/CSS-war.jpeg",
       id: "3",
     },
@@ -34,7 +36,8 @@ const AbacusEvents = () => {
       name: "STATMANIA",
       cont1:
         "StatMania is a unique event that tests one's skills to solve statistical puzzles and elementary problems in computing.",
-      cont3: "The difficulty level is always set keeping in mind that students from all branches and batches can participate.",
+      cont3:
+        "The difficulty level is always set keeping in mind that students from all branches and batches can participate.",
       img: "./images/events/fotor_2023-1-17_17_29_35.jpg",
       id: "2",
     },
@@ -85,7 +88,8 @@ const AbacusEvents = () => {
       name: "RUDIMENTAL DIEGESIS",
       cont1:
         "Stories connect people and allow us to portray our emotions. Now it’s time to embrace the storyteller inside you in RUDIMENTAL DIEGESIS",
-      cont3: ", an event allowing young minds to wield their mighty pens and craft magic with short stories.",
+      cont3:
+        ", an event allowing young minds to wield their mighty pens and craft magic with short stories.",
       img: "./images/events/fotor_2023-1-17_17_38_28.jpg",
       id: "27",
     },
@@ -93,7 +97,8 @@ const AbacusEvents = () => {
       name: "HOLMES ALONE",
       cont1:
         "CSS-ABACUS brings you HOLMES ALONE, wherein there has been a murder. We've managed to find some clues, but we've no idea what it leads to or who the murderer is.",
-      cont3: " C'mon! Be your own Sherlock and solve it before any Lestrade does!",
+      cont3:
+        " C'mon! Be your own Sherlock and solve it before any Lestrade does!",
       img: "./images/events/fotor_2023-1-17_17_32_32.jpg",
       id: "23",
     },
@@ -101,7 +106,8 @@ const AbacusEvents = () => {
       name: "ALGOCHEMY",
       cont1:
         "ALGOCHEMY is the premier coding contest. This is an event to test out your problem-solving skills, logical ability and DSA knowledge.",
-      cont3: " With two divisions , including one exclusively for freshers, ALGOCHEMY caters to coders of all skill level.",
+      cont3:
+        " With two divisions , including one exclusively for freshers, ALGOCHEMY caters to coders of all skill level.",
       img: "./images/events/fotor_2023-1-17_17_34_26.jpg",
       id: "18",
     },
