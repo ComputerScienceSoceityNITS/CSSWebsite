@@ -39,18 +39,16 @@ const DesignWing = ({ members, coHeads }: MemberProps) => {
         {members.map((member, index) => {
           return index < 2 ? <MemberCard2 props={member} key={index} /> : null;
         })}
-        
-        {coHeads.length>=1?<MemberCard2 props={coHeads[0]} />:null}
-        
-      
+
+        {coHeads.length >= 1 ? <MemberCard2 props={coHeads[0]} /> : null}
+
         {members.map((member, index) => {
           return index >= 2 && index < 5 && members.length >= 3 ? (
             <MemberCard2 props={member} key={index} />
           ) : null;
         })}
         {coHeads.length >= 2 ? <MemberCard2 props={coHeads[1]} /> : null}
-        
-        
+
         {members.map((member, index) => {
           return index >= 5 && members.length >= 6 ? (
             <MemberCard2 props={member} key={index} />

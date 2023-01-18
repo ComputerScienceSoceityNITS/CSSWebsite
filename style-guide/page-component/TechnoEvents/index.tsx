@@ -1,7 +1,6 @@
 import React from "react";
 import Styles from "./technoEvents.module.css";
 import TechnoMap from "./TechnoMap";
-import WorkingMan from "../../components/lottie-player/working-man";
 import EventBg from "../../components/lottie-player/event-bg";
 const TechnoEvents = () => {
   const cards = [
@@ -35,7 +34,7 @@ const TechnoEvents = () => {
       id: "4",
     },
     {
-      name: "ENIGMA",
+      name: "ENIGMA/ENIGMA+",
       cont1:
         "Enigma is a weekly coding contest organized by the CP wing aimed to make the students comfortable with the level and format of such questions ",
       cont2:
@@ -50,7 +49,43 @@ const TechnoEvents = () => {
       cont2:
         "and leverage that to improve the extent of performance in fields like A.I.The ML wing of CSS organizes ML sessions on a regular basis to mentor students and help them advance in the field and pursue a career in it",
       img: "./images/events/ML-session.jpg",
+      id: "5",
+    },
+    {
+      name: "DSA MARATHON",
+      cont1:
+        "The Computer Science Society organizes DSA marathon events to help the students improve their DSA skills which can help them in their carrer",
+      cont2:
+        "and improve their coding skills as well as in creating a competetive enviornment among the students",
+      img: "./images/events/dsamarathon_image.jpg",
       id: "6",
+    },
+    {
+      name: "OPEN SOURCE HACKATHON",
+      cont1:
+        "The Computer Science Society organizes hackathons throughout the course of the year which are open source.",
+      cont2:
+        "It’s a great opportunity to get to know others that have the same interests  and it is a great add up to your CV",
+      img: "./images/events/hackathon.jpg",
+      id: "7",
+    },
+    {
+      name: "ML Projects",
+      cont1:
+        "The Computer Science Society showcases various ML projects based on real life problems",
+      cont2:
+        "and helps students explore the growing domain of machine learning and data science ",
+      img: "./images/events/MLProject.jpg",
+      id: "8",
+    },
+    {
+      name: "Design Workshop",
+      cont1:
+        "The Computer Science Society organizes various design workshops throughout the year for the students",
+      cont2:
+        "thus helping them in improving their desgin skills in various fields  ",
+      img: "./images/events/design.jpg",
+      id: "9",
     },
   ];
   return (
@@ -65,9 +100,7 @@ const TechnoEvents = () => {
         <div className={Styles.techno_bg_3}>
           <EventBg />
         </div>
-        <div className={Styles.lottie_1}>
-          <WorkingMan />
-        </div>
+
         {cards.map((event) => (
           <TechnoMap events={event} key={event.id} />
         ))}
