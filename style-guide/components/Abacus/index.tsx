@@ -4,10 +4,6 @@ import styles from "./styles.module.css";
 const Abacus = () => {
   const path = "./images/technical/";
   const images = [
-    ["1", "The InspireRoom"],
-    ["2", "The InspireRoom"],
-    ["3", "The InspireRoom"],
-    ["4", "The InspireRoom"],
     ["5", "The InspireRoom"],
     ["6", "The InspireRoom"],
     ["7", "The InspireRoom"],
