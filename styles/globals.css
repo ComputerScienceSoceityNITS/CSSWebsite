@@ -186,4 +186,11 @@ header .animated {
   .swiper-scrollbar-drag {
     background: linear-gradient(90deg, #f7085a, #be4c9b) !important;
   }
+
+  .swiper-button-next {
+    display: none !important;
+  }
+  .swiper-button-prev {
+    display: none !important;
+  }
 }
