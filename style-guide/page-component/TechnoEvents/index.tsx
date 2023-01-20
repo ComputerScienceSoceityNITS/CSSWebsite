@@ -75,7 +75,7 @@ const TechnoEvents = () => {
         "The Computer Science Society showcases various ML projects based on real life problems",
       cont2:
         "and helps students explore the growing domain of machine learning and data science ",
-      img: "./images/events/MLProject.jpg",
+      img: "./images/events/MLproject.jpg",
       id: "8",
     },
     {
