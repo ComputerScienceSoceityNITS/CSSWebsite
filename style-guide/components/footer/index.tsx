@@ -149,19 +149,14 @@ const Footer = (props: { Report: any; setReport: any }) => {
 
       <div className={Styles.ftnc}>
         <span className={Styles.reporttext}>
-          Download the official CSS mobile app
+          <a
+            href="https://www.amazon.com/gp/product/B0BSG25RBZ"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Download the official CSS mobile app
+          </a>
         </span>
-        <a
-          href="https://play.google.com/store/apps/details?id=com.niki.cssapp"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            className={Styles.ficon}
-            src="https://download.logo.wine/logo/Google_Play/Google_Play-Badge-Logo.wine.png"
-            alt="google-play-logo"
-          ></img>
-        </a>
       </div>
     </div>
   );
