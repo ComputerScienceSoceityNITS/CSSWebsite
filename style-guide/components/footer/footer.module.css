@@ -95,6 +95,7 @@
 }
 
 .footer .ftnc {
+  opacity: 0;
   font-family: "Anton";
   position: relative;
   bottom: 10rem;
