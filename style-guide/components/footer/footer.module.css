@@ -17,6 +17,7 @@
   justify-content: space-around;
   align-items: flex-end;
   z-index: 0;
+  cursor: default;
 }
 
 .footer .fmain {
@@ -96,6 +97,7 @@
 
 .footer .ftnc {
   opacity: 0;
+  pointer-events: none;
   font-family: "Anton";
   position: relative;
   bottom: 10rem;
