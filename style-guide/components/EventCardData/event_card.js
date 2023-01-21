@@ -14,8 +14,8 @@ const eventCardData = [
   },
   {
     heading: "Wings",
-    text: `CSS is comprised of seven different wings, namely Executive Wing, Dev Wing, CP Wing, ML Wing, PR Wing, Design Wing and Literary Wing `,
-    text2: ``,
+    text: `CSS is comprised of seven different wings. Dev Wing maintains the CSS website and app, and holds dev related events. CP wing holds coding contests and DSA marathons. PR Wing generates publicity and arranges speakers.`,
+    text2: `Design Wing handles designing of media related to CSS. Literary Wing manages the BitScribe magazine and writes content for the society. ML Wings organizes ML related events and workshops. Executive Wing binds together all the above and ensures proper functioning.`,
     bg: Event2,
     link: "/wings",
   },
