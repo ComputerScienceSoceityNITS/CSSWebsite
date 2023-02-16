@@ -16,7 +16,7 @@ const DevelopersNewMain = (props: DeveloperYear) => {
       <div className={Styles.maincontainer}>
         <div className={Styles.headingcont}>
           <div className={Styles.headinginnercont}>
-            <div className={Styles.heading}>OUR WEBSITE DEVELOPERS</div>
+            <div className={Styles.heading}>OUR DEVELOPERS TEAM</div>
           </div>
         </div>
         <div className={Styles.lottiecont}>

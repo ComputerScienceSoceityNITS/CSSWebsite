@@ -96,12 +96,32 @@ const Footer = (props: { Report: any; setReport: any }) => {
           </div>
           <div className={Styles.fmain_e}>
             <a
-              href="https://www.youtube.com/channel/UC8tCBXmdKueuFODn_IngQrg"
+              href="https://www.linkedin.com/company/cssnits/"
               style={{ textDecoration: "none" }}
               target="_blank"
               rel="noreferrer"
             >
-              Youtube
+              LinkedIn
+            </a>
+          </div>
+          <div className={Styles.fmain_e}>
+            <a
+              href="https://www.instagram.com/cssnits/"
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Instagram
+            </a>
+          </div>
+          <div className={Styles.fmain_e}>
+            <a
+              href="https://github.com/ComputerScienceSoceityNITS"
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Github
             </a>
           </div>
         </div>
@@ -129,19 +149,14 @@ const Footer = (props: { Report: any; setReport: any }) => {
 
       <div className={Styles.ftnc}>
         <span className={Styles.reporttext}>
-          Download the official CSS mobile app
+          <a
+            href="https://www.amazon.com/gp/product/B0BSG25RBZ"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Download the official CSS mobile app
+          </a>
         </span>
-        <a
-          href="https://play.google.com/store/apps/details?id=com.niki.cssapp"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            className={Styles.ficon}
-            src="https://download.logo.wine/logo/Google_Play/Google_Play-Badge-Logo.wine.png"
-            alt="google-play-logo"
-          ></img>
-        </a>
       </div>
     </div>
   );

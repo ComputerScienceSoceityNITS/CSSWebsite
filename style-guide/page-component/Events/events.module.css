@@ -18,6 +18,7 @@
 
 .body_bg {
   background-color: var(--events-bg-color);
+  min-height: 100vh !important;
 }
 
 .header .heading .coloredBg {
@@ -88,11 +89,9 @@
     opacity: 0;
     transform: translateX(-13vw);
   }
-
   75% {
     transform: translateX(0.8vw);
   }
-
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -103,7 +102,6 @@
   0% {
     backdrop-filter: blur(0);
   }
-
   100% {
     backdrop-filter: blur(5px);
   }
@@ -151,7 +149,6 @@
   .header {
     height: 65vh;
   }
-
   .header .heading {
     transform: scale(1.2);
     top: 31%;
@@ -159,7 +156,6 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
-
   .btnContainer .eventBtn {
     -webkit-box-flex: 1;
     -ms-flex: 1;

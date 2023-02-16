@@ -17,6 +17,7 @@
   justify-content: space-around;
   align-items: flex-end;
   z-index: 0;
+  cursor: default;
 }
 
 .footer .fmain {
@@ -111,7 +112,7 @@
 .ficon {
   height: 10rem;
   position: relative;
-  /* left: 15rem; */
+  background-color: var(--Grey-light-3);
   bottom: 4rem;
 }
 .footer .fcopyright {
@@ -162,6 +163,9 @@
 }
 
 .reporttext {
+  color: var(--footer-text);
+}
+.reporttext a {
   color: var(--footer-text);
 }
 @media only screen and (max-width: 1200px) {

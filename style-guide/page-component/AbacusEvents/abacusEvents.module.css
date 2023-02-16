@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Lobster&family=Quintessential&family=Roboto:wght@500&display=swap");
+.techno {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  max-width: 82vw;
+  width: 82vw;
+  margin: 0 auto;
+  padding: 5rem 0 8rem 0;
+  color: var(--Grey-light-3);
+  text-align: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  min-height: 100vh;
+  -ms-grid-rows: 30vw 32vw 32vw;
+  grid-template-rows: 30vw 32vw 32vw 32vw;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 7vw;
+  grid-column-gap: 5vw;
+  grid-template-areas: "lottie_1 abacus abacus" "card_1 lottie_2 card_2" "hacks enigma classes";
+  background-color: var(--event-techno-bg);
+}
+
+.techno_bg_1 {
+  position: absolute;
+  top: -10vh;
+  width: 100%;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.techno_bg_2 {
+  position: absolute;
+  top: 95vh;
+  width: 100%;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.techno_bg_3 {
+  position: absolute;
+  top: 200vh;
+  width: 100%;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.techno .lottie_1 {
+  grid-area: lottie_1;
+}
+
+.techno .lottie_1 {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+}
+
+.card_blur {
+  border-radius: 5px;
+  background-color: var(--reverse-event-techno-bg);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  border: 1px solid rgba(21, 1, 1, 0.2);
+  -webkit-box-shadow: 0 4px 16px 0 rgba(18, 1, 1, 0.18);
+  box-shadow: 0 4px 16px 0 rgba(19, 0, 0, 0.18);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.card_blur:hover .h_after {
+  -webkit-transform: translate(-50%, -50%) scaleX(1);
+  transform: translate(-50%, -50%) scaleX(1);
+  opacity: 1;
+}
+
+.card_blur:hover .h_before .img_1_c img {
+  -webkit-transform: scale(0.25);
+  transform: scale(0.25);
+  opacity: 0;
+}
+
+.card_blur:hover .h_before .d_title {
+  -webkit-transform: translate(-50%, 10%);
+  transform: translate(-50%, 10%);
+  opacity: 0;
+}
+
+.h_before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.h_before .img_1_c {
+  position: absolute;
+  width: 12vw;
+  height: 12vw;
+}
+
+.h_before .img_1_c img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.6s;
+  border-radius: 50%;
+  border: 2px solid var(--border-event);
+}
+
+.h_before .img_1_c {
+  top: 7%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.h_before .d_title {
+  position: absolute;
+  top: 70% !important;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 2.5vw !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: var(--event-style);
+}
+
+.h_before .d_title::first-letter {
+  color: #f80759;
+}
+
+.h_after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%) scaleX(0);
+  transform: translate(-50%, -30%) scaleX(0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.h_after .d_content p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  letter-spacing: 1px;
+  font-size: 1.1vw;
+  line-height: 1.3;
+  color: var(--event-style);
+}
+
+.d_title {
+  font-weight: 700;
+}
+
+.desktop_hide {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .desktop_hide {
+    display: block;
+  }
+  .techno {
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    max-width: 90vw;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 3.5rem 0 7rem 0;
+    text-align: center;
+    min-height: 100vh;
+    grid-template-rows: repeat(6, 60vw);
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 13vw;
+    grid-column-gap: 6vw;
+    grid-template-areas: "lottie_1 abacus" "card_1 card_2" "hacks lottie_2" "enigma classes";
+  }
+  .mobile_hide {
+    display: none;
+  }
+  .card_blur .title {
+    font-size: 0.9rem;
+    margin-top: 7vw;
+    margin-bottom: 4vw;
+    letter-spacing: 1px;
+    font-family: "Lobster", cursive;
+  }
+  .card_blur .title::first-letter {
+    color: #f80759;
+    font-weight: 500;
+  }
+  .card_blur p:nth-child(2) {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0.7rem;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+  .card_blur:hover {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+  }
+  .desktop_hide {
+    color: var(--event-style);
+  }
+}

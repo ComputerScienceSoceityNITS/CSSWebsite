@@ -40,6 +40,15 @@
   height: 20vw;
   width: 20vw;
 }
+.grid > div:nth-child(7) {
+  -ms-flex-item-align: end;
+  align-self: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  height: 20vw;
+  width: 20vw;
+}
 .grid > div:nth-child(2) {
   -ms-grid-column-align: center;
   justify-self: center;
@@ -94,6 +103,15 @@
     height: 40vh;
     width: 40vh;
   }
+  .gridContainer .grid > div:nth-child(7) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    height: 40vh;
+    width: 40vh;
+  }
   .gridContainer .grid > div:nth-child(4) {
     -ms-flex-item-align: end;
     align-self: flex-end;
@@ -136,6 +154,15 @@
     justify-content: start;
   }
   .gridContainer .grid > div:nth-child(3) {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    height: 40vh;
+    width: 40vh;
+  }
+  .gridContainer .grid > div:nth-child(7) {
     -ms-flex-item-align: end;
     align-self: flex-end;
     -webkit-box-pack: start;

@@ -25,7 +25,7 @@ const Gallery = () => {
                 color: active ? "rgb(228, 31, 111)" : "rgb(68, 68, 68)",
               }}
             >
-              Esperanza
+              Cultural
             </button>
             <button
               onClick={() => setActive(false)}
@@ -33,7 +33,7 @@ const Gallery = () => {
                 color: !active ? "rgb(228, 31, 111)" : "rgb(68, 68, 68)",
               }}
             >
-              Abacus
+              Technical
             </button>
           </div>
         </div>

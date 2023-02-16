@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Italianno&family=Lobster&family=Quintessential&family=Roboto:wght@500&display=swap");
-
 .techno {
   position: relative;
   display: -ms-grid;
@@ -13,17 +12,38 @@
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   min-height: 100vh;
-  -ms-grid-rows: 30vw 32vw 32vw;
+  -ms-grid-rows: 30vw 32vw 32vw 32vw;
   grid-template-rows: 30vw 32vw 32vw;
   -ms-grid-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 7vw;
   grid-column-gap: 5vw;
-  grid-template-areas:
-    "lottie_1 abacus abacus"
-    "card_1 lottie_2 card_2"
-    "hacks enigma classes";
+  grid-template-areas: "lottie_1 abacus abacus" "card_1 lottie_2 card_2" "hacks enigma classes";
   background-color: var(--event-techno-bg);
+}
+
+.techno_bg_1 {
+  position: absolute;
+  top: -10vh;
+  width: 100%;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.techno_bg_2 {
+  position: absolute;
+  top: 95vh;
+  width: 100%;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.techno_bg_3 {
+  position: absolute;
+  top: 200vh;
+  width: 100%;
+  opacity: 0.8;
+  pointer-events: none;
 }
 
 .card_blur {
@@ -31,9 +51,9 @@
   background-color: var(--reverse-event-techno-bg);
   -webkit-backdrop-filter: blur(40px);
   backdrop-filter: blur(40px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  -webkit-box-shadow: 0 4px 16px 0 rgba(255, 255, 255, 0.18);
-  box-shadow: 0 4px 16px 0 rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(21, 1, 1, 0.2);
+  -webkit-box-shadow: 0 4px 16px 0 rgba(18, 1, 1, 0.18);
+  box-shadow: 0 4px 16px 0 rgba(19, 0, 0, 0.18);
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -143,7 +163,6 @@
   .desktop_hide {
     display: block;
   }
-
   .techno {
     position: relative;
     display: -ms-grid;
@@ -154,22 +173,16 @@
     padding: 3.5rem 0 7rem 0;
     text-align: center;
     min-height: 100vh;
-    grid-template-rows: repeat(4, 60vw);
+    grid-template-rows: repeat(5, 60vw);
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 13vw;
     grid-column-gap: 6vw;
-    grid-template-areas:
-      "lottie_1 abacus"
-      "card_1 card_2"
-      "hacks lottie_2"
-      "enigma classes";
+    grid-template-areas: "lottie_1 abacus" "card_1 card_2" "hacks lottie_2" "enigma classes";
   }
-
   .mobile_hide {
     display: none;
   }
-
   .card_blur .title {
     font-size: 0.9rem;
     margin-top: 7vw;
@@ -177,12 +190,10 @@
     letter-spacing: 1px;
     font-family: "Lobster", cursive;
   }
-
   .card_blur .title::first-letter {
     color: #f80759;
     font-weight: 500;
   }
-
   .card_blur p:nth-child(2) {
     width: 90%;
     margin: 0 auto;
@@ -191,12 +202,10 @@
     letter-spacing: 1px;
     font-weight: 300;
   }
-
   .card_blur:hover {
     -webkit-backdrop-filter: blur(3px);
     backdrop-filter: blur(3px);
   }
-
   .desktop_hide {
     color: var(--event-style);
   }
