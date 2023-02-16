@@ -32,4 +32,11 @@
   --dark-blue: #14327f;
   --sky-blue-light: #b8fefe;
   --blue-dark: #acc3fd;
+  --events-bg: #222332;
+  --events-bg-light: linear-gradient(
+    200deg,
+    hsl(340, 95%, 80%) 0%,
+    hsl(340, 85%, 89%) 30%,
+    hsl(0, 8%, 95%) 70%
+  );
 }
