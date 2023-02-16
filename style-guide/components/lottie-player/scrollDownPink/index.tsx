@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Styles from "./styles.module.css";
+import Styles from "./scrollDownPink.module.css";
 
 export default function Rainman() {
   const ref = useRef(null);
@@ -9,10 +9,10 @@ export default function Rainman() {
   return (
     <lottie-player
       ref={ref}
-      id={Styles.headLottie}
-      src="https://assets7.lottiefiles.com/private_files/lf30_dsx6vnmh.json"
+      src="https://assets5.lottiefiles.com/packages/lf20_zcHPSW8Gsv.json"
       background="transparent"
       speed="1"
+      id={Styles.scrollDownLottiePink}
       loop
       autoplay
     ></lottie-player>

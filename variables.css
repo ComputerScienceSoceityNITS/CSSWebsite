@@ -72,11 +72,14 @@
   --wing-black: rgb(255, 255, 255);
   --wing-tooltip-bg: rgba(240, 238, 238, 0.8);
   --carousel-shadow: #666666;
-  --border-event: var(--Grey-dark-5);
+  --border-event: #373850;
   --reverse-event-techno-bg: rgba(255, 255, 255, 0.15);
   --error-page-bg3: rgba(32, 25, 26, 0.95);
   --error-page-bg2: rgba(18, 40, 40, 0.95);
   --error-page-bg1: rgba(23, 19, 19, 0.95);
+  --events-section-bg: var(--events-bg);
+  --events-button-bg: #2c0022;
+  --events-card-bg-2: #292232;
 }
 
 .light {
@@ -113,6 +116,7 @@
     hsl(340, 85%, 89%) 30%,
     hsl(0, 8%, 95%) 70%
   );
+  --events-section-bg: var(--events-bg-light);
   --hero-section-text: var(--Grey-dark-1);
   --hero-section-bg-text: rgb(205, 204, 204);
   --network-lottie-invert-amount: 1;
@@ -160,9 +164,11 @@
   --wing-black: rgb(0, 0, 0);
   --wing-tooltip-bg: rgba(248, 7, 87, 0.8);
   --carousel-shadow: rgb(202, 78, 89);
-  --border-event: var(--Grey-dark-5);
+  --border-event: #4a54ea;
   --reverse-event-techno-bg: var(--wing-white);
   --error-page-bg1: rgba(252, 156, 188, 0.9);
   --error-page-bg2: rgba(251, 203, 219, 0.9);
   --error-page-bg3: rgba(243, 241, 241, 0.9);
+  --events-button-bg: hsl(330, 100%, 100%);
+  --events-card-bg-2: rgba(245, 255, 255, 0.95);
 }
