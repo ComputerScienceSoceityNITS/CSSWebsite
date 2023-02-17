@@ -4,11 +4,9 @@
   width: 10rem;
   height: 10rem;
   box-shadow: 1px 1px 8px rgba(10, 10, 2, 0.2);
-  background: linear-gradient(
-    -45deg,
-    var(--theme-primary),
-    var(--theme-secondary)
-  );
+  background: linear-gradient(-45deg,
+      var(--theme-primary),
+      var(--theme-secondary));
 }
 
 @media screen and (width < 600px) {
