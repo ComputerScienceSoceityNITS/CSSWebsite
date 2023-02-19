@@ -80,6 +80,8 @@
   --events-section-bg: var(--events-bg);
   --events-button-bg: #2c0022;
   --events-card-bg-2: #292232;
+  --events-heading-text: rgba(199, 203, 203, 0.8);
+  /* --events-heading-text:  rgb(21 1 1 / 20%); */
 }
 
 .light {
@@ -95,6 +97,8 @@
   );
   --memberTag-text-shadow: 1px 3px 6px var(--offBlack);
   --text-outline: hsl(317, 45%, 45%);
+  /* --events-heading-text:rgb(197 113 113 / 50%); */
+  --events-heading-text: rgba(0, 0, 0, 0.2);
   --devcard-bg: var(--primary-light);
   --devcard-bottom: rgba(248, 246, 246, 0.8);
   --devcard-text: var(--black);

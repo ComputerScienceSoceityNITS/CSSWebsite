@@ -19,14 +19,6 @@ const CSSMap = ({ CSSEvents }) => {
               <span className={Styles.mobile_hide}>{CSSEvents.cont3}</span>
             </p>
           </div>
-          <button
-            className={Styles.eventsBtn}
-            onClick={() => {
-              window.open(CSSEvents.link, "_blank");
-            }}
-          >
-            [LEARN MORE]
-          </button>
         </div>
       </div>
     </div>

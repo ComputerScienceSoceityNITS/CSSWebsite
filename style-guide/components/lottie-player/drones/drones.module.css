@@ -1,12 +1,22 @@
 #drones {
+  z-index: 10;
   position: absolute;
-  bottom: 0%;
-  right: -5%;
+  background: transparent;
+  left: 46%;
   width: 400px;
   height: 400px;
+  top: 31vw;
 }
-@media only screen and (max-width: 1200px) {
-  #drones {
+@media screen and (max-width: 1400px) {
+  #headLottie {
+    width: 400px;
+    height: 400px;
+
+    top: 14%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #headLottie {
     display: none;
   }
 }
