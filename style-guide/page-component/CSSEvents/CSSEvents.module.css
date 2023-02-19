@@ -4,16 +4,15 @@
   position: relative;
   display: -ms-grid;
   display: grid;
-  max-width: 90vw;
-  width: 75vw;
-  margin: 0 auto;
-  padding: 3.5rem 0 7rem 0;
+  padding: 1rem 0 7rem 0;
   text-align: center;
-  grid-template-rows: repeat(5, 30vw);
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-row-gap: 8vw;
-  grid-column-gap: 30vw;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  grid-template-rows: repeat(3, 25vw);
+  grid-template-columns: repeat(4, 15vw);
+  grid-row-gap: 4vw;
+  grid-column-gap: 5vw;
+  justify-content: space-around;
 }
 
 .card_blur {
@@ -70,8 +69,9 @@
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+
 .h_before .d_title {
-  font-size: 2.3vw;
+  font-size: 1.4vw;
   color: var(--wing-black);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   position: relative;
@@ -112,20 +112,14 @@
   display: none;
 }
 
-.eventsBtn {
-  background-color: var(--events-button-bg);
-  height: 5%;
-  border: 2px solid #fc0160;
-  color: var(--event-style);
-  position: absolute;
-  top: 88%;
-  width: 50%;
-  left: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.2em;
-  font-size: 1.1em;
+.myDIV {
+  display: none;
+}
+.goTop {
+  height: 200px;
+  z-index: 10;
+  position: relative;
+  top: -5vh;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -147,12 +141,11 @@
     padding: 3.5rem 0 7rem 0;
     text-align: center;
     min-height: 100vh;
-    grid-template-rows: repeat(5, 60vw);
+    grid-template-rows: repeat(6, 60vw);
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 13vw;
     grid-column-gap: 6vw;
-    grid-template-areas: "lottie_1 abacus" "card_1 card_2" "hacks lottie_2" "enigma classes";
   }
 
   .h_after .d_content p {
@@ -163,16 +156,8 @@
     display: none;
   }
 
-  .eventsBtn {
-    height: 3%;
-    top: 90%;
-    width: 50%;
-    left: 25%;
-    padding: 0.9em;
-    font-size: 0.6em;
-  }
   .h_before .d_title {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
   .h_before .img_1_c {
@@ -180,5 +165,11 @@
     height: 22vw;
     top: 7%;
     left: 50%;
+  }
+  .goTop {
+    height: 100px;
+    z-index: 10;
+    position: relative;
+    top: 0;
   }
 }

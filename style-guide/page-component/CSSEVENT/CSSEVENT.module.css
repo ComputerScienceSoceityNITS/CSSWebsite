@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Lobster&family=Quintessential&family=Roboto:wght@500&display=swap");
+
+.CSS {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  padding: 17vw 0 15vw 0;
+  text-align: center;
+  grid-template-rows: repeat(1, 60vh);
+  grid-template-columns: repeat(2, 30vw);
+  grid-row-gap: 8vw;
+  grid-column-gap: 5vw;
+  justify-content: space-evenly;
+  height: 60vw;
+}
+.event_card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+}
+.event_card :nth-child(1) {
+  font-size: 4vw;
+  color: var(--reportbox-bg);
+  position: relative;
+  font-family: "Italianno", cursive;
+}
+.event_card a img {
+  height: 40vw;
+  width: 25vw;
+  padding-bottom: 1em;
+}
+
+@media screen and (max-width: 700px) {
+  .CSS {
+    padding: 0;
+    height: 25vh;
+  }
+  .event_card a img {
+    height: 40vw;
+    width: 25vw;
+    padding-bottom: 0;
+  }
+  .event_card {
+    margin-top: 2vh;
+  }
+}
