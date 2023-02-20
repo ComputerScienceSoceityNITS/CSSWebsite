@@ -134,7 +134,7 @@ const Footer = (props: { Report: any; setReport: any }) => {
             cursor: "pointer",
           }}
         >
-          <img src="./images/rocket.png" alt="report" />
+          <img src="/images/rocket.png" alt="report" />
           <span
             className={Styles.reporttext}
             onClick={() => {
