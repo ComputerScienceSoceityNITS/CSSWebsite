@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  padding: 1rem 2rem;
+  padding: 0.1rem 5.5rem;
   background-attachment: fixed;
 }
 
@@ -24,10 +24,14 @@
   color: var(--hero-section-text);
   font-family: Gill Sans, sans-serif;
   margin: 0.4em 0;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-weight: 700;
 }
-
+.heroHead {
+  font-size: 2rem;
+  color: var(--hero-section-text);
+  margin: 1rem 0;
+}
 .heroLogo {
   position: absolute;
   right: 10rem;
@@ -37,6 +41,9 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 0.1rem 1rem;
+  }
   .heroText {
     font-size: 5rem;
   }
@@ -46,11 +53,11 @@
   }
 
   .heroDesc {
-    max-width: 8=90%;
+    max-width: 100%;
     color: var(--hero-section-text);
     font-family: Gill Sans, sans-serif;
-    margin: 0.4em 0;
-    font-size: 1rem;
+    margin: 0.4em 0.3em;
+    font-size: 0.9rem;
     font-weight: 700;
   }
 }
