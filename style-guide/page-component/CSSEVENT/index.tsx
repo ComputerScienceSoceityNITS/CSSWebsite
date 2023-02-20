@@ -9,7 +9,7 @@ const CSSEVENT = () => {
       cont: "Enigma is a weekly coding contest organized by the CP wing aimed to make the students comfortable with the level and format of such questions and to provide them with a competitive edge in their endeavors.Having established a trail of success stories with NIT Silchar CSE students and alumni being placed in top companies around the globe, the CSS of NIT Silchar understands the importance of competitive programming and its role in cracking international hackathons and MNCs.",
       img: "./images/events/ENIGMAbg.png",
       id: "1",
-      link: "https://nitscss.live/events",
+      link: "https://nitscss.live/abacus",
     },
 
     {
@@ -17,7 +17,7 @@ const CSSEVENT = () => {
       cont: "Enigma is a weekly coding contest organized by the CP wing aimed to make the students comfortable with the level and format of such questions and to provide them with a competitive edge in their endeavors.Having established a trail of success stories with NIT Silchar CSE students and alumni being placed in top companies around the globe, the CSS of NIT Silchar understands the importance of competitive programming and its role in cracking international hackathons and MNCs.",
       img: "./images/events/ENIGMAbg.png",
       id: "2",
-      link: "https://nitscss.live/events",
+      link: "https://nitscss.live/enigma",
     },
   ];
 

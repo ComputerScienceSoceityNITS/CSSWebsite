@@ -3,7 +3,6 @@ import Styles from "./events.module.css";
 import CSSEvents from "../CSSEvents";
 import EventsBg from "../../components/lottie-player/events";
 import CSSEVENT from "../CSSEVENT";
-import DownLottie from "../../components/lottie-player/scrollDownPink";
 const Events = () => {
   return (
     <>

@@ -23,6 +23,7 @@
   border: 1px solid rgba(21, 1, 1, 0.2);
   -webkit-box-shadow: 0 4px 16px 0 rgba(15, 10, 10, 0.15);
   box-shadow: 0 4px 16px 0 rgba(16, 15, 15, 0.18);
+  user-select: none;
 }
 
 .card_blur:hover .h_after {

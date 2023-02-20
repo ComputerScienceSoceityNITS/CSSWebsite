@@ -1,11 +1,14 @@
 .wings_page {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(200deg,
+  background: linear-gradient(
+      200deg,
       var(--wing-page-bg1),
       var(--wing-page-bg2) 45%,
-      var(--wing-page-bg3) 80%),
-    url("/images/WingsOfCSS/small/people-min.png") no-repeat center center / cover;
+      var(--wing-page-bg3) 80%
+    ),
+    url("/images/WingsOfCSS/small/people-min.png") no-repeat center center /
+      cover;
   overflow: auto;
   background-position: fixed;
   /* background-attachment: fixed; */
@@ -44,9 +47,11 @@
   display: inline-block;
   padding: 10px;
   border-radius: 5px;
-  background: linear-gradient(-45deg,
-      var(--theme-primary),
-      var(--theme-secondary));
+  background: linear-gradient(
+    -45deg,
+    var(--theme-primary),
+    var(--theme-secondary)
+  );
   -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 0 50%, 0 0);
   clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 0 50%, 0 0);
   transition: all 0.1s ease-in;
@@ -230,21 +235,27 @@
 
 /* way-1 */
 .scroll {
-  background: -webkit-repeating-linear-gradient(90deg,
-      var(--wing-white),
-      var(--wing-white) 2px,
-      var(--navigation-button-bg) 2px,
-      var(--navigation-button-bg) 16.67%);
-  background: -moz-repeating-linear-gradient(90deg,
-      var(--wing-white),
-      var(--wing-white) 2px,
-      var(--navigation-button-bg) 2px,
-      var(--navigation-button-bg) 16.67%);
-  background: repeating-linear-gradient(90deg,
-      var(--wing-white),
-      var(--wing-white) 2px,
-      var(--navigation-button-bg) 2px,
-      var(--navigation-button-bg) 16.67%);
+  background: -webkit-repeating-linear-gradient(
+    90deg,
+    var(--wing-white),
+    var(--wing-white) 2px,
+    var(--navigation-button-bg) 2px,
+    var(--navigation-button-bg) 16.67%
+  );
+  background: -moz-repeating-linear-gradient(
+    90deg,
+    var(--wing-white),
+    var(--wing-white) 2px,
+    var(--navigation-button-bg) 2px,
+    var(--navigation-button-bg) 16.67%
+  );
+  background: repeating-linear-gradient(
+    90deg,
+    var(--wing-white),
+    var(--wing-white) 2px,
+    var(--navigation-button-bg) 2px,
+    var(--navigation-button-bg) 16.67%
+  );
 }
 
 .wings_scrollBar:after {
@@ -275,50 +286,65 @@ way-2
 
 /* cards */
 .wing_card:nth-child(2) {
-  background: linear-gradient(200deg,
+  background: linear-gradient(
+      200deg,
       var(--wing-card-bg1),
-      var(--wing-card-bg2)),
+      var(--wing-card-bg2)
+    ),
     url("/images/WingsOfCSS/small/exec-min.jpg") no-repeat center center / cover;
 }
 
 .wing_card:nth-child(3) {
-  background: linear-gradient(200deg,
+  background: linear-gradient(
+      200deg,
       var(--wing-card-bg1),
-      var(--wing-card-bg2)),
+      var(--wing-card-bg2)
+    ),
     url("/images/WingsOfCSS/small/dev-min.jpg") no-repeat center center / cover;
 }
 
 .wing_card:nth-child(4) {
-  background: linear-gradient(200deg,
+  background: linear-gradient(
+      200deg,
       var(--wing-card-bg1),
-      var(--wing-card-bg2)),
+      var(--wing-card-bg2)
+    ),
     url("/images/WingsOfCSS/small/cp-min.jpg") no-repeat center center / cover;
 }
 
 .wing_card:nth-child(5) {
-  background: linear-gradient(200deg,
+  background: linear-gradient(
+      200deg,
       var(--wing-card-bg1),
-      var(--wing-card-bg2)),
+      var(--wing-card-bg2)
+    ),
     url("/images/WingsOfCSS/small/ai-min.jpg") no-repeat center center / cover;
 }
 
 .wing_card:nth-child(6) {
-  background: linear-gradient(200deg,
+  background: linear-gradient(
+      200deg,
       var(--wing-card-bg1),
-      var(--wing-card-bg2)),
+      var(--wing-card-bg2)
+    ),
     url("/images/WingsOfCSS/small/pr-min.jpg") no-repeat center center / cover;
 }
 
 .wing_card:nth-child(7) {
-  background: linear-gradient(200deg,
+  background: linear-gradient(
+      200deg,
       var(--wing-card-bg1),
-      var(--wing-card-bg2)),
-    url("/images/WingsOfCSS/small/design-min.jpg") no-repeat center center / cover;
+      var(--wing-card-bg2)
+    ),
+    url("/images/WingsOfCSS/small/design-min.jpg") no-repeat center center /
+      cover;
 }
 
 .wing_card:nth-child(8) {
-  background: linear-gradient(200deg,
+  background: linear-gradient(
+      200deg,
       var(--wing-card-bg1),
-      var(--wing-card-bg2)),
+      var(--wing-card-bg2)
+    ),
     url("/images/WingsOfCSS/small/lit-min.jpg") no-repeat center center / cover;
 }

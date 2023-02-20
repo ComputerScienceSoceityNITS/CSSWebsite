@@ -6,6 +6,7 @@
 
 .events_heading {
   padding: 6em 0 2em 6em;
+  user-select: none;
 }
 
 .events_content {
@@ -15,20 +16,20 @@
 
 .events_heading :nth-child(1) {
   color: var(--reportbox-bg);
-  font-size: 4em;
+  font-size: 3em;
   display: block;
   font-family: "Archivo", sans-serif;
 }
 
 .events_heading :nth-child(2) {
   color: var(--reportbox-bg);
-  font-size: 4em;
+  font-size: 3em;
   display: block;
   font-family: "Archivo", sans-serif;
 }
 
 .events_heading :nth-child(2)::first-letter {
-  font-size: 10vh;
+  font-size: 9vh;
   font-weight: bolder;
   color: white;
   background-color: #e41f6f;
@@ -37,7 +38,7 @@
 
 .events_heading :nth-child(3) {
   color: var(--reportbox-bg);
-  font-size: 1.5em;
+  font-size: 1.4em;
   display: block;
   width: 60vw;
   padding-top: 2em;
@@ -50,14 +51,15 @@
   align-items: center;
   background: var(--events-section-bg-2);
   flex-direction: column;
+  user-select: none;
 }
 
 .society_name h1 {
-  font-size: 6vw;
+  font-size: 5vw;
   text-align: center;
   color: var(--events-heading-text);
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 6vw;
+  margin-top: 3vw;
 }
 
 .society_name p {
@@ -93,5 +95,8 @@
 
   .events_heading :nth-child(2)::first-letter {
     font-size: 8vh;
+  }
+  .events_heading :nth-child(3) {
+    font-size: 1.1em;
   }
 }

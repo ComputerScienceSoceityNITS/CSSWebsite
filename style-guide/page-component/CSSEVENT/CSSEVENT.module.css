@@ -18,6 +18,7 @@
   align-items: center;
   flex-direction: column;
   height: fit-content;
+  user-select: none;
 }
 .event_card :nth-child(1) {
   font-size: 4vw;
@@ -29,12 +30,13 @@
   height: 40vw;
   width: 25vw;
   padding-bottom: 1em;
+  user-select: none;
 }
 
 @media screen and (max-width: 700px) {
   .CSS {
     padding: 0;
-    height: 25vh;
+    height: 40vh;
   }
   .event_card a img {
     height: 40vw;
@@ -42,6 +44,6 @@
     padding-bottom: 0;
   }
   .event_card {
-    margin-top: 2vh;
+    margin-top: 21vh;
   }
 }

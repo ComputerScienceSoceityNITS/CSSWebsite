@@ -81,6 +81,7 @@
   --events-button-bg: #2c0022;
   --events-card-bg-2: #292232;
   --events-heading-text: rgba(199, 203, 203, 0.8);
+  --enigma-section-text: var(--Grey-dark-1);
   /* --events-heading-text:  rgb(21 1 1 / 20%); */
 }
 
@@ -175,4 +176,5 @@
   --error-page-bg3: rgba(243, 241, 241, 0.9);
   --events-button-bg: hsl(330, 100%, 100%);
   --events-card-bg-2: rgba(245, 255, 255, 0.95);
+  --enigma-section-text: var(--Grey-light-4);
 }

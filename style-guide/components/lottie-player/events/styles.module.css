@@ -1,8 +1,7 @@
 #headLottie {
   position: absolute;
-  /* right: 5vw; */
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   top: 5%;
   left: 70%;
 }
