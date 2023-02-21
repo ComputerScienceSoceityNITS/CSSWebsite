@@ -66,11 +66,3 @@
     font-size: 3rem;
   }
 }
-
-@media only screen and (max-width: 450px) {
-  .card {
-    gap: 0.5rem;
-    width: 70vw;
-    height: 130px;
-  }
-}
