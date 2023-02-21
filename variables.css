@@ -81,6 +81,7 @@
   --events-heading-text: rgba(199, 203, 203, 0.8);
   --enigma-section-text: var(--Grey-dark-1);
   --abacus-heading: var(--Grey-dark-3);
+  --abacus-shadow: rgba(78, 68, 40, 0.6) -1px -1px 6px, rgba(74, 74, 146, 0.6) 1px 1px 6px;
   /* --events-heading-text:  rgb(21 1 1 / 20%); */
 }
 
@@ -169,4 +170,5 @@
   --events-card-bg-2: rgba(245, 255, 255, 0.95);
   --enigma-section-text: var(--Grey-light-4);
   --abacus-heading: var(--Grey-dark-2);
+  --abacus-shadow: rgb(255 215 77 / 60%) -1px -1px 6px, rgb(124 127 255 / 60%) 1px 1px 6px;
 }

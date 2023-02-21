@@ -3,16 +3,14 @@ import styles from './styles.module.css';
 
 const AbacusPageComponent = ({ data }) => {
     const [registered, setRegistered] = useState(false);
-    const [timeDifference, setTimeDifference] = useState('');
+    const [timeDifference, setTimeDifference] = useState('some');
     useEffect(() => {
         setInterval(() => {
             const date = data.startDate.split('-');
-            const time = data.time.split(':');
+            // const time = data.time.split(':');
             const oneDay = 1000 * 60 * 60 * 24;
             const presentDate = new Date();
             const fixedDate = new Date(date[2], date[1] - 1, date[0]);
-            // if (presentDate.getMonth() == date[1] && presentDate.getDate() > date[0])
-            //     fixedDate.setFullYear(fixedDate.getFullYear() + 1)
             if (fixedDate.getTime() < presentDate.getTime()) {
                 console.log("error");
                 setTimeDifference('LOL');
