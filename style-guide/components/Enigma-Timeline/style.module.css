@@ -6,13 +6,13 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  padding: 0.1rem 5.5rem;
+  padding: 0.1rem 2em;
   background-attachment: fixed;
 }
 
 .heroText {
   user-select: none;
-  font-size: 7rem;
+  font-size: 9em;
   letter-spacing: 1px;
   font-family: Anton, sans-serif;
   color: var(--executive-section-text);
@@ -21,8 +21,6 @@
 .TimestampDates {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
   gap: 0.5rem;
   flex-wrap: wrap;
 }
@@ -34,9 +32,6 @@
   border-radius: 0.3rem;
   border: 1px solid var(--devcard-text);
   background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-weight: 700;
   font-family: Helvetica;
   line-height: 28px;
@@ -69,23 +64,47 @@
   line-height: 28px;
   cursor: pointer;
 }
+
 .enigmaStatus {
-  padding: 0.5rem 0;
+  padding-top: 1em;
+  padding-bottom: 0.4em;
   font-weight: 700;
   font-family: Helvetica;
   color: var(--devcard-text);
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 0.1rem 1rem;
+  }
+
   .heroText {
     font-size: 3.3rem;
   }
+}
+
+@media screen and (max-width: 450px) {
+  .hero {
+    padding: 0.1rem 0rem;
+    text-align: center;
+    margin: auto;
+    justify-self: unset;
+    justify-content: center;
+    align-items: center;
+  }
 
   .TimestampCards {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: auto;
-    transform: translateX(-12vw);
+    padding: 0.1rem 0rem;
+    text-align: center;
+    margin: auto;
+    justify-self: unset;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+  }
+
+  .TimestampDates {
+    justify-content: center;
+    align-items: center;
   }
 }

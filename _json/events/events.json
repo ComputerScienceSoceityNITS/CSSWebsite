@@ -1,75 +1,127 @@
 {
-    "success": true,
-    "events": {
-        "abacus": [
-            {
-                "name": "CSS WARS",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
-                "startDate": "22-12-2023",
-                "endDate": "22-12-2023",
-                "eventType": "Coding",
-                "minTeamSize": 2,
-                "maxTeamSize": 4,
-                "coverPic": "/images/abacus/1.jpg",
-                "time": "9:45PM"
-            },
-            {
-                "name": "CSS WARS 2",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
-                "startDate": "22-12-2023",
-                "endDate": "22-12-2023",
-                "eventType": "Coding",
-                "minTeamSize": 2,
-                "maxTeamSize": 4,
-                "coverPic": "/images/abacus/6.jpg",
-                "time": "9:45PM"
-            },
-            {
-                "name": "CSS Hacks",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
-                "startDate": "23-12-2023",
-                "endDate": "22-12-2023",
-                "eventType": "Coding",
-                "minTeamSize": 2,
-                "maxTeamSize": 4,
-                "coverPic": "/images/abacus/2.jpg",
-                "time": "9:45PM"
-            },
-            {
-                "name": "CSS Hacks 2",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
-                "startDate": "21-02-2023",
-                "endDate": "22-12-2023",
-                "eventType": "Coding",
-                "minTeamSize": 2,
-                "maxTeamSize": 4,
-                "coverPic": "/images/abacus/2.jpg",
-                "time": "9:45PM"
-            },
-            {
-                "name": "Statsmania",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
-                "startDate": "24-12-2023",
-                "endDate": "22-12-2023",
-                "eventType": "Data",
-                "minTeamSize": 2,
-                "maxTeamSize": 4,
-                "coverPic": "/images/abacus/3.jpg",
-                "time": "9:45PM"
-            },
-            {
-                "name": "LOL",
-                "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
-                "startDate": "25-12-2023",
-                "endDate": "22-12-2023",
-                "eventType": "Fun",
-                "minTeamSize": 2,
-                "maxTeamSize": 4,
-                "coverPic": "/images/abacus/4.jpg",
-                "time": "9:45PM"
-            }
-        ],
-        "enigma": []
-    },
-    "eventsCount": 2
+  "success": true,
+  "events": {
+    "abacus": [
+      {
+        "name": "CSS WARS",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
+        "startDate": "22-12-2023",
+        "endDate": "22-12-2023",
+        "eventType": "Coding",
+        "minTeamSize": 2,
+        "maxTeamSize": 4,
+        "coverPic": "/images/abacus/1.jpg",
+        "time": "9:45PM"
+      },
+      {
+        "name": "CSS WARS 2",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
+        "startDate": "22-12-2023",
+        "endDate": "22-12-2023",
+        "eventType": "Coding",
+        "minTeamSize": 2,
+        "maxTeamSize": 4,
+        "coverPic": "/images/abacus/6.jpg",
+        "time": "9:45PM"
+      },
+      {
+        "name": "CSS Hacks",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
+        "startDate": "23-12-2023",
+        "endDate": "22-12-2023",
+        "eventType": "Coding",
+        "minTeamSize": 2,
+        "maxTeamSize": 4,
+        "coverPic": "/images/abacus/2.jpg",
+        "time": "9:45PM"
+      },
+      {
+        "name": "CSS Hacks 2",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
+        "startDate": "21-02-2023",
+        "endDate": "22-12-2023",
+        "eventType": "Coding",
+        "minTeamSize": 2,
+        "maxTeamSize": 4,
+        "coverPic": "/images/abacus/2.jpg",
+        "time": "9:45PM"
+      },
+      {
+        "name": "Statsmania",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
+        "startDate": "24-12-2023",
+        "endDate": "22-12-2023",
+        "eventType": "Data",
+        "minTeamSize": 2,
+        "maxTeamSize": 4,
+        "coverPic": "/images/abacus/3.jpg",
+        "time": "9:45PM"
+      },
+      {
+        "name": "LOL",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
+        "startDate": "25-12-2023",
+        "endDate": "22-12-2023",
+        "eventType": "Fun",
+        "minTeamSize": 2,
+        "maxTeamSize": 4,
+        "coverPic": "/images/abacus/4.jpg",
+        "time": "9:45PM"
+      }
+    ],
+    "enigmaover": [
+      {
+        "name": "ENIGMA + 1.0",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
+        "contestDate": "22-09-2022",
+        "startTime": "9:05PM",
+        "endTime": "11:30PM"
+      },
+      {
+        "name": "ENIGMA 33.0",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
+        "contestDate": "22-08-2022",
+        "startTime": "8:05PM",
+        "endTime": "10:30PM"
+      },
+      {
+        "name": "ENIGMA 32.0",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
+        "contestDate": "22-07-2022",
+        "startTime": "8:05PM",
+        "endTime": "10:30PM"
+      },
+      {
+        "name": "ENIGMA 31.0",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
+        "contestDate": "22-06-2022",
+        "startTime": "8:05PM",
+        "endTime": "10:30PM"
+      }
+    ],
+    "enigma": [
+      {
+        "name": "ENIGMA 38.0",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
+        "contestDate": "22-09-2023",
+        "startTime": "9:05PM",
+        "endTime": "11:30PM"
+      },
+      {
+        "name": "ENIGMA 37.0",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
+        "contestDate": "22-08-2023",
+        "startTime": "8:05PM",
+        "endTime": "10:30PM"
+      },
+      {
+        "name": "ENIGMA 36.0",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
+        "contestDate": "22-07-2023",
+        "startTime": "6:05PM",
+        "endTime": "8:30PM"
+      }
+    ]
+  },
+  "eventsCount": 3
 }

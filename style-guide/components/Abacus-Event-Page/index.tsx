@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import styles from './styles.module.css';
+import React, { useState, useEffect } from "react";
+import styles from "./styles.module.css";
 
 const AbacusPageComponent = ({ data }) => {
     const [registered, setRegistered] = useState(false);
@@ -55,7 +55,7 @@ const AbacusPageComponent = ({ data }) => {
             {/* <p className={styles.banner}>The Event will start in <span>{timeDifference}</span> days</p> */}
         </div>
     </>
-    )
-}
+    );
+};
 
 export default AbacusPageComponent;
