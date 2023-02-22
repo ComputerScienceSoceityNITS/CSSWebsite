@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 
-const AbacusPageComponent = ({ data }) => {
+const AbacusPageComponent = ({ data }: any) => {
   const [registered, setRegistered] = useState(false);
-  const [timeDifference, setTimeDifference] = useState("");
+  const [timeDifference, setTimeDifference] = useState("some");
   useEffect(() => {
     setInterval(() => {
       const date = data.startDate.split("-");
-      const time = data.time.split(":");
+      // const time = data.time.split(':');
       const oneDay = 1000 * 60 * 60 * 24;
       const presentDate = new Date();
       const fixedDate = new Date(date[2], date[1] - 1, date[0]);
-      // if (presentDate.getMonth() == date[1] && presentDate.getDate() > date[0])
-      //     fixedDate.setFullYear(fixedDate.getFullYear() + 1)
       if (fixedDate.getTime() < presentDate.getTime()) {
         console.log("error");
         setTimeDifference("LOL");
@@ -29,7 +27,7 @@ const AbacusPageComponent = ({ data }) => {
         fixed: fixedDate.getTime(),
       });
     }, 10000);
-  }, []);
+  });
   return (
     <>
       <div
@@ -46,7 +44,11 @@ const AbacusPageComponent = ({ data }) => {
           <p>Min Team Size :- {data.minTeamSize}</p>
           <p>Max Team Size :- {data.maxTeamSize}</p>
         </div>
-        <img className={styles.heroLogo} src="/images/logo_compressed.png" />
+        <img
+          className={styles.heroLogo}
+          src="/images/logo_compressed.png"
+          alt=""
+        />
         <p className={styles.uppperBanner1} style={{ width: "300vw" }}>
           Computer Science Society brings you {data.eventType} Event
         </p>
@@ -58,12 +60,13 @@ const AbacusPageComponent = ({ data }) => {
         <p className={styles.description}>{data.description}</p>
         {!registered && (
           <div className={styles.buttonSection}>
-            <button
+            <a
+              href={`/abacus/register/${data.name}`}
               className={styles.btn}
               onClick={() => setRegistered(!registered)}
             >
               Register
-            </button>
+            </a>
           </div>
         )}
         {timeDifference === "LOL" ? (

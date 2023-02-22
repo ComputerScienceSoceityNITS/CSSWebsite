@@ -76,10 +76,7 @@ const Footer = (props: { Report: any; setReport: any }) => {
         <div className={`${Styles.fmain_c} ${Styles.remove}`}>
           <div className={Styles.fmain_e}>Contact</div>
           <div className={Styles.fmain_e}>
-            CSS, NIT Silchar,
-            <br />
-            Silchar, Assam <br />
-            788010
+            CSS, NIT Silchar, Silchar, Assam 788010
           </div>
         </div>
         <div className={Styles.fmain_c}>
@@ -148,6 +145,17 @@ const Footer = (props: { Report: any; setReport: any }) => {
       </div>
 
       <div className={Styles.ftnc}>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.cssofficial.cssapp"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            className={Styles.ficon}
+            src="https://download.logo.wine/logo/Google_Play/Google_Play-Badge-Logo.wine.png"
+            alt="google-play-logo"
+          ></img>
+        </a>
         <span className={Styles.reporttext}>
           <a
             href="https://www.amazon.com/gp/product/B0BSG25RBZ"

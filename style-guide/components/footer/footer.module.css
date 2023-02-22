@@ -98,31 +98,44 @@
 .footer .ftnc {
   font-family: "Anton";
   position: relative;
-  bottom: 10rem;
-  padding: 3em;
+  bottom: 0rem;
+  /* padding: 3em; */
   line-height: 1.5em;
-  height: 15rem;
+  height: 10rem;
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  right: 1.5rem;
+  right: 17rem;
   margin-top: 2rem;
   z-index: 10;
 }
+
 .ficon {
+  height: 10rem;
+  position: relative;
+  /* left: 15rem; */
+  bottom: 4rem;
+}
+
+/* .ficon {
   height: 10rem;
   position: relative;
   background-color: var(--Grey-light-3);
   bottom: 4rem;
-}
+} */
+
 .footer .fcopyright {
   position: absolute;
   font-family: Anton;
   font-weight: 100;
-  color: var(--footer-text);
-  top: 90%;
-  left: 5%;
+  background: var(--footer-text);
+  width: 100%;
+  color: var(--footer-bg);
+  padding: 0.5rem 2rem;
+  bottom: 0%;
+  left: 0%;
 }
+
 .report {
   position: relative;
   right: 40vw;
@@ -131,25 +144,31 @@
   margin-top: 4rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
+
 .report img {
   height: 40px;
   width: 40px;
   transition: all 0.5s ease-in-out;
 }
+
 .report span {
   position: relative;
   left: 3rem;
   bottom: 2rem;
 }
+
 .report:hover {
   opacity: 0.5;
 }
+
 .report:hover img {
   transform: translateZ(0px) rotateY(180deg) !important;
 }
+
 .report:hover::before {
   width: 150%;
 }
+
 .report:before {
   content: "";
   position: absolute;
@@ -165,9 +184,11 @@
 .reporttext {
   color: var(--footer-text);
 }
+
 .reporttext a {
   color: var(--footer-text);
 }
+
 @media only screen and (max-width: 1200px) {
   .footer {
     z-index: 2;
@@ -177,25 +198,31 @@
     text-align: center;
     margin-top: -2em;
   }
+
   .footer .fmain {
     width: 100%;
     flex-direction: column;
   }
+
   .footer .fmain_c {
     margin-bottom: 2em !important;
   }
+
   .footer .fmain_e {
     font-size: 1em !important;
   }
+
   .footer .fmain_e::before {
     width: 0% !important;
   }
+
   .footer .ftnc {
     height: 25rem;
     top: 5rem;
     width: 60%;
     left: 10vw;
   }
+
   .footer .fcopyright {
     width: 100%;
     transform: translate(-50%, 50%);
@@ -206,13 +233,16 @@
     letter-spacing: 1px;
     opacity: 0.5;
   }
+
   .footgroup {
     display: none;
   }
+
   .remove {
     display: none !important;
     pointer-events: none;
   }
+
   .report {
     position: absolute;
     margin: auto;
@@ -228,6 +258,7 @@
     left: 45vw;
   }
 }
+
 .footgroup {
   bottom: 0%;
   right: 0%;
@@ -236,25 +267,30 @@
   height: 50vh;
   z-index: 3;
 }
+
 @media only screen and (max-width: 540px) {
   .footer .ftnc {
-    height: 24rem;
-    top: 2rem;
+    height: 3rem;
+    top: -5rem;
     left: 0.5rem;
   }
+
   .ficon {
     height: 6rem;
     padding: 0;
     left: 0.7rem;
   }
+
   .report {
     width: 29vw;
     right: 40vw;
   }
+
   .report img {
     position: relative;
     left: 2vw;
   }
+
   .report:hover::before {
     width: 0%;
   }
