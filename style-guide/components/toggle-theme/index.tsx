@@ -6,8 +6,8 @@ import React, { useEffect } from "react";
 const ToggleTheme = ({ children }: any) => {
   const { setColorScheme } = children;
   useEffect(() => {
-    const mode: string | null = localStorage.getItem('theme');
-    setColorScheme(mode === 'dark' ? true : false);
+    const mode: string | null = localStorage.getItem("theme");
+    setColorScheme(mode === "dark" ? true : false);
   }, []);
 
   return (
@@ -19,11 +19,10 @@ const ToggleTheme = ({ children }: any) => {
             className={`${Styles.checkbox}`}
             onClick={() => {
               setColorScheme((colorScheme: Boolean) => {
-                localStorage.setItem('theme', colorScheme ? 'light' : 'dark');
+                localStorage.setItem("theme", colorScheme ? "light" : "dark");
                 return !colorScheme;
-              })
-            }
-            }
+              });
+            }}
           />
           <div className={`${Styles.toggleIcon}`}>
             <div className={`${Styles.sun}`}>

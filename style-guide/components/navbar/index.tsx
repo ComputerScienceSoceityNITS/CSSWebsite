@@ -14,13 +14,15 @@ const Navbar = () => {
   return (
     <div className={Styles.navigation}>
       <button
-        className={`${Styles.navigation__button} ${toggle ? Styles.navigation__button__on : ""
-          }`}
+        className={`${Styles.navigation__button} ${
+          toggle ? Styles.navigation__button__on : ""
+        }`}
         onClick={() => setToggle(!toggle)}
       >
         <span
-          className={`${Styles.navigation__icon} ${toggle ? Styles.navigation__icon__on : ""
-            }`}
+          className={`${Styles.navigation__icon} ${
+            toggle ? Styles.navigation__icon__on : ""
+          }`}
         >
           {" "}
           &nbsp;{" "}
@@ -28,15 +30,17 @@ const Navbar = () => {
       </button>
 
       <div
-        className={`${Styles.navigation__bg} ${toggle ? Styles.navigation__bg__on : ""
-          }`}
+        className={`${Styles.navigation__bg} ${
+          toggle ? Styles.navigation__bg__on : ""
+        }`}
       >
         &nbsp;
       </div>
 
       <nav
-        className={`${Styles.navigation__nav} ${toggle ? Styles.navigation__nav__on : ""
-          }`}
+        className={`${Styles.navigation__nav} ${
+          toggle ? Styles.navigation__nav__on : ""
+        }`}
       >
         <div className={Styles.title}>
           <p>
