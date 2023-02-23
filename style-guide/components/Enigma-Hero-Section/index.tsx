@@ -4,7 +4,7 @@ import styles from "./style.module.css";
 const Hero = () => {
   return (
     <div className={styles.hero}>
-      <h1 className={styles.heroText}>ENIGMA</h1>
+      <h1 className={styles.heroText}>ENIGMA / ENIGMA+</h1>
       <h3 className={styles.heroHead}>WHAT?</h3>
       <p className={styles.heroDesc}>
         Lorem ipsum dolor sit amet consectetur. Odio non eu mi cursus arcu a non

@@ -21,9 +21,9 @@ const Events = () => {
             </p>
           </div>
           <div className={Styles.society_name}>
-            <h1>COMPUTER SCIENCE SOCIETY</h1>
-            <span></span>
-            <p>presents</p>
+            <h1 className={Styles.CSSAnimation}>
+              COMPUTER SCIENCE SOCIETY PRESENTS TECHNICAL & CULTURAL EVENTS
+            </h1>
           </div>
         </div>
         <div className={Styles.eventsCards}>

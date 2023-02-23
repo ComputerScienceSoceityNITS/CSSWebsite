@@ -49,6 +49,11 @@
   color: var(--devcard-text);
 }
 
+.aboutEnigma {
+  font-size: 1.2em;
+  color: var(--wing-black);
+}
+
 .activeLink {
   padding: 0.5rem 1rem;
   color: white;
@@ -85,12 +90,7 @@
 
 @media screen and (max-width: 450px) {
   .hero {
-    padding: 0.1rem 0rem;
-    text-align: center;
-    margin: auto;
-    justify-self: unset;
     justify-content: center;
-    align-items: center;
   }
 
   .TimestampCards {
@@ -106,5 +106,10 @@
   .TimestampDates {
     justify-content: center;
     align-items: center;
+  }
+
+  .aboutEnigma {
+    font-size: 1rem;
+    width: 90vw;
   }
 }

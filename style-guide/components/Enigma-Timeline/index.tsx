@@ -19,6 +19,31 @@ const Hero = () => {
   return (
     <div className={styles.hero}>
       <h1 className={styles.heroText}>TIMELINE</h1>
+      <h1 className={styles.enigmaStatus}>MORE ABOUT ENIGMA</h1>
+      <div className={styles.aboutEnigma}>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+          adipisci unde tenetur praesentium! Possimus adipisci velit assumenda
+          minima soluta vero.
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Vero, iste? Fugit, dolor. Aliquam,
+          excepturi culpa, iusto facilis laboriosam veritatis autem ipsa, eius
+          deleniti omnis harum voluptatibus? Vel, qui ipsum. Perferendis! Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Ullam doloremque
+          blanditiis suscipit reiciendis rem corrupti reprehenderit dicta nihil
+          labore numquam? adipisicing elit. Sunt, quasi!
+        </p>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          velit officia corrupti harum molestias laboriosam, laudantium at ad.
+          Deserunt, iure doloremque. Ab, eveniet quasi molestias minima
+          inventore commodi esse nam!
+        </p>
+      </div>
       <h1 className={styles.enigmaStatus}>UPCOMING</h1>
 
       <div className={styles.TimestampDates}>
