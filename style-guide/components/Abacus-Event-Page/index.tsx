@@ -5,28 +5,26 @@ const AbacusPageComponent = ({ data }: any) => {
   const [registered, setRegistered] = useState(false);
   const [timeDifference, setTimeDifference] = useState("some");
   useEffect(() => {
-    setInterval(() => {
-      const date = data.startDate.split("-");
-      // const time = data.time.split(':');
-      const oneDay = 1000 * 60 * 60 * 24;
-      const presentDate = new Date();
-      const fixedDate = new Date(date[2], date[1] - 1, date[0]);
-      if (fixedDate.getTime() < presentDate.getTime()) {
-        console.log("error");
-        setTimeDifference("LOL");
-        return;
-      }
-      const Result =
-        Math.round(fixedDate.getTime() - presentDate.getTime()) / oneDay;
-      const finalResult = Result.toFixed(0);
-      setTimeDifference(`${finalResult}`);
-      console.log({ finalResult });
-      console.log({ presentDate, fixedDate });
-      console.log({
-        present: presentDate.getTime(),
-        fixed: fixedDate.getTime(),
-      });
-    }, 10000);
+    const date = data.startDate.split("-");
+    // const time = data.time.split(':');
+    const oneDay = 1000 * 60 * 60 * 24;
+    const presentDate = new Date();
+    const fixedDate = new Date(date[2], date[1] - 1, date[0]);
+    if (fixedDate.getTime() < presentDate.getTime()) {
+      console.log("error");
+      setTimeDifference("LOL");
+      return;
+    }
+    const Result =
+      Math.round(fixedDate.getTime() - presentDate.getTime()) / oneDay;
+    const finalResult = Result.toFixed(0);
+    setTimeDifference(`${finalResult}`);
+    console.log({ finalResult });
+    console.log({ presentDate, fixedDate });
+    console.log({
+      present: presentDate.getTime(),
+      fixed: fixedDate.getTime(),
+    });
   });
   return (
     <>
@@ -58,7 +56,7 @@ const AbacusPageComponent = ({ data }: any) => {
           Computer Science Society brings you {data.eventType} Event
         </p>
         <p className={styles.description}>{data.description}</p>
-        {!registered && (
+        {!registered && timeDifference !== "LOL" && (
           <div className={styles.buttonSection}>
             <a
               href={`/abacus/register/${data.name}`}
