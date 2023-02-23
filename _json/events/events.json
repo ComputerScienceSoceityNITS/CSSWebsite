@@ -9,7 +9,7 @@
         "endDate": "22-12-2023",
         "eventType": "Coding",
         "minTeamSize": 2,
-        "maxTeamSize": 4,
+        "maxTeamSize": 6,
         "coverPic": "/images/abacus/1.jpg",
         "time": "9:45PM"
       },
@@ -20,7 +20,7 @@
         "endDate": "22-12-2023",
         "eventType": "Coding",
         "minTeamSize": 2,
-        "maxTeamSize": 4,
+        "maxTeamSize": 8,
         "coverPic": "/images/abacus/6.jpg",
         "time": "9:45PM"
       },
@@ -41,8 +41,8 @@
         "startDate": "21-02-2023",
         "endDate": "22-12-2023",
         "eventType": "Coding",
-        "minTeamSize": 2,
-        "maxTeamSize": 4,
+        "minTeamSize": 1,
+        "maxTeamSize": 1,
         "coverPic": "/images/abacus/2.jpg",
         "time": "9:45PM"
       },

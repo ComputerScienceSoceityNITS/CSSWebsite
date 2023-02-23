@@ -3,6 +3,19 @@ import styles from "./styles.module.css";
 
 const AbacusRegisterComponent = ({ data }: any) => {
   const essentialData = ["Team Name", "Leader's Name", "Phone Number"];
+  const minTeamSize = data.minTeamSize - 1;
+  const maxTeamSize = data.maxTeamSize - 1;
+  const eventNameLength = data.name.split(" ").length;
+  let eventNameClass;
+  if (eventNameLength >= 3) {
+    eventNameClass = "eventName3";
+  } else if (eventNameLength === 2) {
+    eventNameClass = "eventName2";
+  } else {
+    eventNameClass = "eventName";
+  }
+  console.log(eventNameLength);
+
   return (
     <>
       <div
@@ -13,20 +26,89 @@ const AbacusRegisterComponent = ({ data }: any) => {
         }}
       >
         <div className={styles.registerCard}>
-          <div className={styles.registerForm}>
+          <div
+            className={
+              minTeamSize > 0 ? styles.registerForm : styles.registerFormMin
+            }
+          >
             {essentialData.map((element, index) => {
               return (
                 <div className={styles.group} key={index}>
-                  <input required type="text" className={styles.input} />
+                  <input
+                    required
+                    type="text"
+                    className={styles.input}
+                    placeholder="lol"
+                  />
                   <span className={styles.highlight}></span>
                   <span className={styles.bar}></span>
                   <label className={styles.label}>{element}</label>
                 </div>
               );
             })}
+            {minTeamSize > 0 && (
+              <div className={styles.teamWrapper}>
+                <legend className={styles.legend}>Required Team Members</legend>
+                <fieldsets className={styles.fieldsets}>
+                  {[...Array(minTeamSize)].map((x, index) => {
+                    return (
+                      <div className={styles.group} key={index}>
+                        <input
+                          required
+                          type="text"
+                          className={styles.input}
+                          placeholder="lol"
+                        />
+                        <span className={styles.highlight}></span>
+                        <span className={styles.bar}></span>
+                        <label className={styles.label}>{`Team Member ${
+                          index + 1
+                        }`}</label>
+                      </div>
+                    );
+                  })}
+                </fieldsets>
+              </div>
+            )}
+            {maxTeamSize > 0 && (
+              // <div className={styles.teamWrapper && styles.labelException}>
+              <div className={styles.teamWrapper}>
+                <legend className={styles.legend}>Optional Team Members</legend>
+                <fieldsets className={styles.fieldsets}>
+                  {[...Array(maxTeamSize - minTeamSize)].map((x, index) => {
+                    return (
+                      <div className={styles.group} key={minTeamSize + index}>
+                        <input
+                          required={false}
+                          type="text"
+                          className={styles.input}
+                          placeholder="lol"
+                        />
+                        <span className={styles.highlight}></span>
+                        <span className={styles.bar}></span>
+                        <label className={styles.label}>{`Team Member ${
+                          minTeamSize + index + 1
+                        }`}</label>
+                      </div>
+                    );
+                  })}
+                </fieldsets>
+              </div>
+            )}
+            <div className={styles.btnWrapper}>
+              <button className={styles.btn}>submit</button>
+            </div>
           </div>
           <div className={styles.eventNameSection}>
-            <h1 className={styles.eventName}>{data.name}</h1>
+            <h1
+              className={
+                (eventNameLength === 1 && styles.eventName) ||
+                (eventNameLength === 2 && styles.eventName2) ||
+                (eventNameLength >= 3 && styles.eventName3)
+              }
+            >
+              {data.name}
+            </h1>
           </div>
         </div>
       </div>
