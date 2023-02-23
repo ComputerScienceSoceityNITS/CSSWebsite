@@ -120,7 +120,7 @@
   height: 200px;
   z-index: 10;
   position: relative;
-  top: -5vh;
+  top: 3vw;
 }
 
 @media only screen and (max-width: 1400px) {

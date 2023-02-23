@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=East+Sea+Dokdo&display=swap");
 
 .events_bg {
-  background-color: var(--event-techno-bg);
+  background-color: var(--footer-text);
 }
 
 .events_heading {
@@ -11,7 +11,7 @@
 
 .events_content {
   background: var(--events-section-bg);
-  height: 55vh;
+  height: 100vh;
 }
 
 .events_heading :nth-child(1) {
@@ -49,13 +49,12 @@
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  background: var(--events-section-bg-2);
   flex-direction: column;
   user-select: none;
 }
 
 .society_name h1 {
-  font-size: 5vw;
+  font-size: 5em;
   text-align: center;
   color: var(--events-heading-text);
   font-family: Arial, Helvetica, sans-serif;
@@ -69,18 +68,30 @@
   font-family: cursive;
   text-align: center !important;
 }
+.CSSAnimation {
+  user-select: none;
+  font-size: 7rem;
+  width: 40em;
+  letter-spacing: 1px;
+  font-family: Anton, sans-serif;
+  color: var(--executive-section-text);
+  animation: animate 12s linear infinite;
+}
 
+@keyframes animate {
+  0% {
+    transform: translateX(60vw);
+  }
+
+  100% {
+    transform: translateX(-200vw);
+  }
+}
 @media screen and (max-width: 700px) {
   .events_heading :nth-child(3) {
     font-size: 1em;
   }
-
-  .events_heading :nth-child(5) {
-    display: none;
-  }
-
   .events_heading {
-    background: var(--events-section-bg);
     min-height: 27vh;
     padding: 6em 0 2em 4em;
   }
@@ -98,5 +109,8 @@
   }
   .events_heading :nth-child(3) {
     font-size: 1.1em;
+  }
+  .CSSAnimation {
+    display: none;
   }
 }

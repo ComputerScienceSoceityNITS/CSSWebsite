@@ -12,6 +12,10 @@
 }
 @media only screen and (max-width: 700px) {
   #headLottie {
-    display: none;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 55%;
+    left: 0;
   }
 }

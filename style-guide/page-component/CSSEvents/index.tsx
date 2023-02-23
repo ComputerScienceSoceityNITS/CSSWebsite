@@ -128,7 +128,7 @@ const CSSEvents = () => {
 
   const scrollToTop = () => {
     window.scrollTo({
-      top: 1800,
+      top: 1450,
       behavior: "smooth",
     });
   };

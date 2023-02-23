@@ -6,7 +6,7 @@ const CSSEVENTMAP = ({ CSSEvents }) => {
       {" "}
       <div className={` ${Styles.event_card}`}>
         <p>{CSSEvents.name}</p>
-        <a href={CSSEvents.link} target="_blank" rel="noreferrer">
+        <a href={CSSEvents.link}>
           <img src={CSSEvents.img} alt="Image" />
         </a>
       </div>

@@ -71,55 +71,69 @@
     ],
     "enigmaover": [
       {
-        "name": "ENIGMA + 1.0",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
+        "name": "ENIGMA 31.0",
         "contestDate": "22-09-2022",
         "startTime": "9:05PM",
-        "endTime": "11:30PM"
+        "endTime": "11:30PM",
+        "contestSetters": "Ayush, Dimpal, Bijay",
+        "contestTesters": "Ayush, Dimpal, Bijay",
+        "participants": "156"
       },
       {
         "name": "ENIGMA 33.0",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
         "contestDate": "22-08-2022",
         "startTime": "8:05PM",
-        "endTime": "10:30PM"
+        "endTime": "10:30PM",
+        "contestSetters": "Ayush, Dimpal, Bijay",
+        "contestTesters": "Ayush, Dimpal, Bijay",
+        "participants": "156"
       },
       {
         "name": "ENIGMA 32.0",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
         "contestDate": "22-07-2022",
         "startTime": "8:05PM",
-        "endTime": "10:30PM"
+        "endTime": "10:30PM",
+        "contestSetters": "Ayush, Dimpal, Bijay",
+        "contestTesters": "Ayush, Dimpal, Bijay",
+        "participants": "156"
       },
       {
         "name": "ENIGMA 31.0",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
         "contestDate": "22-06-2022",
         "startTime": "8:05PM",
-        "endTime": "10:30PM"
+        "endTime": "10:30PM",
+        "contestSetters": "Ayush, Dimpal, Bijay",
+        "contestTesters": "Ayush, Dimpal, Bijay",
+        "participants": "156"
       }
     ],
     "enigma": [
       {
-        "name": "ENIGMA 38.0",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
-        "contestDate": "22-09-2023",
-        "startTime": "9:05PM",
-        "endTime": "11:30PM"
+        "name": "ENIGMA 31.0",
+        "contestDate": "22-02-2023",
+        "startTime": "9:30PM",
+        "endTime": "11:30PM",
+        "contestSetters": "Ayush, Dimpal, Bijay",
+        "contestTesters": "Ayush, Dimpal, Bijay",
+        "participants": "156"
       },
       {
         "name": "ENIGMA 37.0",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
         "contestDate": "22-08-2023",
         "startTime": "8:05PM",
-        "endTime": "10:30PM"
+        "endTime": "10:30PM",
+        "contestSetters": "Ayush, Dimpal, Bijay",
+        "contestTesters": "Ayush, Dimpal, Bijay",
+        "participants": "156"
       },
       {
         "name": "ENIGMA 36.0",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim in aliquid explicabo eum ullam at esse voluptate, itaque excepturi placeat quasi velit aut aliquam repellat, odit, minus minima! Cumque fugiat asperiores consectetur laborum sit quis neque dolorem exercitationem quam, at ipsa inventore dicta. A molestiae distinctio quidem, blanditiis aliquid quasi inventore dicta temporibus quisquam? Maiores quam numquam quae repudiandae voluptatibus ducimus, praesentium sit a pariatur expedita distinctio itaque dolores in animi, beatae magnam necessitatibus hic illum odio, ex doloribus sed aspernatur adipisci nemo. Laboriosam delectus, omnis explicabo iusto, voluptates possimus dolor, dolorum modi magni esse assumenda harum ex fuga!",
         "contestDate": "22-07-2023",
         "startTime": "6:05PM",
-        "endTime": "8:30PM"
+        "endTime": "8:30PM",
+        "contestSetters": "Ayush, Dimpal, Bijay",
+        "contestTesters": "Ayush, Dimpal, Bijay",
+        "participants": "156"
       }
     ]
   },

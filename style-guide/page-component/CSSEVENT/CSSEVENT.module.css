@@ -6,12 +6,12 @@
   display: grid;
   padding: 17vw 0 15vw 0;
   text-align: center;
-  grid-template-rows: repeat(1, 60vh);
+  /* grid-template-rows: repeat(1, 20vh); */
   grid-template-columns: repeat(2, 30vw);
   grid-row-gap: 8vw;
   grid-column-gap: 5vw;
   justify-content: space-evenly;
-  height: 60vw;
+  height: 30vw;
 }
 .event_card {
   display: flex;
@@ -20,30 +20,35 @@
   height: fit-content;
   user-select: none;
 }
+
 .event_card :nth-child(1) {
-  font-size: 4vw;
+  font-size: 3.4rem;
   color: var(--reportbox-bg);
   position: relative;
-  font-family: "Italianno", cursive;
+  top: -23vw;
+  margin-bottom: 2vw;
 }
 .event_card a img {
   height: 40vw;
   width: 25vw;
-  padding-bottom: 1em;
   user-select: none;
 }
 
 @media screen and (max-width: 700px) {
-  .CSS {
-    padding: 0;
-    height: 40vh;
-  }
   .event_card a img {
     height: 40vw;
     width: 25vw;
     padding-bottom: 0;
   }
-  .event_card {
-    margin-top: 21vh;
+  .event_card :nth-child(1) {
+    font-size: 2rem;
+    top: -24vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .event_card :nth-child(1) {
+    top: -26vw;
+    font-size: 1.7rem;
   }
 }
