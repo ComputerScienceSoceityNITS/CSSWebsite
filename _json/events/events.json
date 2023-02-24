@@ -69,62 +69,27 @@
         "time": "9:45PM"
       }
     ],
-    "enigmaover": [
-      {
-        "name": "ENIGMA 31.0",
-        "contestDate": "22-09-2022",
-        "startTime": "9:05PM",
-        "endTime": "11:30PM",
-        "contestSetters": "Ayush, Dimpal, Bijay",
-        "contestTesters": "Ayush, Dimpal, Bijay",
-        "participants": "156"
-      },
-      {
-        "name": "ENIGMA 33.0",
-        "contestDate": "22-08-2022",
-        "startTime": "8:05PM",
-        "endTime": "10:30PM",
-        "contestSetters": "Ayush, Dimpal, Bijay",
-        "contestTesters": "Ayush, Dimpal, Bijay",
-        "participants": "156"
-      },
-      {
-        "name": "ENIGMA 32.0",
-        "contestDate": "22-07-2022",
-        "startTime": "8:05PM",
-        "endTime": "10:30PM",
-        "contestSetters": "Ayush, Dimpal, Bijay",
-        "contestTesters": "Ayush, Dimpal, Bijay",
-        "participants": "156"
-      },
-      {
-        "name": "ENIGMA 31.0",
-        "contestDate": "22-06-2022",
-        "startTime": "8:05PM",
-        "endTime": "10:30PM",
-        "contestSetters": "Ayush, Dimpal, Bijay",
-        "contestTesters": "Ayush, Dimpal, Bijay",
-        "participants": "156"
-      }
-    ],
+
     "enigma": [
       {
         "name": "ENIGMA 31.0",
-        "contestDate": "22-02-2023",
+        "contestDate": "22-01-2023",
         "startTime": "9:30PM",
         "endTime": "11:30PM",
         "contestSetters": "Ayush, Dimpal, Bijay",
         "contestTesters": "Ayush, Dimpal, Bijay",
-        "participants": "156"
+        "participants": "156",
+        "contestLink": "https://codeforces.com/contests/"
       },
       {
-        "name": "ENIGMA 37.0",
-        "contestDate": "22-08-2023",
+        "name": "ENIGMA 33.0",
+        "contestDate": "22-02-2023",
         "startTime": "8:05PM",
         "endTime": "10:30PM",
         "contestSetters": "Ayush, Dimpal, Bijay",
         "contestTesters": "Ayush, Dimpal, Bijay",
-        "participants": "156"
+        "participants": "156",
+        "contestLink": "https://codeforces.com/contests/"
       },
       {
         "name": "ENIGMA 36.0",
@@ -133,9 +98,20 @@
         "endTime": "8:30PM",
         "contestSetters": "Ayush, Dimpal, Bijay",
         "contestTesters": "Ayush, Dimpal, Bijay",
-        "participants": "156"
+        "participants": "156",
+        "contestLink": "https://codeforces.com/contests/"
+      },
+      {
+        "name": "ENIGMA 37.0",
+        "contestDate": "22-08-2023",
+        "startTime": "9:30PM",
+        "endTime": "11:30PM",
+        "contestSetters": "Ayush, Dimpal, Bijay",
+        "contestTesters": "Ayush, Dimpal, Bijay",
+        "participants": "156",
+        "contestLink": "https://codeforces.com/contests/"
       }
     ]
   },
-  "eventsCount": 3
+  "eventsCount": 2
 }

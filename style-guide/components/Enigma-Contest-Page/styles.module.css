@@ -65,7 +65,6 @@
   cursor: pointer;
   text-decoration: none;
 }
-
 .rankSection {
   padding: 0 2rem;
 }
@@ -90,6 +89,7 @@
 
 .uppperBanner1 {
   position: relative;
+  bottom: -4.5rem;
   user-select: none;
   font-size: 7rem;
   letter-spacing: 1px;
@@ -105,8 +105,23 @@
   letter-spacing: 1px;
   font-family: Anton, sans-serif;
   color: var(--executive-section-text);
-  /* width: 100vw; */
-  animation: toLeft2 15s linear infinite reverse forwards;
+  width: 200vw;
+  animation: toLeft2 25s linear infinite reverse forwards;
+}
+
+.banner > span,
+.banner2 > span {
+  color: var(--abacus-heading);
+}
+
+@keyframes toLeft {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translate(-110vw);
+  }
 }
 
 @keyframes toLeft2 {
@@ -115,7 +130,7 @@
   }
 
   100% {
-    transform: translateX(-130vw);
+    transform: translateX(-160vw);
   }
 }
 

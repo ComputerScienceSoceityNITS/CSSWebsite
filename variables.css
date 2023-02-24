@@ -86,7 +86,7 @@
   --abacus-shadow: rgba(78, 68, 40, 0.6) -1px -1px 6px,
     rgba(74, 74, 146, 0.6) 1px 1px 6px;
   --abacus-register-bg: #181818;
-  /* --events-heading-text:  rgb(21 1 1 / 20%); */
+  --events-section-text: var(--Grey-dark-2);
 }
 
 .light {
@@ -102,7 +102,6 @@
   );
   --memberTag-text-shadow: 1px 3px 6px var(--offBlack);
   --text-outline: hsl(317, 45%, 45%);
-  /* --events-heading-text:rgb(197 113 113 / 50%); */
   --events-heading-text: rgba(0, 0, 0, 0.2);
   --devcard-bg: var(--primary-light);
   --devcard-bottom: rgba(248, 246, 246, 0.8);
@@ -142,8 +141,8 @@
   --executive-section-text: var(--Grey-dark-3);
   --executive-section-bg: var(--Grey-light-3);
   --executive-card-text: var(--Grey-light-3);
-  /* --executive-card-bg: var(--Grey-dark-1); */
   --executive-card-bg: rgb(97, 97, 97);
+  --events-section-text: var(--Grey-dark-1);
   --upcomingEvents-section-bg: var(--Grey-light-3);
   --upcomingEvents-section-text: var(--offBlack);
   --upev-lotte-invert-amount: 1;
@@ -185,4 +184,6 @@
   --abacus-shadow: rgb(255 215 77 / 60%) -1px -1px 6px,
     rgb(124 127 255 / 60%) 1px 1px 6px;
   --abacus-register-bg: #eaeaea;
+
+  --events-section-text: var(--Grey-dark-3);
 }

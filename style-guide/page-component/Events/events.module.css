@@ -5,13 +5,13 @@
 }
 
 .events_heading {
-  padding: 6em 0 2em 6em;
+  padding: 6em 0 2em 0em;
   user-select: none;
 }
 
 .events_content {
   background: var(--events-section-bg);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .events_heading :nth-child(1) {
@@ -19,6 +19,7 @@
   font-size: 3em;
   display: block;
   font-family: "Archivo", sans-serif;
+  padding-left: 2em;
 }
 
 .events_heading :nth-child(2) {
@@ -26,6 +27,7 @@
   font-size: 3em;
   display: block;
   font-family: "Archivo", sans-serif;
+  padding-left: 2em;
 }
 
 .events_heading :nth-child(2)::first-letter {
@@ -42,58 +44,131 @@
   display: block;
   width: 60vw;
   padding-top: 2em;
+  padding-left: 2em;
 }
 
-.society_name {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-direction: column;
-  user-select: none;
-}
-
-.society_name h1 {
-  font-size: 5em;
-  text-align: center;
-  color: var(--events-heading-text);
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 3vw;
-}
-
-.society_name p {
-  color: var(--events-heading-text);
-  font-size: 2vw;
-  margin-top: 0.5em;
-  font-family: cursive;
-  text-align: center !important;
-}
 .CSSAnimation {
   user-select: none;
-  font-size: 7rem;
-  width: 40em;
   letter-spacing: 1px;
   font-family: Anton, sans-serif;
-  color: var(--executive-section-text);
-  animation: animate 12s linear infinite;
+  color: var(--events-section-text);
+  display: flex;
+  justify-content: center;
+  font-size: 10vw;
+  margin-top: 1em;
+}
+
+.abacus_card {
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.enigma_card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  user-select: none;
+}
+
+.abacus_card p {
+  font-size: 10vw;
+  user-select: none;
+  letter-spacing: 1px;
+  font-family: Anton, sans-serif;
+  color: var(--events-section-text);
+  animation: animate 20s linear infinite;
+}
+
+.enigma_card p {
+  font-size: 10vw;
+  user-select: none;
+  letter-spacing: 1px;
+  font-family: Anton, sans-serif;
+  color: var(--events-section-text);
+  animation: animatereverse 20s linear infinite;
 }
 
 @keyframes animate {
   0% {
-    transform: translateX(60vw);
+    transform: translateX(0);
   }
 
-  100% {
-    transform: translateX(-200vw);
+  40% {
+    transform: translateX(80%);
   }
 }
+
+@keyframes animatereverse {
+  0% {
+    transform: translate(0);
+  }
+
+  40% {
+    transform: translate(-80%);
+  }
+}
+
+.abacus_card img,
+.enigma_card img {
+  border-radius: 5%;
+  width: 10vw;
+  height: 10vw;
+  cursor: pointer;
+  margin: 0 4vw;
+}
+
+.eventButton {
+  background: linear-gradient(#3a121f, #3a0808);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1vw 2.4vw;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  width: 12vw;
+  --tilt: 24px;
+  --tilt2: 24px;
+  -webkit-clip-path: polygon(0 50%, 0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  clip-path: polygon(0 50%, 0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  height: 100%;
+  transition: -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+  z-index: -1;
+  -webkit-clip-path: polygon(
+    0 50%,
+    var(--tilt) 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    var(--tilt) 100%
+  );
+  clip-path: polygon(
+    20% 50%,
+    var(--tilt) 0,
+    calc(100% - var(--tilt)) 0,
+    95% 50%,
+    calc(100% - var(--tilt2)) 100%,
+    var(--tilt) 100%
+  );
+  font-family: Anton, sans-serif;
+  letter-spacing: 1px;
+}
+
+.eventButton:hover {
+  background: linear-gradient(#2c0d17, #231111);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  transform: translateY(2px);
+}
+
 @media screen and (max-width: 700px) {
   .events_heading :nth-child(3) {
     font-size: 1em;
-  }
-  .events_heading {
-    min-height: 27vh;
-    padding: 6em 0 2em 4em;
   }
 
   .events_heading :nth-child(2) {
@@ -107,10 +182,12 @@
   .events_heading :nth-child(2)::first-letter {
     font-size: 8vh;
   }
+
   .events_heading :nth-child(3) {
     font-size: 1.1em;
+    width: 80vw;
   }
-  .CSSAnimation {
+  .eventButton {
     display: none;
   }
 }
