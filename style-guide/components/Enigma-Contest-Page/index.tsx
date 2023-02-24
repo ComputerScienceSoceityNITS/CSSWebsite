@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import styles from "./styles.module.css";
 import RankCard from "../Enigma-Result-Card";
-const EnigmaPageComponent = ({ data }) => {
+const EnigmaPageComponent = ({ data }: any) => {
   const [registered, setRegistered] = useState(false);
   return (
     <>
+      {" "}
       <div
         className={styles.heroSection}
         style={{
@@ -30,15 +31,15 @@ const EnigmaPageComponent = ({ data }) => {
       <p className={styles.uppperBanner2} style={{ width: "300vw" }}>
         ALL THE BEST CODER !
       </p>
-
       {!registered && (
         <div className={styles.buttonSection}>
-          <button
+          <a
+            href={`/enigma/register/${data.name}`}
             className={styles.btn}
             onClick={() => setRegistered(!registered)}
           >
-            Register{" "}
-          </button>
+            Register
+          </a>
         </div>
       )}
       <div className={styles.rankSection}>
@@ -46,21 +47,25 @@ const EnigmaPageComponent = ({ data }) => {
         <h1 className={styles.ranking}> TOP 3</h1>
 
         <div className={styles.rankingBox}>
-          <RankCard position="1st" username="bj_jiwrajka" />
-          <RankCard position="2nd" username="dk_sensie" />
-          <RankCard position="3rd" username="Ayu_Anchor" />
+          <RankCard
+            position="1st"
+            username="bj_jiwrajka"
+            link="https://codeforces.com/profile/bj_jiwrajka"
+          />
+          <RankCard
+            position="2nd"
+            username="dk_sensie"
+            link="https://codeforces.com/profile/bj_jiwrajka"
+          />
+          <RankCard
+            position="3rd"
+            username="Ayu_Anchor"
+            link="https://codeforces.com/profile/bj_jiwrajka"
+          />
         </div>
         <h1 className={styles.ranking}>GENERAL RANKING</h1>
 
-        <div className={styles.rankingBox}>
-          <RankCard
-            position="1st"
-            username="Username"
-            //   key={i}
-          />
-          <RankCard position="2nd" username="Username" />
-          <RankCard position="3rd" username="Username" />
-        </div>
+        <div className={styles.rankingBox}></div>
       </div>
     </>
   );
