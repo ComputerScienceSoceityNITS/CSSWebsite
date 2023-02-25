@@ -53,11 +53,9 @@
   --theme-pink: var(--white);
   --report-color: rgb(151, 3, 151);
   --about-color: var(--heading-color);
-  --animation-color: radial-gradient(
-    30.75% 49.12% at 30.75% 38.37%,
-    var(--sky-blue) 0%,
-    var(--dark-blue) 100%
-  );
+  --animation-color: radial-gradient(30.75% 49.12% at 30.75% 38.37%,
+      var(--sky-blue) 0%,
+      var(--dark-blue) 100%);
   --about-shadow: #282828;
   --about-shadow-color: #282828;
   --about-section-typed-text-color: rgba(240, 238, 238, 0.8);
@@ -88,6 +86,7 @@
   --abacus-register-bg: #181818;
   --footer-contactSectionLogo-filter: 1;
   /* --events-heading-text:  rgb(21 1 1 / 20%); */
+  --events-section-text: var(--Grey-dark-2);
 }
 
 .light {
@@ -96,14 +95,11 @@
   --memsection-bg: var(--Grey-light-2);
   --memsection-bg-text: hsl(0, 0%, 85%);
   --memberTag-fill-color: var(--theme-primary);
-  --wingTag-bg: linear-gradient(
-    -125deg,
-    var(--theme-primary),
-    var(--theme-secondary)
-  );
+  --wingTag-bg: linear-gradient(-125deg,
+      var(--theme-primary),
+      var(--theme-secondary));
   --memberTag-text-shadow: 1px 3px 6px var(--offBlack);
   --text-outline: hsl(317, 45%, 45%);
-  /* --events-heading-text:rgb(197 113 113 / 50%); */
   --events-heading-text: rgba(0, 0, 0, 0.2);
   --devcard-bg: var(--primary-light);
   --devcard-bottom: rgba(248, 246, 246, 0.8);
@@ -120,22 +116,18 @@
   --abacus-border: var(--bgTextColor);
   --reportbox-bg: rgb(0, 0, 0);
   --temp-color: var(--white);
-  --hero-section-bg: linear-gradient(
-    200deg,
-    hsl(340, 95%, 80%) 0%,
-    hsl(340, 85%, 89%) 30%,
-    hsl(0, 8%, 95%) 70%
-  );
+  --hero-section-bg: linear-gradient(200deg,
+      hsl(340, 95%, 80%) 0%,
+      hsl(340, 85%, 89%) 30%,
+      hsl(0, 8%, 95%) 70%);
   --events-section-bg: var(--events-bg-light);
   --hero-section-text: var(--Grey-dark-1);
   --hero-section-bg-text: rgb(205, 204, 204);
   --network-lottie-invert-amount: 1;
-  --about-section-bg: radial-gradient(
-    farthest-side at 0 50%,
-    hsl(340, 95%, 85%) 0%,
-    hsl(340, 85%, 95%) 60%,
-    hsl(0, 8%, 95%) 90%
-  );
+  --about-section-bg: radial-gradient(farthest-side at 0 50%,
+      hsl(340, 95%, 85%) 0%,
+      hsl(340, 85%, 95%) 60%,
+      hsl(0, 8%, 95%) 90%);
   --about-section-text: var(--Grey-dark-1);
   --css-logo-invert-amount: 0;
   --scrollanime-invert-amount: 1;
@@ -143,8 +135,8 @@
   --executive-section-text: var(--Grey-dark-3);
   --executive-section-bg: var(--Grey-light-3);
   --executive-card-text: var(--Grey-light-3);
-  /* --executive-card-bg: var(--Grey-dark-1); */
   --executive-card-bg: rgb(97, 97, 97);
+  --events-section-text: var(--Grey-dark-1);
   --upcomingEvents-section-bg: var(--Grey-light-3);
   --upcomingEvents-section-text: var(--offBlack);
   --upev-lotte-invert-amount: 1;
@@ -155,11 +147,9 @@
   --devselect-text: white;
   --theme-pink: rgb(232, 9, 172);
   --report-color: rgb(78, 9, 239);
-  --animation-color: radial-gradient(
-    30.75% 49.12% at 30.75% 38.37%,
-    var(--sky-blue-light) 0%,
-    var(--blue-dark) 100%
-  );
+  --animation-color: radial-gradient(30.75% 49.12% at 30.75% 38.37%,
+      var(--sky-blue-light) 0%,
+      var(--blue-dark) 100%);
   --about-shadow: var(--Grey-light-4);
   --about-shadow-color: var(--Grey-light-4);
   --about-section-typed-text-color: var(--offBlack);
@@ -187,4 +177,5 @@
     rgb(124 127 255 / 60%) 1px 1px 6px;
   --abacus-register-bg: #eaeaea;
   --footer-contactSectionLogo-filter: 0;
+  --events-section-text: var(--Grey-dark-3);
 }

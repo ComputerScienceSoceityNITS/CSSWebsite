@@ -2,20 +2,19 @@
   position: absolute;
   width: 500px;
   height: 500px;
-  top: 5%;
-  left: 70%;
+  top: 6%;
+  left: 60%;
 }
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 900px) {
   #headLottie {
-    left: 60%;
-  }
-}
-@media only screen and (max-width: 700px) {
-  #headLottie {
-    position: absolute;
     width: 400px;
     height: 400px;
-    top: 55%;
-    left: 0;
+    top: 22%;
+    /* left: 50%; */
+  }
+}
+@media screen and (max-width: 760px) {
+  #headLottie {
+    display: none;
   }
 }

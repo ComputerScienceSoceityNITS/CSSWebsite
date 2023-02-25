@@ -2,7 +2,7 @@ import React from "react";
 import Styles from "./events.module.css";
 import CSSEvents from "../CSSEvents";
 import EventsBg from "../../components/lottie-player/events";
-import CSSEVENT from "../CSSEVENT";
+import Link from "next/link";
 const Events = () => {
   return (
     <>
@@ -17,20 +17,50 @@ const Events = () => {
               itaque quaerat repudiandae a distinctio et totam dicta, fugiat
               eligendi, nulla upta Lorem ipsum dolor, sit amet consectetur
               adipisicing elit. Nobis ea, dolor praesentiumommodi aspernatur
-              magni officiis consequatur? fuga consequuntur quia animi.
+              magni officiis consequatur? fuga consequuntur quia animi. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Rem, animi!
             </p>
+            <span className={Styles.CSSAnimation}>EVENTS OF THE YEAR</span>
           </div>
-          <div className={Styles.society_name}>
-            <h1 className={Styles.CSSAnimation}>
-              COMPUTER SCIENCE SOCIETY PRESENTS TECHNICAL & CULTURAL EVENTS
-            </h1>
-          </div>
-        </div>
-        <div className={Styles.eventsCards}>
-          <CSSEVENT />
 
-          <CSSEvents />
+          <div className={` ${Styles.abacus_card}`}>
+            <div>
+              <Link href="/abacus">
+                <img src="./images/events/ABACUS.jpg" alt="ABACUS" />
+              </Link>
+              <button
+                className={Styles.eventButton}
+                onClick={() => {
+                  window.location.href = "/abacus";
+                }}
+              >
+                ABACUS
+              </button>
+            </div>
+
+            <p>ABACUS</p>
+          </div>
+
+          <div className={` ${Styles.enigma_card}`}>
+            <p>ENIGMA</p>
+
+            <div>
+              <Link href="/enigma">
+                <img src="./images/events/ENIGMA2.jpg" alt="ENIGMA" />
+              </Link>
+              <button
+                className={Styles.eventButton}
+                onClick={() => {
+                  window.location.href = "/enigma";
+                }}
+              >
+                ENIGMA
+              </button>
+            </div>
+          </div>
         </div>
+
+        <CSSEvents />
       </div>
     </>
   );
