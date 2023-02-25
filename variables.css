@@ -86,6 +86,7 @@
   --abacus-shadow: rgba(78, 68, 40, 0.6) -1px -1px 6px,
     rgba(74, 74, 146, 0.6) 1px 1px 6px;
   --abacus-register-bg: #181818;
+  --footer-contactSectionLogo-filter: 1;
   /* --events-heading-text:  rgb(21 1 1 / 20%); */
 }
 
@@ -185,4 +186,5 @@
   --abacus-shadow: rgb(255 215 77 / 60%) -1px -1px 6px,
     rgb(124 127 255 / 60%) 1px 1px 6px;
   --abacus-register-bg: #eaeaea;
+  --footer-contactSectionLogo-filter: 0;
 }

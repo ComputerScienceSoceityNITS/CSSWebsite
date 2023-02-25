@@ -26,6 +26,7 @@
   display: -ms-flexbox;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .footer .fmain .fmain_c {
@@ -98,16 +99,22 @@
 .footer .ftnc {
   font-family: "Anton";
   position: relative;
-  bottom: 0rem;
+  bottom: -2rem;
   /* padding: 3em; */
   line-height: 1.5em;
-  height: 10rem;
+  /* height: 10rem; */
   width: 50%;
   display: flex;
   flex-wrap: wrap;
   right: 17rem;
   margin-top: 2rem;
   z-index: 10;
+}
+
+.footer .ftnc a {
+  height: 1rem;
+  text-decoration: none;
+  color: var(--footer-text);
 }
 
 .ficon {
@@ -136,40 +143,56 @@
   left: 0%;
 }
 
-.report {
-  position: relative;
-  right: 40vw;
-  bottom: 4rem;
-  font-size: 1.2rem;
-  margin-top: 4rem;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+.contactSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--footer-text);
+  gap: 1rem;
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+  z-index: 3;
 }
 
-.report img {
+.contactSection_data {
+  display: flex;
+  justify-content: flex-starts;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
+}
+
+.contactSection_data img {
   height: 40px;
   width: 40px;
   transition: all 0.5s ease-in-out;
 }
 
-.report span {
+.contactSectionLogo {
+  filter: invert(var(--footer-contactSectionLogo-filter));
+}
+
+.contactSection_data span {
   position: relative;
   left: 3rem;
   bottom: 2rem;
 }
 
-.report:hover {
+.contactSection_data:hover {
   opacity: 0.5;
 }
 
-.report:hover img {
+.contactSection_data:hover img {
   transform: translateZ(0px) rotateY(180deg) !important;
 }
 
-.report:hover::before {
+.contactSection_data:hover::before {
   width: 150%;
 }
 
-.report:before {
+.contactSection_data:before {
   content: "";
   position: absolute;
   display: inline-block;
@@ -181,11 +204,11 @@
   transition: all 0.5s;
 }
 
-.reporttext {
+.contactSection_data {
   color: var(--footer-text);
 }
 
-.reporttext a {
+.contactSection_data a {
   color: var(--footer-text);
 }
 
@@ -217,16 +240,16 @@
   }
 
   .footer .ftnc {
-    height: 25rem;
-    top: 5rem;
+    height: 7rem;
+    /* top: 5rem;
     width: 60%;
-    left: 10vw;
+    left: 10vw; */
   }
 
   .footer .fcopyright {
     width: 100%;
     transform: translate(-50%, 50%);
-    bottom: 3%;
+    /* bottom: 3%; */
     left: 50%;
     top: unset;
     font-size: 10px;
@@ -243,7 +266,7 @@
     pointer-events: none;
   }
 
-  .report {
+  /* .contactSection_data {
     position: absolute;
     margin: auto;
     bottom: 24rem;
@@ -253,10 +276,10 @@
     font-size: 0.9rem;
   }
 
-  .report img {
+  .contactSection_data img {
     position: relative;
     left: 45vw;
-  }
+  } */
 }
 
 .footgroup {
@@ -270,28 +293,38 @@
 
 @media only screen and (max-width: 540px) {
   .footer .ftnc {
-    height: 3rem;
-    top: -5rem;
-    left: 0.5rem;
+    position: unset;
+    /* height: 3rem; */
   }
 
   .ficon {
-    height: 6rem;
+    height: unset;
     padding: 0;
-    left: 0.7rem;
+    /* left: 0.7rem; */
   }
 
-  .report {
+  .contactSection {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    color: var(--footer-text);
+    gap: 1rem;
+    position: unset;
+    margin-top: 1.5rem;
+  }
+
+  /* .contactSection_data {
     width: 29vw;
     right: 40vw;
   }
 
-  .report img {
+  .contactSection_data img {
     position: relative;
     left: 2vw;
   }
 
-  .report:hover::before {
+  .contactSection_data:hover::before {
     width: 0%;
-  }
+  } */
 }

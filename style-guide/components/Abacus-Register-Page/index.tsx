@@ -6,15 +6,6 @@ const AbacusRegisterComponent = ({ data }: any) => {
   const minTeamSize = data.minTeamSize - 1;
   const maxTeamSize = data.maxTeamSize - 1;
   const eventNameLength = data.name.split(" ").length;
-  let eventNameClass;
-  if (eventNameLength >= 3) {
-    eventNameClass = "eventName3";
-  } else if (eventNameLength === 2) {
-    eventNameClass = "eventName2";
-  } else {
-    eventNameClass = "eventName";
-  }
-  console.log(eventNameLength);
 
   return (
     <>
