@@ -6,15 +6,6 @@ const AbacusRegisterComponent = ({ data }: any) => {
   const minTeamSize = data.minTeamSize - 1;
   const maxTeamSize = data.maxTeamSize - 1;
   const eventNameLength = data.name.split(" ").length;
-  let eventNameClass;
-  if (eventNameLength >= 3) {
-    eventNameClass = "eventName3";
-  } else if (eventNameLength === 2) {
-    eventNameClass = "eventName2";
-  } else {
-    eventNameClass = "eventName";
-  }
-  console.log(eventNameLength);
 
   return (
     <>
@@ -61,9 +52,8 @@ const AbacusRegisterComponent = ({ data }: any) => {
                         />
                         <span className={styles.highlight}></span>
                         <span className={styles.bar}></span>
-                        <label className={styles.label}>{`Team Member ${
-                          index + 1
-                        }`}</label>
+                        <label className={styles.label}>{`Team Member ${index + 1
+                          }`}</label>
                       </div>
                     );
                   })}
@@ -86,9 +76,8 @@ const AbacusRegisterComponent = ({ data }: any) => {
                         />
                         <span className={styles.highlight}></span>
                         <span className={styles.bar}></span>
-                        <label className={styles.label}>{`Team Member ${
-                          minTeamSize + index + 1
-                        }`}</label>
+                        <label className={styles.label}>{`Team Member ${minTeamSize + index + 1
+                          }`}</label>
                       </div>
                     );
                   })}
@@ -104,7 +93,7 @@ const AbacusRegisterComponent = ({ data }: any) => {
               className={
                 (eventNameLength === 1 && styles.eventName) ||
                 (eventNameLength === 2 && styles.eventName2) ||
-                (eventNameLength >= 3 && styles.eventName3)
+                (eventNameLength >= 3 && styles.eventName3) || undefined
               }
             >
               {data.name}
