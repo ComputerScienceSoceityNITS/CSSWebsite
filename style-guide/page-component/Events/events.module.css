@@ -58,10 +58,61 @@
   margin-top: 1em;
 }
 
+.mainCardHolder {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
 .abacus_card {
   display: flex;
   align-items: center;
-  user-select: none;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  background: linear-gradient(90deg, #f7085a, #be4c9b);
+  /* padding-top: 2rem; */
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: min(40vw, 17rem);
+  box-shadow: 0px 10px 15px 5px var(--event-card-shadow);
+  transition: all 0.3s ease-in-out;
+
+}
+
+.abacus_card:hover {
+  animation: Event_card 1s ease-in-out infinite alternate;
+}
+
+.abacus_card>img {
+  margin: 3rem 0 !important;
+  filter: invert(0.9);
+}
+
+.abacus_card div {
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.3rem;
+  font-family: Anton, sans-serif;
+  font-size: 2rem;
+  color: white;
+}
+
+@keyframes Event_card {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.2;
+  }
+
+  100% {
+    scale: 0.7;
+  }
 }
 
 .enigma_card {
@@ -140,22 +191,18 @@
   transition: clip-path 0.2s ease;
   transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
   z-index: -1;
-  -webkit-clip-path: polygon(
-    0 50%,
-    var(--tilt) 0,
-    calc(100% - var(--tilt)) 0,
-    100% 50%,
-    calc(100% - var(--tilt)) 100%,
-    var(--tilt) 100%
-  );
-  clip-path: polygon(
-    20% 50%,
-    var(--tilt) 0,
-    calc(100% - var(--tilt)) 0,
-    95% 50%,
-    calc(100% - var(--tilt2)) 100%,
-    var(--tilt) 100%
-  );
+  -webkit-clip-path: polygon(0 50%,
+      var(--tilt) 0,
+      calc(100% - var(--tilt)) 0,
+      100% 50%,
+      calc(100% - var(--tilt)) 100%,
+      var(--tilt) 100%);
+  clip-path: polygon(20% 50%,
+      var(--tilt) 0,
+      calc(100% - var(--tilt)) 0,
+      95% 50%,
+      calc(100% - var(--tilt2)) 100%,
+      var(--tilt) 100%);
   font-family: Anton, sans-serif;
   letter-spacing: 1px;
 }
@@ -187,7 +234,18 @@
     font-size: 1.1em;
     width: 80vw;
   }
+
   .eventButton {
     display: none;
+  }
+
+  .abacus_card>img {
+    margin: 2rem 0 !important;
+    filter: invert(0.9);
+  }
+
+  .abacus_card div {
+    padding: 1rem 0;
+    font-size: 1rem;
   }
 }
