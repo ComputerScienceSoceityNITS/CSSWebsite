@@ -52,8 +52,9 @@ const AbacusRegisterComponent = ({ data }: any) => {
                         />
                         <span className={styles.highlight}></span>
                         <span className={styles.bar}></span>
-                        <label className={styles.label}>{`Team Member ${index + 1
-                          }`}</label>
+                        <label className={styles.label}>{`Team Member ${
+                          index + 1
+                        }`}</label>
                       </div>
                     );
                   })}
@@ -76,8 +77,9 @@ const AbacusRegisterComponent = ({ data }: any) => {
                         />
                         <span className={styles.highlight}></span>
                         <span className={styles.bar}></span>
-                        <label className={styles.label}>{`Team Member ${minTeamSize + index + 1
-                          }`}</label>
+                        <label className={styles.label}>{`Team Member ${
+                          minTeamSize + index + 1
+                        }`}</label>
                       </div>
                     );
                   })}
@@ -93,7 +95,8 @@ const AbacusRegisterComponent = ({ data }: any) => {
               className={
                 (eventNameLength === 1 && styles.eventName) ||
                 (eventNameLength === 2 && styles.eventName2) ||
-                (eventNameLength >= 3 && styles.eventName3) || undefined
+                (eventNameLength >= 3 && styles.eventName3) ||
+                undefined
               }
             >
               {data.name}

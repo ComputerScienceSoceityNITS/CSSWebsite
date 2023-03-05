@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--abacus-register-bg);
+}
+
+.container h1 {
+  font-size: 3em;
+  margin-bottom: 1rem;
+  color: var(--reportbox-bg);
+  text-align: center;
+  font-family: Anton, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.container label {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--reportbox-bg);
+}
+
+.container input {
+  display: flex;
+  padding: 0.5rem;
+  margin-bottom: 0.4em;
+  margin-top: 0.2em;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  width: 30em;
+}
+
+.heroLogo {
+  position: absolute;
+  right: 8em;
+  top: 11rem;
+  filter: invert(var(--css-logo-invert-amount)) brightness(40%);
+  height: 23rem;
+  width: 23rem;
+}
+
+.registerCard {
+  height: 90vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 20vw;
+  background: var(--abacus-register-bg);
+  box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
+}
+
+.container button {
+  border: 1.5px solid var(--hero-section-text);
+  background: linear-gradient(90deg, #f7085a, #be4c9b);
+  border-radius: 0.3rem;
+  border: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-family: Helvetica;
+  line-height: 28px;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 1200px) {
+  .heroLogo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .registerCard {
+    flex-direction: column;
+    min-height: 95vh;
+    padding-top: 1.5rem;
+    overflow-y: auto;
+    padding-left: 1em;
+  }
+
+  .container input {
+    width: 70vw;
+    margin: auto;
+    margin-left: 0;
+  }
+}
