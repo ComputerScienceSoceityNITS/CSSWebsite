@@ -4,12 +4,14 @@ import styles from "./styles.module.css";
 const AbacusPageComponent = ({ data }: any) => {
   const [registered, setRegistered] = useState(false);
   const [timeDifference, setTimeDifference] = useState("some");
+  console.log({data});
+  
   useEffect(() => {
     const date = data.startDate.split("-");
     // const time = data.time.split(':');
     const oneDay = 1000 * 60 * 60 * 24;
     const presentDate = new Date();
-    const fixedDate = new Date(date[2], date[1] - 1, date[0]);
+    const fixedDate = new Date(date[0], date[1] - 1, date[2]);
     if (fixedDate.getTime() < presentDate.getTime()) {
       console.log("error");
       setTimeDifference("LOL");
@@ -31,7 +33,7 @@ const AbacusPageComponent = ({ data }: any) => {
       <div
         className={styles.heroSection}
         style={{
-          background: `linear-gradient(200deg,var(--wing-page-bg1),var(--wing-page-bg2) 45%, var(--wing-page-bg3) 80%),url("${data.coverPic}") no-repeat center center / cover`,
+          background: `linear-gradient(200deg,var(--wing-page-bg1),var(--wing-page-bg2) 45%, var(--wing-page-bg3) 80%),url("${data.coverPic?data.coverPic:null}") no-repeat center center / cover`,
           backgroundAttachment: "fixed",
         }}
       >

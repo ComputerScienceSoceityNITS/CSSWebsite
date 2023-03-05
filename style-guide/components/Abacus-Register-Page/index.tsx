@@ -6,13 +6,15 @@ const AbacusRegisterComponent = ({ data }: any) => {
   const minTeamSize = data.minTeamSize - 1;
   const maxTeamSize = data.maxTeamSize - 1;
   const eventNameLength = data.name.split(" ").length;
-
+  const handleSubmit=() => {
+    console.log("submitted");
+  }
   return (
     <>
       <div
         className={styles.heroSection}
         style={{
-          background: `linear-gradient(200deg,var(--wing-page-bg1),var(--wing-page-bg2) 45%, var(--wing-page-bg3) 80%),url("${data.coverPic}") no-repeat center center / cover`,
+          background: `linear-gradient(200deg,var(--wing-page-bg1),var(--wing-page-bg2) 45%, var(--wing-page-bg3) 80%),url("${data.coverPic?data.coverPic:null}") no-repeat center center / cover`,
           backgroundAttachment: "fixed",
         }}
       >
@@ -85,7 +87,7 @@ const AbacusRegisterComponent = ({ data }: any) => {
               </div>
             )}
             <div className={styles.btnWrapper}>
-              <button className={styles.btn}>submit</button>
+              <button className={styles.btn} onClick={handleSubmit}>submit</button>
             </div>
           </div>
           <div className={styles.eventNameSection}>
