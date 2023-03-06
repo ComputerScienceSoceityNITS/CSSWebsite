@@ -116,7 +116,7 @@ const CSSEvents = () => {
         "CSS organizes the farewell programme each year to bid adieu to the senior cse batch of the institute.The objective is to provide the seniors with a platform to relish and relive ",
       cont3:
         "the joyous moments of their college lives and to honor their contributions to the institute and the student body",
-      img: "./images/events/event-4.jpg",
+      img: "./images/events/event-5_.jpg",
       id: "12",
     },
   ];
