@@ -1,4 +1,4 @@
-@import url("/color.css");
+@import url("./color.css");
 
 * {
   transition: background 200ms linear;
