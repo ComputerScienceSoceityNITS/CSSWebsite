@@ -16,7 +16,7 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   const [Report, setReport] = useState(false);
   const [load, setLoad] = useState(true);
-  const [signed, setSigned] = useState(false);
+  // const [signed, setSigned] = useState(false);
   useEffect(() => {
     loadercall();
   }, []);
@@ -35,7 +35,7 @@ const Layout = ({ children }: LayoutProps) => {
             <title>Computer Science Society</title>
           </Head>
           <GoTop />
-          <SignUpBtn signed={signed} setSigned={setSigned}/>
+          <SignUpBtn/>
           <ToggleTheme>{children[0].props}</ToggleTheme>
           <Curosr />
           <ReportButton Report={Report} setReport={setReport} />

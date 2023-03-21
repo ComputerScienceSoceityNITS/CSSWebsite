@@ -6,103 +6,132 @@ const SignUp = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [scholarId, setScholarId] = useState("");
+  const [scholarID, setScholarID] = useState("");
   const [codeforcesHandle, setCodeforcesHandle] = useState("");
   const [githubHandle, setGithubHandle] = useState("");
-  const [role, setRole] = useState("");
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     try {
-      const response = await axios.post("/api/users", {
+      const response:any = await axios.post("https://css-cms.onrender.com/api/admin/user/signup", {
         name,
         email,
         password,
-        scholarId,
+        scholarID,
         codeforcesHandle,
-        githubHandle,
-        role,
+        githubHandle
       });
       console.log(response.data);
-    } catch (error) {
+      if(response.data.status){
+        window.location.pathname='/signin';
+        // window.location.search=`currentPage=${window.location.search.split('=')[1]}`;
+      }
+    } catch (error:any) {
       console.log(error);
+      alert(error.message)
     }
   };
 
   return (
-    <div className={styles.container}>
-      <form onSubmit={handleSubmit}>
+    <>
+      <div className={styles.heroSection}>
         <div className={styles.registerCard}>
-          <h1>Sign Up</h1>
+          <div
+            className={styles.registerForm}
+          >
+            {/* input - 1 */}
+            <div className={styles.group}>
+              <input
+                required
+                type="text"
+                className={styles.input}
+                placeholder="Name"
+                onChange={(e:any)=>setName(e.target.value)}
+              />
+              <span className={styles.highlight}></span>
+              <span className={styles.bar}></span>
+              <label className={styles.label}>Name</label>
+            </div>
+            <div className={styles.group}>
+              <input
+                required
+                type="email"
+                className={styles.input}
+                placeholder="Email"
+                onChange={(e:any)=>setEmail(e.target.value)}
+              />
+              <span className={styles.highlight}></span>
+              <span className={styles.bar}></span>
+              <label className={styles.label}>Email</label>
+            </div>
+            {/* input - 2 */}
+            <div className={styles.group}>
+              <input
+                required
+                type="password"
+                className={styles.input}
+                placeholder="Password"
+                onChange={(e:any)=>setPassword(e.target.value)}
+              />
+              <span className={styles.highlight}></span>
+              <span className={styles.bar}></span>
+              <label className={styles.label}>Password</label>
+            </div>
+            <div className={styles.group}>
+              <input
+                required
+                type="number"
+                className={styles.input}
+                placeholder="Scholar Id"
+                onChange={(e:any)=>setScholarID(e.target.value)}
+              />
+              <span className={styles.highlight}></span>
+              <span className={styles.bar}></span>
+              <label className={styles.label}>Scholar Id</label>
+            </div>
+            <div className={styles.group}>
+              <input
+                required
+                type="text"
+                className={styles.input}
+                placeholder="codeforcesHandle"
+                onChange={(e:any)=>setCodeforcesHandle(e.target.value)}
+              />
+              <span className={styles.highlight}></span>
+              <span className={styles.bar}></span>
+              <label className={styles.label}>Codeforces Handle</label>
+            </div>
+            <div className={styles.group}>
+              <input
+                required
+                type="text"
+                className={styles.input}
+                placeholder="githubHandle"
+                onChange={(e:any)=>setGithubHandle(e.target.value)}
+              />
+              <span className={styles.highlight}></span>
+              <span className={styles.bar}></span>
+              <label className={styles.label}>Github Handle</label>
+            </div>
 
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={name}
-            onChange={(event) => setName(event.target.value)}
-            required
-          />
-
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-            required
-          />
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
-            required
-          />
-          <label htmlFor="scholarId">Scholar ID</label>
-          <input
-            type="number"
-            id="scholarId"
-            name="scholarId"
-            value={scholarId}
-            onChange={(event) => setScholarId(event.target.value)}
-            required
-          />
-          <label htmlFor="codeforcesHandle">Codeforces Handle</label>
-          <input
-            type="text"
-            id="codeforcesHandle"
-            name="codeforcesHandle"
-            value={codeforcesHandle}
-            onChange={(event) => setCodeforcesHandle(event.target.value)}
-          />
-          <label htmlFor="githubHandle">GitHub Handle</label>
-          <input
-            type="text"
-            id="githubHandle"
-            name="githubHandle"
-            value={githubHandle}
-            onChange={(event) => setGithubHandle(event.target.value)}
-          />
-          <label htmlFor="role">Role</label>
-          <input
-            type="text"
-            id="role"
-            name="role"
-            value={role}
-            onChange={(event) => setRole(event.target.value)}
-            required
-          />
-          <img className={styles.heroLogo} src="/images/logo_compressed.png" />
-          <button type="submit">Sign Up</button>
+            <div className={styles.btnWrapper}>
+              <button className={styles.btn} onClick={handleSubmit}>submit</button>
+            </div>
+          </div>
+          <div className={styles.switchLine}>
+            <p>Already Registered ?</p>
+            <a href={`/signin/${window.location.search}`}>Sign In to your Account</a>
+          </div>
+          <div className={styles.eventNameSection}>
+            <h1
+              className={styles.eventName}
+            >SignUp</h1>
+          </div>
         </div>
-      </form>
-    </div>
-  );
+      </div>
+      {/* <div>{data.name}</div> */}
+    </>
+  )
 };
 
 export default SignUp;

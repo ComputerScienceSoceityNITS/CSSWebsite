@@ -1,6 +1,6 @@
-.signup_btn{
-    color: rgb(255, 255, 255);
-    background: gray;
+.signup_btn {
+    color: var(--wing-white);
+    background: var(--navigation-button-bg);
     position: fixed;
     position: fixed;
     top: 7.7rem;
@@ -8,21 +8,24 @@
     z-index: 99;
     border-radius: 50%;
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 2.8rem;
     height: 2.8rem;
-    display: flex;;
-    svg{
-        margin: auto;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.signed{
+/* svg {
+    margin: auto;
+} */
+
+.signed {
     background: green !important;
 }
 
-@media only screen and (max-width : 700px){
-    .signup_btn{
+@media only screen and (max-width : 700px) {
+    .signup_btn {
         height: 2.3rem;
         width: 2.3rem;
         top: 4.7rem;
