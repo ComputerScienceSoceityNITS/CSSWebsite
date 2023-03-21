@@ -42,7 +42,7 @@ const AbacusRegisterComponent = ({ data }: any) => {
             {minTeamSize > 0 && (
               <div className={styles.teamWrapper}>
                 <legend className={styles.legend}>Required Team Members</legend>
-                <fieldsets className={styles.fieldsets}>
+                <div className={styles.fieldsets}>
                   {[...Array(minTeamSize)].map((x, index) => {
                     return (
                       <div className={styles.group} key={index}>
@@ -60,14 +60,14 @@ const AbacusRegisterComponent = ({ data }: any) => {
                       </div>
                     );
                   })}
-                </fieldsets>
+                </div>
               </div>
             )}
             {maxTeamSize > 0 && (
               // <div className={styles.teamWrapper && styles.labelException}>
               <div className={styles.teamWrapper}>
                 <legend className={styles.legend}>Optional Team Members</legend>
-                <fieldsets className={styles.fieldsets}>
+                <div className={styles.fieldsets}>
                   {[...Array(maxTeamSize - minTeamSize)].map((x, index) => {
                     return (
                       <div className={styles.group} key={minTeamSize + index}>
@@ -85,7 +85,7 @@ const AbacusRegisterComponent = ({ data }: any) => {
                       </div>
                     );
                   })}
-                </fieldsets>
+                </div>
               </div>
             )}
             <div className={styles.btnWrapper}>

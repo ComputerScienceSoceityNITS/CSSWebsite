@@ -7,7 +7,7 @@ import Card from "../Abacus-cards";
 const Hero = () => {
   const [data, setData] = useState([]);
   useEffect(()=>{
-    fetch('http://localhost:5000/api/admin/abacus').then(res=>res.json()).then((response)=>{
+    fetch('https://css-cms.onrender.com/api/admin/abacus').then(res=>res.json()).then((response)=>{
       setData(response.events);
       // setActiveDate(datesArray[0]);
     })
@@ -56,7 +56,7 @@ const Hero = () => {
           if (element.startDate === activeDate) {
             return (
               <Card
-                img={element.coverPic}
+                img={element.coverPic.url}
                 name={element.name}
                 time={element.time}
                 key={i}

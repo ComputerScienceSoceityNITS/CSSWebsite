@@ -33,7 +33,7 @@ const AbacusPageComponent = ({ data }: any) => {
       <div
         className={styles.heroSection}
         style={{
-          background: `linear-gradient(200deg,var(--wing-page-bg1),var(--wing-page-bg2) 45%, var(--wing-page-bg3) 80%),url("${data.coverPic?data.coverPic:null}") no-repeat center center / cover`,
+          background: `linear-gradient(200deg,var(--wing-page-bg1),var(--wing-page-bg2) 45%, var(--wing-page-bg3) 80%),url("${data.coverPic.url?data.coverPic.url:null}") no-repeat center center / cover`,
           backgroundAttachment: "fixed",
         }}
       >

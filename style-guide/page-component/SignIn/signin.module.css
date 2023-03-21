@@ -23,8 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   flex-wrap: wrap;
   gap: 1.5rem;
   font-family: Gill Sans, sans-serif;
@@ -219,7 +218,6 @@
 .switchLine p {
   color: var(--hero-section-text);
 }
-
 .switchLine a {
   text-decoration: none;
   color: var(--abacus-heading);
@@ -241,16 +239,14 @@
   }
 
   .switchLine {
-    position: unset;
     bottom: 17rem;
-    margin: 1.5rem 0;
     margin-left: 2rem;
   }
 
   .registerForm {
     width: 100%;
     /* height: 85%; */
-    margin: 1.5rem 0;
+    margin: 3rem 0;
   }
 
   .eventNameSection {
