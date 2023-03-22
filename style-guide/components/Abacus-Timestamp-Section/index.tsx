@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import Card from "../Abacus-cards";
 // import data from "../../../_json/events/events.json";
@@ -6,16 +6,18 @@ import Card from "../Abacus-cards";
 
 const Hero = () => {
   const [data, setData] = useState([]);
-  useEffect(()=>{
-    fetch('https://css-cms.onrender.com/api/admin/abacus').then(res=>res.json()).then((response)=>{
-      setData(response.events);
-      // setActiveDate(datesArray[0]);
-    })
-  },[]);
+  useEffect(() => {
+    fetch(`https://css-cms.onrender.com/api/admin/abacus`)
+      .then((res) => res.json())
+      .then((response) => {
+        setData(response.events);
+        // setActiveDate(datesArray[0]);
+      });
+  }, []);
   // console.log(data);
-  
+
   const datesSet = new Set();
-  data.map((event:any) => {
+  data.map((event: any) => {
     datesSet.add(event.startDate);
   });
   const datesArray = Array.from(datesSet).sort();
@@ -28,7 +30,7 @@ const Hero = () => {
         {datesArray.length > 0 &&
           datesArray.map((date, i) => {
             // console.log({date,activeDate});
-            if(activeDate===undefined){
+            if (activeDate === undefined) {
               setActiveDate(datesArray[0]);
             }
             return (
@@ -52,7 +54,7 @@ const Hero = () => {
         <div className={styles.TimestampDate}>Sunday, 23 Jan</div> */}
       </div>
       <div className={styles.TimestampCards}>
-        {data.map((element:any, i) => {
+        {data.map((element: any, i) => {
           if (element.startDate === activeDate) {
             return (
               <Card

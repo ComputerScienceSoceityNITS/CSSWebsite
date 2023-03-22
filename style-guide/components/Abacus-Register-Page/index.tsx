@@ -2,19 +2,21 @@ import React from "react";
 import styles from "./styles.module.css";
 
 const AbacusRegisterComponent = ({ data }: any) => {
-  const essentialData = ["Team Name", "Leader's Name", "Phone Number"];
+  const essentialData = ["Team Name", "Team Leader Scholar ID"];
   const minTeamSize = data.minTeamSize - 1;
   const maxTeamSize = data.maxTeamSize - 1;
   const eventNameLength = data.name.split(" ").length;
-  const handleSubmit=() => {
+  const handleSubmit = () => {
     console.log("submitted");
-  }
+  };
   return (
     <>
       <div
         className={styles.heroSection}
         style={{
-          background: `linear-gradient(200deg,var(--wing-page-bg1),var(--wing-page-bg2) 45%, var(--wing-page-bg3) 80%),url("${data.coverPic?data.coverPic:null}") no-repeat center center / cover`,
+          background: `linear-gradient(200deg,var(--wing-page-bg1),var(--wing-page-bg2) 45%, var(--wing-page-bg3) 80%),url("${
+            data.coverPic ? data.coverPic : null
+          }") no-repeat center center / cover`,
           backgroundAttachment: "fixed",
         }}
       >
@@ -79,9 +81,9 @@ const AbacusRegisterComponent = ({ data }: any) => {
                         />
                         <span className={styles.highlight}></span>
                         <span className={styles.bar}></span>
-                        <label className={styles.label}>{`Team Member ${
+                        <label className={styles.label}>{`Member ${
                           minTeamSize + index + 1
-                        }`}</label>
+                        } Scholar ID`}</label>
                       </div>
                     );
                   })}
@@ -89,7 +91,9 @@ const AbacusRegisterComponent = ({ data }: any) => {
               </div>
             )}
             <div className={styles.btnWrapper}>
-              <button className={styles.btn} onClick={handleSubmit}>submit</button>
+              <button className={styles.btn} onClick={handleSubmit}>
+                submit
+              </button>
             </div>
           </div>
           <div className={styles.eventNameSection}>

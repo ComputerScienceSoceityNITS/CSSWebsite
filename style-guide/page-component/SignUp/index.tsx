@@ -13,22 +13,26 @@ const SignUp = () => {
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     try {
-      const response:any = await axios.post("https://css-cms.onrender.com/api/admin/user/signup", {
-        name,
-        email,
-        password,
-        scholarID,
-        codeforcesHandle,
-        githubHandle
-      });
+      const response: any = await axios.post(
+        "https://css-cms.onrender.com/api/admin/user/signup",
+        {
+          name,
+          email,
+          password,
+          scholarID,
+          scholarID,
+          codeforcesHandle,
+          githubHandle,
+        }
+      );
       console.log(response.data);
-      if(response.data.status){
-        window.location.pathname='/signin';
+      if (response.data.status) {
+        window.location.pathname = "/signin";
         // window.location.search=`currentPage=${window.location.search.split('=')[1]}`;
       }
-    } catch (error:any) {
+    } catch (error: any) {
       console.log(error);
-      alert(error.message)
+      alert(error.message);
     }
   };
 
@@ -36,9 +40,7 @@ const SignUp = () => {
     <>
       <div className={styles.heroSection}>
         <div className={styles.registerCard}>
-          <div
-            className={styles.registerForm}
-          >
+          <div className={styles.registerForm}>
             {/* input - 1 */}
             <div className={styles.group}>
               <input
@@ -46,7 +48,7 @@ const SignUp = () => {
                 type="text"
                 className={styles.input}
                 placeholder="Name"
-                onChange={(e:any)=>setName(e.target.value)}
+                onChange={(e: any) => setName(e.target.value)}
               />
               <span className={styles.highlight}></span>
               <span className={styles.bar}></span>
@@ -58,7 +60,7 @@ const SignUp = () => {
                 type="email"
                 className={styles.input}
                 placeholder="Email"
-                onChange={(e:any)=>setEmail(e.target.value)}
+                onChange={(e: any) => setEmail(e.target.value)}
               />
               <span className={styles.highlight}></span>
               <span className={styles.bar}></span>
@@ -71,7 +73,7 @@ const SignUp = () => {
                 type="password"
                 className={styles.input}
                 placeholder="Password"
-                onChange={(e:any)=>setPassword(e.target.value)}
+                onChange={(e: any) => setPassword(e.target.value)}
               />
               <span className={styles.highlight}></span>
               <span className={styles.bar}></span>
@@ -83,7 +85,7 @@ const SignUp = () => {
                 type="number"
                 className={styles.input}
                 placeholder="Scholar Id"
-                onChange={(e:any)=>setScholarID(e.target.value)}
+                onChange={(e: any) => setScholarID(e.target.value)}
               />
               <span className={styles.highlight}></span>
               <span className={styles.bar}></span>
@@ -95,7 +97,7 @@ const SignUp = () => {
                 type="text"
                 className={styles.input}
                 placeholder="codeforcesHandle"
-                onChange={(e:any)=>setCodeforcesHandle(e.target.value)}
+                onChange={(e: any) => setCodeforcesHandle(e.target.value)}
               />
               <span className={styles.highlight}></span>
               <span className={styles.bar}></span>
@@ -107,7 +109,7 @@ const SignUp = () => {
                 type="text"
                 className={styles.input}
                 placeholder="githubHandle"
-                onChange={(e:any)=>setGithubHandle(e.target.value)}
+                onChange={(e: any) => setGithubHandle(e.target.value)}
               />
               <span className={styles.highlight}></span>
               <span className={styles.bar}></span>
@@ -115,23 +117,25 @@ const SignUp = () => {
             </div>
 
             <div className={styles.btnWrapper}>
-              <button className={styles.btn} onClick={handleSubmit}>submit</button>
+              <button className={styles.btn} onClick={handleSubmit}>
+                submit
+              </button>
             </div>
           </div>
           <div className={styles.switchLine}>
             <p>Already Registered ?</p>
-            <a href={`/signin/${window.location.search}`}>Sign In to your Account</a>
+            <a href={`/signin/${window.location.search}`}>
+              Sign In to your Account
+            </a>
           </div>
           <div className={styles.eventNameSection}>
-            <h1
-              className={styles.eventName}
-            >SignUp</h1>
+            <h1 className={styles.eventName}>SignUp</h1>
           </div>
         </div>
       </div>
       {/* <div>{data.name}</div> */}
     </>
-  )
+  );
 };
 
 export default SignUp;
