@@ -23,17 +23,13 @@ const Events = () => {
             <span className={Styles.CSSAnimation}>EVENTS OF THE YEAR</span>
           </div>
           <div className={` ${Styles.mainCardHolder}`}>
-            <a href='/abacus' className={` ${Styles.abacus_card}`}>
+            <a href="/abacus" className={` ${Styles.abacus_card}`}>
               <img src="./images/eventPage_icons/abacus.png" alt="ABACUS" />
-              <div>
-                Abacus
-              </div>
+              <div>Abacus</div>
             </a>
-            <a href='/enigma' className={` ${Styles.abacus_card}`}>
+            <a href="/enigma" className={` ${Styles.abacus_card}`}>
               <img src="./images/eventPage_icons/data.png" alt="ENIGMA" />
-              <div>
-                Enigma
-              </div>
+              <div>Enigma</div>
             </a>
           </div>
 
@@ -54,7 +50,6 @@ const Events = () => {
               </button>
             </div>
           </div> */}
-
         </div>
 
         <CSSEvents />

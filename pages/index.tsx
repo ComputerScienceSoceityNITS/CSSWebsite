@@ -45,18 +45,13 @@ const Home = ({ members }: IndexProps) => {
 export default Home;
 
 export const getStaticProps: GetStaticProps = async () => {
-  let response = await fetch(
+  const response = await fetch(
     `${process.env.BACKEND_URL}/api/admin/members/22-23`
   );
   const data = await response.json();
-
-  response = await fetch(`${process.env.BACKEND_URL}/api/admin/events`);
-
-  const events = await response.json();
   return {
     props: {
       members: data.members,
-      events: events.events,
     },
   };
 };

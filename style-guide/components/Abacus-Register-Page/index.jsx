@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { ChangeEvent, useEffect, useState } from "react";
 import styles from "./styles.module.css";
 
-const AbacusRegisterComponent = ({ data }: any) => {
+const AbacusRegisterComponent = ({ data }) => {
   const essentialData = ["Team Name", "Team Leader Scholar ID"];
   const minTeamSize = data.minTeamSize - 1;
   const maxTeamSize = data.maxTeamSize - 1;
@@ -22,14 +22,14 @@ const AbacusRegisterComponent = ({ data }: any) => {
     for (let i = 1; i <= maxTeamSize; i++) {
       initState.push(`member${i}scholarID`);
     }
-    let initObject: any = {};
-    initState.forEach((key: string) => {
+    let initObject = {};
+    initState.forEach((key) => {
       initObject = { ...initObject, [key]: "" };
     });
     setFormState(initObject);
   }, []);
 
-  const handleFormChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleFormChange = (e) => {
     setFormState((prevFormState) => {
       return { ...prevFormState, [e.target.name]: e.target.value };
     });
@@ -55,12 +55,9 @@ const AbacusRegisterComponent = ({ data }: any) => {
         }
       )
       .then((res) => {
-        // if(res.data.)
         setShowForm(false);
         setCreatedTeam(res.data.team);
-        console.log(createdTeam);
-        alert(`Team ${createdTeam.name} created successfully`);
-        console.log({ res });
+        alert(`Team ${res.data.team} created successfully`);
       })
       .catch((err) => {
         alert(err.response.data.message);
@@ -145,7 +142,9 @@ const AbacusRegisterComponent = ({ data }: any) => {
                     </legend>
                     <div className={styles.fieldsets}>
                       {[...Array(maxTeamSize - minTeamSize)].map((x, index) => {
-                        const fieldName = `member${index + 1}scholarID`;
+                        const fieldName = `member${
+                          index + 1 + minTeamSize
+                        }scholarID`;
                         return (
                           <div
                             className={styles.group}

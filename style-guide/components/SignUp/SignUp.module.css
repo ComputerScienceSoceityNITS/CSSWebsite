@@ -1,19 +1,19 @@
 .signup_btn {
-    color: var(--wing-white);
-    background: var(--navigation-button-bg);
-    position: fixed;
-    position: fixed;
-    top: 7.7rem;
-    right: 3.25rem;
-    z-index: 99;
-    border-radius: 50%;
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
-    font-size: 1.5rem;
-    width: 2.8rem;
-    height: 2.8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  color: var(--wing-white);
+  background: var(--navigation-button-bg);
+  position: fixed;
+  position: fixed;
+  top: 7.7rem;
+  right: 3.25rem;
+  z-index: 99;
+  border-radius: 50%;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* svg {
@@ -21,14 +21,14 @@
 } */
 
 .signed {
-    background: green !important;
+  background: green !important;
 }
 
-@media only screen and (max-width : 700px) {
-    .signup_btn {
-        height: 2.3rem;
-        width: 2.3rem;
-        top: 4.7rem;
-        right: 1.8rem;
-    }
+@media only screen and (max-width: 700px) {
+  .signup_btn {
+    height: 2.3rem;
+    width: 2.3rem;
+    top: 4.7rem;
+    right: 1.8rem;
+  }
 }

@@ -28,7 +28,7 @@ const Hero = () => {
       <h1 className={styles.heroText}>Timestamp</h1>
       <div className={styles.TimestampDates}>
         {datesArray.length > 0 &&
-          datesArray.map((date, i) => {
+          datesArray.map((date: any, i) => {
             // console.log({date,activeDate});
             if (activeDate === undefined) {
               setActiveDate(datesArray[0]);

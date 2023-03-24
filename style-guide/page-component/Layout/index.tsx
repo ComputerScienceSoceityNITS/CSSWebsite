@@ -35,7 +35,7 @@ const Layout = ({ children }: LayoutProps) => {
             <title>Computer Science Society</title>
           </Head>
           <GoTop />
-          <SignUpBtn/>
+          <SignUpBtn />
           <ToggleTheme>{children[0].props}</ToggleTheme>
           <Curosr />
           <ReportButton Report={Report} setReport={setReport} />
