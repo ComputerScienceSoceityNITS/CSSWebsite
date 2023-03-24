@@ -6,7 +6,7 @@ import AbacusPageComponent from "../../style-guide/components/Abacus-Event-Page"
 const AbacusPage = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("https://css-cms.onrender.com/api/admin/abacus")
+    fetch(`${process.env.BACKEND_URL}/api/admin/abacus`)
       .then((res) => res.json())
       .then((response) => {
         setData(response.events);

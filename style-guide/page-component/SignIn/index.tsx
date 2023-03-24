@@ -10,7 +10,7 @@ const SignIn = () => {
     console.log({ email, password });
     try {
       const res: any = await axios.post(
-        "https://css-cms.onrender.com/api/admin/user/login",
+        `${process.env.BACKEND_URL}/api/admin/user/login`,
         { email, password },
         { withCredentials: true }
       );

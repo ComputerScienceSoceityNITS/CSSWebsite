@@ -14,7 +14,7 @@ const SignUp = () => {
     event.preventDefault();
     try {
       const response: any = await axios.post(
-        "https://css-cms.onrender.com/api/admin/user/signup",
+        `${process.env.BACKEND_URL}/api/admin/user/signup`,
         {
           name,
           email,

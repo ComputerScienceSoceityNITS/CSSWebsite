@@ -26,7 +26,7 @@ const SignUp = (props) => {
     if (query) {
       try {
         const res = await axios.get(
-          "https://css-cms.onrender.com/api/admin/user/logout"
+          `${process.env.BACKEND_URL}/api/admin/user/logout`
         );
         console.log({ res });
         if (res.data.success) {

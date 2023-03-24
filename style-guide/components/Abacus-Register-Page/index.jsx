@@ -48,7 +48,7 @@ const AbacusRegisterComponent = ({ data }) => {
     }
     axios
       .post(
-        `https://css-cms.onrender.com/api/admin/abacus/register/${data._id}`,
+        `${process.env.BACKEND_URL}/api/admin/abacus/register/${data._id}`,
         registrationForm,
         {
           withCredentials: true,
