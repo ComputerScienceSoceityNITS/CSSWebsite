@@ -43,7 +43,7 @@ const Hero = () => {
 
       <div className={styles.TimestampDates}>
         {datesArray.length > 0 &&
-          datesArray.map((date, i) => {
+          datesArray.map((date: any, i) => {
             return (
               <div
                 className={
@@ -78,7 +78,7 @@ const Hero = () => {
 
       <div className={styles.TimestampDates}>
         {datesArray.length > 0 &&
-          datesArray.map((date, i) => {
+          datesArray.map((date: any, i) => {
             return (
               <div
                 className={

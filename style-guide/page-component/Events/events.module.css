@@ -78,14 +78,14 @@
   width: min(40vw, 17rem);
   box-shadow: 0px 10px 15px 5px var(--event-card-shadow);
   transition: all 0.3s ease-in-out;
-
 }
 
-.abacus_card:hover,.events_abacus_card__yqlcb:hover {
+.abacus_card:hover,
+.events_abacus_card__yqlcb:hover {
   animation: Event_card 1s ease-in-out infinite alternate;
 }
 
-.abacus_card>img {
+.abacus_card > img {
   margin: 3rem 0 !important;
   filter: invert(0.9);
 }
@@ -191,18 +191,22 @@
   transition: clip-path 0.2s ease;
   transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
   z-index: -1;
-  -webkit-clip-path: polygon(0 50%,
-      var(--tilt) 0,
-      calc(100% - var(--tilt)) 0,
-      100% 50%,
-      calc(100% - var(--tilt)) 100%,
-      var(--tilt) 100%);
-  clip-path: polygon(20% 50%,
-      var(--tilt) 0,
-      calc(100% - var(--tilt)) 0,
-      95% 50%,
-      calc(100% - var(--tilt2)) 100%,
-      var(--tilt) 100%);
+  -webkit-clip-path: polygon(
+    0 50%,
+    var(--tilt) 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    var(--tilt) 100%
+  );
+  clip-path: polygon(
+    20% 50%,
+    var(--tilt) 0,
+    calc(100% - var(--tilt)) 0,
+    95% 50%,
+    calc(100% - var(--tilt2)) 100%,
+    var(--tilt) 100%
+  );
   font-family: Anton, sans-serif;
   letter-spacing: 1px;
 }
@@ -239,7 +243,7 @@
     display: none;
   }
 
-  .abacus_card>img {
+  .abacus_card > img {
     margin: 2rem 0 !important;
     filter: invert(0.9);
   }

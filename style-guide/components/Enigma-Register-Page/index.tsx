@@ -70,7 +70,8 @@ const EnigmaRegisterComponent = ({ data }: any) => {
               className={
                 (eventNameLength === 1 && styles.eventName) ||
                 (eventNameLength === 2 && styles.eventName2) ||
-                (eventNameLength >= 3 && styles.eventName3)
+                (eventNameLength >= 3 && styles.eventName3) ||
+                undefined
               }
             >
               {data.name}

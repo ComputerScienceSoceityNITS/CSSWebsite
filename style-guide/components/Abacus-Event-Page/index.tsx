@@ -4,8 +4,8 @@ import styles from "./styles.module.css";
 const AbacusPageComponent = ({ data }: any) => {
   const [registered, setRegistered] = useState(false);
   const [timeDifference, setTimeDifference] = useState("some");
-  console.log({data});
-  
+  console.log({ data });
+
   useEffect(() => {
     const date = data.startDate.split("-");
     // const time = data.time.split(':');
@@ -33,14 +33,16 @@ const AbacusPageComponent = ({ data }: any) => {
       <div
         className={styles.heroSection}
         style={{
-          background: `linear-gradient(200deg,var(--wing-page-bg1),var(--wing-page-bg2) 45%, var(--wing-page-bg3) 80%),url("${data.coverPic.url?data.coverPic.url:null}") no-repeat center center / cover`,
+          background: `linear-gradient(200deg,var(--wing-page-bg1),var(--wing-page-bg2) 45%, var(--wing-page-bg3) 80%),url("${
+            data.coverPic.url ? data.coverPic.url : null
+          }") no-repeat center center / cover`,
           backgroundAttachment: "fixed",
         }}
       >
         <h1 className={styles.heroTitle}>{data.name}</h1>
         <div className={styles.heroDetails}>
           <p>Date :- {data.startDate}</p>
-          <p>Time :- {data.time}</p>
+          <p>Time :- {data.startTime}</p>
           <p>Min Team Size :- {data.minTeamSize}</p>
           <p>Max Team Size :- {data.maxTeamSize}</p>
         </div>

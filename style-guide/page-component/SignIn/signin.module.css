@@ -5,7 +5,12 @@
   justify-content: center;
   align-items: center;
   background-attachment: fixed;
-  background: linear-gradient(200deg, var(--wing-page-bg1), var(--wing-page-bg2) 45%, var(--wing-page-bg3) 80%);
+  background: linear-gradient(
+    200deg,
+    var(--wing-page-bg1),
+    var(--wing-page-bg2) 45%,
+    var(--wing-page-bg3) 80%
+  );
 }
 
 .registerCard {
@@ -141,13 +146,12 @@
   opacity: 0;
 }
 
-.input:focus~label,
-.input:not(:placeholder-shown)~label {
+.input:focus ~ label,
+.input:not(:placeholder-shown) ~ label {
   top: -20px;
   font-size: 14px;
   color: #5264ae;
 }
-
 
 .bar {
   position: relative;
@@ -176,8 +180,8 @@
   right: 50%;
 }
 
-.input:focus~.bar:before,
-.input:focus~.bar:after {
+.input:focus ~ .bar:before,
+.input:focus ~ .bar:after {
   width: 50%;
 }
 
@@ -191,7 +195,7 @@
   opacity: 0.5;
 }
 
-.input:focus~.highlight {
+.input:focus ~ .highlight {
   animation: inputHighlighter 0.3s ease;
 }
 
