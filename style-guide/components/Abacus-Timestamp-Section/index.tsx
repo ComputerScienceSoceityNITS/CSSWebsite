@@ -7,7 +7,7 @@ import Card from "../Abacus-cards";
 const Hero = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch(`${process.env.BACKEND_URL}/api/admin/abacus`)
+    fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/abacus`)
       .then((res) => res.json())
       .then((response) => {
         setData(response.events);

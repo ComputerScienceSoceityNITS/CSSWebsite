@@ -14,7 +14,7 @@ const SignUp = () => {
     event.preventDefault();
     try {
       const response: any = await axios.post(
-        `${process.env.BACKEND_URL}/api/admin/user/signup`,
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/user/signup`,
         {
           name,
           email,

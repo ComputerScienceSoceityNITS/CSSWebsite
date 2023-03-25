@@ -10,7 +10,7 @@ const SignIn = () => {
     console.log({ email, password });
     try {
       const res: any = await axios.post(
-        `${process.env.BACKEND_URL}/api/admin/user/login`,
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/user/login`,
         { email, password },
         { withCredentials: true }
       );
