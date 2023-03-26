@@ -26,7 +26,7 @@ const SignUp = (props) => {
     if (query) {
       try {
         const res = await axios.get(
-          `${process.env.BACKEND_URL}/api/admin/user/logout`
+          `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/user/logout`
         );
         console.log({ res });
         if (res.data.success) {

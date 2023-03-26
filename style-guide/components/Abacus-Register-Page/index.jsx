@@ -48,7 +48,7 @@ const AbacusRegisterComponent = ({ data }) => {
     }
     axios
       .post(
-        `${process.env.BACKEND_URL}/api/admin/abacus/register/${data._id}`,
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/abacus/register/${data._id}`,
         registrationForm,
         {
           withCredentials: true,
