@@ -3,30 +3,45 @@ import styles from "./styles.module.css";
 
 const AbacusPageComponent = ({ data }: any) => {
   const [registered, setRegistered] = useState(false);
-  const [timeDifference, setTimeDifference] = useState("some");
+  const [timeDifference, setTimeDifference] = useState("");
+  const [endDateDifference, setEndDateDifference] = useState("some");
   console.log({ data });
 
   useEffect(() => {
     const date = data.startDate.split("-");
+    const endDate = data.endDate.split("-");
     // const time = data.time.split(':');
     const oneDay = 1000 * 60 * 60 * 24;
     const presentDate = new Date();
     const fixedDate = new Date(date[0], date[1] - 1, date[2]);
-    if (fixedDate.getTime() < presentDate.getTime()) {
+    const fixedEndDate = new Date(endDate[0], endDate[1] - 1, endDate[2]);
+    // console.log({fixedEndDate});
+    if (fixedEndDate.getTime() < presentDate.getTime()) {
       console.log("error");
-      setTimeDifference("LOL");
+      setEndDateDifference("error");
       return;
+    } else if (fixedDate.getTime() < presentDate.getTime()) {
+      console.log("error");
+      setTimeDifference("error");
+      const endResult =
+        Math.round(fixedEndDate.getTime() - presentDate.getTime()) / oneDay;
+      const endFinalResult = endResult.toFixed(0);
+      setEndDateDifference(`${endFinalResult}`);
+      return;
+    } else {
+      const Result =
+        Math.round(fixedDate.getTime() - presentDate.getTime()) / oneDay;
+      const finalResult = Result.toFixed(0);
+      setTimeDifference(`${finalResult}`);
+      console.log({ fixedDate });
     }
-    const Result =
-      Math.round(fixedDate.getTime() - presentDate.getTime()) / oneDay;
-    const finalResult = Result.toFixed(0);
-    setTimeDifference(`${finalResult}`);
-    console.log({ finalResult });
-    console.log({ presentDate, fixedDate });
-    console.log({
-      present: presentDate.getTime(),
-      fixed: fixedDate.getTime(),
-    });
+
+    // console.log({ finalResult });
+    // console.log({ presentDate, fixedDate });
+    // console.log({
+    //   present: presentDate.getTime(),
+    //   fixed: fixedDate.getTime(),
+    // });
   });
   return (
     <>
@@ -60,7 +75,7 @@ const AbacusPageComponent = ({ data }: any) => {
           Computer Science Society brings you {data.eventType} Event
         </p>
         <p className={styles.description}>{data.description}</p>
-        {!registered && timeDifference !== "LOL" && (
+        {!registered && endDateDifference !== "error" && (
           <div className={styles.buttonSection}>
             <a
               href={`/abacus/register/${data.name}`}
@@ -71,15 +86,32 @@ const AbacusPageComponent = ({ data }: any) => {
             </a>
           </div>
         )}
-        {timeDifference === "LOL" ? (
+        {endDateDifference === "error" ? (
           <p className={styles.banner}>The Event has Ended</p>
+        ) : timeDifference === "error" ? (
+          <p className={styles.banner}>
+            The Event has started and will end in{" "}
+            <span>{endDateDifference}</span> days
+          </p>
         ) : (
           <p className={styles.banner}>
             The Event will start in <span>{timeDifference}</span> days
           </p>
         )}
-        {timeDifference === "LOL" ? (
+        {/* {timeDifference === "error" ? (
+          <p className={styles.banner}>The Event has Ended</p>
+        ) : (
+          <p className={styles.banner}>
+            The Event will start in <span>{timeDifference}</span> days
+          </p>
+        )} */}
+        {endDateDifference === "error" ? (
           <p className={styles.banner2}>The Event has Ended</p>
+        ) : timeDifference === "error" ? (
+          <p className={styles.banner2}>
+            The Event has started and will end in{" "}
+            <span>{endDateDifference}</span> days
+          </p>
         ) : (
           <p className={styles.banner2}>
             The Event will start in <span>{timeDifference}</span> days
