@@ -1,6 +1,7 @@
 import React from "react";
 import Styles from "./CSSEvents.module.css";
 import CSSMap from "./CSSEventsMap";
+import CulturalEvents from "../CulturalEvents";
 import { useState } from "react";
 import ScrollDownLottie from "../../components/lottie-player/scrollDownPink";
 const CSSEvents = () => {
@@ -89,6 +90,8 @@ const CSSEvents = () => {
 
       {showSection && (
         <div className={`${Styles.otherEvents}`}>
+          <CulturalEvents />
+
           <h2 className={Styles.eventHeading}>TECHNICAL EVENTS</h2>
 
           <section className={Styles.CSS}>

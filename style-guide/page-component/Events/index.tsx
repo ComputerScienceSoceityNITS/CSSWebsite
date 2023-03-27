@@ -54,7 +54,6 @@ const Events = () => {
         </div>
 
         <TechnicalEvents />
-        <CulturalEvents />
       </div>
     </>
   );

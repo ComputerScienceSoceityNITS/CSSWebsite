@@ -128,6 +128,7 @@
   letter-spacing: 0.3rem;
   font-size: 5rem;
   color: var(--events-section-text);
+  margin-top: 1em;
 }
 
 @media only screen and (max-width: 1400px) {
