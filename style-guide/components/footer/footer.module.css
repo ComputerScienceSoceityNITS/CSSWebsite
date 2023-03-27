@@ -18,6 +18,7 @@
   align-items: flex-end;
   z-index: 0;
   cursor: default;
+  backdrop-filter: blur(0.3rem) !important;
 }
 
 .footer .fmain {
