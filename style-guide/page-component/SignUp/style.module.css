@@ -218,6 +218,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  font-family: Geneva, Tahoma, sans-serif;
 }
 
 .switchLine p {
@@ -248,7 +249,9 @@
     position: unset;
     bottom: 17rem;
     margin: 1.5rem 0;
-    margin-left: 2rem;
+    margin-left: 3.5rem;
+    flex-direction: column;
+    /* margin-left: 1rem; */
   }
 
   .registerForm {
