@@ -47,9 +47,9 @@ const SignUp = (props) => {
       href={
         signed
           ? "/logout?currentPage=" +
-          router.pathname.slice(1, router.pathname.length)
+            router.pathname.slice(1, router.pathname.length)
           : "/signin?currentPage=" +
-          router.pathname.slice(1, router.pathname.length)
+            router.pathname.slice(1, router.pathname.length)
       }
       passHref={true}
     >
@@ -57,7 +57,7 @@ const SignUp = (props) => {
         id="signup"
         className={`${styles.signin_btn} ${signed ? styles.signed : ""}`}
         onClick={signed && handleLogout}
-        title={signed?"click to signout":"click to signin"}
+        title={signed ? "click to signout" : "click to signin"}
       >
         {
           // signed?<FaUser/>:<FaSignInAlt />
@@ -68,10 +68,7 @@ const SignUp = (props) => {
           )
         }
         <div className={styles.signin_text}>
-          {signed ?
-            localStorage.getItem("CSS_ScholarID") :
-            "Sign In"
-          }
+          {signed ? localStorage.getItem("CSS_ScholarID") : "Sign In"}
         </div>
       </div>
     </Link>
