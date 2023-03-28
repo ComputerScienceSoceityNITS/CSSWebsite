@@ -1,8 +1,9 @@
 import React from "react";
 import Styles from "./events.module.css";
-import CSSEvents from "../CSSEvents";
+import TechnicalEvents from "../TechnicalEvents";
+import CulturalEvents from "../CulturalEvents";
 import EventsBg from "../../components/lottie-player/events";
-import Link from "next/link";
+// import Link from "next/link";
 const Events = () => {
   return (
     <>
@@ -52,7 +53,7 @@ const Events = () => {
           </div> */}
         </div>
 
-        <CSSEvents />
+        <TechnicalEvents />
       </div>
     </>
   );
