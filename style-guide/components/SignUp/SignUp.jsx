@@ -5,7 +5,7 @@ import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSignInAlt, faUser } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 
 const SignUp = (props) => {
   const [signed, setSigned] = useState();
@@ -18,7 +18,7 @@ const SignUp = (props) => {
   }, []);
 
   // const signed = JSON.parse(localStorage.getItem("signed")) || false;
-  const router = useRouter();
+  // const router = useRouter();
 
   const handleLogout = async (e) => {
     e.preventDefault();
@@ -46,10 +46,8 @@ const SignUp = (props) => {
     <Link
       href={
         signed
-          ? "/logout?currentPage=" +
-            router.pathname.slice(1, router.pathname.length)
-          : "/signin?currentPage=" +
-            router.pathname.slice(1, router.pathname.length)
+          ? "/logout?currentPage=" + window.location.pathname
+          : "/signin?currentPage=" + window.location.pathname
       }
       passHref={true}
     >
