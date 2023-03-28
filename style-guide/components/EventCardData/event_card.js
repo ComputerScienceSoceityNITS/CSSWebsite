@@ -41,8 +41,8 @@ const eventCardData = [
     link: "/events",
   },
   {
-    heading: "Speaker Session",
-    text: `“The Computer Science Society organizes numerous speaker sessions throughout the course of the year featuring techies from across the country.`,
+    heading: "Inspire Room",
+    text: `“The Computer Science Society organizes numerous speaker sessions under Inspire Room throughout the course of the year featuring techies from across the country.`,
     text2: `Having proved their mettle in varied advancing domains in the realm of computational sciences, the words of guidance from the speakers target to ignite within the students a sense of zeal and initiative as they strive forward in their respective fields. The PR wing of the CSS organizes these sessions.`,
     bg: Event5,
     link: "/events",
