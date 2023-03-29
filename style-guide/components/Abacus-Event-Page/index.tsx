@@ -3,19 +3,24 @@ import styles from "./styles.module.css";
 
 const AbacusPageComponent = ({ data }: any) => {
   const [registered, setRegistered] = useState(false);
+  const [signedIn, setSignedIn] = useState(false);
   const [timeDifference, setTimeDifference] = useState("");
   const [endDateDifference, setEndDateDifference] = useState("some");
-  console.log({ data });
+
+  const whatsappLinkOnClick = async () => {
+    await navigator.clipboard.writeText(data.groupLink);
+    alert(
+      `Whatsapp group link has been copied to your clipboard: \n ${data.groupLink}`
+    );
+  };
 
   useEffect(() => {
     const date = data.startDate.split("-");
     const endDate = data.endDate.split("-");
-    // const time = data.time.split(':');
     const oneDay = 1000 * 60 * 60 * 24;
     const presentDate = new Date();
     const fixedDate = new Date(date[0], date[1] - 1, date[2]);
     const fixedEndDate = new Date(endDate[0], endDate[1] - 1, endDate[2]);
-    // console.log({fixedEndDate});
     if (fixedEndDate.getTime() < presentDate.getTime()) {
       console.log("error");
       setEndDateDifference("error");
@@ -35,14 +40,18 @@ const AbacusPageComponent = ({ data }: any) => {
       setTimeDifference(`${finalResult}`);
       console.log({ fixedDate });
     }
-
-    // console.log({ finalResult });
-    // console.log({ presentDate, fixedDate });
-    // console.log({
-    //   present: presentDate.getTime(),
-    //   fixed: fixedDate.getTime(),
-    // });
   });
+
+  useEffect(() => {
+    const participants = data.participants || [];
+    const currUserScholarID = localStorage.getItem("CSS_ScholarID");
+    if (!currUserScholarID) return;
+    setSignedIn(true);
+    if (participants.indexOf(currUserScholarID) !== -1) {
+      setRegistered(true);
+    }
+  }, []);
+
   return (
     <>
       <div
@@ -75,16 +84,34 @@ const AbacusPageComponent = ({ data }: any) => {
           Computer Science Society brings you {data.eventType} Event
         </p>
         <p className={styles.description}>{data.description}</p>
-        {!registered && endDateDifference !== "error" && (
+        {!registered && endDateDifference !== "error" ? (
           <div className={styles.buttonSection}>
-            <a
-              href={`/abacus/register/${data.name}`}
-              className={styles.btn}
-              onClick={() => setRegistered(!registered)}
-            >
-              Register
-            </a>
+            {signedIn ? (
+              <a href={`/abacus/register/${data.name}`} className={styles.btn}>
+                Register
+              </a>
+            ) : (
+              <a
+                href={`/signin?currentPage=/abacus/${data.name}`}
+                className={styles.btn}
+              >
+                Sign in to register
+              </a>
+            )}
           </div>
+        ) : (
+          <>
+            <div
+              className={`${styles.buttonSection} ${styles.postRegisterBtn}`}
+            >
+              <a href={`/abacus/teams/${data.name}`} className={styles.btn}>
+                Teams
+              </a>
+              <div onClick={whatsappLinkOnClick} className={styles.btn}>
+                Whatsapp Group Link
+              </div>
+            </div>
+          </>
         )}
         {endDateDifference === "error" ? (
           <p className={styles.banner}>The Event has Ended</p>
@@ -98,13 +125,6 @@ const AbacusPageComponent = ({ data }: any) => {
             The Event will start in <span>{timeDifference}</span> days
           </p>
         )}
-        {/* {timeDifference === "error" ? (
-          <p className={styles.banner}>The Event has Ended</p>
-        ) : (
-          <p className={styles.banner}>
-            The Event will start in <span>{timeDifference}</span> days
-          </p>
-        )} */}
         {endDateDifference === "error" ? (
           <p className={styles.banner2}>The Event has Ended</p>
         ) : timeDifference === "error" ? (
@@ -117,7 +137,6 @@ const AbacusPageComponent = ({ data }: any) => {
             The Event will start in <span>{timeDifference}</span> days
           </p>
         )}
-        {/* <p className={styles.banner}>The Event will start in <span>{timeDifference}</span> days</p> */}
       </div>
     </>
   );
