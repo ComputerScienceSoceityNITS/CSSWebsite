@@ -2,16 +2,16 @@ import React from "react";
 import styles from "./styles.module.css";
 
 const Abacus = () => {
-  const path = "./images/technical/";
+  const path = "/images/technical/";
   const images = [
-    ["5", "The InspireRoom"],
-    ["6", "The InspireRoom"],
-    ["7", "The InspireRoom"],
-    ["8", "The InspireRoom"],
-    ["9", "The InspireRoom"],
-    ["10", "The InspireRoom"],
+    ["5", "The Inspire Room"],
+    ["6", "The Inspire Room"],
+    ["7", "The Inspire Room"],
+    ["8", "The Inspire Room"],
+    ["9", "The Inspire Room"],
+    ["10", "The Inspire Room"],
   ];
-  const path2 = "./images/abacus/";
+  const path2 = "/images/abacus/";
   const images2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   return (
     <>

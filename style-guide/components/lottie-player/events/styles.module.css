@@ -1,17 +1,20 @@
 #headLottie {
-  z-index: 10;
   position: absolute;
-  background: transparent;
-  top: 35%;
-  right: 5%;
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
+  top: 6%;
+  left: 60%;
 }
-@media (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   #headLottie {
-    width: 200px;
-    height: 200px;
-    top: 62%;
-    right: 17%;
+    width: 400px;
+    height: 400px;
+    top: 22%;
+    /* left: 50%; */
+  }
+}
+@media screen and (max-width: 760px) {
+  #headLottie {
+    display: none;
   }
 }

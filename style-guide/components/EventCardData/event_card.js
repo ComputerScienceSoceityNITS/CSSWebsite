@@ -14,8 +14,8 @@ const eventCardData = [
   },
   {
     heading: "Wings",
-    text: `CSS is comprised of seven different wings, namely Executive Wing, Dev Wing, CP Wing, ML Wing, PR Wing, Design Wing and Literary Wing `,
-    text2: ``,
+    text: `CSS is comprised of seven different wings. Dev Wing maintains the CSS website and app, and holds dev related events. CP wing holds coding contests and DSA marathons. PR Wing generates publicity and arranges speakers.`,
+    text2: `Design Wing handles designing of media related to CSS. Literary Wing manages the BitScribe magazine and writes content for the society. ML Wings organizes ML related events and workshops. Executive Wing binds together all the above and ensures proper functioning.`,
     bg: Event2,
     link: "/wings",
   },
@@ -41,8 +41,8 @@ const eventCardData = [
     link: "/events",
   },
   {
-    heading: "Speaker Session",
-    text: `“The Computer Science Society organizes numerous speaker sessions throughout the course of the year featuring techies from across the country.`,
+    heading: "Inspire Room",
+    text: `“The Computer Science Society organizes numerous speaker sessions under Inspire Room throughout the course of the year featuring techies from across the country.`,
     text2: `Having proved their mettle in varied advancing domains in the realm of computational sciences, the words of guidance from the speakers target to ignite within the students a sense of zeal and initiative as they strive forward in their respective fields. The PR wing of the CSS organizes these sessions.`,
     bg: Event5,
     link: "/events",

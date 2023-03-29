@@ -1,75 +1,61 @@
-import React, { useState } from "react";
+import React from "react";
 import Styles from "./events.module.css";
-import TechnoEvents from "../TechnoEvents";
+import TechnicalEvents from "../TechnicalEvents";
 import CulturalEvents from "../CulturalEvents";
-import AbacusEvents from "../AbacusEvents";
-import ScrollDownLottie from "../../components/lottie-player/scrollDown";
 import EventsBg from "../../components/lottie-player/events";
-
+// import Link from "next/link";
 const Events = () => {
-  const [active, setActive] = useState(0);
   return (
-    <div className={Styles.body_bg}>
-      <header className={Styles.header}>
-        <div className={Styles.heading}>
-          <div className={Styles.coloredBg}>
-            <p>
-              <span>C</span>
-              <span>S</span>
-              <span>S</span>
-            </p>
-          </div>
-          <h1 className={Styles.eventstyle}>Events</h1>
-          <p className={Styles.tagline}>
-            <span>Participate</span>
-            <span>Enjoy</span>
-            <span>Learn</span>
-          </p>
-        </div>
-        <ScrollDownLottie />
+    <>
+      <div className={Styles.events_bg}>
         <EventsBg />
-      </header>
-      <main className={Styles.body_bg}>
-        <div className={Styles.btnContainer}>
-          <button
-            id="stechno"
-            className={`${Styles.eventBtn} ${
-              active === 0 ? Styles.active : ""
-            }`}
-            onClick={() => {
-              setActive(0);
-            }}
-          >
-            Techno Events
-          </button>
-          <button
-            id="scultural"
-            className={`${Styles.eventBtn} ${
-              active === 1 ? Styles.active : ""
-            }`}
-            onClick={() => {
-              setActive(1);
-            }}
-          >
-            Cultural Events
-          </button>
-          <button
-            id="sabacus"
-            className={`${Styles.eventBtn} ${
-              active === 2 ? Styles.active : ""
-            }`}
-            onClick={() => {
-              setActive(2);
-            }}
-          >
-            Abacus Events
-          </button>
+        <div className={Styles.events_content}>
+          <div className={Styles.events_heading}>
+            <span>OUR</span>
+            <span>EVENTS</span>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+              itaque quaerat repudiandae a distinctio et totam dicta, fugiat
+              eligendi, nulla upta Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Nobis ea, dolor praesentiumommodi aspernatur
+              magni officiis consequatur? fuga consequuntur quia animi. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Rem, animi!
+            </p>
+            <span className={Styles.CSSAnimation}>EVENTS OF THE YEAR</span>
+          </div>
+          <div className={` ${Styles.mainCardHolder}`}>
+            <a href="/abacus" className={` ${Styles.abacus_card}`}>
+              <img src="./images/eventPage_icons/abacus.png" alt="ABACUS" />
+              <div>Abacus</div>
+            </a>
+            <a href="/enigma" className={` ${Styles.abacus_card}`}>
+              <img src="./images/eventPage_icons/data.png" alt="ENIGMA" />
+              <div>Enigma</div>
+            </a>
+          </div>
+
+          {/* <div className={` ${Styles.enigma_card}`}>
+            <p>ENIGMA</p>
+
+            <div>
+              <Link href="/enigma">
+                <img src="./images/events/ENIGMA2.jpg" alt="ENIGMA" />
+              </Link>
+              <button
+                className={Styles.eventButton}
+                onClick={() => {
+                  window.location.href = "/enigma";
+                }}
+              >
+                ENIGMA
+              </button>
+            </div>
+          </div> */}
         </div>
-        {active === 0 && <TechnoEvents />}
-        {active === 1 && <CulturalEvents />}
-        {active === 2 && <AbacusEvents />}
-      </main>
-    </div>
+
+        <TechnicalEvents />
+      </div>
+    </>
   );
 };
 

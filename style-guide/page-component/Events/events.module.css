@@ -1,168 +1,254 @@
-.header {
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=East+Sea+Dokdo&display=swap");
+
+.events_bg {
+  background-color: var(--footer-text);
+}
+
+.events_heading {
+  padding: 6em 0 2em 0em;
+  user-select: none;
+}
+
+.events_content {
+  background: var(--events-section-bg);
+  min-height: 100vh;
+}
+
+.events_heading :nth-child(1) {
+  color: var(--reportbox-bg);
+  font-size: 3em;
+  display: block;
+  font-family: "Archivo", sans-serif;
+  padding-left: 2em;
+}
+
+.events_heading :nth-child(2) {
+  color: var(--reportbox-bg);
+  font-size: 3em;
+  display: block;
+  font-family: "Archivo", sans-serif;
+  padding-left: 2em;
+}
+
+.events_heading :nth-child(2)::first-letter {
+  font-size: 9vh;
+  font-weight: bolder;
+  color: white;
+  background-color: #e41f6f;
+  font-family: "Archivo", sans-serif;
+}
+
+.events_heading :nth-child(3) {
+  color: var(--reportbox-bg);
+  font-size: 1.4em;
+  display: block;
+  width: 60vw;
+  padding-top: 2em;
+  padding-left: 2em;
+}
+
+.CSSAnimation {
+  user-select: none;
+  letter-spacing: 1px;
+  font-family: Anton, sans-serif;
+  color: var(--events-section-text);
+  display: flex;
+  justify-content: center;
+  font-size: 10vw;
+  margin-top: 1em;
+}
+
+.mainCardHolder {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.abacus_card {
   position: relative;
-  width: 100vw;
-  height: 95vh;
-  background-color: var(--events-bg-color);
-}
-
-.header .heading {
-  z-index: 10;
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  color: var(--Grey-light-3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-decoration: none;
+  background: linear-gradient(90deg, #f7085a, #be4c9b);
+  padding-bottom: 6rem;
+  border-radius: 0.5rem;
   overflow: hidden;
-  font-family: "Roboto", sans-serif;
+  width: min(40vw, 17rem);
+  box-shadow: 0px 10px 15px 5px var(--event-card-shadow);
+  transition: all 0.2s ease-in;
 }
 
-.body_bg {
-  background-color: var(--events-bg-color);
-  min-height: 100vh !important;
+.abacus_card:hover {
+  transform: scale(1.02);
 }
 
-.header .heading .coloredBg {
-  width: 16vw;
+.abacus_card > img {
+  margin: 3rem 0 !important;
+  filter: invert(0.9);
+}
+
+.abacus_card div {
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
   text-align: center;
-  background: var(--hero-section-bg-text);
-  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0.3rem;
+  font-family: Anton, sans-serif;
+  font-size: 2rem;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.abacus_card:hover div {
+  height: 70%;
   backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 4px 0 rgba(255, 255, 255, 0.1);
-  animation: getBlurry 3s ease-out;
+  background: rgba(0, 0, 0, 0.6);
 }
 
-.header .heading .coloredBg:hover {
-  backdrop-filter: blur(0);
+.enigma_card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  user-select: none;
 }
 
-.header .heading .coloredBg p {
-  font-size: 3.5vw;
-  font-weight: 800;
-  animation: moveInLeft 1s ease-out;
-  padding: 0.5rem 0.5rem;
-  color: var(--event-style);
+.abacus_card p {
+  font-size: 10vw;
+  user-select: none;
+  letter-spacing: 1px;
+  font-family: Anton, sans-serif;
+  color: var(--events-section-text);
+  animation: animate 20s linear infinite;
 }
 
-.header .heading .coloredBg p span {
-  font-family: "Roboto", sans-serif;
+.enigma_card p {
+  font-size: 10vw;
+  user-select: none;
+  letter-spacing: 1px;
+  font-family: Anton, sans-serif;
+  color: var(--events-section-text);
+  animation: animatereverse 20s linear infinite;
 }
 
-.header .heading h1 {
-  font-weight: 600;
-  font-size: 8vw;
-  letter-spacing: 5px;
-  margin-top: 0.5rem;
-}
-
-.header .heading h1::first-letter {
-  background: #f80759;
-  border-radius: 2px;
-  padding: 0.5rem 0.5rem;
-  margin-right: 5px;
-  /* font-family: "Abril Fatface", cursive; */
-}
-
-.header .heading .tagline {
-  font-family: "Italianno";
-  font-size: 2vw;
-  margin-top: 12px;
-}
-
-.header .heading .tagline span {
-  margin: 0 2.2vw;
-  letter-spacing: 3px;
-  transition: all 0.2s;
-  color: var(--theme-primary);
-}
-
-.header .heading .tagline span:nth-child(2) {
-  color: #f80759;
-}
-
-.eventstyle {
-  color: var(--event-style);
-}
-
-@keyframes moveInLeft {
+@keyframes animate {
   0% {
-    opacity: 0;
-    transform: translateX(-13vw);
-  }
-  75% {
-    transform: translateX(0.8vw);
-  }
-  100% {
-    opacity: 1;
     transform: translateX(0);
   }
+
+  40% {
+    transform: translateX(80%);
+  }
 }
 
-@keyframes getBlurry {
+@keyframes animatereverse {
   0% {
-    backdrop-filter: blur(0);
+    transform: translate(0);
   }
-  100% {
-    backdrop-filter: blur(5px);
+
+  40% {
+    transform: translate(-80%);
   }
 }
 
-.btnContainer {
-  position: relative;
-  padding: 4rem 0;
-  padding-left: 5rem;
-  background-color: var(--events-bg-color);
-}
-
-.btnContainer button {
-  font-size: 1.6vw;
-  color: var(--event-button);
-  border: none;
-  background-color: transparent;
-  padding: 1rem 1rem;
-  margin: 1rem 1rem;
-  letter-spacing: 1px;
-  outline: none;
-  font-family: "Cormorant", serif;
-}
-
-.btnContainer button:focus {
-  outline: none;
-}
-
-.btnContainer button:hover {
+.abacus_card img,
+.enigma_card img {
+  border-radius: 5%;
+  width: 10vw;
+  height: 10vw;
   cursor: pointer;
+  margin: 0 4vw;
 }
 
-.btnContainer .active {
-  color: #f80759;
+.eventButton {
+  background: linear-gradient(#3a121f, #3a0808);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1vw 2.4vw;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  width: 12vw;
+  --tilt: 24px;
+  --tilt2: 24px;
+  -webkit-clip-path: polygon(0 50%, 0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  clip-path: polygon(0 50%, 0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  height: 100%;
+  transition: -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+  z-index: -1;
+  -webkit-clip-path: polygon(
+    0 50%,
+    var(--tilt) 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    var(--tilt) 100%
+  );
+  clip-path: polygon(
+    20% 50%,
+    var(--tilt) 0,
+    calc(100% - var(--tilt)) 0,
+    95% 50%,
+    calc(100% - var(--tilt2)) 100%,
+    var(--tilt) 100%
+  );
+  font-family: Anton, sans-serif;
+  letter-spacing: 1px;
 }
 
-@media only screen and (max-width: 850px) {
-  .header .heading {
-    top: 14%;
-    left: 32%;
-  }
+.eventButton:hover {
+  background: linear-gradient(#2c0d17, #231111);
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  transform: translateY(2px);
 }
 
-@media only screen and (max-width: 700px) {
-  .header {
-    height: 65vh;
+@media screen and (max-width: 700px) {
+  .events_heading :nth-child(3) {
+    font-size: 1em;
   }
-  .header .heading {
-    transform: scale(1.2);
-    top: 31%;
-    left: 32%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+
+  .events_heading :nth-child(2) {
+    font-size: 3em;
   }
-  .btnContainer .eventBtn {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    font-size: 4vw;
-    padding: 0.5rem 0.5rem;
-    margin: 0 0;
-    letter-spacing: 1px;
+
+  .events_heading :nth-child(1) {
+    font-size: 3em;
+  }
+
+  .events_heading :nth-child(2)::first-letter {
+    font-size: 8vh;
+  }
+
+  .events_heading :nth-child(3) {
+    font-size: 1.1em;
+    width: 80vw;
+  }
+
+  .eventButton {
+    display: none;
+  }
+
+  .abacus_card > img {
+    margin: 2rem 0 !important;
+    filter: invert(0.9);
+  }
+
+  .abacus_card div {
+    padding: 1rem 0;
+    font-size: 1rem;
   }
 }

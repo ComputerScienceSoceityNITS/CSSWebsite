@@ -1,0 +1,151 @@
+.hero {
+  min-height: 100vh;
+  width: 100vw;
+  background: var(--hero-section-bg);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0.1rem 2em;
+  background-attachment: fixed;
+}
+.uppperBanner1 {
+  position: relative;
+  user-select: none;
+  font-size: 7rem;
+  letter-spacing: 1px;
+  font-family: Anton, sans-serif;
+  color: var(--executive-section-text);
+  width: 200vw;
+  width: 100%;
+  animation: toLeft2 25s linear infinite forwards;
+}
+
+.uppperBanner2 {
+  user-select: none;
+  font-size: 7rem;
+  letter-spacing: 1px;
+  font-family: Anton, sans-serif;
+  color: var(--executive-section-text);
+  width: 200vw;
+  width: 100%;
+  animation: toLeft2 25s linear infinite reverse forwards;
+}
+
+@keyframes toLeft2 {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(-40vw);
+  }
+}
+
+
+.TimestampDates {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.TimestampDate {
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--hero-section-text);
+  color: var(--devcard-text);
+  border-radius: 0.3rem;
+  border: 1px solid var(--devcard-text);
+  background-color: transparent;
+  font-weight: 700;
+  font-family: Helvetica;
+  line-height: 28px;
+  cursor: pointer;
+  color: var(--devcard-text);
+}
+
+.TimestampCards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+  color: var(--devcard-text);
+}
+
+.aboutEnigma {
+  font-size: 1.2em;
+  color: var(--wing-black);
+}
+
+.activeLink {
+  padding: 0.5rem 1rem;
+  color: white;
+  border: 1.5px solid var(--hero-section-text);
+  background: linear-gradient(90deg, #f7085a, #be4c9b);
+  border-radius: 0.3rem;
+  border: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: Helvetica;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.enigmaStatus {
+  padding-top: 1em;
+  padding-bottom: 0.4em;
+  font-weight: 700;
+  font-family: Helvetica;
+  color: var(--devcard-text);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0.1rem 1rem;
+  }
+
+  .heroText {
+    font-size: 3.3rem;
+  }
+  .uppperBanner1, .uppperBanner2 {
+    font-size: 5rem;
+    animation-duration: 20s;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero {
+    justify-content: center;
+  }
+
+  .TimestampCards {
+    padding: 0.1rem 0rem;
+    text-align: center;
+    margin: auto;
+    justify-self: unset;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto;
+  }
+
+  .TimestampDates {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutEnigma {
+    font-size: 1rem;
+    width: 90vw;
+  }
+  .uppperBanner1,
+  .uppperBanner2 {
+    font-size: 3rem;
+    width: 100vw;
+      animation-duration: 15s;
+  }
+
+}

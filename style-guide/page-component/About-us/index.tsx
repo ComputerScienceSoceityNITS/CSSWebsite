@@ -11,24 +11,24 @@ const AboutUs = () => {
           <div className={styles.title}>
             <p>ABOUT US</p>
           </div>
-          <ReactTyped
-            className={styles.typed}
-            strings={[
-              "TECHNICAL EVENTS",
-              "FUN EVENTS",
-              "SPEAKER SESSIONS",
-              "WORKSHOPS",
-            ]}
-            typeSpeed={100}
-            backSpeed={40}
-            loop
-          />
           <div className={styles.subtitle}>
             <p>
               The Computer Science Society, run by the CSE department of NIT
               Silchar, aims to impart academic, technical and socio-cultural
               awareness to the students of our beloved college.
             </p>
+            <ReactTyped
+              className={styles.typed}
+              strings={[
+                "TECHNICAL EVENTS",
+                "FUN EVENTS",
+                "SPEAKER SESSIONS",
+                "WORKSHOPS",
+              ]}
+              typeSpeed={100}
+              backSpeed={40}
+              loop
+            />
           </div>
         </div>
         <div className={styles.dividers}>
