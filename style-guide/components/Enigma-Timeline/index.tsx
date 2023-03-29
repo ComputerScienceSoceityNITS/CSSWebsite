@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./style.module.css";
-import Card from "../Enigma-cards";
+// import Card from "../Enigma-cards";
 import data from "../../../_json/events/events.json";
 
 const Hero = () => {
@@ -8,8 +8,8 @@ const Hero = () => {
   data.events.enigma.map((event) => {
     datesSet.add(event.contestDate);
   });
-  const datesArray = Array.from(datesSet).sort();
-  const [activeDate, setActiveDate] = useState(datesArray[0]);
+  // const datesArray = Array.from(datesSet).sort();
+  // const [activeDate, setActiveDate] = useState(datesArray[0]);
   return (
     <div className={styles.hero}>
       <h1 className={styles.enigmaStatus}>MORE ABOUT ENIGMA</h1>
@@ -37,7 +37,13 @@ const Hero = () => {
           inventore commodi esse nam!
         </p>
       </div>
-      <h1 className={styles.heroText}>TIMELINE</h1>
+      <p className={styles.uppperBanner2} >
+      COMING SOON
+      </p>
+      <p className={styles.uppperBanner1}>
+      COMING SOON
+      </p>
+      {/* <h1 className={styles.heroText}>TIMELINE</h1>
 
       <h1 className={styles.enigmaStatus}>UPCOMING</h1>
 
@@ -108,7 +114,7 @@ const Hero = () => {
             );
           }
         })}
-      </div>
+      </div> */}
     </div>
   );
 };

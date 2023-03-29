@@ -9,14 +9,39 @@
   padding: 0.1rem 2em;
   background-attachment: fixed;
 }
-
-.heroText {
+.uppperBanner1 {
+  position: relative;
   user-select: none;
-  font-size: 9em;
+  font-size: 7rem;
   letter-spacing: 1px;
   font-family: Anton, sans-serif;
   color: var(--executive-section-text);
+  width: 200vw;
+  width: 100%;
+  animation: toLeft2 25s linear infinite forwards;
 }
+
+.uppperBanner2 {
+  user-select: none;
+  font-size: 7rem;
+  letter-spacing: 1px;
+  font-family: Anton, sans-serif;
+  color: var(--executive-section-text);
+  width: 200vw;
+  width: 100%;
+  animation: toLeft2 25s linear infinite reverse forwards;
+}
+
+@keyframes toLeft2 {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(-40vw);
+  }
+}
+
 
 .TimestampDates {
   width: 100%;
@@ -86,6 +111,10 @@
   .heroText {
     font-size: 3.3rem;
   }
+  .uppperBanner1, .uppperBanner2 {
+    font-size: 5rem;
+    animation-duration: 20s;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -112,4 +141,11 @@
     font-size: 1rem;
     width: 90vw;
   }
+  .uppperBanner1,
+  .uppperBanner2 {
+    font-size: 3rem;
+    width: 100vw;
+      animation-duration: 15s;
+  }
+
 }

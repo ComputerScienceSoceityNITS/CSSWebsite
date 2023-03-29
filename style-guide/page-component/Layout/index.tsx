@@ -40,7 +40,7 @@ const Layout = ({ children }: LayoutProps) => {
           <Curosr />
           <ReportButton Report={Report} setReport={setReport} />
           <Navbar />
-          {children}
+          {children} 
           <Footer Report={Report} setReport={setReport} />
         </>
       )}
