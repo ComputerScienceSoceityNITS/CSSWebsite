@@ -90,6 +90,8 @@
   /* --events-heading-text:  rgb(21 1 1 / 20%); */
   --events-section-text: var(--Grey-dark-2);
   --event-card-shadow: rgb(21, 20, 20);
+  --signIn-btn-text: pink;
+  --signIn-btn-bg: var(--theme-primary);
 }
 
 .light {
@@ -190,4 +192,6 @@
   --footer-contactSectionLogo-filter: 0;
   --events-section-text: var(--Grey-dark-3);
   --event-card-shadow: grey;
+  --signIn-btn-text: black;
+  --signIn-btn-bg: #f0eeee;
 }
