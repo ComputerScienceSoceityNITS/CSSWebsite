@@ -18,21 +18,24 @@
   color: var(--reportbox-bg);
   font-size: 3em;
   display: block;
-  font-family: "Archivo", sans-serif;
-  padding-left: 2em;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding-left: 0.7em;
 }
 
 .events_heading :nth-child(2) {
   color: var(--reportbox-bg);
   font-size: 3em;
   display: block;
-  font-family: "Archivo", sans-serif;
-  padding-left: 2em;
+  font-family: sans-serif;
+  padding-left: 0.7em;
+  font-weight: bold;
 }
 
 .events_heading :nth-child(2)::first-letter {
-  font-size: 9vh;
+  font-size: 4rem;
   font-weight: bolder;
+  padding: 0 0.1em;
   color: white;
   background-color: #e41f6f;
   font-family: "Archivo", sans-serif;
@@ -40,11 +43,22 @@
 
 .events_heading :nth-child(3) {
   color: var(--reportbox-bg);
-  font-size: 1.4em;
+  font-size: 1.2em;
   display: block;
   width: 60vw;
   padding-top: 2em;
   padding-left: 2em;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.events_heading :nth-child(4) {
+  color: var(--reportbox-bg);
+  font-size: 1.2em;
+  display: block;
+  width: 60vw;
+  padding-top: 1em;
+  padding-left: 2em;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .CSSAnimation {
@@ -109,58 +123,12 @@
 }
 
 .abacus_card:hover div {
-  height: 70%;
+  height: 60%;
   backdrop-filter: blur(5px);
   background: rgba(0, 0, 0, 0.6);
 }
 
-.enigma_card {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  user-select: none;
-}
-
-.abacus_card p {
-  font-size: 10vw;
-  user-select: none;
-  letter-spacing: 1px;
-  font-family: Anton, sans-serif;
-  color: var(--events-section-text);
-  animation: animate 20s linear infinite;
-}
-
-.enigma_card p {
-  font-size: 10vw;
-  user-select: none;
-  letter-spacing: 1px;
-  font-family: Anton, sans-serif;
-  color: var(--events-section-text);
-  animation: animatereverse 20s linear infinite;
-}
-
-@keyframes animate {
-  0% {
-    transform: translateX(0);
-  }
-
-  40% {
-    transform: translateX(80%);
-  }
-}
-
-@keyframes animatereverse {
-  0% {
-    transform: translate(0);
-  }
-
-  40% {
-    transform: translate(-80%);
-  }
-}
-
-.abacus_card img,
-.enigma_card img {
+.abacus_card img {
   border-radius: 5%;
   width: 10vw;
   height: 10vw;
@@ -168,73 +136,35 @@
   margin: 0 4vw;
 }
 
-.eventButton {
-  background: linear-gradient(#3a121f, #3a0808);
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  border: none;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 1vw 2.4vw;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  width: 12vw;
-  --tilt: 24px;
-  --tilt2: 24px;
-  -webkit-clip-path: polygon(0 50%, 0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
-  clip-path: polygon(0 50%, 0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
-  height: 100%;
-  transition: -webkit-clip-path 0.2s ease;
-  transition: clip-path 0.2s ease;
-  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
-  z-index: -1;
-  -webkit-clip-path: polygon(
-    0 50%,
-    var(--tilt) 0,
-    calc(100% - var(--tilt)) 0,
-    100% 50%,
-    calc(100% - var(--tilt)) 100%,
-    var(--tilt) 100%
-  );
-  clip-path: polygon(
-    20% 50%,
-    var(--tilt) 0,
-    calc(100% - var(--tilt)) 0,
-    95% 50%,
-    calc(100% - var(--tilt2)) 100%,
-    var(--tilt) 100%
-  );
-  font-family: Anton, sans-serif;
-  letter-spacing: 1px;
+.hideDate {
+  display: none;
 }
 
-.eventButton:hover {
-  background: linear-gradient(#2c0d17, #231111);
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
-  transform: translateY(2px);
+.abacus_card:hover .hideDate {
+  display: flex;
+}
+
+.eventHover {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 700px) {
-  .events_heading :nth-child(3) {
-    font-size: 1em;
-  }
-
   .events_heading :nth-child(2) {
     font-size: 3em;
+    padding-left: 0.7em;
   }
 
   .events_heading :nth-child(1) {
     font-size: 3em;
+    padding-left: 0.7em;
   }
 
-  .events_heading :nth-child(2)::first-letter {
-    font-size: 8vh;
+  .events_heading :nth-child(4) {
+    display: none;
   }
-
   .events_heading :nth-child(3) {
-    font-size: 1.1em;
+    font-size: 1em;
     width: 80vw;
   }
 

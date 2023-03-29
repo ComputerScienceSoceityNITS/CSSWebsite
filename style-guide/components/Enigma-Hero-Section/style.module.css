@@ -1,5 +1,4 @@
 .hero {
-  min-height: 100vh;
   width: 100vw;
   background: var(--hero-section-bg);
   display: flex;
@@ -16,6 +15,7 @@
   letter-spacing: 1px;
   font-family: Anton, sans-serif;
   color: var(--executive-section-text);
+  margin-top: 2rem;
 }
 
 .heroDesc {
@@ -27,11 +27,14 @@
   font-size: 1.1rem;
   font-weight: 700;
 }
+
 .heroHead {
   font-size: 2rem;
   color: var(--hero-section-text);
   margin: 1rem 0;
+  font-family: Helvetica;
 }
+
 .heroLogo {
   position: absolute;
   right: 10rem;
@@ -40,12 +43,18 @@
   width: 15rem;
 }
 
+.advantagesList {
+  margin-left: 1em;
+}
+
 @media (max-width: 768px) {
   .hero {
     padding: 0.1rem 1rem;
   }
+
   .heroText {
-    font-size: 5rem;
+    font-size: 2.5rem;
+    margin-top: 3rem;
   }
 
   .heroLogo {

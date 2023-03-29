@@ -11,38 +11,32 @@ const Hero = () => {
   // const datesArray = Array.from(datesSet).sort();
   // const [activeDate, setActiveDate] = useState(datesArray[0]);
   return (
-    <div className={styles.hero}>
-      <h1 className={styles.enigmaStatus}>MORE ABOUT ENIGMA</h1>
-      <div className={styles.aboutEnigma}>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
-          adipisci unde tenetur praesentium! Possimus adipisci velit assumenda
-          minima soluta vero.
+    <>
+      <div className={styles.hero}>
+        <h1 className={styles.enigmaStatus}>MORE ABOUT ENIGMA</h1>
+        <div className={styles.aboutEnigma}>
+          <p>
+            Apart from all these engagements, ENIGMA provides an opportunity for
+            the freshman of the college to get introduced to the field of
+            competitive programming. It prepares the students for
+            internship/placement season by providing an opportunity to take a
+            shot at real time Coding Round Problems. Our alumni have also, at
+            many times appreciated this highly esteemed initiative by the CP
+            Wing of the Society, given the value addition it has accentuated in
+            the brightest of minds
+          </p>
+        </div>
+      </div>
+
+      <div className={styles.animatedbanner}>
+        <p className={styles.uppperBanner2} style={{ width: "300vw" }}>
+          COMING SOON
         </p>
-        <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Vero, iste? Fugit, dolor. Aliquam,
-          excepturi culpa, iusto facilis laboriosam veritatis autem ipsa, eius
-          deleniti omnis harum voluptatibus? Vel, qui ipsum. Perferendis! Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Ullam doloremque
-          blanditiis suscipit reiciendis rem corrupti reprehenderit dicta nihil
-          labore numquam? adipisicing elit. Sunt, quasi!
-        </p>
-        <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-          velit officia corrupti harum molestias laboriosam, laudantium at ad.
-          Deserunt, iure doloremque. Ab, eveniet quasi molestias minima
-          inventore commodi esse nam!
+        <p className={styles.uppperBanner1} style={{ width: "300vw" }}>
+          COMING SOON
         </p>
       </div>
-      <p className={styles.uppperBanner2} >
-      COMING SOON
-      </p>
-      <p className={styles.uppperBanner1}>
-      COMING SOON
-      </p>
+
       {/* <h1 className={styles.heroText}>TIMELINE</h1>
 
       <h1 className={styles.enigmaStatus}>UPCOMING</h1>
@@ -115,7 +109,7 @@ const Hero = () => {
           }
         })}
       </div> */}
-    </div>
+    </>
   );
 };
 
