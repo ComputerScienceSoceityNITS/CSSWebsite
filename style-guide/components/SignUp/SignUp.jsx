@@ -29,7 +29,7 @@ const SignUp = (props) => {
           `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/user/logout`
         );
         console.log({ res });
-        if (res.data.success) {
+        if (res.data.status === "success") {
           setSigned(false);
           localStorage.setItem("signed", "false");
           localStorage.setItem("CSS_ScholarID", "");
