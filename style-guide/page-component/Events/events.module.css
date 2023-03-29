@@ -66,23 +66,23 @@
 }
 
 .abacus_card {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-decoration: none;
   background: linear-gradient(90deg, #f7085a, #be4c9b);
-  /* padding-top: 2rem; */
+  padding-bottom: 6rem;
   border-radius: 0.5rem;
   overflow: hidden;
   width: min(40vw, 17rem);
   box-shadow: 0px 10px 15px 5px var(--event-card-shadow);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in;
 }
 
-.abacus_card:hover,
-.events_abacus_card__yqlcb:hover {
-  animation: Event_card 1s ease-in-out infinite alternate;
+.abacus_card:hover {
+  transform: scale(1.02);
 }
 
 .abacus_card > img {
@@ -91,28 +91,27 @@
 }
 
 .abacus_card div {
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2rem 0;
   text-align: center;
-  width: 100%;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 0.3rem;
   font-family: Anton, sans-serif;
   font-size: 2rem;
   color: white;
+  transition: all 0.3s ease-in-out;
 }
 
-@keyframes Event_card {
-  0% {
-    scale: 1;
-  }
-
-  50% {
-    scale: 1.2;
-  }
-
-  100% {
-    scale: 0.7;
-  }
+.abacus_card:hover div {
+  height: 70%;
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .enigma_card {
