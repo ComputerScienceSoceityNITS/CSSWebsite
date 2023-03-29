@@ -9,6 +9,7 @@ import Slide from "../lottie-player/slide";
 export default function Carousel() {
   const ref = useRef();
   const iarray = [
+    "https://www.youtube.com/embed/ankaSYxOH1g",
     "https://www.youtube.com/embed/xMJo865ORSs",
     "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7020012658594590720?compact=1",
   ];
@@ -52,12 +53,3 @@ export default function Carousel() {
   );
 }
 
-<iframe
-  width="642"
-  height="361"
-  src="https://www.youtube.com/embed/xMJo865ORSs"
-  title="StriverAtNITS"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowfullscreen
-></iframe>;
