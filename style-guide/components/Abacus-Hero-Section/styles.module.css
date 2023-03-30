@@ -46,7 +46,7 @@
   }
 
   .heroDesc {
-    max-width: 8=90%;
+    max-width: 90%;
     color: var(--hero-section-text);
     font-family: Gill Sans, sans-serif;
     margin: 0.4em 0;
