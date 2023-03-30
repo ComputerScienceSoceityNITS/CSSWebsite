@@ -26,7 +26,7 @@ const CSSEvents = () => {
     },
 
     {
-      name: "OPEN SOURCE HACKATHON",
+      name: "OPEN SOURCE MARATHON",
       cont1:
         "The Computer Science Society organizes hackathons throughout the course of the year which are open source.",
       cont3:
