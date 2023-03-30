@@ -51,6 +51,7 @@ const Hero = () => {
           Sunday, 21 Jan
         </div>
         <div className={styles.TimestampDate}>Sunday, 22 Jan</div>
+        <div className={styles.TimestampDate}>Sunday, 23 Jan</div>
         <div className={styles.TimestampDate}>Sunday, 23 Jan</div> */}
       </div>
       <div className={styles.TimestampCards}>
