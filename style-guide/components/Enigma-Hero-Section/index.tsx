@@ -7,27 +7,26 @@ const Hero = () => {
       <h1 className={styles.heroText}>ENIGMA / ENIGMA+</h1>
       <h3 className={styles.heroHead}>WHAT?</h3>
       <p className={styles.heroDesc}>
-        Lorem ipsum dolor sit amet consectetur. Odio non eu mi cursus arcu a non
-        quis. Luctus nunc tellus sit arcu aliquam cursus auctor. Sed in risus
-        accumsan facilisi feugiat vitae. Ridiculus mattis enim elementum
-        vulputate porta. Mattis potenti donec sed a rutrum hac sapien. Velit
-        mattis feugiat diam lacus fringilla. Id.
+        Enigma is the competitive programming contests held by CP wing primarily
+        for second-years. Participation is open to all and the contests are held
+        regularly on Codeforces.
       </p>
 
       <h3 className={styles.heroHead}>WHY?</h3>
       <p className={styles.heroDesc}>
-        Lorem ipsum dolor sit amet consectetur. Odio non eu mi cursus arcu a non
-        quis. Luctus nunc tellus sit arcu aliquam cursus auctor. Sed in risus
-        accumsan facilisi feugiat vitae. Ridiculus mattis enim elementum
-        vulputate porta. Mattis potenti donec sed a rutrum hac sapien. Velit
-        mattis feugiat diam lacus fringilla. Id.
+        The CP wing organises ENIGMA to cultivate a culture of competitive
+        programming and make the students familiar with programming contests.
+        With leaderboards, it also fosters friendly competition among the
+        students.
       </p>
 
       <h3 className={styles.heroHead}>ADVANTAGES?</h3>
       <p className={styles.heroDesc}>
-        Lorem ipsum dolor sit amet consectetur. Odio non eu mi cursus arcu a non
-        quis. nim elementum vulputate porta. Mattis potenti donec sed a rutrum
-        hac sapien. Velit mattis feugiat diam lacus fringilla. Id.
+        <ul className={styles.advantagesList}>
+          <li>Improvement of problem solving and DSA skills</li>
+          <li>Preparation for OAs and other online technical rounds</li>
+          <li>Improves the ability of students to perform under pressure</li>
+        </ul>
       </p>
       <img className={styles.heroLogo} src="/images/logo_compressed.png" />
     </div>
