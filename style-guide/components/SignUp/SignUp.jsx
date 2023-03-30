@@ -15,33 +15,33 @@ const SignUp = (props) => {
     }
   }, []);
 
-  const handleLogout = async (e) => {
-    e.preventDefault();
-    const query = confirm("Do you really want to log out?");
-    if (query) {
-      try {
-        const res = await axios.get(
-          `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/user/logout`
-        );
-        console.log({ res });
-        if (res.data.status === "success") {
-          setSigned(false);
-          localStorage.setItem("signed", "false");
-          localStorage.removeItem("CSS_ScholarID");
-          window.location.search = "";
-        }
-      } catch (err) {
-        console.log({ err });
-        alert(err.message);
-      }
-    }
-  };
+  // const handleLogout = async (e) => {
+  //   e.preventDefault();
+  //   const query = confirm("Do you really want to log out?");
+  //   if (query) {
+  //     try {
+  //       const res = await axios.get(
+  //         `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/user/logout`
+  //       );
+  //       console.log({ res });
+  //       if (res.data.status === "success") {
+  //         setSigned(false);
+  //         localStorage.setItem("signed", "false");
+  //         localStorage.removeItem("CSS_ScholarID");
+  //         window.location.search = "";
+  //       }
+  //     } catch (err) {
+  //       console.log({ err });
+  //       alert(err.message);
+  //     }
+  //   }
+  // };
 
   return (
     <Link
       href={
         signed
-          ? "/logout?currentPage=" + window.location.pathname
+          ? "/profile?currentPage=" + window.location.pathname
           : "/signin?currentPage=" + window.location.pathname
       }
       passHref={true}
@@ -49,8 +49,8 @@ const SignUp = (props) => {
       <div
         id="signup"
         className={`${styles.signin_btn} ${signed ? styles.signed : ""}`}
-        onClick={signed && handleLogout}
-        title={signed ? "click to signout" : "click to signin"}
+        // onClick={signed && handleLogout}
+        title={signed ? "click to view profile" : "click to signin"}
       >
         {
           // signed?<FaUser/>:<FaSignInAlt />

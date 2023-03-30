@@ -2,14 +2,25 @@ import React, { useState } from "react";
 import axios from "axios";
 import styles from "./style.module.css";
 
-const SignUp = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+const SignUp = ({ data, eventType }: any) => {
+  const [name, setName] = useState(data != null ? data.name : "");
+  const [email, setEmail] = useState(data !== null ? data.email : "");
   const [password, setPassword] = useState("");
-  const [scholarID, setScholarID] = useState("");
-  const [codeforcesHandle, setCodeforcesHandle] = useState("");
-  const [githubHandle, setGithubHandle] = useState("");
+  const [scholarID, setScholarID] = useState(
+    data !== null ? data.scholarID : ""
+  );
+  const [codeforcesHandle, setCodeforcesHandle] = useState(
+    data !== null ? data.codeforcesHandle : ""
+  );
+  const [githubHandle, setGithubHandle] = useState(
+    data !== null ? data.githubHandle : ""
+  );
 
+  const [signed, setSigned] = useState(
+    JSON.parse(localStorage.getItem("signed") || "false")
+  );
+
+  // submit
   const handleSubmit = async (event: any) => {
     event.preventDefault();
     try {
@@ -35,6 +46,57 @@ const SignUp = () => {
     }
   };
 
+  // update
+  const handleUpdate = async (event: any) => {
+    event.preventDefault();
+    try {
+      const response: any = await axios.post(
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/user/update`, //update it
+        {
+          name,
+          email,
+          password,
+          scholarID,
+          codeforcesHandle,
+          githubHandle,
+        },
+        { withCredentials: true }
+      );
+      console.log(response.data);
+      if (response.data.status) {
+        // window.location.pathname = "/signin";
+        window.location.pathname = window.location.search.split("=")[1];
+        // window.location.search=`currentPage=${window.location.search.split('=')[1]}`;
+      }
+    } catch (error: any) {
+      console.log(error);
+      alert(error.message);
+    }
+  };
+
+  // logout
+  const handleLogout = async (e: any) => {
+    e.preventDefault();
+    const query = confirm("Do you really want to log out?");
+    if (query) {
+      try {
+        const res = await axios.get(
+          `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/user/logout`
+        );
+        console.log({ res });
+        if (res.data.status === "success") {
+          setSigned(false);
+          localStorage.setItem("signed", "false");
+          localStorage.removeItem("CSS_ScholarID");
+          window.location.pathname = window.location.search.split("=")[1];
+        }
+      } catch (err: any) {
+        console.log({ err });
+        alert(err.message);
+      }
+    }
+  };
+
   return (
     <>
       <div className={styles.heroSection}>
@@ -47,6 +109,7 @@ const SignUp = () => {
                 type="text"
                 className={styles.input}
                 placeholder="Name"
+                value={name}
                 onChange={(e: any) => setName(e.target.value)}
               />
               <span className={styles.highlight}></span>
@@ -59,11 +122,12 @@ const SignUp = () => {
                 type="email"
                 className={styles.input}
                 placeholder="Email"
+                value={email}
                 onChange={(e: any) => setEmail(e.target.value)}
               />
               <span className={styles.highlight}></span>
               <span className={styles.bar}></span>
-              <label className={styles.label}>Email</label>
+              <label className={styles.label}>Institute Email</label>
             </div>
             {/* input - 2 */}
             <div className={styles.group}>
@@ -72,6 +136,7 @@ const SignUp = () => {
                 type="password"
                 className={styles.input}
                 placeholder="Password"
+                value={password}
                 onChange={(e: any) => setPassword(e.target.value)}
               />
               <span className={styles.highlight}></span>
@@ -84,6 +149,7 @@ const SignUp = () => {
                 type="number"
                 className={styles.input}
                 placeholder="Scholar Id"
+                value={scholarID}
                 onChange={(e: any) => setScholarID(e.target.value)}
               />
               <span className={styles.highlight}></span>
@@ -96,6 +162,7 @@ const SignUp = () => {
                 type="text"
                 className={styles.input}
                 placeholder="codeforcesHandle"
+                value={codeforcesHandle}
                 onChange={(e: any) => setCodeforcesHandle(e.target.value)}
               />
               <span className={styles.highlight}></span>
@@ -108,6 +175,7 @@ const SignUp = () => {
                 type="text"
                 className={styles.input}
                 placeholder="githubHandle"
+                value={githubHandle}
                 onChange={(e: any) => setGithubHandle(e.target.value)}
               />
               <span className={styles.highlight}></span>
@@ -115,20 +183,41 @@ const SignUp = () => {
               <label className={styles.label}>Github Handle</label>
             </div>
 
-            <div className={styles.btnWrapper}>
-              <button className={styles.btn} onClick={handleSubmit}>
-                submit
-              </button>
+            {eventType === "SignUp" && (
+              <div className={styles.btnWrapper}>
+                <button className={styles.btn} onClick={handleSubmit}>
+                  submit
+                </button>
+              </div>
+            )}
+            {eventType === "Profile" && (
+              <div className={styles.btnWrapper}>
+                <button className={styles.btn} onClick={handleUpdate}>
+                  update
+                </button>
+                <button className={styles.btn} onClick={handleLogout}>
+                  logout
+                </button>
+              </div>
+            )}
+          </div>
+
+          {eventType === "SignUp" && (
+            <div className={styles.switchLine}>
+              <p>Already Registered ?</p>
+              <a href={`/signin/${window.location.search}`}>
+                Sign In to your Account
+              </a>
             </div>
-          </div>
-          <div className={styles.switchLine}>
-            <p>Already Registered ?</p>
-            <a href={`/signin/${window.location.search}`}>
-              Sign In to your Account
-            </a>
-          </div>
+          )}
+          {eventType === "Profile" && (
+            <div className={styles.switchLine}>
+              <p>Password can't be updated</p>
+            </div>
+          )}
+
           <div className={styles.eventNameSection}>
-            <h1 className={styles.eventName}>SignUp</h1>
+            <h1 className={styles.eventName}>{eventType}</h1>
           </div>
         </div>
       </div>

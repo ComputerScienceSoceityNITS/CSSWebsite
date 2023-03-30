@@ -11,6 +11,7 @@
   padding: 1rem 0;
   padding-bottom: 3rem;
 }
+
 .heroText {
   user-select: none;
   font-size: 5rem;
@@ -19,10 +20,12 @@
   color: var(--executive-section-text);
   overflow-x: hidden;
 }
+
 .teamLeaderRow {
   background: var(--wing-page-bg1);
   color: var(--wing-black) !important;
 }
+
 .mainTable {
   margin-top: 2rem;
   padding: 1rem 0.5rem;
@@ -35,6 +38,7 @@
   width: min(90vw, 70rem);
   gap: 0.5rem;
 }
+
 .row {
   /* width: 100%; */
   display: flex;
@@ -49,9 +53,11 @@
   width: 20rem;
   transition: all 0.3s ease-in-out;
 }
+
 .expand {
   height: unset !important;
 }
+
 :where(.row, .expand) h3 {
   width: 100%;
   display: flex;
@@ -63,9 +69,11 @@
   color: var(--wing-black) !important;
   /* overflow-x: hidden; */
 }
+
 :where(.row, .expand) .tr {
   margin: 1rem !important;
 }
+
 :where(.row, .expand) :where(td, th) {
   margin: 1rem !important;
   padding: 1rem;
