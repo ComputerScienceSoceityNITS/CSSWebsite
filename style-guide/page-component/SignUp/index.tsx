@@ -41,8 +41,10 @@ const SignUp = ({ data, eventType }: any) => {
         // window.location.search=`currentPage=${window.location.search.split('=')[1]}`;
       }
     } catch (error: any) {
+      error.response?
+      alert(error.response.data.message):alert(error.message)
       console.log(error);
-      alert(error.message);
+      // alert(error.message);
     }
   };
 

@@ -46,23 +46,30 @@ const AbacusRegisterComponent = ({ data }) => {
         registrationForm.memberScholarIDs.push(formState[key]);
       }
     }
-    axios
-      .post(
-        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/abacus/register/${data._id}`,
-        registrationForm,
-        {
-          withCredentials: true,
-        }
-      )
-      .then((res) => {
-        setShowForm(false);
-        setCreatedTeam(res.data.team);
-        alert(`Team ${res.data.team} created successfully`);
-      })
-      .catch((err) => {
-        alert(err.response.data.message);
-        console.log({ err });
-      });
+    try{
+      axios
+        .post(
+          `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/abacus/register/${data._id}`,
+          registrationForm,
+          {
+            withCredentials: true,
+          }
+        )
+        .then((res) => {
+          setShowForm(false);
+          setCreatedTeam(res.data.team);
+          alert(`Team ${res.data.team} created successfully`);
+        })
+        .catch((err) => {
+          err.response?
+          alert(err.response.data.message):alert(err.message)
+          console.log({ err });
+        });
+    }catch(err) {
+      err.response?
+      alert(err.response.data.message):alert(err.message)
+      // alert(err.message);
+    }
   };
   return (
     <>

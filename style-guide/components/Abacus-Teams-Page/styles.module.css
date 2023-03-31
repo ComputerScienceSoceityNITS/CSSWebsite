@@ -50,12 +50,12 @@
   overflow: hidden;
   border-radius: 0.15rem;
   background: rgba(245, 245, 245, 0.8);
-  width: 20rem;
-  transition: all 0.3s ease-in-out;
+  width: 25rem;
+  transition: all 3s ease-in-out;
 }
 
 .expand {
-  height: unset !important;
+  height: max-content !important;
 }
 
 :where(.row, .expand) h3 {

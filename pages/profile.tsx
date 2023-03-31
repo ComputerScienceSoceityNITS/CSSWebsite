@@ -18,7 +18,10 @@ const Profile = () => {
           setLoading(false);
         }
       } catch (err: any) {
-        alert(err.message);
+        // err.response
+          err.response?
+          alert(err.response.data.message):alert(err.message)
+        // alert(err.message);
         console.log(err);
       }
     })();

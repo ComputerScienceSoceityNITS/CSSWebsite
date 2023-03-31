@@ -22,7 +22,9 @@ const SignIn = () => {
         // window.location.search='';
       }
     } catch (err: any) {
-      alert(err.message);
+      err.response?
+      alert(err.response.data.message):alert(err.message)
+      // alert(err.message);
       console.log(err);
     }
   };

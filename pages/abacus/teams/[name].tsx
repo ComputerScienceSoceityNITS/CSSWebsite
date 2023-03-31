@@ -6,12 +6,23 @@ import AbacusTeamsComponent from "../../../style-guide/components/Abacus-Teams-P
 const RegisterPage = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/abacus`)
-      .then((res) => res.json())
-      .then((response) => {
-        console.log({ response });
-        setData(response.events);
-      });
+    try{
+      fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/abacus`)
+        .then((res) => res.json())
+        .then((response) => {
+          console.log({ response });
+          setData(response.events);
+        })
+        .catch((err)=>{
+      err.response?
+      alert(err.response.data.message):alert(err.message)
+        });
+    }
+    catch(error:any){
+      error.response?
+      alert(error.response.data.message):alert(error.message)
+      // alert(error.message);
+    }
   }, []);
   console.log(data);
   const router = useRouter();
