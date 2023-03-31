@@ -6,12 +6,22 @@ import AbacusPageComponent from "../../style-guide/components/Abacus-Event-Page"
 const AbacusPage = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/abacus`)
-      .then((res) => res.json())
-      .then((response) => {
-        setData(response.events);
-        // setActiveDate(datesArray[0]);
-      });
+    try{
+      fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/abacus`)
+        .then((res) => res.json())
+        .then((response) => {
+          setData(response.events);
+          // setActiveDate(datesArray[0]);
+        })
+        .catch((err)=>{
+      err.response?
+      alert(err.response.data.message):alert(err.message)
+        });
+    }catch(error:any){
+      error.response?
+      alert(error.response.data.message):alert(error.message)
+      // alert(error.message);
+    }
   }, []);
   console.log(data);
   const router = useRouter();
