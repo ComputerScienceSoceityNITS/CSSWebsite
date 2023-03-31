@@ -23,7 +23,7 @@ const Login = () => {
       myForm.set("password", data.password);
       const config = { headers: { "Content-Type": "multipart/form-data" } };
       const {} = await axios.post(
-        `https://css-website.herokuapp.com/api/admin/login`,
+        `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/login`,
         myForm,
         config
       );

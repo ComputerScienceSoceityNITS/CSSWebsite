@@ -18,6 +18,7 @@
   align-items: flex-end;
   z-index: 0;
   cursor: default;
+  backdrop-filter: blur(0.3rem) !important;
 }
 
 .footer .fmain {
@@ -26,6 +27,7 @@
   display: -ms-flexbox;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .footer .fmain .fmain_c {
@@ -98,59 +100,100 @@
 .footer .ftnc {
   font-family: "Anton";
   position: relative;
-  bottom: 10rem;
-  padding: 3em;
+  bottom: -2rem;
+  /* padding: 3em; */
   line-height: 1.5em;
-  height: 15rem;
+  /* height: 10rem; */
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  right: 1.5rem;
+  right: 17rem;
   margin-top: 2rem;
   z-index: 10;
 }
+
+.footer .ftnc a {
+  height: 1rem;
+  text-decoration: none;
+  color: var(--footer-text);
+}
+
 .ficon {
+  height: 10rem;
+  position: relative;
+  /* left: 15rem; */
+  bottom: 4rem;
+}
+
+/* .ficon {
   height: 10rem;
   position: relative;
   background-color: var(--Grey-light-3);
   bottom: 4rem;
-}
+} */
+
 .footer .fcopyright {
   position: absolute;
   font-family: Anton;
   font-weight: 100;
+  background: var(--footer-text);
+  width: 100%;
+  color: var(--footer-bg);
+  padding: 0.5rem 2rem;
+  bottom: 0%;
+  left: 0%;
+}
+
+.contactSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   color: var(--footer-text);
-  top: 90%;
-  left: 5%;
+  gap: 1rem;
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+  z-index: 3;
 }
-.report {
-  position: relative;
-  right: 40vw;
-  bottom: 4rem;
-  font-size: 1.2rem;
-  margin-top: 4rem;
+
+.contactSection_data {
+  display: flex;
+  justify-content: flex-starts;
+  align-items: center;
+  gap: 0.5rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
 }
-.report img {
+
+.contactSection_data img {
   height: 40px;
   width: 40px;
   transition: all 0.5s ease-in-out;
 }
-.report span {
+
+.contactSectionLogo {
+  filter: invert(var(--footer-contactSectionLogo-filter));
+}
+
+.contactSection_data span {
   position: relative;
   left: 3rem;
   bottom: 2rem;
 }
-.report:hover {
+
+.contactSection_data:hover {
   opacity: 0.5;
 }
-.report:hover img {
+
+.contactSection_data:hover img {
   transform: translateZ(0px) rotateY(180deg) !important;
 }
-.report:hover::before {
+
+.contactSection_data:hover::before {
   width: 150%;
 }
-.report:before {
+
+.contactSection_data:before {
   content: "";
   position: absolute;
   display: inline-block;
@@ -162,12 +205,14 @@
   transition: all 0.5s;
 }
 
-.reporttext {
+.contactSection_data {
   color: var(--footer-text);
 }
-.reporttext a {
+
+.contactSection_data a {
   color: var(--footer-text);
 }
+
 @media only screen and (max-width: 1200px) {
   .footer {
     z-index: 2;
@@ -177,43 +222,52 @@
     text-align: center;
     margin-top: -2em;
   }
+
   .footer .fmain {
     width: 100%;
     flex-direction: column;
   }
+
   .footer .fmain_c {
     margin-bottom: 2em !important;
   }
+
   .footer .fmain_e {
     font-size: 1em !important;
   }
+
   .footer .fmain_e::before {
     width: 0% !important;
   }
+
   .footer .ftnc {
-    height: 25rem;
-    top: 5rem;
+    height: 7rem;
+    /* top: 5rem;
     width: 60%;
-    left: 10vw;
+    left: 10vw; */
   }
+
   .footer .fcopyright {
     width: 100%;
     transform: translate(-50%, 50%);
-    bottom: 3%;
+    /* bottom: 3%; */
     left: 50%;
     top: unset;
     font-size: 10px;
     letter-spacing: 1px;
     opacity: 0.5;
   }
+
   .footgroup {
     display: none;
   }
+
   .remove {
     display: none !important;
     pointer-events: none;
   }
-  .report {
+
+  /* .contactSection_data {
     position: absolute;
     margin: auto;
     bottom: 24rem;
@@ -223,11 +277,12 @@
     font-size: 0.9rem;
   }
 
-  .report img {
+  .contactSection_data img {
     position: relative;
     left: 45vw;
-  }
+  } */
 }
+
 .footgroup {
   bottom: 0%;
   right: 0%;
@@ -236,26 +291,41 @@
   height: 50vh;
   z-index: 3;
 }
+
 @media only screen and (max-width: 540px) {
   .footer .ftnc {
-    height: 24rem;
-    top: 2rem;
-    left: 0.5rem;
+    position: unset;
+    /* height: 3rem; */
   }
+
   .ficon {
-    height: 6rem;
+    height: unset;
     padding: 0;
-    left: 0.7rem;
+    /* left: 0.7rem; */
   }
-  .report {
+
+  .contactSection {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    color: var(--footer-text);
+    gap: 1rem;
+    position: unset;
+    margin-top: 1.5rem;
+  }
+
+  /* .contactSection_data {
     width: 29vw;
     right: 40vw;
   }
-  .report img {
+
+  .contactSection_data img {
     position: relative;
     left: 2vw;
   }
-  .report:hover::before {
+
+  .contactSection_data:hover::before {
     width: 0%;
-  }
+  } */
 }

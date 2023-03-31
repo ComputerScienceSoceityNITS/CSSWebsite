@@ -1,0 +1,82 @@
+.hero {
+  min-height: 100vh;
+  width: 100vw;
+  background: var(--hero-section-bg);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  background-attachment: fixed;
+}
+
+.heroText {
+  user-select: none;
+  font-size: 7rem;
+  letter-spacing: 1px;
+  font-family: Anton, sans-serif;
+  color: var(--executive-section-text);
+}
+.TimestampDates {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.TimestampDate {
+  padding: 0.5rem 1rem;
+  border: 1.5px solid var(--hero-section-text);
+  color: var(--devcard-text);
+  border-radius: 0.3rem;
+  border: 1px solid var(--devcard-text);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: Helvetica;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.TimestampCards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+
+.activeLink {
+  padding: 0.5rem 1rem;
+  color: white;
+  border: 1.5px solid var(--hero-section-text);
+  background: linear-gradient(90deg, #f7085a, #be4c9b);
+  border-radius: 0.3rem;
+  border: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-family: Helvetica;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .heroText {
+    font-size: 3rem;
+  }
+  .TimestampCards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-1rem);
+  }
+}

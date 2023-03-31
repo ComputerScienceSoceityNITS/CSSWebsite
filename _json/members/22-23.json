@@ -1,0 +1,1706 @@
+{
+  "success": true,
+  "devWing": [
+    {
+      "avatar": {
+        "public_id": "avatars/kuxzroxpcl9tczbdul5d",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673502768/avatars/kuxzroxpcl9tczbdul5d.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/rajdristant/",
+        "linkedin": "https://www.linkedin.com/in/rajdristant-ghose-286061231",
+        "github": "https://github.com/Raj217",
+        "facebook": "https://www.facebook.com/profile.php?id=100076066695970&mibextid=ZbWKwL"
+      },
+      "_id": "63bfa031598ac5c7a8a479a8",
+      "name": "Rajdristant Ghose ",
+      "role": "Dev-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/toqw9cmebtgjegfdst8b",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673509777/avatars/toqw9cmebtgjegfdst8b.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/partooxntn/",
+        "linkedin": "https://www.linkedin.com/in/partha-pratim-deka-46a406203/",
+        "github": "https://github.com/parthaxntn",
+        "facebook": "https://www.facebook.com/profile.php?id=100076429322657"
+      },
+      "_id": "63bfbb91598ac5c7a8a47a7a",
+      "name": "Partha Pratim Deka",
+      "role": "Dev-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/pochbotlm5slqykxbvo2",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673537239/avatars/pochbotlm5slqykxbvo2.jpg"
+      },
+      "socialMedia": {
+        "instagram": "www.instagram.com/shrthk_7",
+        "linkedin": "https://www.linkedin.com/in/sharthak-sharma-1a23b0235/",
+        "github": "https://github.com/shrthk-7"
+      },
+      "_id": "63c026d8598ac5c7a8a47b70",
+      "name": "Sharthak Sharma ",
+      "role": "Dev-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    }
+  ],
+  "cpWing": [
+    {
+      "avatar": {
+        "public_id": "avatars/guji7lduucm5j4mvenf8",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673502031/avatars/guji7lduucm5j4mvenf8.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/agrazsaha/LIN",
+        "linkedin": "https://www.linkedin.com/in/agraz-saha-80b02022a/",
+        "github": "https://github.com/Agraz30",
+        "facebook": "https://www.facebook.com/sgas.sgas.39/"
+      },
+      "_id": "63bf9d4f598ac5c7a8a4799f",
+      "name": "Agraz saha",
+      "role": "CP-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/wuqhwajwtztmm8vn6o9o",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673507985/avatars/wuqhwajwtztmm8vn6o9o.jpg"
+      },
+      "socialMedia": {
+        "linkedin": "https://www.linkedin.com/in/ayuanchor/",
+        "github": "https://github.com/AyuAnchor",
+        "facebook": "https://www.facebook.com/profile.php?id=100076313942761"
+      },
+      "_id": "63bfb491598ac5c7a8a479f0",
+      "name": "Ayush Malviya ",
+      "role": "CP-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/iqryxklpcu84wpegk5mi",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673508190/avatars/iqryxklpcu84wpegk5mi.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/dimpal_kalita_99/",
+        "linkedin": "https://www.linkedin.com/in/dimpal-kalita-819121226",
+        "github": "https://github.com/Dimpal-Kalita",
+        "facebook": "https://www.facebook.com/dimpalkalita99/"
+      },
+      "_id": "63bfb55e598ac5c7a8a47a14",
+      "name": "Dimpal Kalita",
+      "role": "CP-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/pf1lbvug4xh1zf7s62nz",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673508477/avatars/pf1lbvug4xh1zf7s62nz.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/_siddhid_s/",
+        "linkedin": "http://www.linkedin.com/in/siddhid-saha",
+        "github": "https://github.com/Sids-03",
+        "facebook": "https://www.facebook.com/siddhid.saha/"
+      },
+      "_id": "63bfb67d598ac5c7a8a47a20",
+      "name": "Siddhid Saha",
+      "role": "CP-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/dnsmv8gzcaxcq53ihw2b",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673509956/avatars/dnsmv8gzcaxcq53ihw2b.jpg"
+      },
+      "socialMedia": {
+        "linkedin": "https://www.linkedin.com/in/darpan-deka-63a291231/",
+        "github": "https://github.com/Darpan-2002",
+        "facebook": "https://www.facebook.com/darpan.deka.10"
+      },
+      "_id": "63bfbc45598ac5c7a8a47a7d",
+      "name": "Darpan Deka",
+      "role": "CP-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/ohgxl5cfan7x4ctlqhnm",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673537435/avatars/ohgxl5cfan7x4ctlqhnm.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/dinesh_aragonda?r=nametag",
+        "facebook": "https://www.facebook.com/profile.php?id=100065052894737&mibextid=ZbWKwL",
+        "linkedin": "https://www.linkedin.com/in/dinesh-aragonda-5795a2223"
+      },
+      "_id": "63c0279c598ac5c7a8a47b7c",
+      "name": "A Dinesh",
+      "role": "CP-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    }
+  ],
+  "executiveWing": [
+    {
+      "avatar": {
+        "public_id": "avatars/i98cya8x2p4dnw5msaku",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673501906/avatars/i98cya8x2p4dnw5msaku.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/_chimron_",
+        "linkedin": "https://www.linkedin.com/in/chimron-saikia-3617ba22b",
+        "github": "https://github.com/chimron",
+        "facebook": "https://www.facebook.com/profile.php?id=100075977448045"
+      },
+      "_id": "63bf9cd3598ac5c7a8a4799c",
+      "name": "Chimron Saikia ",
+      "role": "Executive-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/zxnfruknn1f5hcgqsja6",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673510922/avatars/zxnfruknn1f5hcgqsja6.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://instagram.com/amanjain.21?igshid=Zjc2ZTc4Nzk=",
+        "linkedin": "https://www.linkedin.com/in/aman-jain-77210a249",
+        "github": "https://github.com/JainAman21",
+        "facebook": "https://www.facebook.com/profile.php?id=100004956000693&mibextid=LQQJ4d"
+      },
+      "_id": "63bfc00b598ac5c7a8a47a9b",
+      "name": "Aman Jain",
+      "role": "Executive-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/untcpo80dw0fenilafv5",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673511078/avatars/untcpo80dw0fenilafv5.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://instagram.com/_.siddhanth._?igshid=YmMyMTA2M2Y=",
+        "linkedin": "https://www.linkedin.com/in/siddhanth-paitya-a199711aa",
+        "github": "github.com/siddhanth007",
+        "facebook": "https://www.facebook.com/profile.php?id=100076197938150&mibextid=ZbWKwL"
+      },
+      "_id": "63bfc0a6598ac5c7a8a47a9e",
+      "name": "Siddhanth Paitya ",
+      "role": "Executive-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/wfz8k5mw965vmltlz60b",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673518717/avatars/wfz8k5mw965vmltlz60b.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/rishantdas/",
+        "linkedin": "https://www.linkedin.com/in/rishant-das-3945ba22a/",
+        "github": "https://github.com/rishantdas",
+        "facebook": "https://www.facebook.com/rishant.das.9"
+      },
+      "_id": "63bfde7e598ac5c7a8a47abb",
+      "name": "Rishant das",
+      "role": "Executive-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/sykzrkihnmateekxcibh",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673537637/avatars/sykzrkihnmateekxcibh.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/j_.a_.g_.r_.i_.t/",
+        "linkedin": "https://www.linkedin.com/in/jagrit-kr-jain-54b152230",
+        "github": "https://github.com/Jagritjain24",
+        "facebook": "https://www.facebook.com/jagrit.jain.79?mibextid=ZbWKwL"
+      },
+      "_id": "63c02866598ac5c7a8a47b88",
+      "name": "Jagrit Kr Jain",
+      "role": "Executive-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/wpqoka9n9rleyussog9l",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673537729/avatars/wpqoka9n9rleyussog9l.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/felixnarzarii/?hl=en",
+        "linkedin": "https://www.linkedin.com/in/priyangshu-narzary-a41718228",
+        "facebook": "https://www.facebook.com/priyangshu.narzary.9?mibextid=ZbWKwL"
+      },
+      "_id": "63c028c2598ac5c7a8a47b8e",
+      "name": "Priyangshu Narzary ",
+      "role": "Executive-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/zzztxinnhsurpeb1fvnh",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673547951/avatars/zzztxinnhsurpeb1fvnh.png"
+      },
+      "socialMedia": {
+        "instagram": "https://instagram.com/bhargavi_i?igshid=YmMyMTA2M2Y=",
+        "linkedin": "https://www.linkedin.com/in/bhargavi-nath-9a8a81223",
+        "github": "https://github.com/22bhargavi",
+        "facebook": "https://www.facebook.com/bhargavi.nath?mibextid=LQQJ4d"
+      },
+      "_id": "63c050b0598ac5c7a8a47c53",
+      "name": "Bhargabi Nath",
+      "role": "Executive-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    }
+  ],
+  "mlWing": [
+    {
+      "avatar": {
+        "public_id": "avatars/lux0lcihyip2mt39chmy",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673518571/avatars/lux0lcihyip2mt39chmy.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://instagram.com/thesharanteja?igshid=YmMyMTA2M2Y=",
+        "linkedin": "https://www.linkedin.com/in/thesharanteja",
+        "github": "https://github.com/Thesharanteja",
+        "facebook": "https://www.facebook.com/profile.php?id=100077267834171&mibextid=LQQJ4d"
+      },
+      "_id": "63bfddec598ac5c7a8a47ab8",
+      "name": "M Sharan Teja",
+      "role": "ML-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/twplvkjsbiuntkudfxey",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673518985/avatars/twplvkjsbiuntkudfxey.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/abbas_bahrainwala_/",
+        "linkedin": "https://www.linkedin.com/in/abbas-bahrainwala-239793223",
+        "github": "https://github.com/xxAbbas",
+        "facebook": "https://www.facebook.com/abbas.bahrainwala.5"
+      },
+      "_id": "63bfdf89598ac5c7a8a47abe",
+      "name": "Abbas Bahrainwala",
+      "role": "ML-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    }
+  ],
+  "designWing": [
+    {
+      "avatar": {
+        "public_id": "avatars/lnrobm4qu1bnkreone9b",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673508941/avatars/lnrobm4qu1bnkreone9b.jpg"
+      },
+      "socialMedia": {
+        "linkedin": "https://www.linkedin.com/in/chinmoy-dutta-11268b223",
+        "facebook": "https://www.facebook.com/chinmoy.dutt.5?mibextid=ZbWKwL"
+      },
+      "_id": "63bfb84e598ac5c7a8a47a6f",
+      "name": "Chinmoy Dutta",
+      "role": "Design-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/cku0hsku8hohxczs0rqz",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673537522/avatars/cku0hsku8hohxczs0rqz.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/manju_kuchipudi/",
+        "linkedin": "https://www.linkedin.com/in/kuchipudi-darsini-manju-7b1068230",
+        "github": "https://github.com/Manju-118",
+        "facebook": "https://www.facebook.com/profile.php?id=100076144151130&mibextid=ZbWKwL"
+      },
+      "_id": "63c027f2598ac5c7a8a47b82",
+      "name": "Kuchipudi Darsini Manju ",
+      "role": "Design-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/gv0iypn7ogwmeges7qaw",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673537640/avatars/gv0iypn7ogwmeges7qaw.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/parthib_toppo/",
+        "linkedin": "https://www.linkedin.com/in/parthib-toppo-11b075255/",
+        "github": "https://github.com/Parthib-toppo",
+        "facebook": "https://www.facebook.com/profile.php?id=100077087420748"
+      },
+      "_id": "63c02869598ac5c7a8a47b8b",
+      "name": "Parthib Toppo",
+      "role": "Design-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/vjn4nxul9tyliuntut1i",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673545754/avatars/vjn4nxul9tyliuntut1i.jpg"
+      },
+      "socialMedia": {
+        "linkedin": "https://www.linkedin.com/in/parthsarthi2050",
+        "github": "https://github.com/parthsarthi2050",
+        "facebook": "https://m.facebook.com/100003839290188/"
+      },
+      "_id": "63c0481a598ac5c7a8a47c2b",
+      "name": "PARTH SARTHI",
+      "role": "Design-Wing",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    }
+  ],
+  "literaryWing": [
+    {
+      "avatar": {
+        "public_id": "avatars/wqsgshd7rrn58dqwj4la",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673465834/avatars/wqsgshd7rrn58dqwj4la.jpg"
+      },
+      "socialMedia": {
+        "instagram": "undefined",
+        "linkedin": "https://www.linkedin.com/in/deepjyoti-sharma-375111229/",
+        "github": "undefined",
+        "facebook": "https://www.facebook.com/profile.php?id=100076170522682"
+      },
+      "_id": "63bf076d598ac5c7a8a4794b",
+      "name": "Deepjyoti Sharma",
+      "role": "Literary-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/cviqqmtv7mznfynmtwob",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673465915/avatars/cviqqmtv7mznfynmtwob.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/huffin_2003/",
+        "linkedin": "https://www.linkedin.com/in/rohit-jain-9ba070255/",
+        "github": "https://github.com/rohit123cse",
+        "facebook": "https://www.facebook.com/profile.php?id=100012909422804"
+      },
+      "_id": "63bf088a598ac5c7a8a47951",
+      "name": "Rohit Jain",
+      "role": "Literary-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/cpix0kk0gv1ypnlzwvod",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673502200/avatars/cpix0kk0gv1ypnlzwvod.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/mayurjkashyap",
+        "linkedin": "https://www.linkedin.com/in/mayur-jyoti-kashyap-90992622b",
+        "github": "https://github.com/MJK1mjk",
+        "facebook": "https://www.facebook.com/profile.php?id=100076207390070&mibextid=ZbWKwL"
+      },
+      "_id": "63bf9df9598ac5c7a8a479a5",
+      "name": "Mayur Jyoti Kashyap",
+      "role": "Literary-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/nfrzjdnuh5foiqgdbwff",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673510160/avatars/nfrzjdnuh5foiqgdbwff.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/championvishesh/",
+        "linkedin": "https://www.linkedin.com/in/vishesh-vishesh-1860a4229/",
+        "github": "https://github.com/cvishesh64",
+        "facebook": "https://www.facebook.com/profile.php?id=100075987946323"
+      },
+      "_id": "63bfbd10598ac5c7a8a47a83",
+      "name": "Vishesh ",
+      "role": "Literary-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    }
+  ],
+  "coHeads": [],
+  "members": [
+    {
+      "avatar": {
+        "public_id": "avatars/pjmr0sl0uxxraagcutev",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673465615/avatars/pjmr0sl0uxxraagcutev.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/kr.ashishranjan/",
+        "linkedin": "https://www.linkedin.com/in/kumar-ashish-ranjan-6359b7233/",
+        "github": "https://github.com/dev-AshishRanjan",
+        "facebook": "https://www.facebook.com/RASTRASHASTRA/"
+      },
+      "_id": "63bf04e4598ac5c7a8a47938",
+      "name": "Kumar Ashish Ranjan",
+      "role": "Dev-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/q8a4wpadwpjzyzywc6dt",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673465640/avatars/q8a4wpadwpjzyzywc6dt.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://instagram.com/its_anubhav_99?igshid=ZDdkNTZiNTM=",
+        "linkedin": "https://www.linkedin.com/in/anubhav-chakraborty-44b042222",
+        "github": "https://github.com/AnubhavChakrabortynits",
+        "facebook": "https://www.facebook.com/anubhav.chakraborty.775?mibextid=ZbWKwL"
+      },
+      "_id": "63bf060c598ac5c7a8a4793e",
+      "name": "Anubhav Chakraborty",
+      "role": "Dev-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/wfpxhnamlj1vfoosltdu",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673465687/avatars/wfpxhnamlj1vfoosltdu.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/abhishek03200/",
+        "linkedin": "https://www.linkedin.com/in/abhishek-ranjan-31044223a/",
+        "github": "https://github.com/AbhiRanj123",
+        "facebook": "https://www.facebook.com/profile.php?id=100009413930965"
+      },
+      "_id": "63bf0670598ac5c7a8a47942",
+      "name": "Abhishek Ranjan ",
+      "role": "ML-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/z4i6hvfehztps9qwlxm2",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673465752/avatars/z4i6hvfehztps9qwlxm2.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/bj_jiwrajka/",
+        "linkedin": "https://www.linkedin.com/in/bijay-jiwrajka-6b308a225/",
+        "github": "https://github.com/bj-jiwrajka",
+        "facebook": "https://www.facebook.com/bijay.jiwrajka.1?mibextid=ZbWKwL"
+      },
+      "_id": "63bf06b1598ac5c7a8a47945",
+      "name": "Bijay Jiwrajka",
+      "role": "Dev-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/ndouczqwokdelwqy0hwo",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673465784/avatars/ndouczqwokdelwqy0hwo.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/rahul._.malakar/",
+        "linkedin": "https://www.linkedin.com/in/rahulmalakar42/",
+        "github": "https://github.com/rahulmalakar42",
+        "facebook": "https://www.facebook.com/profile.php?id=100076306022881"
+      },
+      "_id": "63bf06fb598ac5c7a8a47948",
+      "name": "Rahul Malakar",
+      "role": "Design-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/wqsgshd7rrn58dqwj4la",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673465834/avatars/wqsgshd7rrn58dqwj4la.jpg"
+      },
+      "socialMedia": {
+        "instagram": "undefined",
+        "linkedin": "https://www.linkedin.com/in/deepjyoti-sharma-375111229/",
+        "github": "undefined",
+        "facebook": "https://www.facebook.com/profile.php?id=100076170522682"
+      },
+      "_id": "63bf076d598ac5c7a8a4794b",
+      "name": "Deepjyoti Sharma",
+      "role": "Literary-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/gjqdp0ubbrughddddeum",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673465850/avatars/gjqdp0ubbrughddddeum.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/wary_bhaskar/",
+        "linkedin": "https://www.linkedin.com/in/bhaskar-wary/",
+        "github": "https://github.com/Bhaskar100-hub",
+        "facebook": "https://www.facebook.com/bhaskar.wary.100/"
+      },
+      "_id": "63bf0840598ac5c7a8a4794e",
+      "name": "Bhaskar Wary",
+      "role": "Design-Wing Head",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/cviqqmtv7mznfynmtwob",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673465915/avatars/cviqqmtv7mznfynmtwob.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/huffin_2003/",
+        "linkedin": "https://www.linkedin.com/in/rohit-jain-9ba070255/",
+        "github": "https://github.com/rohit123cse",
+        "facebook": "https://www.facebook.com/profile.php?id=100012909422804"
+      },
+      "_id": "63bf088a598ac5c7a8a47951",
+      "name": "Rohit Jain",
+      "role": "Literary-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/r8kakckh8goxpogzzkjx",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673466016/avatars/r8kakckh8goxpogzzkjx.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/sayantan11_05/",
+        "linkedin": "https://www.linkedin.com/in/sayantan-das-0310951ba",
+        "github": "https://github.com/sayantan1105",
+        "facebook": "https://www.facebook.com/sayantan.das.12764874"
+      },
+      "_id": "63bf08bf598ac5c7a8a47954",
+      "name": "Sayantan Das",
+      "role": "Executive-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/ssbiqltv7titq6gazehp",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673465928/avatars/ssbiqltv7titq6gazehp.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/diweshtiwari17/",
+        "linkedin": "https://www.linkedin.com/in/diwesh-kumar-tiwari-67ba52220",
+        "github": "https://github.com/diwesh09",
+        "facebook": "https://www.facebook.com/diwesh.tiwari.79?mibextid=ZbWKwL"
+      },
+      "_id": "63bf0933598ac5c7a8a4795c",
+      "name": "Diwesh Kumar Tiwari",
+      "role": "Executive-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/itytx32toikeehouye7z",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673465999/avatars/itytx32toikeehouye7z.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/prybrt06/",
+        "linkedin": "https://www.linkedin.com/in/priyabrat-duarah-6a6132221/",
+        "github": "https://github.com/Prybrt06",
+        "facebook": "https://www.facebook.com/profile.php?id=100076231446828"
+      },
+      "_id": "63bf0988598ac5c7a8a4795f",
+      "name": "Priyabrat Duarah",
+      "role": "Dev-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/ntmch3f24pcwpmqedqrq",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673500172/avatars/ntmch3f24pcwpmqedqrq.jpg"
+      },
+      "socialMedia": {
+        "instagram": "undefined",
+        "linkedin": "https://www.linkedin.com/in/apurv-anand-634b21227/",
+        "github": "https://github.com/apurvanand-2002",
+        "facebook": "https://www.facebook.com/profile.php?id=100076566816479"
+      },
+      "_id": "63bf960c598ac5c7a8a4798b",
+      "name": "Apurv Anand",
+      "role": "ML-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/c5v1n7gilwzyiiobefwv",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673511609/avatars/c5v1n7gilwzyiiobefwv.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://instagram.com/hrishita.paul03",
+        "linkedin": "https://www.linkedin.com/in/hrishita-paul-80212217b",
+        "github": "https://github.com/Hrishita-Paul",
+        "facebook": "https://www.facebook.com/profile.php?id=100008204263502"
+      },
+      "_id": "63bf9a01598ac5c7a8a4798e",
+      "name": "Hrishita Paul ",
+      "role": "Executive-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/cd3sfyenbu9kqcxii4p3",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673511466/avatars/cd3sfyenbu9kqcxii4p3.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/nits_armaan",
+        "linkedin": "https://www.linkedin.com/in/armaan-chaudhary-1828ab24b",
+        "github": "https://github.com/ArmaanChaudhary",
+        "facebook": "https://www.facebook.com/profile.php?id=100073479349040&mibextid=ZbWKwL"
+      },
+      "_id": "63bf9b02598ac5c7a8a47993",
+      "name": "Armaan",
+      "role": "Design-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/o8bioicktzuc7mmg9ha3",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673501689/avatars/o8bioicktzuc7mmg9ha3.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/suryanshu.kedar/",
+        "linkedin": "https://www.linkedin.com/in/suryanshu-kedar-231701240/",
+        "github": "undefined",
+        "facebook": "undefined"
+      },
+      "_id": "63bf9bf9598ac5c7a8a47996",
+      "name": "Suryanshu Kedar",
+      "role": "Executive-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/uhxhjrf1irpr092qbuqi",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673501806/avatars/uhxhjrf1irpr092qbuqi.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/i_nrittik/",
+        "linkedin": "https://www.linkedin.com/in/nrittik-sarmah/",
+        "github": "https://github.com/inrittik",
+        "facebook": "https://www.facebook.com/nrittik.sarmah.31"
+      },
+      "_id": "63bf9c6f598ac5c7a8a47999",
+      "name": "Nrittik Sarmah",
+      "role": "Dev-Wing Head",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/i98cya8x2p4dnw5msaku",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673501906/avatars/i98cya8x2p4dnw5msaku.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/_chimron_",
+        "linkedin": "https://www.linkedin.com/in/chimron-saikia-3617ba22b",
+        "github": "https://github.com/chimron",
+        "facebook": "https://www.facebook.com/profile.php?id=100075977448045"
+      },
+      "_id": "63bf9cd3598ac5c7a8a4799c",
+      "name": "Chimron Saikia ",
+      "role": "Executive-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/guji7lduucm5j4mvenf8",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673502031/avatars/guji7lduucm5j4mvenf8.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/agrazsaha/LIN",
+        "linkedin": "https://www.linkedin.com/in/agraz-saha-80b02022a/",
+        "github": "https://github.com/Agraz30",
+        "facebook": "https://www.facebook.com/sgas.sgas.39/"
+      },
+      "_id": "63bf9d4f598ac5c7a8a4799f",
+      "name": "Agraz saha",
+      "role": "CP-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/cpix0kk0gv1ypnlzwvod",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673502200/avatars/cpix0kk0gv1ypnlzwvod.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/mayurjkashyap",
+        "linkedin": "https://www.linkedin.com/in/mayur-jyoti-kashyap-90992622b",
+        "github": "https://github.com/MJK1mjk",
+        "facebook": "https://www.facebook.com/profile.php?id=100076207390070&mibextid=ZbWKwL"
+      },
+      "_id": "63bf9df9598ac5c7a8a479a5",
+      "name": "Mayur Jyoti Kashyap",
+      "role": "Literary-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/kuxzroxpcl9tczbdul5d",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673502768/avatars/kuxzroxpcl9tczbdul5d.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/rajdristant/",
+        "linkedin": "https://www.linkedin.com/in/rajdristant-ghose-286061231",
+        "github": "https://github.com/Raj217",
+        "facebook": "https://www.facebook.com/profile.php?id=100076066695970&mibextid=ZbWKwL"
+      },
+      "_id": "63bfa031598ac5c7a8a479a8",
+      "name": "Rajdristant Ghose ",
+      "role": "Dev-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/omohpvdfcpg5rny4fsph",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673502862/avatars/omohpvdfcpg5rny4fsph.png"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/bharadwaz_abhishek/",
+        "linkedin": "https://www.linkedin.com/in/abhishek-bharadwaz/",
+        "github": "https://github.com/4Marsha1",
+        "facebook": "https://www.facebook.com/bharadwaz.abhishek/"
+      },
+      "_id": "63bfa08e598ac5c7a8a479ab",
+      "name": "Abhishek Bharadwaz",
+      "role": "General Secretary",
+      "session": "22-23",
+      "year": "4",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/ad1frcwepm3admsruasu",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673503058/avatars/ad1frcwepm3admsruasu.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/khiladi_ng/",
+        "linkedin": "https://www.linkedin.com/in/nikhil-kumar-991429242/",
+        "github": "https://github.com/NK-1234",
+        "facebook": "https://www.facebook.com/profile.php?id=100016925493393"
+      },
+      "_id": "63bfa153598ac5c7a8a479ae",
+      "name": "Nikhil Kumar",
+      "role": "PR-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/f28oyr3wgwn1r931adhl",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673505591/avatars/f28oyr3wgwn1r931adhl.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/arihant09/?hl=en",
+        "linkedin": "https://www.linkedin.com/in/arihant-pal-2b8714228",
+        "github": "https://github.com/Arihant1009",
+        "facebook": "https://www.facebook.com/arihant.pal.56?mibextid=ZbWKwL"
+      },
+      "_id": "63bfab37598ac5c7a8a479b8",
+      "name": "Arihant Pal",
+      "role": "Design-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/day97gvthzxclthj2pri",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673505791/avatars/day97gvthzxclthj2pri.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/mrinal_nits/",
+        "linkedin": "https://www.linkedin.com/in/mrinal-kangsa-banik-43b84a223/",
+        "github": "https://github.com/Mrinalkbanik01",
+        "facebook": "https://www.facebook.com/profile.php?id=100010417385639"
+      },
+      "_id": "63bfabff598ac5c7a8a479bf",
+      "name": "Mrinal Kansga Banik",
+      "role": "ML-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/cllqiphfivrjurcrsmer",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673505890/avatars/cllqiphfivrjurcrsmer.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/jyotishka007/",
+        "linkedin": "https://www.linkedin.com/in/jyotishka-b-32995712b/",
+        "github": "https://github.com/jyotishka747",
+        "facebook": "https://www.facebook.com/people/Jyotishka-Bhattacharjee/100005647038947/"
+      },
+      "_id": "63bfac62598ac5c7a8a479c2",
+      "name": "Jyotishka Bhattacharjee ",
+      "role": "Literary-Wing Head",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/wuckfnaa8ejdr0xqlmam",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673506340/avatars/wuckfnaa8ejdr0xqlmam.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://instagram.com/_.bi5hal?igshid=ZDdkNTZiNTM=",
+        "linkedin": "https://www.linkedin.com/in/bishal-karmakar-26942a20b",
+        "github": "http://github.com/bishalk03",
+        "facebook": "https://www.facebook.com/profile.php?id=100011434842985&mibextid=ZbWKwL"
+      },
+      "_id": "63bfae24598ac5c7a8a479c5",
+      "name": "Bishal Karmakar ",
+      "role": "Assistant General Secretary",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/bcsmixrdzkpxcdnenskq",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673506423/avatars/bcsmixrdzkpxcdnenskq.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://instagram.com/_aruneshh_?igshid=YmMyMTA2M2Y=",
+        "linkedin": "https://www.linkedin.com/in/arunesh-prasad-98aa0b13a",
+        "github": "https://github.com/aruneshprasad2992",
+        "facebook": "https://www.facebook.com/profile.php?id=100011434842985&mibextid=ZbWKwL"
+      },
+      "_id": "63bfae77598ac5c7a8a479c8",
+      "name": "Arunesh Prasad",
+      "role": "PR-Wing Head",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/shgml8tetgphkt0ddfpl",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673593366/avatars/shgml8tetgphkt0ddfpl.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/invites/contact/?i=1h2ogo2oc5giw&utm_content=3m9gi57",
+        "linkedin": "https://www.linkedin.com/in/revanth-palukuri-500917217",
+        "github": "https://github.com/Revanthpalukuri",
+        "facebook": "https://m.facebook.com/100015024453513/"
+      },
+      "_id": "63bfaef9598ac5c7a8a479cb",
+      "name": "Palukuri Revanth",
+      "role": "CP-Wing Head",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/ewbfzxuldklqmyiud5qs",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673506653/avatars/ewbfzxuldklqmyiud5qs.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/chakradhar____chakri/",
+        "linkedin": "https://www.linkedin.com/in/chakradhar-reddy-7a4716228/",
+        "github": "https://github.com/chakri-939",
+        "facebook": "https://www.facebook.com/people/Mandlem-Chakradhar-Reddy/100076278424412/"
+      },
+      "_id": "63bfaf5e598ac5c7a8a479ce",
+      "name": "Mandlem Chakradhar Reddy",
+      "role": "Design-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/uwanwcxowidjdb6obnzy",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673507004/avatars/uwanwcxowidjdb6obnzy.webp"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/time_exceed/",
+        "linkedin": "https://www.linkedin.com/in/abhishek-chauhan-046551206/",
+        "github": "https://github.com/abhishekprogrammer18112003",
+        "facebook": "https://www.facebook.com/profile.php?id=100067987196786"
+      },
+      "_id": "63bfb0bd598ac5c7a8a479d4",
+      "name": "Abhishek Chauhan",
+      "role": "Dev-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/zrypq9dpk6pdzs9muf9u",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673507084/avatars/zrypq9dpk6pdzs9muf9u.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://instagram.com/_.kabhi.kabhi.aditiii._?igshid=YmMyMTA2M2Y=",
+        "linkedin": "https://www.linkedin.com/in/aditi-archita-khataniar-2189a3226",
+        "github": "https://github.com/adzzzzzzzz",
+        "facebook": "https://www.facebook.com/mumpyyyyyyy?mibextid=ZbWKwL"
+      },
+      "_id": "63bfb10c598ac5c7a8a479d7",
+      "name": "Aditi Archita Khataniar",
+      "role": "Literary-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/wmld9zt6e5lbet5xvwb3",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673507322/avatars/wmld9zt6e5lbet5xvwb3.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/lavanyashree01/",
+        "linkedin": "http://linkedin.com/in/lavanya-shree-745b10230",
+        "github": "https://gitlab.com/LavanyaShree1",
+        "facebook": "https://www.facebook.com/lavanya.shree.5815"
+      },
+      "_id": "63bfb1fa598ac5c7a8a479da",
+      "name": "Lavanya Shree",
+      "role": "Design-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/onsysdpzvnzxonzdpsr1",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673546540/avatars/onsysdpzvnzxonzdpsr1.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://instagram.com/mr.lahkar?igshid=YmMyMTA2M2Y=",
+        "linkedin": "https://www.linkedin.com/in/partha-p-lahkar-8140091b7",
+        "github": "https://github.com/Partha-Lahkar",
+        "facebook": "https://www.facebook.com/partha.lahkar.16?mibextid=ZbWKwL"
+      },
+      "_id": "63bfb30c598ac5c7a8a479e1",
+      "name": "Partha Protim Lahkar ",
+      "role": "Executive-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/wuqhwajwtztmm8vn6o9o",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673507985/avatars/wuqhwajwtztmm8vn6o9o.jpg"
+      },
+      "socialMedia": {
+        "linkedin": "https://www.linkedin.com/in/ayuanchor/",
+        "github": "https://github.com/AyuAnchor",
+        "facebook": "https://www.facebook.com/profile.php?id=100076313942761"
+      },
+      "_id": "63bfb491598ac5c7a8a479f0",
+      "name": "Ayush Malviya ",
+      "role": "CP-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/iqryxklpcu84wpegk5mi",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673508190/avatars/iqryxklpcu84wpegk5mi.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/dimpal_kalita_99/",
+        "linkedin": "https://www.linkedin.com/in/dimpal-kalita-819121226",
+        "github": "https://github.com/Dimpal-Kalita",
+        "facebook": "https://www.facebook.com/dimpalkalita99/"
+      },
+      "_id": "63bfb55e598ac5c7a8a47a14",
+      "name": "Dimpal Kalita",
+      "role": "CP-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/pf1lbvug4xh1zf7s62nz",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673508477/avatars/pf1lbvug4xh1zf7s62nz.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/_siddhid_s/",
+        "linkedin": "http://www.linkedin.com/in/siddhid-saha",
+        "github": "https://github.com/Sids-03",
+        "facebook": "https://www.facebook.com/siddhid.saha/"
+      },
+      "_id": "63bfb67d598ac5c7a8a47a20",
+      "name": "Siddhid Saha",
+      "role": "CP-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/lnrobm4qu1bnkreone9b",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673508941/avatars/lnrobm4qu1bnkreone9b.jpg"
+      },
+      "socialMedia": {
+        "linkedin": "https://www.linkedin.com/in/chinmoy-dutta-11268b223",
+        "facebook": "https://www.facebook.com/chinmoy.dutt.5?mibextid=ZbWKwL"
+      },
+      "_id": "63bfb84e598ac5c7a8a47a6f",
+      "name": "Chinmoy Dutta",
+      "role": "Design-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/toqw9cmebtgjegfdst8b",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673509777/avatars/toqw9cmebtgjegfdst8b.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/partooxntn/",
+        "linkedin": "https://www.linkedin.com/in/partha-pratim-deka-46a406203/",
+        "github": "https://github.com/parthaxntn",
+        "facebook": "https://www.facebook.com/profile.php?id=100076429322657"
+      },
+      "_id": "63bfbb91598ac5c7a8a47a7a",
+      "name": "Partha Pratim Deka",
+      "role": "Dev-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/dnsmv8gzcaxcq53ihw2b",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673509956/avatars/dnsmv8gzcaxcq53ihw2b.jpg"
+      },
+      "socialMedia": {
+        "linkedin": "https://www.linkedin.com/in/darpan-deka-63a291231/",
+        "github": "https://github.com/Darpan-2002",
+        "facebook": "https://www.facebook.com/darpan.deka.10"
+      },
+      "_id": "63bfbc45598ac5c7a8a47a7d",
+      "name": "Darpan Deka",
+      "role": "CP-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/ei4wu2ild200olqi1kqp",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673510090/avatars/ei4wu2ild200olqi1kqp.jpg"
+      },
+      "socialMedia": {
+        "linkedin": "https://www.linkedin.com/in/sourabh-shah-1b6225192/",
+        "github": "https://github.com/SRV1030",
+        "facebook": "https://www.facebook.com/sourab579/"
+      },
+      "_id": "63bfbcca598ac5c7a8a47a80",
+      "name": "Sourabh Shah",
+      "role": "Technical Head",
+      "session": "22-23",
+      "year": "4",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/nfrzjdnuh5foiqgdbwff",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673510160/avatars/nfrzjdnuh5foiqgdbwff.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/championvishesh/",
+        "linkedin": "https://www.linkedin.com/in/vishesh-vishesh-1860a4229/",
+        "github": "https://github.com/cvishesh64",
+        "facebook": "https://www.facebook.com/profile.php?id=100075987946323"
+      },
+      "_id": "63bfbd10598ac5c7a8a47a83",
+      "name": "Vishesh ",
+      "role": "Literary-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/edsi8yenznnjfnq68uiq",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673510257/avatars/edsi8yenznnjfnq68uiq.jpg"
+      },
+      "socialMedia": {
+        "linkedin": "https://www.linkedin.com/in/teresa-louis-80974b1a0/",
+        "github": "https://github.com/tracyber",
+        "facebook": "https://www.facebook.com/teresa.louis1"
+      },
+      "_id": "63bfbd72598ac5c7a8a47a86",
+      "name": "Teresa Louis",
+      "role": "President",
+      "session": "22-23",
+      "year": "4",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/pasi9pbvagw7ieo8hf2g",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673510291/avatars/pasi9pbvagw7ieo8hf2g.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/skywalkerps/",
+        "linkedin": "https://www.linkedin.com/in/skywalkerps/",
+        "github": "https://github.com/SkyWalkerPS",
+        "facebook": "https://www.facebook.com/SkyWalkerPS"
+      },
+      "_id": "63bfbd94598ac5c7a8a47a89",
+      "name": "Prakhar Saxena",
+      "role": "CP-Wing Head",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/xiijusbgnupmmsrl9r6m",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673510432/avatars/xiijusbgnupmmsrl9r6m.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/the_lol_man/",
+        "linkedin": "https://in.linkedin.com/in/gyandeep-kalita-354294219",
+        "github": "https://github.com/Gyandeep216",
+        "facebook": "https://www.facebook.com/gyandeep.kalita.98?mibextid=ZbWKwL"
+      },
+      "_id": "63bfbe20598ac5c7a8a47a8c",
+      "name": "Gyandeep Kalita",
+      "role": "Executive-Wing Head",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/zlideism4bom7syv0zod",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673510520/avatars/zlideism4bom7syv0zod.jpg"
+      },
+      "socialMedia": {
+        "instagram": "undefined",
+        "linkedin": "https://www.linkedin.com/in/piyush-musaddi-62b71a1b9/",
+        "github": "https://github.com/PiyushMusaddi",
+        "facebook": "https://m.facebook.com/thephenomenalbeastawesome"
+      },
+      "_id": "63bfbe7a598ac5c7a8a47a8f",
+      "name": "Piyush Musaddi",
+      "role": "Executive-Wing Head",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/yxh51vpqslkwa1jtln0l",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673510618/avatars/yxh51vpqslkwa1jtln0l.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://instagram.com/chetnataparia_?igshid=YmMyMTA2M2Y=",
+        "linkedin": "https://www.linkedin.com/in/chetna-taparia-821761204",
+        "facebook": "https://www.facebook.com/chetna.taparia.5?mibextid=ZbWKwL"
+      },
+      "_id": "63bfbeda598ac5c7a8a47a92",
+      "name": "Chetna Taparia",
+      "role": "Executive-Wing Head",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/i37nzge4jv2rssuv6ozv",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673510659/avatars/i37nzge4jv2rssuv6ozv.jpg"
+      },
+      "socialMedia": {
+        "instagram": "undefined",
+        "linkedin": "https://www.linkedin.com/in/tushar-rathi-361731204",
+        "github": "https://nitscss.live/",
+        "facebook": "https://www.facebook.com/tusharrathi173"
+      },
+      "_id": "63bfbf04598ac5c7a8a47a95",
+      "name": "Tushar Rathi",
+      "role": "Executive-Wing Head",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/vz4wptumtrnpnjpy1huk",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673510762/avatars/vz4wptumtrnpnjpy1huk.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/neha_pramanik_/",
+        "linkedin": "https://www.linkedin.com/in/neha-pramanik-808919202",
+        "github": "https://github.com/NehaPramanik",
+        "facebook": "https://www.facebook.com/profile.php?id=100011385968596"
+      },
+      "_id": "63bfbf6b598ac5c7a8a47a98",
+      "name": "Neha Pramanik",
+      "role": "Executive-Wing Head",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/zxnfruknn1f5hcgqsja6",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673510922/avatars/zxnfruknn1f5hcgqsja6.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://instagram.com/amanjain.21?igshid=Zjc2ZTc4Nzk=",
+        "linkedin": "https://www.linkedin.com/in/aman-jain-77210a249",
+        "github": "https://github.com/JainAman21",
+        "facebook": "https://www.facebook.com/profile.php?id=100004956000693&mibextid=LQQJ4d"
+      },
+      "_id": "63bfc00b598ac5c7a8a47a9b",
+      "name": "Aman Jain",
+      "role": "Executive-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/untcpo80dw0fenilafv5",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673511078/avatars/untcpo80dw0fenilafv5.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://instagram.com/_.siddhanth._?igshid=YmMyMTA2M2Y=",
+        "linkedin": "https://www.linkedin.com/in/siddhanth-paitya-a199711aa",
+        "github": "github.com/siddhanth007",
+        "facebook": "https://www.facebook.com/profile.php?id=100076197938150&mibextid=ZbWKwL"
+      },
+      "_id": "63bfc0a6598ac5c7a8a47a9e",
+      "name": "Siddhanth Paitya ",
+      "role": "Executive-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/ryv2k5zr5t7ltsvxmgki",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673518188/avatars/ryv2k5zr5t7ltsvxmgki.jpg"
+      },
+      "socialMedia": {
+        "linkedin": "https://www.linkedin.com/in/saurav-boro-68a403209/",
+        "github": "https://github.com/kabuki07",
+        "facebook": "https://www.facebook.com/saurav.boro.5070/"
+      },
+      "_id": "63bfdc6d598ac5c7a8a47aaf",
+      "name": "Saurav Kumar Boro",
+      "role": "Design-Wing Head",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/q4igwhxu9iidy5bbo5kp",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673518357/avatars/q4igwhxu9iidy5bbo5kp.jpg"
+      },
+      "socialMedia": {
+        "instagram": "undefined",
+        "linkedin": "https://www.linkedin.com/mwlite/in/krishnav-rajbangshi",
+        "github": "https://github.com/Krishnav-Rajbangshi",
+        "facebook": "https://m.facebook.com/100024888183336/"
+      },
+      "_id": "63bfdd16598ac5c7a8a47ab2",
+      "name": "Krishnav Rajbangshi",
+      "role": "ML-Wing Head",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/lux0lcihyip2mt39chmy",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673518571/avatars/lux0lcihyip2mt39chmy.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://instagram.com/thesharanteja?igshid=YmMyMTA2M2Y=",
+        "linkedin": "https://www.linkedin.com/in/thesharanteja",
+        "github": "https://github.com/Thesharanteja",
+        "facebook": "https://www.facebook.com/profile.php?id=100077267834171&mibextid=LQQJ4d"
+      },
+      "_id": "63bfddec598ac5c7a8a47ab8",
+      "name": "M Sharan Teja",
+      "role": "ML-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/wfz8k5mw965vmltlz60b",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673518717/avatars/wfz8k5mw965vmltlz60b.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/rishantdas/",
+        "linkedin": "https://www.linkedin.com/in/rishant-das-3945ba22a/",
+        "github": "https://github.com/rishantdas",
+        "facebook": "https://www.facebook.com/rishant.das.9"
+      },
+      "_id": "63bfde7e598ac5c7a8a47abb",
+      "name": "Rishant das",
+      "role": "Executive-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/twplvkjsbiuntkudfxey",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673518985/avatars/twplvkjsbiuntkudfxey.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/abbas_bahrainwala_/",
+        "linkedin": "https://www.linkedin.com/in/abbas-bahrainwala-239793223",
+        "github": "https://github.com/xxAbbas",
+        "facebook": "https://www.facebook.com/abbas.bahrainwala.5"
+      },
+      "_id": "63bfdf89598ac5c7a8a47abe",
+      "name": "Abbas Bahrainwala",
+      "role": "ML-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/pochbotlm5slqykxbvo2",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673537239/avatars/pochbotlm5slqykxbvo2.jpg"
+      },
+      "socialMedia": {
+        "instagram": "www.instagram.com/shrthk_7",
+        "linkedin": "https://www.linkedin.com/in/sharthak-sharma-1a23b0235/",
+        "github": "https://github.com/shrthk-7"
+      },
+      "_id": "63c026d8598ac5c7a8a47b70",
+      "name": "Sharthak Sharma ",
+      "role": "Dev-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/bt7lttf15nnvurppetmw",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673537299/avatars/bt7lttf15nnvurppetmw.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/amit_mishra2507/",
+        "linkedin": "https://www.linkedin.com/in/amit-mishra-0b6069230",
+        "facebook": "https://www.facebook.com/profile.php?id=100035271457468&mibextid=ZbWKwL"
+      },
+      "_id": "63c02713598ac5c7a8a47b73",
+      "name": "Amit Mishra",
+      "role": "ML-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/lcjwmacveyw4hi1fgfus",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673537383/avatars/lcjwmacveyw4hi1fgfus.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/shivam_kumar.124/",
+        "linkedin": "https://www.linkedin.com/in/shivam-kumar-823b9a253/",
+        "github": "https://github.com/ShivamKumar124",
+        "facebook": "https://www.facebook.com/profile.php?id=100018278011649"
+      },
+      "_id": "63c02767598ac5c7a8a47b79",
+      "name": "Shivam Kumar",
+      "role": "PR-Wing ",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/ohgxl5cfan7x4ctlqhnm",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673537435/avatars/ohgxl5cfan7x4ctlqhnm.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/dinesh_aragonda?r=nametag",
+        "facebook": "https://www.facebook.com/profile.php?id=100065052894737&mibextid=ZbWKwL",
+        "linkedin": "https://www.linkedin.com/in/dinesh-aragonda-5795a2223"
+      },
+      "_id": "63c0279c598ac5c7a8a47b7c",
+      "name": "A Dinesh",
+      "role": "CP-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/nurfejyfa0vygpmab6hs",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673537485/avatars/nurfejyfa0vygpmab6hs.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/__bipangshu__/",
+        "linkedin": "https://www.linkedin.com/in/bipangshu-saha-2aab9b228/",
+        "github": "https://github.com/BIPS8812",
+        "facebook": "https://www.facebook.com/ronny.kumar.7186896"
+      },
+      "_id": "63c027ce598ac5c7a8a47b7f",
+      "name": "Bipangshu Saha",
+      "role": "PR-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/cku0hsku8hohxczs0rqz",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673537522/avatars/cku0hsku8hohxczs0rqz.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/manju_kuchipudi/",
+        "linkedin": "https://www.linkedin.com/in/kuchipudi-darsini-manju-7b1068230",
+        "github": "https://github.com/Manju-118",
+        "facebook": "https://www.facebook.com/profile.php?id=100076144151130&mibextid=ZbWKwL"
+      },
+      "_id": "63c027f2598ac5c7a8a47b82",
+      "name": "Kuchipudi Darsini Manju ",
+      "role": "Design-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/sykzrkihnmateekxcibh",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673537637/avatars/sykzrkihnmateekxcibh.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/j_.a_.g_.r_.i_.t/",
+        "linkedin": "https://www.linkedin.com/in/jagrit-kr-jain-54b152230",
+        "github": "https://github.com/Jagritjain24",
+        "facebook": "https://www.facebook.com/jagrit.jain.79?mibextid=ZbWKwL"
+      },
+      "_id": "63c02866598ac5c7a8a47b88",
+      "name": "Jagrit Kr Jain",
+      "role": "Executive-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/gv0iypn7ogwmeges7qaw",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673537640/avatars/gv0iypn7ogwmeges7qaw.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/parthib_toppo/",
+        "linkedin": "https://www.linkedin.com/in/parthib-toppo-11b075255/",
+        "github": "https://github.com/Parthib-toppo",
+        "facebook": "https://www.facebook.com/profile.php?id=100077087420748"
+      },
+      "_id": "63c02869598ac5c7a8a47b8b",
+      "name": "Parthib Toppo",
+      "role": "Design-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/wpqoka9n9rleyussog9l",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673537729/avatars/wpqoka9n9rleyussog9l.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/felixnarzarii/?hl=en",
+        "linkedin": "https://www.linkedin.com/in/priyangshu-narzary-a41718228",
+        "facebook": "https://www.facebook.com/priyangshu.narzary.9?mibextid=ZbWKwL"
+      },
+      "_id": "63c028c2598ac5c7a8a47b8e",
+      "name": "Priyangshu Narzary ",
+      "role": "Executive-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/bhidm8f81zq9fbhcl8jc",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673537820/avatars/bhidm8f81zq9fbhcl8jc.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/_vermastra_/",
+        "linkedin": "https://www.linkedin.com/in/aditya-verma-554b42217",
+        "github": "https://github.com/vermastra/",
+        "facebook": "https://m.facebook.com/100015889993034/"
+      },
+      "_id": "63c0291c598ac5c7a8a47b91",
+      "name": "Aditya Verma",
+      "role": "Dev-Wing Head",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/gznb2xkphtmszjczu7x3",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673538346/avatars/gznb2xkphtmszjczu7x3.jpg"
+      },
+      "socialMedia": {
+        "instagram": "https://www.instagram.com/indraray_71/",
+        "linkedin": "https://www.linkedin.com/in/indrajit-ray-77a907226/",
+        "github": "https://github.com/indraray",
+        "facebook": "https://www.facebook.com/indrajit.ray.18294/"
+      },
+      "_id": "63c02b2a598ac5c7a8a47b97",
+      "name": "Indrajit Ray",
+      "role": "PR-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/gklouv35er6okelfxjth",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673539157/avatars/gklouv35er6okelfxjth.jpg"
+      },
+      "socialMedia": {
+        "linkedin": "https://www.linkedin.com/in/princhi-pawan-saikia/",
+        "github": "https://github.com/Prince819794",
+        "facebook": "https://www.facebook.com/prinze.xaikia.3"
+      },
+      "_id": "63c02e56598ac5c7a8a47bb7",
+      "name": "Princhi Pawan Saikia",
+      "role": "Dev-Wing Head",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/vjn4nxul9tyliuntut1i",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673545754/avatars/vjn4nxul9tyliuntut1i.jpg"
+      },
+      "socialMedia": {
+        "linkedin": "https://www.linkedin.com/in/parthsarthi2050",
+        "github": "https://github.com/parthsarthi2050",
+        "facebook": "https://m.facebook.com/100003839290188/"
+      },
+      "_id": "63c0481a598ac5c7a8a47c2b",
+      "name": "PARTH SARTHI",
+      "role": "Design-Wing",
+      "session": "22-23",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/zzztxinnhsurpeb1fvnh",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1673547951/avatars/zzztxinnhsurpeb1fvnh.png"
+      },
+      "socialMedia": {
+        "instagram": "https://instagram.com/bhargavi_i?igshid=YmMyMTA2M2Y=",
+        "linkedin": "https://www.linkedin.com/in/bhargavi-nath-9a8a81223",
+        "github": "https://github.com/22bhargavi",
+        "facebook": "https://www.facebook.com/bhargavi.nath?mibextid=LQQJ4d"
+      },
+      "_id": "63c050b0598ac5c7a8a47c53",
+      "name": "Bhargabi Nath",
+      "role": "Executive-Wing",
+      "session": "22-23",
+      "year": "2",
+      "__v": 0
+    }
+  ]
+}

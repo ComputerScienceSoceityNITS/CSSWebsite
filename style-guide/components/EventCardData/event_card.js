@@ -10,7 +10,7 @@ const eventCardData = [
     text: `The annual Computer Science and Engineering week - ABACUS! The excitement begins each year, for the Annual week of the CSE department in which different games and competitions takes place where everyone gets a cool opportunity to prove their skills down and claim the prize money.`,
     text2: `But the most unique point about it is that it gives you, the freshers, the opportunity to become organizers, to present your ideas, instead of just participating and enables you to learn numerous things.`,
     bg: Event3,
-    link: "https://www.facebook.com/csenitsabacus",
+    link: "/abacus",
   },
   {
     heading: "Wings",
@@ -41,8 +41,8 @@ const eventCardData = [
     link: "/events",
   },
   {
-    heading: "Speaker Session",
-    text: `“The Computer Science Society organizes numerous speaker sessions throughout the course of the year featuring techies from across the country.`,
+    heading: "Inspire Room",
+    text: `“The Computer Science Society organizes numerous speaker sessions under Inspire Room throughout the course of the year featuring techies from across the country.`,
     text2: `Having proved their mettle in varied advancing domains in the realm of computational sciences, the words of guidance from the speakers target to ignite within the students a sense of zeal and initiative as they strive forward in their respective fields. The PR wing of the CSS organizes these sessions.`,
     bg: Event5,
     link: "/events",

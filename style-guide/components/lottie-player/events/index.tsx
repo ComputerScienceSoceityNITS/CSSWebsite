@@ -10,7 +10,7 @@ export default function Rainman() {
     <lottie-player
       ref={ref}
       id={Styles.headLottie}
-      src="https://assets9.lottiefiles.com/packages/lf20_98vgucqb.json"
+      src="https://assets7.lottiefiles.com/private_files/lf30_dsx6vnmh.json"
       background="transparent"
       speed="1"
       loop

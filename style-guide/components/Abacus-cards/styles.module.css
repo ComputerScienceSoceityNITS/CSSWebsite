@@ -1,0 +1,76 @@
+.card {
+  /* width: 22rem;
+    height: 30rem; */
+  /* padding: 0.5rem; */
+  /* border-radius: 0.3rem; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  width: 350px;
+  height: 440px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #f7085a, #be4c9b);
+  backdrop-filter: blur(0.5rem);
+
+  font-family: Helvetica, sans-serif;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover .btn {
+  bottom: 0rem;
+  left: 0;
+}
+
+/* .card:hover .image {
+    filter: grayscale(1);
+} */
+
+.image {
+  width: 100%;
+  height: 75%;
+  transition: all 0.3s ease-in-out;
+}
+
+.name {
+  font-weight: 700;
+  line-height: 28px;
+  font-size: 1.5rem;
+}
+
+.time {
+  font-weight: 100;
+}
+
+.name,
+.time {
+  margin: 0 1.5rem;
+}
+
+.btn {
+  position: absolute;
+  bottom: -50rem;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  backdrop-filter: blur(0.2rem) grayscale(0.7);
+  font-family: Helvetica, sans-serif;
+  color: white;
+  font-weight: 900;
+  font-size: 1.5rem;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .heroText {
+    font-size: 3rem;
+  }
+}

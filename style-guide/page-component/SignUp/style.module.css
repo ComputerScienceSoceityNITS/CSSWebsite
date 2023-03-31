@@ -1,0 +1,288 @@
+.heroSection {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background: linear-gradient(
+    200deg,
+    var(--wing-page-bg1),
+    var(--wing-page-bg2) 45%,
+    var(--wing-page-bg3) 80%
+  );
+}
+
+.registerCard {
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--abacus-register-bg);
+  box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
+}
+
+.registerForm {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-family: Gill Sans, sans-serif;
+  color: var(--hero-section-text);
+}
+
+.eventNameSection {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eventName,
+.eventName2,
+.eventName3 {
+  user-select: none;
+  font-size: 7rem;
+  letter-spacing: 1px;
+  font-family: Anton, sans-serif;
+  color: var(--abacus-heading);
+  margin-bottom: 1rem;
+  transform: rotateZ(90deg);
+  text-align: center;
+}
+
+.eventName2 {
+  font-size: 5rem;
+}
+
+.eventName3 {
+  font-size: 3rem;
+}
+
+.btnWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  width: 200px;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: 1.5px solid var(--hero-section-text);
+  background: linear-gradient(90deg, #f7085a, #be4c9b);
+  border-radius: 0.3rem;
+  border: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-family: Helvetica;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+/* .fieldsets {
+  padding: 1rem 0.5rem;
+  border-top: 1px solid var(--hero-section-text);
+} */
+
+.teamWrapper,
+.labelException {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0.5rem 0;
+  gap: 1.5rem;
+}
+
+/* input styling */
+/* ref = https://uiverse.io/G4b413l/mean-stingray-9 */
+.group {
+  position: relative;
+}
+
+.input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #515151;
+  background: transparent;
+  color: var(--hero-section-text);
+}
+
+.input:focus {
+  outline: none;
+}
+
+.label {
+  /* color: #999; */
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  text-align: center;
+  width: 100%;
+}
+
+.input::placeholder {
+  opacity: 0;
+}
+
+.input:focus ~ label,
+.input:not(:placeholder-shown) ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #5264ae;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 200px;
+}
+
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: #5264ae;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+  left: 50%;
+}
+
+.bar:after {
+  right: 50%;
+}
+
+.input:focus ~ .bar:before,
+.input:focus ~ .bar:after {
+  width: 50%;
+}
+
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: #5264ae;
+  }
+
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+.switchLine {
+  position: absolute;
+  bottom: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: Geneva, Tahoma, sans-serif;
+}
+
+.switchLine p {
+  color: var(--hero-section-text);
+}
+
+.switchLine a {
+  text-decoration: none;
+  color: var(--abacus-heading);
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 1rem;
+  }
+
+  .registerCard {
+    flex-direction: column;
+    max-height: 95vh;
+    padding-top: 1.5rem;
+    overflow-y: auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .switchLine {
+    position: unset;
+    bottom: 17rem;
+    margin: 1.5rem 0;
+    margin-left: 3.5rem;
+    flex-direction: column;
+    /* margin-left: 1rem; */
+  }
+
+  .registerForm {
+    width: 100%;
+    /* height: 85%; */
+    margin: 1.5rem 0;
+  }
+
+  .eventNameSection {
+    width: 100%;
+    /* height: 15%; */
+  }
+
+  .eventName {
+    font-size: 3rem;
+    transform: rotateZ(0deg);
+  }
+
+  .eventName2 {
+    font-size: 3rem;
+    transform: rotateZ(0deg);
+  }
+
+  .eventName3 {
+    font-size: 2rem;
+    transform: rotateZ(0deg);
+  }
+
+  .btnWrapper {
+    margin-top: 0rem;
+  }
+}

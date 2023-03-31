@@ -1,0 +1,17 @@
+.btn {
+  padding: 0.5rem 1rem;
+  color: white;
+  border: 1.5px solid var(--hero-section-text);
+  background: linear-gradient(90deg, #f7085a, #be4c9b);
+  border-radius: 0.3rem;
+  border: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-family: Helvetica;
+  line-height: 28px;
+  cursor: pointer;
+  text-decoration: none;
+}

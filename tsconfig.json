@@ -19,7 +19,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "style-guide/page-component/TechnoEvents/TechnoMap.jsx"
+    "style-guide/page-component/TechnoEvents/TechnoMap.jsx",
+    "style-guide/components/SignUp/SignUp.jsx"
   ],
   "exclude": ["node_modules"]
 }

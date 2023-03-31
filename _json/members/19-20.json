@@ -1,0 +1,276 @@
+{
+  "success": true,
+  "devWing": [],
+  "cpWing": [],
+  "executiveWing": [],
+  "mlWing": [],
+  "designWing": [],
+  "literaryWing": [],
+  "coHeads": [],
+  "members": [
+    {
+      "avatar": {
+        "public_id": "avatars/hziprjdekvxzsjkghgd7",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649240039/avatars/hziprjdekvxzsjkghgd7.jpg"
+      },
+      "_id": "624d67e7b599f1281bfe8e58",
+      "name": "Udit Pathak",
+      "role": "General Secretary",
+      "session": "19-20",
+      "year": "4",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/ijfmtmorrwln4qdorlcs",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649240120/avatars/ijfmtmorrwln4qdorlcs.jpg"
+      },
+      "_id": "624d683ab599f1281bfe8e5a",
+      "name": "Supraja Venkatesh",
+      "role": "President",
+      "session": "19-20",
+      "year": "4",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/micjaz17051fgv12nzce",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649240159/avatars/micjaz17051fgv12nzce.jpg"
+      },
+      "_id": "624d6860b599f1281bfe8e5c",
+      "name": "Prateek Chand",
+      "role": "Technical Head",
+      "session": "19-20",
+      "year": "4",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/f8hcnfpgs2ozjb24t1js",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649241362/avatars/f8hcnfpgs2ozjb24t1js.jpg"
+      },
+      "_id": "624d6d12b599f1281bfe8e64",
+      "name": "Asif Nawaz",
+      "role": "Senior Executive Member",
+      "session": "19-20",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/mnqqmolud0i9yyiuw3kt",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649241414/avatars/mnqqmolud0i9yyiuw3kt.jpg"
+      },
+      "_id": "624d6d46b599f1281bfe8e66",
+      "name": "Yash Bajoria",
+      "role": "Senior Executive Member",
+      "session": "19-20",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/i8qsskysniaruj3nbxuu",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649241457/avatars/i8qsskysniaruj3nbxuu.jpg"
+      },
+      "_id": "624d6d72b599f1281bfe8e68",
+      "name": "Manav Agrawal",
+      "role": "Senior Executive Member",
+      "session": "19-20",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/xb1ukplqcrk1k5knhgzm",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649241510/avatars/xb1ukplqcrk1k5knhgzm.jpg"
+      },
+      "_id": "624d6da6b599f1281bfe8e6a",
+      "name": "Abhisek Ray",
+      "role": "Senior Executive Member",
+      "session": "19-20",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/hopjuq2o6isqfnmgtcru",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649241549/avatars/hopjuq2o6isqfnmgtcru.jpg"
+      },
+      "_id": "624d6dcdb599f1281bfe8e6c",
+      "name": "Manish Upadhyaya",
+      "role": "Senior Technical Member",
+      "session": "19-20",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/odaweez8xcedcmnru69k",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649241609/avatars/odaweez8xcedcmnru69k.jpg"
+      },
+      "_id": "624d6e09b599f1281bfe8e6e",
+      "name": "Arpit Singh",
+      "role": "Senior Technical Member",
+      "session": "19-20",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/wvh41w3zsltwo7o4qxgw",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649241712/avatars/wvh41w3zsltwo7o4qxgw.jpg"
+      },
+      "_id": "624d6e71b599f1281bfe8e70",
+      "name": "Aditya Soni",
+      "role": " Design Head",
+      "session": "19-20",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/zw9lbkpqujzswd70kiwu",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649241900/avatars/zw9lbkpqujzswd70kiwu.jpg"
+      },
+      "_id": "624d6f2cb599f1281bfe8e72",
+      "name": "Ojasvee Chaurasia",
+      "role": "Senior Executive Member",
+      "session": "19-20",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/atitu8q7gkyverrkkflj",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649241961/avatars/atitu8q7gkyverrkkflj.jpg"
+      },
+      "_id": "624d6f69b599f1281bfe8e74",
+      "name": "Muskan Gupta",
+      "role": "Literary Head",
+      "session": "19-20",
+      "year": "3",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/bpsaox2c9xbpff1m6x6f",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649248889/avatars/bpsaox2c9xbpff1m6x6f.jpg"
+      },
+      "_id": "624d8a79683281957e6dde03",
+      "name": "Abhilekh Deka",
+      "role": "Design-Executive",
+      "session": "19-20",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/pz0f67wko706pt4phphf",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649249044/avatars/pz0f67wko706pt4phphf.jpg"
+      },
+      "_id": "624d8b14683281957e6dde05",
+      "name": "Deepjoy Dey",
+      "role": "Literary-Executive",
+      "session": "19-20",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/zfsfbpmwqcv3srulzm3u",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649249167/avatars/zfsfbpmwqcv3srulzm3u.jpg"
+      },
+      "_id": "624d8b90683281957e6dde07",
+      "name": "Punyabrat Saikia",
+      "role": "Technical Member",
+      "session": "19-20",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/nefohn9k3hawa7f3wrkw",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649249245/avatars/nefohn9k3hawa7f3wrkw.jpg"
+      },
+      "_id": "624d8bdd683281957e6dde09",
+      "name": "Prasurjya Kashyap",
+      "role": "Technical Member",
+      "session": "19-20",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/nqw3m64xfesenowz0n4q",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649249301/avatars/nqw3m64xfesenowz0n4q.jpg"
+      },
+      "_id": "624d8c15683281957e6dde0b",
+      "name": "Swagat Shubham Bhuyan",
+      "role": "Technical Member",
+      "session": "19-20",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/qpmoe5zvijedhi7ukdtr",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649249362/avatars/qpmoe5zvijedhi7ukdtr.jpg"
+      },
+      "_id": "624d8c52683281957e6dde0d",
+      "name": "Ritu Agarwal",
+      "role": "Technical Member",
+      "session": "19-20",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/cfrqinhvdy0ncrsktvs1",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649249438/avatars/cfrqinhvdy0ncrsktvs1.jpg"
+      },
+      "_id": "624d8c9f683281957e6dde0f",
+      "name": "Akash Lahoty",
+      "role": "Executive Member",
+      "session": "19-20",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/zb4ly9gwpszopchylafa",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649250689/avatars/zb4ly9gwpszopchylafa.jpg"
+      },
+      "_id": "624d9181683281957e6dde31",
+      "name": "Samiksha Kulkarni",
+      "role": "Executive Member",
+      "session": "19-20",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/mph2kmgnsdva1aaupeud",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649250731/avatars/mph2kmgnsdva1aaupeud.jpg"
+      },
+      "_id": "624d91ab683281957e6dde33",
+      "name": "Debojit Das",
+      "role": "Executive Member",
+      "session": "19-20",
+      "year": "2",
+      "__v": 0
+    },
+    {
+      "avatar": {
+        "public_id": "avatars/gjl2joyihbzuokzd37oc",
+        "url": "https://res.cloudinary.com/css-cloud/image/upload/v1649250820/avatars/gjl2joyihbzuokzd37oc.jpg"
+      },
+      "_id": "624d9204683281957e6dde35",
+      "name": "Joythish Reddy Evuri",
+      "role": "Executive Member",
+      "session": "19-20",
+      "year": "2",
+      "__v": 0
+    }
+  ]
+}

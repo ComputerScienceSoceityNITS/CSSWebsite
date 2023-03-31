@@ -1,0 +1,56 @@
+.hero {
+  min-height: 100vh;
+  width: 100vw;
+  background: var(--hero-section-bg);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  background-attachment: fixed;
+}
+
+.heroText {
+  user-select: none;
+  font-size: 10rem;
+  letter-spacing: 1px;
+  font-family: Anton, sans-serif;
+  color: var(--executive-section-text);
+}
+
+.heroDesc {
+  font-family: "Ubuntu", sans-serif;
+  max-width: 60%;
+  color: var(--hero-section-text);
+  font-family: Gill Sans, sans-serif;
+  margin: 0.4em 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.heroLogo {
+  position: absolute;
+  right: 10rem;
+  filter: invert(var(--css-logo-invert-amount)) brightness(40%);
+  height: 15rem;
+  width: 15rem;
+}
+
+@media (max-width: 768px) {
+  .heroText {
+    font-size: 5rem;
+  }
+
+  .heroLogo {
+    display: none;
+  }
+
+  .heroDesc {
+    max-width: 90%;
+    color: var(--hero-section-text);
+    font-family: Gill Sans, sans-serif;
+    margin: 0.4em 0;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}

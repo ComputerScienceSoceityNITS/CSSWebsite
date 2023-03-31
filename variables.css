@@ -1,4 +1,4 @@
-@import url("/color.css");
+@import url("./color.css");
 
 * {
   transition: background 200ms linear;
@@ -72,11 +72,26 @@
   --wing-black: rgb(255, 255, 255);
   --wing-tooltip-bg: rgba(240, 238, 238, 0.8);
   --carousel-shadow: #666666;
-  --border-event: var(--Grey-dark-5);
+  --border-event: #373850;
   --reverse-event-techno-bg: rgba(255, 255, 255, 0.15);
   --error-page-bg3: rgba(32, 25, 26, 0.95);
   --error-page-bg2: rgba(18, 40, 40, 0.95);
   --error-page-bg1: rgba(23, 19, 19, 0.95);
+  --events-section-bg: var(--events-bg);
+  --events-button-bg: #2c0022;
+  --events-card-bg-2: #292232;
+  --events-heading-text: rgba(199, 203, 203, 0.8);
+  --enigma-section-text: var(--Grey-dark-1);
+  --abacus-heading: var(--Grey-dark-3);
+  --abacus-shadow: rgba(78, 68, 40, 0.6) -1px -1px 6px,
+    rgba(74, 74, 146, 0.6) 1px 1px 6px;
+  --abacus-register-bg: #181818;
+  --footer-contactSectionLogo-filter: 1;
+  /* --events-heading-text:  rgb(21 1 1 / 20%); */
+  --events-section-text: var(--Grey-dark-2);
+  --event-card-shadow: rgb(21, 20, 20);
+  --signIn-btn-text: pink;
+  --signIn-btn-bg: var(--theme-primary);
 }
 
 .light {
@@ -92,6 +107,7 @@
   );
   --memberTag-text-shadow: 1px 3px 6px var(--offBlack);
   --text-outline: hsl(317, 45%, 45%);
+  --events-heading-text: rgba(0, 0, 0, 0.2);
   --devcard-bg: var(--primary-light);
   --devcard-bottom: rgba(248, 246, 246, 0.8);
   --devcard-text: var(--black);
@@ -113,6 +129,7 @@
     hsl(340, 85%, 89%) 30%,
     hsl(0, 8%, 95%) 70%
   );
+  --events-section-bg: var(--events-bg-light);
   --hero-section-text: var(--Grey-dark-1);
   --hero-section-bg-text: rgb(205, 204, 204);
   --network-lottie-invert-amount: 1;
@@ -129,8 +146,8 @@
   --executive-section-text: var(--Grey-dark-3);
   --executive-section-bg: var(--Grey-light-3);
   --executive-card-text: var(--Grey-light-3);
-  /* --executive-card-bg: var(--Grey-dark-1); */
   --executive-card-bg: rgb(97, 97, 97);
+  --events-section-text: var(--Grey-dark-1);
   --upcomingEvents-section-bg: var(--Grey-light-3);
   --upcomingEvents-section-text: var(--offBlack);
   --upev-lotte-invert-amount: 1;
@@ -160,9 +177,21 @@
   --wing-black: rgb(0, 0, 0);
   --wing-tooltip-bg: rgba(248, 7, 87, 0.8);
   --carousel-shadow: rgb(202, 78, 89);
-  --border-event: var(--Grey-dark-5);
+  --border-event: #4a54ea;
   --reverse-event-techno-bg: var(--wing-white);
   --error-page-bg1: rgba(252, 156, 188, 0.9);
   --error-page-bg2: rgba(251, 203, 219, 0.9);
   --error-page-bg3: rgba(243, 241, 241, 0.9);
+  --events-button-bg: hsl(330, 100%, 100%);
+  --events-card-bg-2: rgba(245, 255, 255, 0.95);
+  --enigma-section-text: var(--Grey-light-4);
+  --abacus-heading: var(--Grey-dark-2);
+  --abacus-shadow: rgb(255 215 77 / 60%) -1px -1px 6px,
+    rgb(124 127 255 / 60%) 1px 1px 6px;
+  --abacus-register-bg: #eaeaea;
+  --footer-contactSectionLogo-filter: 0;
+  --events-section-text: var(--Grey-dark-3);
+  --event-card-shadow: grey;
+  --signIn-btn-text: black;
+  --signIn-btn-bg: #f0eeee;
 }
