@@ -42,7 +42,7 @@ const SignIn = () => {
               />
               <span className={styles.highlight}></span>
               <span className={styles.bar}></span>
-              <label className={styles.label}>Email</label>
+              <label className={styles.label}>Institute Email</label>
             </div>
             {/* input - 2 */}
             <div className={styles.group}>
