@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { ChangeEvent, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
 
 const AbacusRegisterComponent = ({ data }) => {
@@ -10,13 +10,24 @@ const AbacusRegisterComponent = ({ data }) => {
 
   const [showForm, setShowForm] = useState(true);
   const [createdTeam, setCreatedTeam] = useState({
-    name: "defaultTeamName",
+    name: "",
   });
 
   const [formState, setFormState] = useState({
     teamName: "",
     teamLeaderScholarID: "",
   });
+
+  // check if signed in user has already registered for the event
+  useEffect(() => {
+    const participants = data.participants || [];
+    const currUserScholarID = localStorage.getItem("CSS_ScholarID");
+    if (!currUserScholarID) return;
+    if (participants.indexOf(currUserScholarID) !== -1) {
+      setShowForm(false);
+    }
+  }, []);
+
   useEffect(() => {
     const initState = ["teamName", "teamLeaderScholarID"];
     for (let i = 1; i <= maxTeamSize; i++) {

@@ -1,18 +1,10 @@
 import React, { useState, useEffect } from "react";
 import styles from "./styles.module.css";
+import AbacusSectionBtns from "../Abacus-Event-Page-Buttons";
 
 const AbacusPageComponent = ({ data }: any) => {
-  const [registered, setRegistered] = useState(false);
-  const [signedIn, setSignedIn] = useState(false);
   const [timeDifference, setTimeDifference] = useState("");
   const [endDateDifference, setEndDateDifference] = useState("some");
-
-  const whatsappLinkOnClick = async () => {
-    await navigator.clipboard.writeText(data.groupLink);
-    alert(
-      `Whatsapp group link has been copied to your clipboard: \n ${data.groupLink}`
-    );
-  };
 
   useEffect(() => {
     const date = data.startDate.split("-");
@@ -39,16 +31,6 @@ const AbacusPageComponent = ({ data }: any) => {
       const finalResult = Result.toFixed(0);
       setTimeDifference(`${finalResult}`);
       console.log({ fixedDate });
-    }
-  });
-
-  useEffect(() => {
-    const participants = data.participants || [];
-    const currUserScholarID = localStorage.getItem("CSS_ScholarID");
-    if (!currUserScholarID) return;
-    setSignedIn(true);
-    if (participants.indexOf(currUserScholarID) !== -1) {
-      setRegistered(true);
     }
   }, []);
 
@@ -84,35 +66,12 @@ const AbacusPageComponent = ({ data }: any) => {
           Computer Science Society brings you {data.eventType} Event
         </p>
         <p className={styles.description}>{data.description}</p>
-        {!registered && endDateDifference !== "error" ? (
-          <div className={styles.buttonSection}>
-            {signedIn ? (
-              <a href={`/abacus/register/${data.name}`} className={styles.btn}>
-                Register
-              </a>
-            ) : (
-              <a
-                href={`/signin?currentPage=/abacus/${data.name}`}
-                className={styles.btn}
-              >
-                Sign in to register
-              </a>
-            )}
-          </div>
-        ) : (
-          <>
-            <div
-              className={`${styles.buttonSection} ${styles.postRegisterBtn}`}
-            >
-              <a href={`/abacus/teams/${data.name}`} className={styles.btn}>
-                Teams
-              </a>
-              <div onClick={whatsappLinkOnClick} className={styles.btn}>
-                Whatsapp Group Link
-              </div>
-            </div>
-          </>
-        )}
+        <div className={`${styles.buttonSection} ${styles.postRegisterBtn}`}>
+          <AbacusSectionBtns
+            data={data}
+            endDateDifference={endDateDifference}
+          />
+        </div>
         {endDateDifference === "error" ? (
           <p className={styles.banner}>The Event has Ended</p>
         ) : timeDifference === "error" ? (
