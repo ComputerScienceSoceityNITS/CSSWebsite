@@ -35,6 +35,7 @@ const AbacusPageComponent = ({ data }: any) => {
     }
   }, []);
 
+  console.log(data.startTime)
   return (
     <>
       <div

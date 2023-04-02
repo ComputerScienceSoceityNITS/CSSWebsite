@@ -2,8 +2,8 @@
   color: var(--wing-white);
   background: var(--navigation-button-bg);
   position: fixed;
-  top: 1rem;
-  left: 12rem;
+  bottom: 1rem;
+  left: 2rem;
   z-index: 99;
   border-radius: 4.5rem;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
