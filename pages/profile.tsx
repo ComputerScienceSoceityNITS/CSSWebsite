@@ -4,7 +4,6 @@ import axios from "axios";
 const Profile = () => {
   const [data, setData] = useState();
   const [loading, setLoading] = useState(true);
-  // const currUserScholarID = localStorage.getItem("CSS_ScholarID");
   useEffect(() => {
     (async () => {
       try {
@@ -18,10 +17,7 @@ const Profile = () => {
           setLoading(false);
         }
       } catch (err: any) {
-        // err.response
-          err.response?
-          alert(err.response.data.message):alert(err.message)
-        // alert(err.message);
+        err.response ? alert(err.response.data.message) : alert(err.message);
         console.log(err);
       }
     })();

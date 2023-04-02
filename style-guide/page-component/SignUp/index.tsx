@@ -41,8 +41,9 @@ const SignUp = ({ data, eventType }: any) => {
         // window.location.search=`currentPage=${window.location.search.split('=')[1]}`;
       }
     } catch (error: any) {
-      error.response?
-      alert(error.response.data.message):alert(error.message)
+      error.response
+        ? alert(error.response.data.message)
+        : alert(error.message);
       console.log(error);
       // alert(error.message);
     }
@@ -214,7 +215,7 @@ const SignUp = ({ data, eventType }: any) => {
           )}
           {eventType === "Profile" && (
             <div className={styles.switchLine}>
-              <p>Password can't be updated</p>
+              <p>Email can't be updated</p>
             </div>
           )}
 
