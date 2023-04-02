@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import AbacusPageComponent from "../../style-guide/components/Abacus-Event-Page";
+import Spinner from "../../style-guide/components/Spinner";
 
 const AbacusPage = () => {
   const [data, setData] = useState([]);
@@ -30,6 +31,9 @@ const AbacusPage = () => {
   const pageData: Object | undefined = data.find(
     (element: any) => element.name === name
   );
+  if(loading){
+    return <Spinner/>
+  }
   if (pageData && !loading) {
     return <AbacusPageComponent data={pageData} />;
   }
