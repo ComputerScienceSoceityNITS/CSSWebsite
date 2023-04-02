@@ -17,6 +17,9 @@ const Profile = () => {
           setData(res.data.user);
           setLoading(false);
         }
+        if(res.status===401){
+          localStorage.clear();
+        }
       } catch (err: any) {
         // err.response
           err.response?

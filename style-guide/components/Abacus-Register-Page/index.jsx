@@ -57,7 +57,7 @@ const AbacusRegisterComponent = ({ data }) => {
         registrationForm.memberScholarIDs.push(formState[key]);
       }
     }
-    try{
+    try {
       axios
         .post(
           `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/abacus/register/${data._id}`,
@@ -72,13 +72,19 @@ const AbacusRegisterComponent = ({ data }) => {
           alert(`Team ${res.data.team} created successfully`);
         })
         .catch((err) => {
-          err.response?
-          alert(err.response.data.message):alert(err.message)
+          err.response ?
+            alert(err.response.data.message) : alert(err.message)
           console.log({ err });
+          if (err.status === 401) {
+            localStorage.clear();
+          }
         });
-    }catch(err) {
-      err.response?
-      alert(err.response.data.message):alert(err.message)
+    } catch (err) {
+      err.response ?
+        alert(err.response.data.message) : alert(err.message);
+      if (err.status === 401) {
+        localStorage.clear();
+      }
       // alert(err.message);
     }
   };
@@ -87,9 +93,8 @@ const AbacusRegisterComponent = ({ data }) => {
       <div
         className={styles.heroSection}
         style={{
-          background: `linear-gradient(200deg,var(--wing-page-bg1),var(--wing-page-bg2) 45%, var(--wing-page-bg3) 80%),url("${
-            data.coverPic ? data.coverPic : null
-          }") no-repeat center center / cover`,
+          background: `linear-gradient(200deg,var(--wing-page-bg1),var(--wing-page-bg2) 45%, var(--wing-page-bg3) 80%),url("${data.coverPic ? data.coverPic : null
+            }") no-repeat center center / cover`,
           backgroundAttachment: "fixed",
         }}
       >
@@ -144,9 +149,8 @@ const AbacusRegisterComponent = ({ data }) => {
                             />
                             <span className={styles.highlight}></span>
                             <span className={styles.bar}></span>
-                            <label className={styles.label}>{`Member ${
-                              index + 1
-                            } Scholar ID`}</label>
+                            <label className={styles.label}>{`Member ${index + 1
+                              } Scholar ID`}</label>
                           </div>
                         );
                       })}
@@ -160,9 +164,8 @@ const AbacusRegisterComponent = ({ data }) => {
                     </legend>
                     <div className={styles.fieldsets}>
                       {[...Array(maxTeamSize - minTeamSize)].map((x, index) => {
-                        const fieldName = `member${
-                          index + 1 + minTeamSize
-                        }scholarID`;
+                        const fieldName = `member${index + 1 + minTeamSize
+                          }scholarID`;
                         return (
                           <div
                             className={styles.group}
@@ -179,9 +182,8 @@ const AbacusRegisterComponent = ({ data }) => {
                             />
                             <span className={styles.highlight}></span>
                             <span className={styles.bar}></span>
-                            <label className={styles.label}>{`Member ${
-                              minTeamSize + index + 1
-                            } Scholar ID`}</label>
+                            <label className={styles.label}>{`Member ${minTeamSize + index + 1
+                              } Scholar ID`}</label>
                           </div>
                         );
                       })}

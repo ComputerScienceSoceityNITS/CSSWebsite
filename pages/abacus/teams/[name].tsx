@@ -5,6 +5,7 @@ import AbacusTeamsComponent from "../../../style-guide/components/Abacus-Teams-P
 
 const RegisterPage = () => {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     try{
       fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/abacus`)
@@ -16,7 +17,8 @@ const RegisterPage = () => {
         .catch((err)=>{
       err.response?
       alert(err.response.data.message):alert(err.message)
-        });
+        })
+        .finally(()=>setLoading(false))
     }
     catch(error:any){
       error.response?
@@ -31,8 +33,11 @@ const RegisterPage = () => {
     (element: any) => element.name === name
   );
   console.log({ pageData });
-  if (data.length > 0) {
+  if (pageData && !loading) {
     return <AbacusTeamsComponent data={pageData} />;
+  }
+  if (!pageData && !loading) {
+    window.location.pathname = "/page-not-found";
   }
   return null;
 };
