@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import SignUp from "../style-guide/page-component/SignUp";
+import Spinner from "../style-guide/components/Spinner";
 import axios from "axios";
 const Profile = () => {
   const [data, setData] = useState();
   const [loading, setLoading] = useState(true);
-  // const currUserScholarID = localStorage.getItem("CSS_ScholarID");
   useEffect(() => {
     (async () => {
       try {
@@ -21,16 +21,13 @@ const Profile = () => {
           localStorage.clear();
         }
       } catch (err: any) {
-        // err.response
-          err.response?
-          alert(err.response.data.message):alert(err.message)
-        // alert(err.message);
+        err.response ? alert(err.response.data.message) : alert(err.message);
         console.log(err);
       }
     })();
   }, []);
   if (!loading) return <SignUp data={data} eventType={"Profile"} />;
-  else return null;
+  else return <Spinner/>;
 };
 
 export default Profile;

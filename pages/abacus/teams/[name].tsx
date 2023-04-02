@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 // import data from "../../../_json/events/events.json";
 import AbacusTeamsComponent from "../../../style-guide/components/Abacus-Teams-Page";
+import Spinner from "../../../style-guide/components/Spinner";
 
 const RegisterPage = () => {
   const [data, setData] = useState([]);
@@ -33,6 +34,9 @@ const RegisterPage = () => {
     (element: any) => element.name === name
   );
   console.log({ pageData });
+  if(loading) {
+    return <Spinner/>
+  }
   if (pageData && !loading) {
     return <AbacusTeamsComponent data={pageData} />;
   }

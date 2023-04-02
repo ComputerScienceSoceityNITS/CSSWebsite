@@ -72,6 +72,7 @@
   margin-top: 1.5rem;
   overflow: hidden;
   overflow-wrap: break-word;
+  white-space: break-spaces;
 }
 
 .buttonSection {

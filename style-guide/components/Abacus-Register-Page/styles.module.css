@@ -288,7 +288,7 @@
     min-height: 95vh;
     padding-top: 1.5rem;
     overflow-y: auto;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
   }
 
