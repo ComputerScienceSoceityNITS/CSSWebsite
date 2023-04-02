@@ -35,7 +35,6 @@ const AbacusPageComponent = ({ data }: any) => {
     }
   }, []);
 
-  console.log(data.startTime)
   return (
     <>
       <div
@@ -50,7 +49,7 @@ const AbacusPageComponent = ({ data }: any) => {
         <h1 className={styles.heroTitle}>{data.name}</h1>
         <div className={styles.heroDetails}>
           <p>Date :- {date.parse(data.startDate,"YYYY-MM-DD").toDateString()}</p>
-          <p>Time :- {data.startTime}</p>
+          <p>Time :- {(parseFloat(data.startTime) >=0 && parseFloat(data.startTime)<12)?data.startTime + " AM" : data.startTime + " PM" }</p>
           <p>Min Team Size :- {data.minTeamSize}</p>
           <p>Max Team Size :- {data.maxTeamSize}</p>
         </div>
