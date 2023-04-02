@@ -8,8 +8,8 @@ const AbacusPageComponent = ({ data }: any) => {
   const [endDateDifference, setEndDateDifference] = useState("some");
 
   useEffect(() => {
-    const date = data.startDate.split("-");
-    const endDate = data.endDate.split("-");
+    const date = data?.startDate.split("-");
+    const endDate = data?.endDate.split("-");
     const oneDay = 1000 * 60 * 60 * 24;
     const presentDate = new Date();
     const fixedDate = new Date(date[0], date[1] - 1, date[2]);
@@ -41,17 +41,17 @@ const AbacusPageComponent = ({ data }: any) => {
         className={styles.heroSection}
         style={{
           background: `linear-gradient(200deg,var(--wing-page-bg1),var(--wing-page-bg2) 45%, var(--wing-page-bg3) 80%),url("${
-            data.coverPic.url ? data.coverPic.url : null
+            data?.coverPic.url ? data?.coverPic.url : null
           }") no-repeat center center / cover`,
           backgroundAttachment: "fixed",
         }}
       >
-        <h1 className={styles.heroTitle}>{data.name}</h1>
+        <h1 className={styles.heroTitle}>{data?.name}</h1>
         <div className={styles.heroDetails}>
-          <p>Date :- {date.parse(data.startDate,"YYYY-MM-DD").toDateString()}</p>
-          <p>Time :- {(parseFloat(data.startTime) >=0 && parseFloat(data.startTime)<12)?data.startTime + " AM" : data.startTime + " PM" }</p>
-          <p>Min Team Size :- {data.minTeamSize}</p>
-          <p>Max Team Size :- {data.maxTeamSize}</p>
+          <p>Date :- {date.parse(data?.startDate,"YYYY-MM-DD").toDateString() || ""}</p>
+          <p>Time :- {(parseFloat(data?.startTime) >=0 && parseFloat(data?.startTime)<12)?data?.startTime + " AM" : data?.startTime + " PM" }</p>
+          <p>Min Team Size :- {data?.minTeamSize}</p>
+          <p>Max Team Size :- {data?.maxTeamSize}</p>
         </div>
         <img
           className={styles.heroLogo}
@@ -59,14 +59,14 @@ const AbacusPageComponent = ({ data }: any) => {
           alt=""
         />
         <p className={styles.uppperBanner1} style={{ width: "300vw" }}>
-          Computer Science Society brings you {data.eventType} Event
+          Computer Science Society brings you {data?.eventType} Event
         </p>
       </div>
       <div className={styles.descriptionSection}>
         <p className={styles.uppperBanner2} style={{ width: "300vw" }}>
-          Computer Science Society brings you {data.eventType} Event
+          Computer Science Society brings you {data?.eventType} Event
         </p>
-        <p className={styles.description}>{data.description}</p>
+        <p className={styles.description}>{data?.description}</p>
         <div className={`${styles.buttonSection} ${styles.postRegisterBtn}`}>
           <AbacusSectionBtns
             data={data}
