@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import AbacusSectionBtns from "../Abacus-Event-Page-Buttons";
+import date from "date-and-time";
 
 const AbacusPageComponent = ({ data }: any) => {
   const [timeDifference, setTimeDifference] = useState("");
@@ -47,7 +48,7 @@ const AbacusPageComponent = ({ data }: any) => {
       >
         <h1 className={styles.heroTitle}>{data.name}</h1>
         <div className={styles.heroDetails}>
-          <p>Date :- {data.startDate}</p>
+          <p>Date :- {date.parse(data.startDate,"YYYY-MM-DD").toDateString()}</p>
           <p>Time :- {data.startTime}</p>
           <p>Min Team Size :- {data.minTeamSize}</p>
           <p>Max Team Size :- {data.maxTeamSize}</p>

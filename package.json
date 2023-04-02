@@ -21,6 +21,7 @@
     "@lottiefiles/lottie-player": "^1.5.4",
     "@tanem/react-nprogress": "^4.0.13",
     "axios": "^0.26.1",
+    "date-and-time": "^2.4.3",
     "emailjs-com": "^3.2.0",
     "eslint-config-google": "^0.14.0",
     "font-awesome": "^4.7.0",
