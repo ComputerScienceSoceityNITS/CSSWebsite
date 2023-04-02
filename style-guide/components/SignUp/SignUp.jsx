@@ -15,35 +15,15 @@ const SignUp = (props) => {
     }
   }, []);
 
-  // const handleLogout = async (e) => {
-  //   e.preventDefault();
-  //   const query = confirm("Do you really want to log out?");
-  //   if (query) {
-  //     try {
-  //       const res = await axios.get(
-  //         `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/user/logout`
-  //       );
-  //       console.log({ res });
-  //       if (res.data.status === "success") {
-  //         setSigned(false);
-  //         localStorage.setItem("signed", "false");
-  //         localStorage.removeItem("CSS_ScholarID");
-  //         window.location.search = "";
-  //       }
-  //     } catch (err) {
-  //       console.log({ err });
-  //       alert(err.message);
-  //     }
-  //   }
-  // };
 
   return (
     <Link
-      href={
+      href={(window.location.pathname.includes("signin") || window.location.pathname.includes("profile")) ? "javascript:void(0)" :
         signed
           ? "/profile?currentPage=" + window.location.pathname
           : "/signin?currentPage=" + window.location.pathname
       }
+      // className={window.location.pathname.includes("signin")?styles.disabled:null}
       passHref={true}
     >
       <div

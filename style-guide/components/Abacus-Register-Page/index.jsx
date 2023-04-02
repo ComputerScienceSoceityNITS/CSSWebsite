@@ -144,9 +144,9 @@ const AbacusRegisterComponent = ({ data }) => {
                             />
                             <span className={styles.highlight}></span>
                             <span className={styles.bar}></span>
-                            <label className={styles.label}>{`Team Member ${
+                            <label className={styles.label}>{`Member ${
                               index + 1
-                            }`}</label>
+                            } Scholar ID`}</label>
                           </div>
                         );
                       })}
