@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import styles from "./styles.module.css";
 import Card from "../Abacus-cards";
+import date from "date-and-time";
 // import data from "../../../_json/events/events.json";
 // import Image from 'next/image';
 
 const Hero = () => {
   const [data, setData] = useState([]);
+
   useEffect(() => {
     fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/abacus`)
       .then((res) => res.json())
@@ -21,14 +23,13 @@ const Hero = () => {
     datesSet.add(event.startDate);
   });
   const datesArray = Array.from(datesSet).sort();
-  // console.log(datesArray);
   const [activeDate, setActiveDate] = useState(datesArray[0]);
   return (
     <div className={styles.hero}>
       <h1 className={styles.heroText}>Timestamp</h1>
       <div className={styles.TimestampDates}>
         {datesArray.length > 0 &&
-          datesArray.map((date: any, i) => {
+          datesArray.map((Date: any, i) => {
             // console.log({date,activeDate});
             if (activeDate === undefined) {
               setActiveDate(datesArray[0]);
@@ -36,14 +37,14 @@ const Hero = () => {
             return (
               <div
                 className={
-                  activeDate == date ? styles.activeLink : styles.TimestampDate
+                  activeDate == Date ? styles.activeLink : styles.TimestampDate
                 }
                 key={i}
                 onClick={() => {
-                  setActiveDate(date);
+                  setActiveDate(date.parse(Date, "YYYY-MM-DD").toDateString());
                 }}
               >
-                {date}
+                {date.parse(Date, "YYYY-MM-DD").toDateString()}
               </div>
             );
           })}
