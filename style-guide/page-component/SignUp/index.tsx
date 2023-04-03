@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import styles from "./style.module.css";
+import Spinner from "../../components/Spinner";
 
 const SignUp = ({ data, eventType }: any) => {
   const [name, setName] = useState(data != null ? data.name : "");
@@ -19,9 +20,11 @@ const SignUp = ({ data, eventType }: any) => {
   const [signed, setSigned] = useState(
     JSON.parse(localStorage.getItem("signed") || "false")
   );
+  const [loading, setLoading] = useState(false);
 
   // submit
   const handleSubmit = async (event: any) => {
+    setLoading(true);
     event.preventDefault();
     try {
       const response: any = await axios.post(
@@ -35,22 +38,32 @@ const SignUp = ({ data, eventType }: any) => {
           githubHandle,
         }
       );
-      console.log(response.data);
+      // console.log(response.data);
+      response.response
+        ? alert(response.response.data.message)
+        : alert(response.message);
       if (response.data.status) {
         window.location.pathname = "/signin";
         // window.location.search=`currentPage=${window.location.search.split('=')[1]}`;
       }
+      if(response.response && response.response.status===401){
+        localStorage.clear();
+        window.location.pathname ="/abacus";
+      }
+      setLoading(false);
     } catch (error: any) {
       error.response
         ? alert(error.response.data.message)
         : alert(error.message);
       console.log(error);
+      setLoading(false);
       // alert(error.message);
     }
   };
 
   // update
   const handleUpdate = async (event: any) => {
+    setLoading(true);
     event.preventDefault();
     try {
       const response: any = await axios.post(
@@ -71,17 +84,31 @@ const SignUp = ({ data, eventType }: any) => {
         window.location.pathname = window.location.search.split("=")[1];
         // window.location.search=`currentPage=${window.location.search.split('=')[1]}`;
       }
-      if(response.status===401){
-        localStorage.clear();
-      }
+      // if(response.response.status===401){
+      //   localStorage.clear();
+      //   window.location.pathname ="/abacus";
+      // }
+    response.response
+        ? alert(response.response.data.message)
+        : alert(response.message);
+        if(response.response.status===401){
+          localStorage.clear();
+          window.location.pathname ="/abacus";
+        }
+        setLoading(false);
     } catch (error: any) {
+      error.response
+        ? alert(error.response.data.message)
+        : alert(error.message);
       console.log(error);
-      alert(error.message);
+      setLoading(false);
+      // alert(error.message);
     }
   };
 
   // logout
   const handleLogout = async (e: any) => {
+    setLoading(true);
     e.preventDefault();
     const query = confirm("Do you really want to log out?");
     if (query) {
@@ -97,15 +124,18 @@ const SignUp = ({ data, eventType }: any) => {
           window.location.pathname = window.location.search.split("=")[1];
           
         }
+        setLoading(false);
       } catch (err: any) {
         console.log({ err });
         alert(err.message);
+        setLoading(false);
       }
     }
   };
 
   return (
     <>
+    {loading?<Spinner/>:null}
       <div className={styles.heroSection}>
         <div className={styles.registerCard}>
           <div className={styles.registerForm}>

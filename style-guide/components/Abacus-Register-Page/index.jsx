@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.css";
+import Spinner from "../Spinner";
 
 const AbacusRegisterComponent = ({ data }) => {
   const essentialData = ["Team Name", "Team Leader Scholar ID"];
@@ -17,6 +18,7 @@ const AbacusRegisterComponent = ({ data }) => {
     teamName: "",
     teamLeaderScholarID: "",
   });
+  const [loading, setLoading] = useState(false);
 
   // check if signed in user has already registered for the event
   useEffect(() => {
@@ -47,6 +49,7 @@ const AbacusRegisterComponent = ({ data }) => {
   };
 
   const handleSubmit = async () => {
+    setLoading(true);
     const registrationForm = {
       teamName: formState.teamName,
       teamLeaderScholarID: formState.teamLeaderScholarID,
@@ -69,27 +72,32 @@ const AbacusRegisterComponent = ({ data }) => {
         .then((res) => {
           setShowForm(false);
           setCreatedTeam(res.data.team);
-          alert(`Team ${res.data.team} created successfully`);
+          console.log({ res });
+          alert(`Team created successfully`);
+          // if (res.response.status === 401) {
+          //   localStorage.clear();
+          //   window.location.pathname = "/abacus";
+          // }
         })
         .catch((err) => {
           err.response ?
             alert(err.response.data.message) : alert(err.message)
           console.log({ err });
-          if (err.status === 401) {
+          if (err.response.status === 401) {
             localStorage.clear();
+            window.location.pathname = "/abacus";
           }
-        });
+        }).finally(()=>setLoading(false))
     } catch (err) {
       err.response ?
         alert(err.response.data.message) : alert(err.message);
-      if (err.status === 401) {
-        localStorage.clear();
-      }
+      setLoading(false);
       // alert(err.message);
     }
   };
   return (
     <>
+    {loading?<Spinner/>:null}
       <div
         className={styles.heroSection}
         style={{
