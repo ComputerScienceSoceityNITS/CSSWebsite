@@ -28,7 +28,7 @@ const Profile = () => {
             localStorage.clear();
             window.location.pathname ="/abacus";
           }
-        // console.log(err);
+        console.log(res);
         })
       } catch (err: any) {
         err.response ? alert(err.response.data.message) : alert(err.message);
