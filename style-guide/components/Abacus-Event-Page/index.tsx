@@ -13,7 +13,13 @@ const AbacusPageComponent = ({ data }: any) => {
     const oneDay = 1000 * 60 * 60 * 24;
     const presentDate = new Date();
     const fixedDate = new Date(date[0], date[1] - 1, date[2]);
+    // console.log(data.startTime);
+    fixedDate.setHours(data.startTime.split(':')[0])
+    fixedDate.setMinutes(data.startTime.split(':')[1])
     const fixedEndDate = new Date(endDate[0], endDate[1] - 1, endDate[2]);
+    fixedEndDate.setHours(23)
+    fixedEndDate.setMinutes(59)
+    // console.log({fixedEndDate});
     if (fixedEndDate.getTime() < presentDate.getTime()) {
       console.log("error");
       setEndDateDifference("error");
