@@ -91,6 +91,7 @@ const SignUp = ({ data, eventType }: any) => {
           localStorage.setItem("signed", "false");
           localStorage.removeItem("CSS_ScholarID");
           window.location.pathname = window.location.search.split("=")[1];
+          
         }
       } catch (err: any) {
         console.log({ err });
