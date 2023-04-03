@@ -48,7 +48,7 @@ const Hero = () => {
                   }
                   key={i}
                   onClick={() => {
-                    setActiveDate(date.parse(Date, "YYYY-MM-DD").toDateString());
+                    setActiveDate(Date);
                   }}
                 >
                   {date.parse(Date, "YYYY-MM-DD").toDateString()}
