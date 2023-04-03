@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
 import styles from "./signin.module.css";
+import Spinner from "../../components/Spinner";
 
 const SignIn = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const [loading, setLoading] = useState(false);
   const handleSubmit = async (e: any) => {
+    setLoading(true);
     e.preventDefault();
     console.log({ email, password });
     try {
@@ -21,15 +24,18 @@ const SignIn = () => {
         window.location.pathname = window.location.search.split("=")[1];
         // window.location.search='';
       }
+      setLoading(false);
     } catch (err: any) {
       err.response?
       alert(err.response.data.message):alert(err.message)
       // alert(err.message);
       console.log(err);
+      setLoading(false);
     }
   };
   return (
     <>
+    {loading?<Spinner/>:null}
       <div className={styles.heroSection}>
         <div className={styles.registerCard}>
           <div className={styles.registerForm}>

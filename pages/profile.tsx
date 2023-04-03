@@ -11,18 +11,28 @@ const Profile = () => {
         const res: any = await axios.get(
           `${process.env.NEXT_PUBLIC_BACKEND_URL}/api/admin/user`,
           { withCredentials: true }
-        );
-        console.log({ res });
-        if (res.data.status === "success") {
-          setData(res.data.user);
-          setLoading(false);
-        }
-        if(res.status===401){
-          localStorage.clear();
-        }
+        ).then((result)=>{
+          if (result.data.status === "success") {
+            setData(result.data.user);
+            setLoading(false);
+          }
+          // if(result.status===401){
+          //     localStorage.clear();
+          //     window.location.pathname ="/";
+          //   }
+          // console.log({result});
+        }).catch((err)=>{
+          err.response ? alert(err.response.data.message) : alert(err.message);
+          console.log({err});
+          if(err.response.status===401){
+            localStorage.clear();
+            window.location.pathname ="/abacus";
+          }
+        // console.log(err);
+        })
       } catch (err: any) {
         err.response ? alert(err.response.data.message) : alert(err.message);
-        console.log(err);
+        // console.log(err);
       }
     })();
   }, []);
