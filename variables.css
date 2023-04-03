@@ -92,6 +92,7 @@
   --event-card-shadow: rgb(21, 20, 20);
   --signIn-btn-text: pink;
   --signIn-btn-bg: var(--theme-primary);
+  --spinner-bg:rgba(0, 0, 0, 0.834);
 }
 
 .light {
@@ -167,11 +168,11 @@
   --about-shadow-color: var(--Grey-light-4);
   --about-section-typed-text-color: var(--offBlack);
   --devcard-socials: rgb(255, 255, 255, 0.25);
-  --wing-page-bg1: rgba(252, 156, 188, 0.8);
-  --wing-page-bg2: rgba(251, 203, 219, 0.8);
-  --wing-card-bg1: rgba(194, 194, 194, 0.8);
-  --wing-card-bg2: rgba(255, 213, 213, 0.8);
-  --wing-page-bg3: rgba(243, 241, 241, 0.8);
+  --wing-page-bg1: rgba(252, 156, 188, 0.9);
+  --wing-page-bg2: rgba(251, 203, 219, 0.9);
+  --wing-card-bg1: rgba(194, 194, 194, 0.9);
+  --wing-card-bg2: rgba(255, 213, 213, 0.9);
+  --wing-page-bg3: rgba(243, 241, 241, 0.9);
   --wing-card-bg: rgba(255, 255, 255, 0.3);
   --wing-white: rgb(255, 255, 255);
   --wing-black: rgb(0, 0, 0);
@@ -194,4 +195,5 @@
   --event-card-shadow: grey;
   --signIn-btn-text: black;
   --signIn-btn-bg: #f0eeee;
+  --spinner-bg:rgba(255, 255, 255, 0.834);
 }
