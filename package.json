@@ -20,6 +20,7 @@
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@lottiefiles/lottie-player": "^1.5.4",
     "@tanem/react-nprogress": "^4.0.13",
+    "aos": "^2.3.4",
     "axios": "^0.26.1",
     "date-and-time": "^2.4.3",
     "emailjs-com": "^3.2.0",
