@@ -1,5 +1,6 @@
-import React from "react";
+import React,{useEffect} from "react";
 import styles from "./styles.module.css";
+import AOS from "aos";
 
 const Abacus = () => {
   const path = "/images/technical/";
@@ -13,6 +14,11 @@ const Abacus = () => {
   ];
   const path2 = "/images/abacus/";
   const images2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  
+  useEffect(()=>{
+    AOS.init({duration: 1000});
+  },[])
+  
   return (
     <>
       <div className={styles.wrapper}>
