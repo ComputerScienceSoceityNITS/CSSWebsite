@@ -18,12 +18,12 @@ const Abacus = () => {
   useEffect(()=>{
     AOS.init({duration: 1000});
   },[])
-  
+
   return (
     <>
       <div className={styles.wrapper}>
         {images.map((image, ind) => (
-          <div key={ind} className={styles.item}>
+          <div key={ind} className={styles.item} data-aos = "fade-up">
             <div className={styles.polaroid}>
               <img src={path + image[0] + "-min.jpg"} alt="image" />
               <div className={styles.caption}>{image[1]}</div>
@@ -31,7 +31,7 @@ const Abacus = () => {
           </div>
         ))}
         {images2.map((image, ind) => (
-          <div key={ind} className={styles.item}>
+          <div key={ind} className={styles.item} data-aos = "fade-up">
             <div className={styles.polaroid}>
               <img src={path2 + image + ".jpg"} alt="image" />
               <div className={styles.caption}>Abacus</div>
