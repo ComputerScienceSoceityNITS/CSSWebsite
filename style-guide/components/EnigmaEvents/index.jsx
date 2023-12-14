@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Data from "../../../_json/events/enigmaContests.json"; 
-import Styles from './eventsList.module.css';
+import Styles from './style.module.css';
 
 const EventsList = () => {
     const [jsonData, setJsonData] = useState(Data); 
