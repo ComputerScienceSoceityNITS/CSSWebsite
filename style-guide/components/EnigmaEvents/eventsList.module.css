@@ -1,0 +1,96 @@
+.Main{
+    background: var(--hero-section-bg);
+    font-family: "Ubuntu", sans-serif;
+    color: var(--hero-section-text);
+    font-size: 18px;
+    font-weight: 700;
+}
+.Main h1{
+    margin-left:18px;
+}
+.container{
+    color: var(--executive-section-text);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:10px;
+}
+
+
+.upcomingEvents,.pastEvents{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    font-family: "Ubuntu", sans-serif;
+    color: var(--hero-section-text);
+    font-family: Gill Sans, sans-serif;
+    margin: 0.4em 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    max-height:70vh;
+}
+.Title{
+    display: flex;
+    flex-direction: column;
+    gap:1vh;
+    padding:2vh;
+    height: 100%;
+    align-items: start;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.Title::-webkit-scrollbar{
+    display: none;
+}
+.upEvents{
+    display: flex;
+    justify-content: center;
+    font-size:clamp(12px,2.5vw,24px);
+    padding: 2vw;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 2px var(--executive-section-text);
+}
+.pEvents{
+    display: flex;
+    justify-content: center;
+    padding: 2vw;
+    border-radius: 15px;
+    display: flex;
+    font-size: clamp(12px,2.5vw,24px);
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 2px var(--executive-section-text);
+}
+
+ .upEvents a,.pEvents a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--hero-section-text);
+}
+
+.upcomingEvents+h2,.pastEvents+h2{
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:540px) {
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .upcomingEvents h2,.pastEvents h2{
+        font-size: 20px ;
+    }
+    .upEvents,.pEvents{
+        width: 80vw;
+    }
+    .Title{
+        display: flex;
+        align-items: center;
+        width: 100vw;
+    }
+}
