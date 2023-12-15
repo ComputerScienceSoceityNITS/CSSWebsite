@@ -16,13 +16,17 @@ const Gallery = () => {
         <div className={styles.header_content}>
           <p className={styles.gallerytext}>Gallery</p>
           <span className={styles.gallerytext}>
-            Things end but memories last forever.{" "}
+            A Picture Is Worth A Thousand Words.{" "}
           </span>
+        </div>
+      </div>
           <div className={styles.buttonContainer}>
             <button
               onClick={() => setActive(true)}
               style={{
                 color: active ? "rgb(228, 31, 111)" : "rgb(68, 68, 68)",
+                borderBottom: active ? "1px rgb(228, 31, 111) solid" : "none",
+                boxShadow : active ? "0 0 20px rgb(228, 31, 111)" : "none",
               }}
             >
               Cultural
@@ -31,15 +35,18 @@ const Gallery = () => {
               onClick={() => setActive(false)}
               style={{
                 color: !active ? "rgb(228, 31, 111)" : "rgb(68, 68, 68)",
+                borderBottom: !active ? "1px rgb(228, 31, 111) solid" : "none",
+                boxShadow : !active ? "0 0 20px rgb(228, 31, 111)" : "none",
               }}
             >
               Technical
             </button>
           </div>
-        </div>
-      </div>
-      {active && <Esperanza />}
-      {!active && <Abacus />}
+            
+            {active && <Esperanza />}
+           {!active && <Abacus />}
+      
+
     </>
   );
 };

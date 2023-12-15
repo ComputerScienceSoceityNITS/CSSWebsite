@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState }from "react";
 import SkeletonElement from "./SkeletonElement";
 import styles from "./styles.module.css";
 
@@ -25,7 +25,7 @@ const Esperanza = () => {
 
   return (
     <>
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper} >
         {images1.map((image, ind) => (
           <div key={ind} className={styles.item}>
             {loading&& !imageLoaded? (

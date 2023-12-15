@@ -3,7 +3,7 @@ import SkeletonElement from "./SkeletonElement";
 import styles from "./styles.module.css";
 
 const Abacus = () => {
-const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   const [imageLoaded, setImageLoaded] = useState(false);
 
   const path = "/images/technical/";
@@ -19,7 +19,7 @@ const [loading, setLoading] = useState(true);
   const path2 = "/images/abacus/";
   const images2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-    const handleImageLoad = () => {
+  const handleImageLoad = () => {
     setImageLoaded(true);
     setLoading(false);
   };
@@ -28,11 +28,11 @@ const [loading, setLoading] = useState(true);
       <div className={styles.wrapper}>
         {images.map((image, ind) => (
           <div key={ind} className={styles.item}>
-            {loading &&!imageLoaded? (
-                <SkeletonElement />
+            {loading && !imageLoaded ? (
+              <SkeletonElement />
             ) : (
               <div className={styles.polaroid}>
-                <img src={path + image[0] + "-min.jpg"} alt="image" onLoad={handleImageLoad}/>
+                <img src={path + image[0] + "-min.jpg"} alt="image" onLoad={handleImageLoad} />
                 <div className={styles.caption}>{image[1]}</div>
               </div>
             )}
@@ -40,11 +40,11 @@ const [loading, setLoading] = useState(true);
         ))}
         {images2.map((image, ind) => (
           <div key={ind} className={styles.item}>
-            {loading&&imageLoaded ? (
-                <SkeletonElement />
+            {loading &&imageLoaded ? (
+              <SkeletonElement />
             ) : (
               <div className={styles.polaroid}>
-                <img src={path2 + image + ".jpg"} alt="image" onLoad={handleImageLoad}/>
+                <img src={path2 + image + ".jpg"} alt="image" onLoad={handleImageLoad} />
                 <div className={styles.caption}>Abacus</div>
               </div>
             )}
