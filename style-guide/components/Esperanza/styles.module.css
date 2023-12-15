@@ -1,6 +1,6 @@
 .wrapper {
   width: 100%;
-  padding: 3rem ;
+  padding: 3rem;
   text-align: center;
   background-color: var(--devcard-bg);
 }
@@ -32,6 +32,8 @@
   margin-top: 2rem;
   /* filter: grayscale(100%); */
   box-shadow: 2px 2px 10px var(--abacus-border);
+  position: relative;
+  overflow: hidden;
 }
 .item .polaroid:before {
   content: "";
@@ -96,7 +98,7 @@
   transform: scale(1, 1) rotate(0deg) !important;
   transition: all 0.75s ease-out;
   box-shadow: none;
-  border:none;
+  border: none;
 }
 .item:hover .polaroid::before {
   content: "";
@@ -109,6 +111,21 @@
   right: 5%;
   box-shadow: 0 2rem 3rem #e41f6ebe;
   transition: all 0.75s ease-out;
+}
+.skeletonElement {
+  width: 100%;
+  height: 300px;
+  background-color: #e7e2e24d;
+  animation: loading 1s linear infinite alternate;
+}
+
+@keyframes loading {
+  0% {
+    background-color: hsl(199, 16%, 80%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
 }
 @media only screen and (max-width: 968px) {
   .item {
