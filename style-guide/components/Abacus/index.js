@@ -28,26 +28,20 @@ const Abacus = () => {
       <div className={styles.wrapper}>
         {images.map((image, ind) => (
           <div key={ind} className={styles.item}>
-            {loading && !imageLoaded ? (
-              <SkeletonElement />
-            ) : (
               <div className={styles.polaroid}>
-                <img src={path + image[0] + "-min.jpg"} alt="image" onLoad={handleImageLoad} />
+              <img src={path + image[0] + "-min.jpg"} alt="image" onLoad={handleImageLoad} />
+              {loading && <SkeletonElement cards={1} />}
                 <div className={styles.caption}>{image[1]}</div>
               </div>
-            )}
           </div>
         ))}
         {images2.map((image, ind) => (
           <div key={ind} className={styles.item}>
-            {loading &&imageLoaded ? (
-              <SkeletonElement />
-            ) : (
               <div className={styles.polaroid}>
-                <img src={path2 + image + ".jpg"} alt="image" onLoad={handleImageLoad} />
+              <img src={path2 + image + ".jpg"} alt="image" onLoad={handleImageLoad} />
+              {loading && <SkeletonElement cards={1} />}
                 <div className={styles.caption}>Abacus</div>
               </div>
-            )}
           </div>
         ))}
       </div>
