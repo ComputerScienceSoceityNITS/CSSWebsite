@@ -21,6 +21,6 @@
     "**/*.tsx",
     "style-guide/page-component/TechnoEvents/TechnoMap.jsx",
     "style-guide/components/SignUp/SignUp.jsx"
-  ],
+, "style-guide/components/Esperanza/index.js", "style-guide/components/Abacus/index.js"  ],
   "exclude": ["node_modules"]
 }
