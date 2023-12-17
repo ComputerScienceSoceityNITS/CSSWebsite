@@ -1,8 +1,9 @@
 .wrapper {
   width: 100%;
-  padding: 3rem;
+  padding-bottom: 3rem;
   text-align: center;
-  background-color: var(--devcard-bg);
+  background: rgb(246,151,204);
+  background: linear-gradient(90deg, rgba(246,151,204,1) 0%, rgba(248,201,215,1) 0%, rgba(255,255,255,1) 100%, rgba(236,208,225,1) 100%);
 }
 .polaroid {
   background: #fff;
@@ -12,6 +13,7 @@
 .polaroid > img {
   max-width: 100%;
   height: auto;
+  border: 0.7px black solid;
 }
 .caption {
   font-size: 2rem;
@@ -27,16 +29,19 @@
   margin-top: 2rem;
   /* filter: grayscale(100%); */
   box-shadow: 2px 2px 10px var(--abacus-border);
+  animation: fade-up 1s ease forwards;
+  animation-timeline: view();
 }
 .item .polaroid:before {
   content: "";
   position: absolute;
   z-index: -1;
-  transition: all 0.75s;
+  
+  transition: all 1s ease-out;
 }
 .item:nth-of-type(4n + 1) {
   transform: scale(0.8, 0.8) rotate(5deg);
-  transition: all 0.75s ease-out;
+  transition: all 1s ease-out;
 }
 .item:nth-of-type(4n + 1) .polaroid:before {
   transform: rotate(6deg);
@@ -48,7 +53,7 @@
 }
 .item:nth-of-type(4n + 2) {
   transform: scale(0.8, 0.8) rotate(-5deg);
-  transition: all 0.75s;
+  transition: all 1s;
 }
 .item:nth-of-type(4n + 2) .polaroid:before {
   transform: rotate(-6deg);
@@ -60,7 +65,7 @@
 }
 .item:nth-of-type(4n + 4) {
   transform: scale(0.8, 0.8) rotate(3deg);
-  transition: all 0.75s ease-out;
+  transition: all 1s ease-out;
 }
 .item:nth-of-type(4n + 4) .polaroid:before {
   transform: rotate(4deg);
@@ -72,7 +77,7 @@
 }
 .item:nth-of-type(4n + 3) {
   transform: scale(0.8, 0.8) rotate(-3deg);
-  transition: all 0.75s ease-out;
+  transition: all 1s ease-out;
 }
 .item:nth-of-type(4n + 3) .polaroid:before {
   transform: rotate(-4deg);
@@ -85,7 +90,8 @@
 .item:hover {
   filter: none;
   transform: scale(1, 1) rotate(0deg) !important;
-  transition: all 0.75s ease-out;
+  transition: all 1s ease-out;
+  border: 1px rgb(186, 186, 186) solid;
   box-shadow: none;
 }
 .item:hover .polaroid:before {
@@ -98,7 +104,7 @@
   bottom: 0%;
   right: 5%;
   box-shadow: 0 1rem 3rem #e41f6ebe;
-  transition: all 0.75s ease-out;
+  transition: all 1s ease-out;
 }
 @media only screen and (max-width: 968px) {
   .item {
@@ -109,5 +115,21 @@
 @media only screen and (max-width: 600px) {
   .item {
     width: 100%;
+  }
+}
+
+@keyframes fade-up{
+  0%{
+    opacity: 0.4;
+    transform: translateY(110px) scale(0.67);
+    
+  }
+  75%{
+    opacity: 0.95;
+    
+    
+  }
+  100%{
+    opacity: 1;
   }
 }
