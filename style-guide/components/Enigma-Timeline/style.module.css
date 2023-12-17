@@ -5,10 +5,10 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  padding: 0.1rem 2em;
+  padding:3rem 2rem;
   background-attachment: fixed;
 }
-.animatedbanner {
+/* .animatedbanner {
   width: 100vw;
   overflow-y: hidden;
   overflow-x: hidden;
@@ -42,7 +42,7 @@
   100% {
     transform: translateX(-45vw);
   }
-}
+} */
 
 /* .TimestampDates {
   width: 100%;

@@ -28,14 +28,14 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className={styles.animatedbanner}>
+      {/* <div className={styles.animatedbanner}>
         <p className={styles.uppperBanner2} style={{ width: "300vw" }}>
           COMING SOON
         </p>
         <p className={styles.uppperBanner1} style={{ width: "300vw" }}>
           COMING SOON
         </p>
-      </div>
+      </div> */}
 
       {/* <h1 className={styles.heroText}>TIMELINE</h1>
 
