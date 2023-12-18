@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Styles from "./navbar.module.css";
-
+import SignUpBtn from "../../components/SignUp/SignUp";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);//new
   useEffect(() => {
     if (toggle) {
       document.body.setAttribute("style", "overflow: hidden");
     } else {
       document.body.setAttribute("style", "overflow: scrollY");
     }
-  });
+  }, [toggle]);
   return (
     <div className={Styles.navigation}>
       <button
@@ -117,12 +118,14 @@ const Navbar = () => {
                 className={Styles.navigation__link}
                 onClick={() => setToggle(!toggle)}
               >
-          
+          Sign Up
               </a>
             </Link>
           </li> */}
         </ul>
+        <SignUpBtn />
       </nav>
+      {/* <SignUpBtn /> */}
     </div>
   );
 };
