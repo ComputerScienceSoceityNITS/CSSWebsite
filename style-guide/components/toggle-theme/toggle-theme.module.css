@@ -1,7 +1,7 @@
 .toggleBtnContainer {
   position: fixed;
-  top: 1rem;
-  left: 2.7rem;
+  top: 3rem;
+  left: 72.5rem;
   z-index: 99;
   border-radius: 50%;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
@@ -11,8 +11,8 @@
 }
 .toggleIcon {
   position: relative;
-  height: 3rem;
-  width: 3rem;
+  height: 3.4rem;
+  width: 3.4rem;
   border-radius: 50%;
   background-color: var(--Grey-light-3);
   overflow: hidden;
