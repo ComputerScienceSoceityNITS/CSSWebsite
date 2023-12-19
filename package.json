@@ -1,4 +1,4 @@
-{
+ {
   "name": "css-website-2.0",
   "private": true,
   "scripts": {
@@ -21,12 +21,8 @@
     "@lottiefiles/lottie-player": "^1.5.4",
     "@react-spring/parallax": "^9.7.3",
     "@tanem/react-nprogress": "^4.0.13",
-<<<<<<< HEAD
     "aos": "^2.3.4",
     "axios": "^0.26.1",
-=======
-    "axios": "^1.6.2",
->>>>>>> 45d0b5a6297980e2149b4d597f528dac9ac188a3
     "date-and-time": "^2.4.3",
     "emailjs-com": "^3.2.0",
     "eslint-config-google": "^0.14.0",
