@@ -207,55 +207,44 @@
   background: linear-gradient(180deg, black 0%, black 100%); /* Gradient background */
 }
 /* Adjust styles for the session-based menu bars */
-.buttons button {
-  --glow-color: #f5c1e9;
-  --glow-spread-color : #f590bc;
-  --enhanced-glow-color: #fc88bb;
-  --btn-color: #ff1178;
 
-  border: .25em solid var(--glow-color);
-  margin: 0.5em;
+.buttons button {
+  border: .25em solid black;
+  margin: 0.5em; /* Adjust margin to add space between buttons */
   padding: 1em 3em;
-  color: var(--glow-color);
+  color: white;
   font-size: 15px;
   font-weight: bold;
-  background-color: var(--btn-color);
-  border-radius: 1em;
+  
+  background: linear-gradient(90deg, #f80759 0%, #923cb5 100%);
+  border-radius: 10px;
   outline: none;
-  box-shadow: 0 0 1em .25em var(--glow-color),
-              0 0 4em 1em var(--glow-spread-color),
-              inset 0 0 .75em .25em var(--glow-color);
-  text-shadow: 0 0 .5em var(--glow-color);
   position: relative;
-  transition: all 0.3s;
+  transition: background-color 0.3s;
 }
 
 .buttons button::after {
   pointer-events: none;
   content: "";
   position: absolute;
-  top: 120%;
+  top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: var(--glow-spread-color);
-  filter: blur(2em);
-  opacity: .7;
-  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+  background: linear-gradient(90deg, #f80759, #923cb5); /* Color transition when selected */
+  opacity: 0;
+  z-index: -1;
+  border-radius: 1em;
+  transition: opacity 0.3s;
 }
 
-/* Apply the enhanced styles on hover */
+.buttons button:hover::after {
+  opacity: 1;
+}
+
 .buttons button:hover {
-  color: var(--btn-color);
-  background-color: var(--glow-color);
-  box-shadow: 0 0 1em .25em var(--glow-color),
-              0 0 4em 2em var(--glow-spread-color),
-              inset 0 0 .75em .25em var(--glow-color);
+  border: .25em solid #000; /* Change border color on hover */
+  background-color: linear-gradient(90deg, #f80759, #923cb5); /* Color transition on hover */
 }
 
-/* Apply the enhanced styles on active */
-.buttons button:active {
-  box-shadow: 0 0 0.6em .25em var(--glow-color),
-              0 0 2.5em 2em var(--glow-spread-color),
-              inset 0 0 .5em .25em var(--glow-color);
-}
+/* Apply the enhanced styles on selected */
