@@ -1,4 +1,5 @@
-.firstSection {
+
+/*.firstSection {
   overflow: hidden;
   height: 100vh;
   width: 100%;
@@ -30,8 +31,8 @@
   letter-spacing: 5px;
   font-family: Anton;
   pointer-events: none;
-}
-
+}*/
+/*
 .firstSection h3 {
   z-index: 2;
   font-size: 2vh;
@@ -103,7 +104,7 @@
   font-weight: 500;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
+ /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.836);
 }
 
@@ -124,11 +125,11 @@
   color: var(--Grey-light-3);
   -webkit-text-fill-color: var(--Grey-light-3);
   /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
+ /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--primary-light);
   border-radius: 10px;
   /* background: var(--dark); */
-  background: rgba(10, 10, 10, 0.7);
+ /* background: rgba(10, 10, 10, 0.7);
   cursor: pointer;
   font-size: clamp(1rem, 10vw, 2.5rem);
   border: none;
@@ -192,4 +193,69 @@
     bottom: 7%;
     left: -6%;
   }
+}
+/* Adjust styles for the session-based menu bars */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align items at the top */
+  
+  padding: 3rem;
+  border-radius: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, black 0%, black 100%); /* Gradient background */
+}
+/* Adjust styles for the session-based menu bars */
+.buttons button {
+  --glow-color: #f5c1e9;
+  --glow-spread-color : #f590bc;
+  --enhanced-glow-color: #fc88bb;
+  --btn-color: #ff1178;
+
+  border: .25em solid var(--glow-color);
+  margin: 0.5em;
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em .25em var(--glow-color),
+              0 0 4em 1em var(--glow-spread-color),
+              inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+}
+
+.buttons button::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: .7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+/* Apply the enhanced styles on hover */
+.buttons button:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+              0 0 4em 2em var(--glow-spread-color),
+              inset 0 0 .75em .25em var(--glow-color);
+}
+
+/* Apply the enhanced styles on active */
+.buttons button:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+              0 0 2.5em 2em var(--glow-spread-color),
+              inset 0 0 .5em .25em var(--glow-color);
 }
