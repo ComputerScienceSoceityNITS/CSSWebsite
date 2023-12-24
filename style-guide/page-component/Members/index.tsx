@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Styles from "./members.module.css";
-import ScrollDownLottie from "../../components/lottie-player/scrollDown";
-import StudyTableLottie from "../../components/lottie-player/memberspage";
+//import ScrollDownLottie from "../../components/lottie-player/scrollDown";
+//import StudyTableLottie from "../../components/lottie-player/memberspage";
 
 interface MemberYearProp {
   year: number;
@@ -21,7 +21,7 @@ const Members = (props: MemberYearProp) => {
   };
   return (
     <>
-      <p className={Styles.bgtext}>
+      {/*<p className={Styles.bgtext}>
         Computer
         <br /> Science <br /> Society
       </p>
@@ -29,7 +29,7 @@ const Members = (props: MemberYearProp) => {
         <div className={Styles.lottie}>
           <StudyTableLottie />
         </div>
-        <ScrollDownLottie />
+  <ScrollDownLottie />*/}
         <div className={Styles.container}>
           <div className={Styles.buttons}>
             <Link href="/members/20-21" passHref scroll={false} replace>
@@ -48,7 +48,7 @@ const Members = (props: MemberYearProp) => {
             </Link>
             <Link href="/members/22-23" passHref scroll={false} replace>
               <button onClick={() => handleYearChange(2023)}>
-                <span className={year === 2023 ? Styles.active : ""}>
+                <span className={year === 2023 ? Styles.active :""}>
                   22-23
                 </span>
               </button>
@@ -62,11 +62,12 @@ const Members = (props: MemberYearProp) => {
             </Link>
           </div>
         </div>
-        <h3 className={Styles.text1}>Programers</h3>
+       {/* <h3 className={Styles.text1}>Programers</h3>
         <h3 className={Styles.text2}>Creators</h3>
         <h3 className={Styles.text3}>Developers</h3>
         <h3 className={Styles.text4}>Coders</h3>
-      </section>
+</section>*/}
+
     </>
   );
 };
