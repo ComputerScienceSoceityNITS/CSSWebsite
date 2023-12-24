@@ -48,7 +48,7 @@ const Members = (props: MemberYearProp) => {
             </Link>
             <Link href="/members/22-23" passHref scroll={false} replace>
               <button onClick={() => handleYearChange(2023)}>
-                <span className={year === 2023 ? Styles.active : ""}>
+                <span className={year === 2023 ? Styles.active :""}>
                   22-23
                 </span>
               </button>

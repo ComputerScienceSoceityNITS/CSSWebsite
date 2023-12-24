@@ -200,51 +200,75 @@
   justify-content: center;
   align-items: center; /* Align items at the top */
   
-  padding: 3rem;
-  border-radius: 10px;
+  flex-wrap: wrap;
+  padding: 2rem;
+  border-radius: 2px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background: linear-gradient(180deg, black 0%, black 100%); /* Gradient background */
+  background: linear-gradient(180deg, #e4d8e8 0%, #ececec 100%); /* Gradient background */
 }
 /* Adjust styles for the session-based menu bars */
 
-.buttons button {
-  border: .25em solid black;
+.buttons button  {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
   margin: 0.5em; /* Adjust margin to add space between buttons */
   padding: 1em 3em;
+align-items: center;
+text-align: center;
   color: white;
   font-size: 15px;
   font-weight: bold;
   
-  background: linear-gradient(90deg, #f80759 0%, #923cb5 100%);
+  background:rgb(52, 51, 51);
+  width: 120px;
+  height: 50px;
   border-radius: 10px;
   outline: none;
-  position: relative;
-  transition: background-color 0.3s;
+  white-space: nowrap;
+  transition: background-color 0.3s,color 0.3s;
+ 
+
 }
 
-.buttons button::after {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(90deg, #f80759, #923cb5); /* Color transition when selected */
-  opacity: 0;
-  z-index: -1;
-  border-radius: 1em;
-  transition: opacity 0.3s;
+
+
+
+ 
+  .buttons button:hover{
+ color: white;
+  background: linear-gradient(90deg, #f80759, #be4c9b);
+  border: 1px solid #ececec;
+  
 }
 
-.buttons button:hover::after {
-  opacity: 1;
-}
 
-.buttons button:hover {
-  border: .25em solid #000; /* Change border color on hover */
-  background-color: linear-gradient(90deg, #f80759, #923cb5); /* Color transition on hover */
-}
 
-/* Apply the enhanced styles on selected */
+
+
+.active{
+ 
+ position: relative;
+ overflow: hidden;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  margin: 0.5em; /* Adjust margin to add space between buttons */
+  padding: 3em 4em;
+  color: white;
+  width: 120px ;
+  height:40px ;
+ 
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #f7085a, #be4c9b); 
+  border-radius: 10px;
+  outline: none;
+  
+ 
+}
