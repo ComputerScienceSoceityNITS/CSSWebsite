@@ -1,4 +1,5 @@
-.firstSection {
+
+/*.firstSection {
   overflow: hidden;
   height: 100vh;
   width: 100%;
@@ -30,8 +31,8 @@
   letter-spacing: 5px;
   font-family: Anton;
   pointer-events: none;
-}
-
+}*/
+/*
 .firstSection h3 {
   z-index: 2;
   font-size: 2vh;
@@ -103,7 +104,7 @@
   font-weight: 500;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
+ /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.836);
 }
 
@@ -124,11 +125,11 @@
   color: var(--Grey-light-3);
   -webkit-text-fill-color: var(--Grey-light-3);
   /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
+ /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--primary-light);
   border-radius: 10px;
   /* background: var(--dark); */
-  background: rgba(10, 10, 10, 0.7);
+ /* background: rgba(10, 10, 10, 0.7);
   cursor: pointer;
   font-size: clamp(1rem, 10vw, 2.5rem);
   border: none;
@@ -192,4 +193,82 @@
     bottom: 7%;
     left: -6%;
   }
+}
+/* Adjust styles for the session-based menu bars */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Align items at the top */
+  
+  flex-wrap: wrap;
+  padding: 2rem;
+  border-radius: 2px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: linear-gradient(180deg, #e4d8e8 0%, #ececec 100%); /* Gradient background */
+}
+/* Adjust styles for the session-based menu bars */
+
+.buttons button  {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  margin: 0.5em; /* Adjust margin to add space between buttons */
+  padding: 1em 3em;
+align-items: center;
+text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  
+  background:rgb(52, 51, 51);
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  white-space: nowrap;
+  transition: background-color 0.3s,color 0.3s;
+ 
+
+}
+
+
+
+
+ 
+  .buttons button:hover{
+ color: white;
+  background: linear-gradient(90deg, #f80759, #be4c9b);
+  border: 1px solid #ececec;
+  
+}
+
+
+
+
+
+.active{
+ 
+ position: relative;
+ overflow: hidden;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  margin: 0.5em; /* Adjust margin to add space between buttons */
+  padding: 3em 4em;
+  color: white;
+  width: 120px ;
+  height:40px ;
+ 
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #f7085a, #be4c9b); 
+  border-radius: 10px;
+  outline: none;
+  
+ 
 }
