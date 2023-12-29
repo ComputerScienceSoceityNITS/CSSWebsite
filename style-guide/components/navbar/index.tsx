@@ -93,7 +93,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={Styles.navigation__item}>
-            <Link href="/members/22-23" passHref={false}>
+            <Link href="/members/23-24" passHref={false}>
               <a
                 className={Styles.navigation__link}
                 onClick={() => setToggle(!toggle)}

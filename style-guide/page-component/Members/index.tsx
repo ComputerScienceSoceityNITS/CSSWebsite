@@ -53,6 +53,13 @@ const Members = (props: MemberYearProp) => {
                 </span>
               </button>
             </Link>
+            <Link href="/members/23-24" passHref scroll={false} replace>
+              <button onClick={() => handleYearChange(2024)}>
+                <span className={year === 2024 ? Styles.active : ""}>
+                  23-24
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
        {/* <h3 className={Styles.text1}>Programers</h3>
