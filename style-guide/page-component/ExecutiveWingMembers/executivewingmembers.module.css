@@ -104,7 +104,7 @@
   height: 20vw;
   width: 20vw;
 }
-.grid > div:nth-child(17) {
+.grid > div:nth-child(16) {
   -ms-grid-column-align: center;
   justify-self: center;
   -ms-flex-item-align: start;
@@ -178,6 +178,14 @@
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    height: 40vh;
+    width: 40vh;
+  }
+  .grid > div:nth-child(16) {
+    -ms-grid-column-align: center;
+    justify-self: center;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
     height: 40vh;
     width: 40vh;
   }
