@@ -32,7 +32,7 @@ const CPWing = ({ members, coHeads }: MemberProps) => {
     <div className={Styles.gridContainer}>
       <h1 className={Styles.wingTag}>
         &nbsp; &nbsp; &nbsp; CP <br />
-        &nbsp; -wing <br />
+        &nbsp;  wing <br />
         Members
       </h1>
       <div className={Styles.grid}>
