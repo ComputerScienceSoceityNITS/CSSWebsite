@@ -9,10 +9,10 @@ const Gallery = () => {
   return (
     <>
       <div className={styles.header}>
+          <span></span>
+          <span></span>
+          <span></span>
         <div className={styles.headerContainer}>
-          <span></span>
-          <span></span>
-          <span></span>
           <div className={styles.lottiecont}>
           {" "}
           <BrightGallery />
