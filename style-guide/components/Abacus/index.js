@@ -28,9 +28,9 @@ const Abacus = () => {
   const defaultOptions = {
     reverse:        false,  
     max:            35,    
-    perspective:    100,   
+    perspective:    1000,   
     scale:          1,    
-    speed:          1000,   
+    speed:          1500,   
     transition:     true,   
     axis:           null,   
     reset:          true,    

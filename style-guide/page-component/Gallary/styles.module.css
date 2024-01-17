@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=East+Sea+Dokdo&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 
 
 /* ///// */
@@ -155,7 +156,7 @@
     font-weight: bolder;
     padding: 0 1.75vw;
     margin: 13px 0;
-    font-family: 'Kalnia', serif;
+    font-family: 'Anton', sans-serif;
     text-align: center;
     /* position: relative; */
     /* top: -130px;
@@ -169,7 +170,7 @@
     background: linear-gradient(rgb(241, 78, 106),rgb(252, 191, 201));
     padding: 0 3vh;
     margin: 13px 0;
-    font-family: 'Kalnia', serif;
+    font-family: 'Anton', sans-serif;
     border-radius: 50%;
   }
 
@@ -320,7 +321,7 @@
     padding: 0;
     /* margin: 30px 0; */
     color: black;
-   font-family: 'Kalnia', serif;
+    font-family: 'Anton', sans-serif;
   }
   .header_content p::first-letter {
     font-size: 12vw;
@@ -329,7 +330,7 @@
     background: linear-gradient(rgb(241, 78, 106),rgb(252, 191, 201));
     padding: 0 15px;
     margin: 30px 5px;
-    font-family: 'Kalnia', serif;
+    font-family: 'Anton', sans-serif;
     border-radius: 50%;
   }
   .header_content span {
