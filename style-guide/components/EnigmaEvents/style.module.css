@@ -5,18 +5,22 @@
     font-size: 18px;
     font-weight: 700;
 }
-.Main h1{
+.Timestamp{
     margin-left:18px;
+    user-select: none;
+    font-size:7vw;
+    letter-spacing: 1px;
+    font-family: Anton, sans-serif;
+    color: var(--executive-section-text);
 }
 .container{
     color: var(--executive-section-text);
     width: 100vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     padding:10px;
 }
-
 
 .upcomingEvents,.pastEvents{
     display: flex;
@@ -29,40 +33,77 @@
     margin: 0.4em 0;
     font-size: 1.1rem;
     font-weight: 600;
-    max-height:70vh;
 }
+
 .Title{
     display: flex;
-    flex-direction: column;
-    gap:1vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap:3vh;
     padding:2vh;
-    height: 100%;
+    /* height: 100%; */
     align-items: start;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    flex-wrap: wrap;
+    width: 100vw;
 }
-.Title::-webkit-scrollbar{
-    display: none;
-}
-.upEvents{
+.upEvents,.pEvents{
     display: flex;
     justify-content: center;
-    font-size:clamp(12px,2.5vw,24px);
-    padding: 2vw;
+    align-items: center;
+    font-size:24px;
+    padding: 50px;
     border-radius: 15px;
-    display: flex;
+    display: flex;    
+    height:300px;
+    width:400px;
+    flex-wrap: wrap;
     flex-direction: column;
     box-shadow: 2px 2px 2px 2px var(--executive-section-text);
+    background: -webkit-gradient(linear,left top,right top,from(#f7085a),to(#be4c9b));
+    background: -moz-linear-gradient(left,#f7085a,#be4c9b);
+    background: linear-gradient(90deg,#f7085a,#be4c9b);
 }
-.pEvents{
+/* .upEvents:hover,.pEvents:hover{
+    transform: scale(1.08);
+    z-index: 1;
+} */
+
+.Main .Year{
     display: flex;
+    flex-direction: row;
+    gap:0.5rem;
+    margin-left: 20px;
+}
+ .Main .Year .yr{
+    padding: 0.5rem;
+    color: #000;
+    border-radius: 0.3rem;
+    border: 1px;
+    display: -moz-box;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: center;
     justify-content: center;
-    padding: 2vw;
-    border-radius: 15px;
-    display: flex;
-    font-size: clamp(12px,2.5vw,24px);
-    flex-direction: column;
-    box-shadow: 2px 2px 2px 2px var(--executive-section-text);
+    padding: 0.5rem 1rem;
+    height:40px;
+    font-size:16px;
+    font-weight: 700;
+    font-family: Helvetica;
+    line-height: 28px;
+    cursor: pointer;
+    min-width: 100px;
+    border: 1px solid #000 ;
+}
+
+.Main .Year .active{
+    background: -webkit-linear-gradient(left, #f7085a, #be4c9b);
+    background: -moz-linear-gradient(left, #f7085a, #be4c9b);
+    background: linear-gradient(90deg, #f7085a, #be4c9b);
+}
+.dateheading{
+    font-size:36px;
 }
 
  .upEvents a,.pEvents a{
@@ -70,13 +111,71 @@
     font-weight: 700;
     color: var(--hero-section-text);
 }
-
-.upcomingEvents+h2,.pastEvents+h2{
-    font-size: 2em;
-    text-decoration: underline;
+.up,.p{
+    padding: 10px;
+    width: 100%;
+    color: #fff;
 }
 
-@media screen and (max-width:540px) {
+.upEvents a,.pEvents a{
+  position: absolute;
+  left: -45px;
+  bottom: -204px;
+  width: 400px;
+  height: 177.5%;
+  margin-left:-1vw;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  backdrop-filter: blur(0.2rem) grayscale(0.7);
+  font-family: Helvetica, sans-serif;
+  color: white;
+  font-weight: 900;
+  font-size: 2vw;
+  visibility:hidden;
+  opacity:0;
+  border: none;
+  border-radius: 1vw;
+  overflow: hidden;
+  /* transition: all 0.01s ease-in-out; */
+}
+.upEvents:hover.upEvents a,.pEvents:hover.pEvents a{
+  position: relative;
+  left: -45px;
+  bottom: 204px;
+  width: 400px;
+  height: 177.5%;
+  margin-left:-1vw;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  backdrop-filter: blur(0.2rem) grayscale(0.7);
+  font-family: Helvetica, sans-serif;
+  color: white;
+  font-weight: 900;
+  font-size: 24px;
+  visibility:visible;
+  opacity:100;
+  border: none;
+  border-radius: 1vw;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.upEvents:hover .contestLink{
+    position: relative;
+    bottom:0;
+}
+.upcomingEvents h2,.pastEvents h2{
+    font-size: 2.5em;
+    /* text-decoration: underline; */
+}
+
+@media (max-width:540px) {
     .container{
         flex-direction: column;
         justify-content: center;
@@ -85,8 +184,13 @@
     .upcomingEvents h2,.pastEvents h2{
         font-size: 20px ;
     }
+    
     .upEvents,.pEvents{
         width: 80vw;
+    }
+
+    .upEvents:hover.upEvents a,.pEvents:hover.pEvents a{
+    left:-52px;
     }
     .Title{
         display: flex;
