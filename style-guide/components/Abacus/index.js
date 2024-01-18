@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SkeletonElement from "./SkeletonElement";
 import styles from "./styles.module.css";
+import { Tilt } from 'react-tilt';
 
 const Abacus = () => {
   const [loading, setLoading] = useState(true);
@@ -23,10 +24,23 @@ const Abacus = () => {
     setImageLoaded(true);
     setLoading(false);
   };
+
+  const defaultOptions = {
+    reverse:        false,  
+    max:            35,    
+    perspective:    1000,   
+    scale:          1,    
+    speed:          1500,   
+    transition:     true,   
+    axis:           null,   
+    reset:          true,    
+    easing:         "cubic-bezier(.03,.98,.52,.99)",    
+  };
   return (
     <>
       <div className={styles.wrapper}>
         {images.map((image, ind) => (
+          <Tilt options={defaultOptions} className={styles.Tilt}> 
           <div key={ind} className={styles.item}>
               <div className={styles.polaroid}>
               <img src={path + image[0] + "-min.jpg"} alt="image" onLoad={handleImageLoad} />
@@ -34,8 +48,10 @@ const Abacus = () => {
                 <div className={styles.caption}>{image[1]}</div>
               </div>
           </div>
+          </Tilt>
         ))}
         {images2.map((image, ind) => (
+          <Tilt options={defaultOptions} className={styles.Tilt}> 
           <div key={ind} className={styles.item}>
               <div className={styles.polaroid}>
               <img src={path2 + image + ".jpg"} alt="image" onLoad={handleImageLoad} />
@@ -43,6 +59,7 @@ const Abacus = () => {
                 <div className={styles.caption}>Abacus</div>
               </div>
           </div>
+          </Tilt>
         ))}
       </div>
     </>
