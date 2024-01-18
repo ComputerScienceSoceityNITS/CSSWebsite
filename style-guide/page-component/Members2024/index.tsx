@@ -8,7 +8,7 @@ import MLWing from "../MLWingMembers";
 import LiteraryWing from "../LiteraryWingMembers";
 import DesignWing from "../DesignWingMembers";
 import PRWing from "../PrWingMembers";
-import Styles from "./members2023.module.css";
+import Styles from "./members2024.module.css";
 
 interface MemberProps {
   devWing: {
@@ -149,7 +149,7 @@ const index = ({
       <section className={Styles.memsection}>
         <div className={Styles.tabPanel} id={Styles.tabPanel}>
           <div className={Styles.wrapper}>
-            {/* <h1 className={Styles.memberTag}>Members 22-23</h1> */}
+            {/* <h1 className={Styles.memberTag}>Members 23-24</h1> */}
             {/* <Fade bottom> */}
             <SocietyHeads members={members} />
             <DevWing members={devWing} coHeads={devCoHeads} />

@@ -2,74 +2,139 @@
 
 /* ///// */
 
+
 .gallerytext {
-  color: var(--icon-text) !important;
+  color: var(--offBlack) !important;
 }
 .header {
+  background: url("../../../public/images/bg-pink.webp");
+  background-size: cover;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
+
+
+.buttonContainer{
+  width:30%;
+  background: transparent;
+  /* background: linear-gradient(90deg, rgba(246,151,204,1) 0%, rgba(248,201,215,1) 0%, rgba(255,255,255,1) 100%, rgba(236,208,225,1) 100%); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
 @media (max-width: 1023px) {
   .header {
     flex-direction: column-reverse;
+
   }
   .lottiecont {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    overflow: hidden;
+
   }
+
+  
+
 }
 
 @media (max-width: 620px) {
   .header {
-    height: 100vh;
+    display:flex;
+    align-items: center;
+    height: 70vh;
     width: 100%;
     background-color: var(--memsection-bg);
     position: relative;
+    
+  }
+  .lottiecont {
+    height:60vh;
+    aspect-ratio: 1/1;
+    position: absolute;
+    right: 31%;
+    bottom: 8%;
+
   }
   .header_content {
+   
     z-index: 2 !important;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
   }
   .header_content p {
-    font-size: 10vh;
+    font-size: 9vh;
     font-weight: bolder;
-    color: white;
-    padding: 0;
+    color: black;
+    padding: 0 1.75vw;
     margin: 30px 0;
     font-family: "Archivo", sans-serif;
   }
   .header_content p::first-letter {
-    font-size: 15vh;
+    font-size: 13vh;
     font-weight: bolder;
     color: white;
     background-color: #e41f6f;
-    padding: 0;
+    padding: 0 3vh;
     margin: 30px 0;
     font-family: "Archivo", sans-serif;
+    border-radius: 50%;
   }
   .header_content span {
+    display: inline-block;
+    text-align: center;
     font-size: 3.5vh;
     font-weight: bolder;
     color: white;
-    padding: 0;
-    margin: 30px 0;
+    padding: 18px;
     font-family: "East Sea Dokdo", cursive;
   }
-  .header_content .buttonContainer button {
+
+  .buttonContainer{
+    gap: 2rem;
+
+  }
+ .buttonContainer button {
     font-size: 3vh;
     font-weight: bolder;
     color: rgb(68, 68, 68);
     border: none;
     background-color: transparent;
-    padding: 0 20px 0 0;
+    padding: 0 10px 0 10px;
     margin: 30px 0;
     font-family: "Archivo", sans-serif;
     outline: none;
+    border-radius: 15px;
+    transition: all 0.75s ease-out ;
+  }
+
+  .buttonContainer button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(228, 31, 111);
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+
+  .buttonContainer button:hover {
+    transform: scale(1.25) translateX(0);
+    color: white !important;
+
   }
   /* button:focus {
     outline: none;
@@ -77,41 +142,91 @@
   /* button:hover {
     cursor: pointer;
   } */
+
+  
 }
 
 @media (min-width: 620px) {
   .header {
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     background-color: var(--memsection-bg);
     position: relative;
   }
+
+  .lottiecont {
+    display: flex;
+    justify-content: flex-end;
+    height: 72vh;
+
+
+  }
+  .buttonContainer{
+    position: absolute;
+    top: 89%;
+    left: 35%;
+    margin: auto;
+  
+    
+  }
+  
   .header_content {
     position: absolute;
-    color: var(--Grey-light-3);
-    top: 50%;
-    right: 10%;
-    text-align: end;
-    transform: translate(0%, -50%);
+    width: 52vw;
+    height: 38vh;
+    border-radius: 30px;
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    top: 30%;
+    right: 5%;
+    text-align: center;
     z-index: 2 !important;
+    animation: 1s ease-out 0s 1 slideLeft;
+    
+
   }
+
+  .header_content::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25rem;
+    background: linear-gradient(rgb(241, 78, 106),rgb(252, 191, 201));
+    clip-path: circle(25.4% at 4% 0);
+    z-index: -1;
+    opacity: 0.5;
+    transition: all 1s ease;
+  }
+
+  .header_content:hover::before{
+    clip-path: circle(36.7% at 4% 0);
+    
+    opacity: 1;
+
+  }
+
+
   .header_content p {
-    font-size: 15vh;
+    font-size: 10vw;
     font-weight: bolder;
     padding: 0;
     margin: 30px 0;
-    color: var(--Grey-light-3);
+    color: black;
     font-family: "Archivo", sans-serif;
   }
   .header_content p::first-letter {
-    font-size: 15vh;
+    font-size: 12vw;
     font-weight: bolder;
-    color: var(--devcard-text);
+    color: white;
     background-color: #e41f6f;
-    padding: 0;
-    margin: 30px 0;
+    padding: 0 15px;
+    margin: 30px 5px;
     font-family: "Archivo", sans-serif;
-    border-radius: 7px;
+    border-radius: 50%;
   }
   .header_content span {
     font-size: 4.5vh;
@@ -121,16 +236,46 @@
     margin: 30px 0;
     font-family: "East Sea Dokdo", cursive;
   }
-  .header_content .buttonContainer > button {
-    font-size: 3vh;
+  .buttonContainer{
+    gap: 5rem;
+  }
+   .buttonContainer > button {
+    font-size: 3.6vh;
     font-weight: bolder;
     color: rgb(68, 68, 68);
     border: none;
+    border-radius: 10px;
     background-color: transparent;
-    padding: 0 20px 0 0;
+    padding: 0 20px 0 20px;
     margin: 30px 0;
     font-family: "Archivo", sans-serif;
     outline: none;
     cursor: pointer;
+    border-radius: 15px;
+    transition: all 0.75s ease-out ;
+  }
+
+  .buttonContainer button:hover {
+    transform: scale(1.25);
+    background-color: rgb(228, 31, 111);
+    color: white !important;
+
+  }
+}
+
+@keyframes slideLeft{
+  0%{
+    opacity: 0.4;
+    transform: translateX(100%);
+    
+  }
+  75%{
+    opacity: 0.95;
+    transform: translate(25%) scale(1.1);
+    
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0) scale(1) rotateZ(0);
   }
 }

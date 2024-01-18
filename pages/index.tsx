@@ -46,7 +46,7 @@ export default Home;
 
 export const getStaticProps: GetStaticProps = async () => {
   const response = await fetch(
-    "https://css-cms.onrender.com/api/admin/members/22-23"
+    `${process.env.BACKEND_URL}/api/admin/members/23-24`
   );
   const data = await response.json();
   return {
