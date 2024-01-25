@@ -26,6 +26,14 @@ const DevelopersNewMain = (props: DeveloperYear) => {
       <div className={Styles.yearcontainer}>
         <div className={Styles.sideheading}>TEAM OF</div>
         <div className={Styles.buttoncontainer}>
+        <Link href="/developers/23-24" passHref scroll={false} replace>
+            <div
+              onClick={() => setYear(2024)}
+              className={`${year === 2024 ? Styles.active : Styles.buttons}`}
+            >
+              2023-24
+            </div>
+          </Link>
           <Link href="/developers/22-23" passHref scroll={false} replace>
             <div
               onClick={() => setYear(2023)}

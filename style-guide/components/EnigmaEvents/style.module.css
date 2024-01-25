@@ -1,3 +1,4 @@
+
 .Main {
   background: var(--hero-section-bg);
   font-family: "Ubuntu", sans-serif;
@@ -126,6 +127,61 @@
   width: 100%;
   color: #fff;
 }
+.up,.p{
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+}
+
+.upEvents a,.pEvents a{
+  position: absolute;
+  left: -45px;
+  bottom: -204px;
+  width: 400px;
+  height: 177.5%;
+  margin-left:-1vw;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  backdrop-filter: blur(0.2rem) grayscale(0.7);
+  font-family: Helvetica, sans-serif;
+  color: white;
+  font-weight: 900;
+  font-size: 2vw;
+  visibility:hidden;
+  opacity:0;
+  border: none;
+  border-radius: 1vw;
+  overflow: hidden;
+  /* transition: all 0.01s ease-in-out; */
+}
+.upEvents:hover.upEvents a,.pEvents:hover.pEvents a{
+  position: relative;
+  left: -45px;
+  bottom: 204px;
+  width: 400px;
+  height: 177.5%;
+  margin-left:-1vw;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  backdrop-filter: blur(0.2rem) grayscale(0.7);
+  font-family: Helvetica, sans-serif;
+  color: white;
+  font-weight: 900;
+  font-size: 24px;
+  visibility:visible;
+  opacity:100;
+  border: none;
+  border-radius: 1vw;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
 
 .upEvents a,
 .pEvents a {
@@ -214,3 +270,4 @@
     width: 100vw;
   }
 }
+

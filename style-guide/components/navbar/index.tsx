@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Styles from "./navbar.module.css";
-
+import SignUpBtn from "../../components/SignUp/SignUp";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);//new
   useEffect(() => {
     if (toggle) {
       document.body.setAttribute("style", "overflow: hidden");
     } else {
       document.body.setAttribute("style", "overflow: scrollY");
     }
-  });
+  }, [toggle]);
   return (
     <div className={Styles.navigation}>
       <button
@@ -92,7 +93,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={Styles.navigation__item}>
-            <Link href="/members/22-23" passHref={false}>
+            <Link href="/members/23-24" passHref={false}>
               <a
                 className={Styles.navigation__link}
                 onClick={() => setToggle(!toggle)}
@@ -102,7 +103,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className={Styles.navigation__item}>
-            <Link href="/developers/22-23" passHref={false}>
+            <Link href="/developers/23-24" passHref={false}>
               <a
                 className={Styles.navigation__link}
                 onClick={() => setToggle(!toggle)}
@@ -117,12 +118,14 @@ const Navbar = () => {
                 className={Styles.navigation__link}
                 onClick={() => setToggle(!toggle)}
               >
-          
+          Sign Up
               </a>
             </Link>
           </li> */}
         </ul>
+        <SignUpBtn />
       </nav>
+      {/* <SignUpBtn /> */}
     </div>
   );
 };

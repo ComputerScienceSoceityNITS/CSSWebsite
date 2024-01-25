@@ -1,5 +1,6 @@
 .hero {
   width: 100vw;
+  height: 40vh;
   background: var(--hero-section-bg);
   display: flex;
   justify-content: center;
@@ -7,6 +8,7 @@
   flex-direction: column;
   padding: 3rem 2rem;
   background-attachment: fixed;
+  z-index: 1;
 }
 
 @media (max-width: 768px) {
