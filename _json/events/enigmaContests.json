@@ -1,37 +1,64 @@
-[{
-    "Date":"2023-12-12",
-    "Time":"8:00pm",
-    "codeforces_link":"https://legacy.reactjs.org/docs/context.html"
-},
 {
-    "Date":"2023-12-12",
-    "Time":"8:10pm",
-    "codeforces_link":"https://legacy.reactjs.org/docs/context.html"
-},
-{
-    "Date":"2023-12-13",
-    "Time":"8:00pm",
-    "codeforces_link":"xyz"
-},
-{
-    "Date":"2023-12-13",
-    "Time":"8:08pm",
-    "codeforces_link":"xyz"
-},
-{
-    "Date":"2023-12-14",
-    "Time":"8:00pm",
-    "codeforces_link":"https://legacy.reactjs.org/docs/context.html"
-},
-{
-    "Date":"2023-12-15",
-    "Time":"8:00pm",
-    "codeforces_link":"xyz"
+    "status": "success",
+    "enigmas": [
+        {
+            "_id": "6416e33bf2c75ce3100aa3e3",
+            "cfContestLink": "www.google.com",
+            "startDate": "2023-03-25",
+            "startTime": "22:00",
+            "durationInHrs": 2,
+            "questionSetters": [],
+            "questionTesters": [],
+            "participants": [
+                "64062d92d4445ce3bd291b39",
+                "6417473ecc2a56aa6b0c150c",
+                "6422b1eab55c4c42705498bb",
+                "6421f2cd9d68cd0aae459e9c",
+                "6576b5ec8fb772928b4e6288",
+                "6578637de27dc920182add37"
+            ],
+            "winners": [],
+            "__v": 6
+        },
+        {
+            "_id": "64175fd6857b0a3693421f7b",
+            "cfContestLink": "initial",
+            "startDate": "2023-03-23",
+            "startTime": "00:00",
+            "durationInHrs": 45,
+            "questionSetters": [
+                "texting "
+            ],
+            "questionTesters": [
+                "testing"
+            ],
+            "participants": [
+                "6429ebe49d4da747858a4d3f"
+            ],
+            "winners": [],
+            "__v": 1
+        },
+        {
+            "_id": "658e617249010daadd2de614",
+            "cfContestLink": "jobDifficulty.size()",
+            "startDate": "2023-12-27",
+            "startTime": "15:34",
+            "participants": [
+                "6429ebe49d4da747858a4d3f"
+            ],
+            "winners": [],
+            "__v": 1
+        },
+        {
+            "_id": "658e617249010daadd2de614",
+            "cfContestLink": "jobDifficulty.size()",
+            "startDate": "2024-12-27",
+            "startTime": "15:34",
+            "participants": [
+                "6429ebe49d4da747858a4d3f"
+            ],
+            "winners": [],
+            "__v": 1
+        }
+    ]
 }
-,
-{
-    "Date":"2023-12-15",
-    "Time":"8:30pm",
-    "codeforces_link":"xyz"
-}
-]

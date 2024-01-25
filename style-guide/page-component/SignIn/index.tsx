@@ -21,9 +21,12 @@ const SignIn = () => {
       if (res.data.status === "success") {
         localStorage.setItem("signed", "true");
         localStorage.setItem("CSS_ScholarID", res.data.user.scholarID);
+        localStorage.setItem("CSS_EnigmaID", res.data.user.enigmaID);
+        localStorage.setItem("token", res.data.token);
         window.location.pathname = window.location.search.split("=")[1];
         // window.location.search='';
       }
+      console.log( res.data.token,'token' );
       setLoading(false);
     } catch (err: any) {
       err.response?
