@@ -1,6 +1,5 @@
 import React,{useEffect} from "react";
 import styles from "./styles.module.css";
-import Tilt from "react-vanilla-tilt";
 
 const Abacus = () => {
   const path = "/images/technical/";
