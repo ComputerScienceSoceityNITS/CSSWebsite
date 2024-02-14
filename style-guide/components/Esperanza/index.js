@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import SkeletonElement from "./SkeletonElement";
 import styles from "./styles.module.css";
-import { Tilt } from 'react-tilt';
 
 const Esperanza = () => {
   const [loading, setLoading] = useState(true);
@@ -23,49 +22,49 @@ const Esperanza = () => {
   };
 
   const defaultOptions = {
-    reverse:        false,  
-    max:            35,    
-    perspective:    1000,   
-    scale:          1,    
-    speed:          1500,   
-    transition:     true,   
-    axis:           null,   
-    reset:          true,    
-    easing:         "cubic-bezier(.03,.98,.52,.99)",    
+    reverse: false,
+    max: 35,
+    perspective: 1000,
+    scale: 1,
+    speed: 1500,
+    transition: true,
+    axis: null,
+    reset: true,
+    easing: "cubic-bezier(.03,.98,.52,.99)",
   };
   return (
     <>
       <div className={styles.wrapper}>
         {images1.map((image, ind) => (
-          <Tilt options={defaultOptions} className={styles.Tilt}>  
-          <div key={ind} className={styles.item}>
-            <div className={styles.polaroid}>
-              <img
-                src={path1 + image[0] + "-min.jpg"}
-                alt="image"
-                onLoad={handleImageLoad}
-              />
-              {loading && <SkeletonElement cards={1} />}
-              <div className={styles.caption}>{image[1]}</div>
+          <div className={styles.Tilt} key={ind}>
+            <div key={ind} className={styles.item}>
+              <div className={styles.polaroid}>
+                <img
+                  src={path1 + image[0] + "-min.jpg"}
+                  alt="image"
+                  onLoad={handleImageLoad}
+                />
+                {loading && <SkeletonElement cards={1} />}
+                <div className={styles.caption}>{image[1]}</div>
+              </div>
             </div>
           </div>
-          </Tilt>
         ))}
-          
+
         {images2.map((image, ind) => (
-          <Tilt options={defaultOptions} className={styles.Tilt}> 
-          <div key={ind} className={styles.item}>
-            <div className={styles.polaroid}>
-              <img
-                src={path2 + image + "-min.jpg"}
-                alt="image"
-                onLoad={handleImageLoad}
-              />
-              {loading && <SkeletonElement cards={1} />}
-              <div className={styles.caption}>Esperanza</div>
+          <div className={styles.Tilt} key={ind}>
+            <div key={ind} className={styles.item}>
+              <div className={styles.polaroid}>
+                <img
+                  src={path2 + image + "-min.jpg"}
+                  alt="image"
+                  onLoad={handleImageLoad}
+                />
+                {loading && <SkeletonElement cards={1} />}
+                <div className={styles.caption}>Esperanza</div>
+              </div>
             </div>
           </div>
-          </Tilt>
         ))}
       </div>
     </>
