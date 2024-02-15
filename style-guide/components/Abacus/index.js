@@ -1,11 +1,9 @@
-import React, { useState } from "react";
-import SkeletonElement from "./SkeletonElement";
+// Abacus.js
+import React from "react";
+import ImageItem from "./ImageItem";
 import styles from "./styles.module.css";
 
 const Abacus = () => {
-  const [loading, setLoading] = useState(true);
-  const [imageLoaded, setImageLoaded] = useState(false);
-
   const path = "/images/technical/";
   const images = [
     ["5", "The Inspire Room"],
@@ -19,33 +17,26 @@ const Abacus = () => {
   const path2 = "/images/abacus/";
   const images2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-  const handleImageLoad = () => {
-    setImageLoaded(true);
-    setLoading(false);
-  };
   return (
-    <>
-      <div className={styles.wrapper}>
-        {images.map((image, ind) => (
-          <div key={ind} className={styles.item}>
-              <div className={styles.polaroid}>
-              <img src={path + image[0] + "-min.jpg"} alt="image" onLoad={handleImageLoad} />
-              {loading && <SkeletonElement cards={1} />}
-                <div className={styles.caption}>{image[1]}</div>
-              </div>
-          </div>
-        ))}
-        {images2.map((image, ind) => (
-          <div key={ind} className={styles.item}>
-              <div className={styles.polaroid}>
-              <img src={path2 + image + ".jpg"} alt="image" onLoad={handleImageLoad} />
-              {loading && <SkeletonElement cards={1} />}
-                <div className={styles.caption}>Abacus</div>
-              </div>
-          </div>
-        ))}
-      </div>
-    </>
+    <div className={styles.wrapper}>
+      {images.map((image, ind) => (
+        <ImageItem
+          key={ind}
+          src={path + image[0] + "-min.jpg"}
+          alt="image"
+          title={image[1]}
+        />
+      ))}
+
+      {images2.map((image, ind) => (
+        <ImageItem
+          key={ind + images.length}
+          src={path2 + image + ".jpg"}
+          alt="image"
+          title="Abacus"
+        />
+      ))}
+    </div>
   );
 };
 

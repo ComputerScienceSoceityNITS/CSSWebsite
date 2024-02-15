@@ -1,10 +1,9 @@
-import React, { useState } from "react";
-import SkeletonElement from "./SkeletonElement";
+// Esperanza.js
+import React from "react";
+import ImageItem from "./ImageItem";
 import styles from "./styles.module.css";
 
 const Esperanza = () => {
-  const [loading, setLoading] = useState(true);
-
   const path1 = "./images/cultural/";
   const images1 = [
     ["1", "CSS Orientation"],
@@ -17,42 +16,26 @@ const Esperanza = () => {
   const path2 = "./images/esperanza/";
   const images2 = [1, 2, 3, 7, 4, 6, 8, 5, 9, 31];
 
-  const handleImageLoad = () => {
-    setLoading(false);
-  };
-
   return (
-    <>
-      <div className={styles.wrapper}>
-        {images1.map((image, ind) => (
-          <div key={ind} className={styles.item}>
-            <div className={styles.polaroid}>
-              <img
-                src={path1 + image[0] + "-min.jpg"}
-                alt="image"
-                onLoad={handleImageLoad}
-              />
-              {loading && <SkeletonElement cards={1} />}
-              <div className={styles.caption}>{image[1]}</div>
-            </div>
-          </div>
-        ))}
+    <div className={styles.wrapper}>
+      {images1.map((image, ind) => (
+        <ImageItem
+          key={ind}
+          src={path1 + image[0] + "-min.jpg"}
+          alt="image"
+          title={image[1]}
+        />
+      ))}
 
-        {images2.map((image, ind) => (
-          <div key={ind} className={styles.item}>
-            <div className={styles.polaroid}>
-              <img
-                src={path2 + image + "-min.jpg"}
-                alt="image"
-                onLoad={handleImageLoad}
-              />
-              {loading && <SkeletonElement cards={1} />}
-              <div className={styles.caption}>Esperanza</div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </>
+      {images2.map((image, ind) => (
+        <ImageItem
+          key={ind + images1.length}
+          src={path2 + image + "-min.jpg"}
+          alt="image"
+          title="Esperanza"
+        />
+      ))}
+    </div>
   );
 };
 

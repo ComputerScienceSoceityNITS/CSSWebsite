@@ -8,10 +8,25 @@
   background: #fff;
   padding: 1rem 1rem 0;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  height: 100%; /* Make the card height match the width for symmetry */
 }
 .polaroid > img {
   max-width: 100%;
   height: auto;
+  aspect-ratio: 20/19;
+  object-fit: contain;
+}
+
+.hiddenImage {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.visibleImage {
+  visibility: visible;
+  width: 100%;
+  height: 100%;
 }
 .caption {
   font-size: 2rem;
@@ -22,17 +37,19 @@
   color: #e41f6f;
 }
 .item {
-  width: 30%;
+  width: 33%;
+  /* max-height: 30%; */
   display: inline-block;
   margin-top: 2rem;
   /* filter: grayscale(100%); */
   box-shadow: 2px 2px 10px var(--abacus-border);
+  position: relative;
 }
 .item .polaroid:before {
   content: "";
   position: absolute;
   z-index: -1;
-  transition: all 0.75s;
+  transition: all 0.75s ease-out;
 }
 .item:nth-of-type(4n + 1) {
   transform: scale(0.8, 0.8) rotate(5deg);
@@ -48,7 +65,7 @@
 }
 .item:nth-of-type(4n + 2) {
   transform: scale(0.8, 0.8) rotate(-5deg);
-  transition: all 0.75s;
+  transition: all 0.75s ease-out;
 }
 .item:nth-of-type(4n + 2) .polaroid:before {
   transform: rotate(-6deg);
@@ -70,6 +87,10 @@
   right: 12px;
   box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
 }
+
+/* /* .item:nth-of-type(12) > .polaroid{
+  width: 90%; 
+} */
 .item:nth-of-type(4n + 3) {
   transform: scale(0.8, 0.8) rotate(-3deg);
   transition: all 0.75s ease-out;
@@ -87,8 +108,9 @@
   transform: scale(1, 1) rotate(0deg) !important;
   transition: all 0.75s ease-out;
   box-shadow: none;
+  border: none;
 }
-.item:hover .polaroid:before {
+.item:hover .polaroid::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -97,10 +119,9 @@
   width: 90%;
   bottom: 0%;
   right: 5%;
-  box-shadow: 0 1rem 3rem #e41f6ebe;
+  box-shadow: 0 2rem 3rem #e41f6ebe;
   transition: all 0.75s ease-out;
 }
-
 .skeletonElement {
   width: 100%;
   height: 300px;
@@ -116,7 +137,6 @@
     background-color: hsl(200, 20%, 95%);
   }
 }
-
 @media only screen and (max-width: 968px) {
   .item {
     width: 50%;
