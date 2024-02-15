@@ -15,8 +15,8 @@ export default function BrightGallery() {
   return (
     <div>
       <Lottie
-        height={"70%"}
-        width={"40vw"}
+      height={"55%"}
+        width={"75%"}
         options={defaultOptions}
         speed={1.5}
       />

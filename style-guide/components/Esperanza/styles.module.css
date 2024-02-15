@@ -8,7 +8,7 @@
   background: #fff;
   padding: 1rem 1rem 0;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  height: 100%; /* Make the card height match the width for symmetry */
+  height: 100%;
 }
 .polaroid > img {
   max-width: 100%;

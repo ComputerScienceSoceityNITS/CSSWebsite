@@ -133,7 +133,7 @@ const index = ({
       <section className={Styles.memsection}>
         <div className={Styles.tabPanel} id={Styles.tabPanel}>
           <div className={Styles.wrapper}>
-            <h1 className={Styles.memberTag}>Members 20-21</h1>
+            {/* <h1 className={Styles.memberTag}>Members 20-21</h1> */}
             {/* <Fade bottom> */}
             <SocietyHeads members={members} />
             <DevWing members={devWing} coHeads={devCoHeads} />
