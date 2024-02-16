@@ -33,8 +33,8 @@ const Esperanza = ({theme}) => {
 
       {images2.map((image, ind) => (
         <ImageItem
-          key={ind + images2.length}
-          src={path2 + image + ".jpg"}
+          key={ind + image.length}
+          src={path2 + image + "-min.jpg"}
           alt="image"
           title="Esperanza"
         />
