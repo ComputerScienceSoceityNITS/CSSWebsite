@@ -31,8 +31,8 @@ const DevWing = ({ members, coHeads }: MemberProps) => {
   return (
     <div className={Styles.gridContainer}>
       <h1 className={Styles.wingTag}>
-        &nbsp; &nbsp; &nbsp; Dev <br />
-        &nbsp; -wing <br />
+        &nbsp;&nbsp; Dev  <br />
+        &nbsp;  -wing <br />
         Members
       </h1>
       <div className={Styles.grid}>

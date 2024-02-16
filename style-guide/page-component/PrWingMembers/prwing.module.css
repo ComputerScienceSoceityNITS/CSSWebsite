@@ -40,6 +40,15 @@
   height: 20vw;
   width: 20vw;
 }
+.grid > div:nth-child(5) {
+  -ms-flex-item-align: end;
+  align-self: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  height: 20vw;
+  width: 20vw;
+}
 .grid > div:nth-child(2) {
   -ms-grid-column-align: center;
   justify-self: center;
@@ -68,11 +77,22 @@
     -ms-grid-column-align: center;
     justify-self: center;
   }
-  .gridContainer .grid > div:nth-child(2) {
+  .gridContainer .grid > div:nth-child(3) {
     -ms-grid-column-align: center;
     justify-self: center;
     -ms-flex-item-align: start;
     align-self: center;
+    height: 40vh;
+    width: 40vh;
+  }
+  .grid > div:nth-child(5) {
+    -ms-flex-item-align: end;
+    align-self: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    height: 40vh;
+    width: 40vh;
   }
   .gridContainer .grid > div:nth-child(3) {
     -ms-flex-item-align: end;
@@ -80,8 +100,7 @@
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: start;
-    height: 40vh;
-    width: 40vh;
+    
   }
   .gridContainer .grid > div:nth-child(4) {
     -ms-flex-item-align: end;
@@ -89,7 +108,9 @@
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    
   }
+  
 }
 
 @media only screen and (max-width: 420px) {

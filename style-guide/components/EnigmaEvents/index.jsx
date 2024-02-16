@@ -1,17 +1,21 @@
 import React, { useState, useEffect,useRef } from 'react';
+
 import Link from 'next/link';
 import axios from "axios";
+
 import Data from "../../../_json/events/enigmaContests.json"; 
 import Styles from './style.module.css';
 // import index from '../../page-component/Members2021';
 
 const EventsList = () => {
     const [jsonData, setJsonData] = useState(Data);
+
     const [year,setYear] = useState( 2023 );
     const [yearWiseData,setYearWiseData] = useState(jsonData.enigmas.filter((obj) => obj.startDate.toString().slice(0, 4) === year.toString()));
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [hasRegisteredInEnigma, setHasRegisteredInEnigma] = useState(false);
     const [error, setError] = useState(null);
+
 
     
     // Function to format a date
@@ -27,6 +31,7 @@ const EventsList = () => {
         .replace('mm', today.slice(0, 2))
         .replace('dd', today.slice(3, 5));
     };
+
 
     const Today = formatDate(new Date(), 'yyyy-mm-dd');
     const yearRef = useRef(null);
@@ -113,16 +118,20 @@ const EventsList = () => {
       
 
     
+
     // const eventDate = new Date(event.Date);
     const todayDate = new Date();
     
     const upcomingEvents = yearWiseData.filter((event) =>{
+
             const eventDate = new Date(event.startDate);
+
     return(
             eventDate > todayDate || formatDate(eventDate, 'yyyy-mm-dd') === Today )});
 
     
     const pastEvents = yearWiseData.filter((event) =>{ 
+
         const eventDate = new Date(event.startDate);
         // console.log(eventDate,'1'); 
         // console.log(todayDate,'2'); 
@@ -130,13 +139,16 @@ const EventsList = () => {
     return(
             eventDate < todayDate && formatDate(eventDate, 'yyyy-mm-dd') !== Today)
     });
+
     
     const pastSortedData =pastEvents.sort((a,b)=> new Date(b.Date) - new Date(a.Date));
     const upcomingSortedData = upcomingEvents.sort((a,b) => new Date(a.Date) - new Date(b.Date));
     
+
     function handleClick(data) {
         setYear(data);
     }
+
     
     return (
         <div className={Styles.Main}>
@@ -148,7 +160,9 @@ const EventsList = () => {
                 borderColor:data === year && 'transparent',
                 background: data === year &&'-webkit-gradient(linear,left top,right top,from(#f7085a),to(#be4c9b))MozAnimation',
                 background: data === year && '-moz-linear-gradient(left,#f7085a,#be4c9b)',
+
                 background: data === year && 'linear-gradient(90deg,#f7085a,#be4c9b)',}} onClick={() => handleClick(data)}>
+
                     {data}
                 </div>
                 )}
@@ -161,6 +175,7 @@ const EventsList = () => {
                         {upcomingSortedData.map((data) => (
                             <div key={data.key} className={Styles.upEvents}>
                                 <div className={Styles.up}>
+
                                     <div className={Styles.dateheading}>{dateHeading(data.startDate)}</div>
                                     <div>Date :{data.startDate}</div>
                                     <div>Time :{data.startTime}</div>
@@ -173,6 +188,7 @@ const EventsList = () => {
                             </div>
                         ))}
                         </div> : <div className={Styles.Title} style={{ padding: '50px 0' }}>No Upcoming Enigmas in {year}</div>}
+
                 </div>
 
                 <div className={Styles.pastEvents}>
@@ -181,6 +197,7 @@ const EventsList = () => {
                         {pastSortedData.map((data) => (
                             <div key={data.key} className={Styles.pEvents}>
                                 <div className={Styles.p}>
+
                                     <div className={Styles.dateheading}>{dateHeading(data.startDate)}</div>
                                     <div>Date : {data.startDate}</div>
                                     <div>Time : {data.startTime}</div>
@@ -192,6 +209,7 @@ const EventsList = () => {
                             </div>
                         ))}
                     </div> : <div style={{ padding: '20px 0' }}>No past enigmas in {year}</div>}
+
                 </div>
             </div>
         </div>
