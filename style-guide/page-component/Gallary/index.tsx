@@ -7,6 +7,8 @@ import BrightGallery from "../../components/lottie-player/gallerybright";
 const Gallery = () => {
   const mode: string | null = localStorage.getItem("theme");
   const [active, setActive] = useState(true);
+
+  const themeValue = mode != null ? mode : "default";
   
   return (
     <>
@@ -52,7 +54,7 @@ const Gallery = () => {
         
       </div>
 
-      {active && <Esperanza theme={mode}/>}
+      {active && <Esperanza theme={mode} />}
       {!active && <Abacus theme={mode}/>}
     </>
   );

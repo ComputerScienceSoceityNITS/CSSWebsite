@@ -2,6 +2,7 @@ import React from "react";
 import ImageItem from "./ImageItem";
 import styles from "./styles.module.css";
 
+
 const Abacus = ({theme}) => {
 
   const path = "/images/technical/";
