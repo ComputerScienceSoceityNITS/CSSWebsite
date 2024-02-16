@@ -3,7 +3,7 @@ import SkeletonElement from "./SkeletonElement";
 import styles from "./styles.module.css";
 import { Tilt } from 'react-tilt';
 
-const Abacus = () => {
+const Abacus = ({theme}) => {
   const [loading, setLoading] = useState(true);
   const [imageLoaded, setImageLoaded] = useState(false);
 
@@ -38,7 +38,7 @@ const Abacus = () => {
   };
   return (
     <>
-      <div className={styles.wrapper}>
+      <div className={styles.wrapper + (theme === "dark" ? "dark":"")}>
         {images.map((image, ind) => (
           <Tilt options={defaultOptions} className={styles.Tilt}> 
           <div key={ind} className={styles.item}>

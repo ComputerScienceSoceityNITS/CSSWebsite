@@ -96,6 +96,9 @@
 }
 
 @media (max-width: 620px) {
+  .dark{
+    color: rgb(249, 212, 212) !important;
+  }
   .header {
     display:flex;
     height: 70vh;
@@ -239,6 +242,10 @@
 }
 
 @media (min-width: 620px) {
+  .dark{
+    color: rgb(247, 228, 228) !important;
+  }
+
   .header {
     height: 82vh;
     width: 100%;
@@ -328,7 +335,7 @@
     font-weight: bolder;
     color: white;
     background: linear-gradient(rgb(241, 78, 106),rgb(252, 191, 201));
-    padding: 0 15px;
+    padding: 15px 15px;
     margin: 30px 5px;
     font-family: 'Anton', sans-serif;
     border-radius: 50%;
@@ -357,15 +364,15 @@
     /* outline: none;
     cursor: none; */
     /* border-radius: 15px; */
-    text-shadow: 0 0 6px white ;
+    /* text-shadow: 0 0 6px white ; */
     transition: all 0.55s ease-out ;
   }
 
   .buttonContainer button:hover {
     transform: scale(1.25);
-    letter-spacing: 1.5px;
+    letter-spacing: 1.3px;
     background-color: rgb(228, 31, 111);
-    color: white !important;
+    color: rgba(211, 196, 196, 0.74) !important;
 
   }
 
