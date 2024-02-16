@@ -1,4 +1,3 @@
-// Esperanza.js
 import React from "react";
 import ImageItem from "./ImageItem";
 import styles from "./styles.module.css";
