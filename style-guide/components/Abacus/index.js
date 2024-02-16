@@ -2,7 +2,8 @@ import React from "react";
 import ImageItem from "./ImageItem";
 import styles from "./styles.module.css";
 
-const Abacus = () => {
+const Abacus = ({theme}) => {
+
   const path = "/images/technical/";
   const images = [
     ["5", "The Inspire Room"],
@@ -16,7 +17,8 @@ const Abacus = () => {
   const path2 = "/images/abacus/";
   const images2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   return (
-    <div className={styles.wrapper}>
+    <>
+      <div className={styles.wrapper  + (theme === "dark" ? "dark":"")}>
       {images.map((image, ind) => (
         <ImageItem
           key={ind}
@@ -35,6 +37,7 @@ const Abacus = () => {
         />
       ))}
     </div>
+    </>
   );
 };
 

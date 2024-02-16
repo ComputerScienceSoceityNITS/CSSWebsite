@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import ImageItem from "./ImageItem";
 import styles from "./styles.module.css";
 
-const Esperanza = () => {
+
+const Esperanza = ({theme}) => {
+
+
   const path1 = "./images/cultural/";
   const images1 = [
     ["1", "CSS Orientation"],
@@ -15,8 +18,10 @@ const Esperanza = () => {
   const path2 = "./images/esperanza/";
   const images2 = [1, 2, 3, 7, 4, 6, 8, 5, 9, 31];
 
+
   return (
-    <div className={styles.wrapper}>
+    <>
+       <div className={styles.wrapper  + (theme === "dark" ? "dark":"")}>
       {images1.map((image, ind) => (
         <ImageItem
           key={ind}
@@ -28,13 +33,14 @@ const Esperanza = () => {
 
       {images2.map((image, ind) => (
         <ImageItem
-          key={ind + images1.length}
-          src={path2 + image + "-min.jpg"}
+          key={ind + images2.length}
+          src={path2 + image + ".jpg"}
           alt="image"
           title="Esperanza"
         />
       ))}
     </div>
+    </>
   );
 };
 

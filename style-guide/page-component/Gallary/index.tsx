@@ -5,7 +5,9 @@ import Abacus from "../../components/Abacus";
 import BrightGallery from "../../components/lottie-player/gallerybright";
 
 const Gallery = () => {
+  const mode: string | null = localStorage.getItem("theme");
   const [active, setActive] = useState(true);
+  
   return (
     <>
       <div className={styles.header}>
@@ -17,9 +19,9 @@ const Gallery = () => {
           {" "}
           <BrightGallery />
         </div>
-          <div className={styles.header_content}>
-            <p className={styles.gallerytext}>Gallery</p>
-            <span className={styles.gallerytext}>
+          <div className={styles.header_content }>
+            <p className={styles.gallerytext + (mode === "dark" ? ' ' + styles.dark : '')}>Gallery</p>
+            <span className={styles.gallerytext + (mode === "dark" ? ' ' + styles.dark : '')}>
               A Picture Is Worth A Thousand Words.
             </span>
           </div>
@@ -29,8 +31,9 @@ const Gallery = () => {
         <button
           onClick={() => setActive(true)}
           style={{
-            color: active ? "rgb(228, 31, 111)" : "rgb(68, 68, 68)",
+            color: active ? "rgb(228, 31, 111)" : "rgb(35, 35, 35)",
             boxShadow: active ? "0 0 20px rgb(228, 31, 111)" : "none",
+            
           }}
         >
           Cultural
@@ -38,8 +41,9 @@ const Gallery = () => {
         <button
           onClick={() => setActive(false)}
           style={{
-            color: !active ? "rgb(228, 31, 111)" : "rgb(68, 68, 68)",
+            color: !active ? "rgb(228, 31, 111)" : "rgb(35, 35, 35)",
             boxShadow: !active ? "0 0 20px rgb(228, 31, 111)" : "none",
+            
           }}
         >
           Technical
@@ -48,8 +52,8 @@ const Gallery = () => {
         
       </div>
 
-      {active && <Esperanza />}
-      {!active && <Abacus />}
+      {active && <Esperanza theme={mode}/>}
+      {!active && <Abacus theme={mode}/>}
     </>
   );
 };
