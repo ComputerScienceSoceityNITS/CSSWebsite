@@ -8,7 +8,7 @@
   background: #fff;
   padding: 1rem 1rem 0;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  height: 100%; /* Make the card height match the width for symmetry */
+  height: 100%;
 }
 .polaroid > img {
   max-width: 100%;
@@ -21,12 +21,23 @@
   visibility: hidden;
   width: 100%;
   height: 100%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: scale(1);
 }
 
 .visibleImage {
   visibility: visible;
   width: 100%;
   height: 100%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: scale(1);
+}
+.imageTransition {
+  opacity: 0;
+}
+
+.visibleImage {
+  opacity: 1;
 }
 .caption {
   font-size: 2rem;
