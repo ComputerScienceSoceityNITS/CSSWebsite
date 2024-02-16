@@ -136,11 +136,11 @@
     
 
   }
-  .header_content{
+  /* .header_content{
     /* position: absolute; */
-    /* width: 100%; */
+    /* width: 100%; 
     
-  }
+  } */
 
   .header > span:nth-child(3){
     visibility: hidden;
