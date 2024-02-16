@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import SkeletonElement from "./SkeletonElement";
+import ImageItem from "./ImageItem";
 import styles from "./styles.module.css";
-import { Tilt } from 'react-tilt';
+
 
 const Esperanza = ({theme}) => {
 
@@ -22,10 +22,10 @@ const Esperanza = ({theme}) => {
   return (
     <>
        <div className={styles.wrapper  + (theme === "dark" ? "dark":"")}>
-      {images.map((image, ind) => (
+      {images1.map((image, ind) => (
         <ImageItem
           key={ind}
-          src={path + image[0] + "-min.jpg"}
+          src={path1 + image[0] + "-min.jpg"}
           alt="image"
           title={image[1]}
         />
@@ -33,7 +33,7 @@ const Esperanza = ({theme}) => {
 
       {images2.map((image, ind) => (
         <ImageItem
-          key={ind + images.length}
+          key={ind + images2.length}
           src={path2 + image + ".jpg"}
           alt="image"
           title="Esperanza"
