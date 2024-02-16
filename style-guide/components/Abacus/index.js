@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import SkeletonElement from "./SkeletonElement";
+import React from "react";
+import ImageItem from "./ImageItem";
 import styles from "./styles.module.css";
-import { Tilt } from 'react-tilt';
 
 const Abacus = ({theme}) => {
   const [loading, setLoading] = useState(true);
@@ -19,23 +18,6 @@ const Abacus = ({theme}) => {
 
   const path2 = "/images/abacus/";
   const images2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
-  const handleImageLoad = () => {
-    setImageLoaded(true);
-    setLoading(false);
-  };
-
-  const defaultOptions = {
-    reverse:        false,  
-    max:            35,    
-    perspective:    1000,   
-    scale:          1,    
-    speed:          1500,   
-    transition:     true,   
-    axis:           null,   
-    reset:          true,    
-    easing:         "cubic-bezier(.03,.98,.52,.99)",    
-  };
   return (
     <>
       <div className={styles.wrapper + (theme === "dark" ? "dark":"")}>

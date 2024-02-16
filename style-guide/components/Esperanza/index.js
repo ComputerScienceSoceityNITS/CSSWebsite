@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import SkeletonElement from "./SkeletonElement";
+import React from "react";
+import ImageItem from "./ImageItem";
 import styles from "./styles.module.css";
-import { Tilt } from 'react-tilt';
 
 const Esperanza = ({theme}) => {
 
@@ -19,21 +18,6 @@ const Esperanza = ({theme}) => {
   const path2 = "./images/esperanza/";
   const images2 = [1, 2, 3, 7, 4, 6, 8, 5, 9, 31];
 
-  const handleImageLoad = () => {
-    setLoading(false);
-  };
-
-  const defaultOptions = {
-    reverse:        false,  
-    max:            35,    
-    perspective:    1000,   
-    scale:          1,    
-    speed:          1500,   
-    transition:     true,   
-    axis:           null,   
-    reset:          true,    
-    easing:         "cubic-bezier(.03,.98,.52,.99)",    
-  };
   return (
     <>
       <div className={styles.wrapper + (theme === "dark" ? "dark":"")}>
